@@ -1,0 +1,89 @@
+#summary How to install the BIMserver on a freshly installed Ubuntu 12.04.2 LTS Server
+
+Note: These instructions are for the 1.2 final release.
+
+The machine this was tested on was a Ubuntu Server 12.04.2 LTS Amazon EC2 server (Ubuntu Cloud Guest AMI ID ami-d0f89fb9 (x86_64)) on an m1.xlarge machine.
+
+= Introduction =
+
+This guide is used to install a BIMserver on a cloud based server. Root rights are assumed. When running as a normal user, prepend "sudo " to each command (or start your session with sudo -i).
+
+Paths can be changed to your liking of course. This is just one way of doing thing, yes you can use a different NTP server, yes you can use another JRE implementation etc...
+
+= Commands =
+
+|| *Command* || *Description* ||
+||apt-get update||Update the package index||
+||apt-get upgrade||Upgrade installed packages||
+||apt-get install openjdk-7-jre-headless wget unzip nano||Install JRE 7 and some tools||
+||ntpdate ntp2.xs4all.nl||Update the local time||
+||dpkg-reconfigure tzdata||Select timezone||
+||nano /opt/tomcat7/conf/server.xml||Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024" ||
+
+<Host name="(YOUR DOMAIN)" appBase="/var/www/(YOUR DOMAIN)" unpackWARs$
+            <Alias>sandbox.bimserver.org</Alias>
+            <Context path="" docBase="/var/www/bimserver.logic-labs.nl/ROOT.war">
+                <Parameter name="homedir" value="/opt/bimserver/home"/>
+            </Context>
+            <Valve className="org.apache.catalina.valves.AccessLogValve" directory="/opt/tomcat7$
+               prefix="access_log." suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+      </Host>
+
+||mkdir /var/www||Create a /var/www directory if it's not already there||
+||mkdir /var/www/(YOUR DOMAIN)||Create a directory for you domain||
+||chown -R tomcat7 /var/www/(YOUR DOMAIN)||Give rights to tomcat7 user to write||
+||mkdir /var/bimserver||Create a directory for you BIMserver home directory (this has nothing to do with /home on unix systems||
+||chown -R tomcat7 /var/bimserver||Give the appropriate rights to the tomcat7 user||
+
+
+
+Edit /etc/default/tomcat7 (with "nano" for example), change the line with "JAVA_OPTS" to: JAVA_OPTS="-Djava.awt.headless=true -Xmx12G -Xss4096k"
+
+The 12G parameter indicates 12GB of heap memory, please adjust to your server (always keep a few hundred megabytes free for your OS and other apps).
+
+Restart Tomcat: service tomcat7 restart
+
+= Using the Tomcat Manager =
+
+(Copied from: [https://help.ubuntu.com/10.10/serverguide/C/tomcat.html])
+== Tomcat administration webapps ==
+
+The tomcat6-admin package contains two webapps that can be used to administer the Tomcat server using a web interface. You can install them by entering the following command in the terminal prompt:
+
+{{{
+sudo apt-get install tomcat6-admin
+}}}
+The first one is the manager webapp, which you can access by default at http://yourserver:8080/manager/html. It is primarily used to get server status and restart webapps.
+
+Access to the manager application is protected by default: you need to define a user with the role "manager" in /etc/tomcat6/tomcat-users.xml before you can access it.
+
+= Installing an STMP server =
+
+{{{
+apt-get install postfix
+}}}
+
+Select "Internet server", use a real domain name that is pointing to your server's IP address.
+
+= Running op ports below 1024 =
+
+The tomcat user has no rights to bind to ports below 1024, to make the server available on port 80 (the default HTTP port), you can use iptables (you might have to install the package "iptables"):
+
+{{{
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+}}}
+
+to store these settings:
+{{{
+iptables-save
+}}}
+
+= Tmp folder =
+
+Sometimes the BIMserver cannot create the tmp folder used by JNA, this folder is usually created in /var/lib/tomcat6/tmp, if you see errors about this in the log, try the following:
+
+{{{
+mkdir /var/lib/tomcat6/tmp
+chown -R tomcat6 /var/lib/tomcat6/tmp
+}}}
