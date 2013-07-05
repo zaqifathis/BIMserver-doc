@@ -44,20 +44,6 @@ The 12G parameter indicates 12GB of heap memory, please adjust to your server (a
 
 Restart Tomcat: service tomcat7 restart
 
-= Using the Tomcat Manager =
-
-(Copied from: [https://help.ubuntu.com/10.10/serverguide/C/tomcat.html])
-== Tomcat administration webapps ==
-
-The tomcat6-admin package contains two webapps that can be used to administer the Tomcat server using a web interface. You can install them by entering the following command in the terminal prompt:
-
-{{{
-sudo apt-get install tomcat6-admin
-}}}
-The first one is the manager webapp, which you can access by default at http://yourserver:8080/manager/html. It is primarily used to get server status and restart webapps.
-
-Access to the manager application is protected by default: you need to define a user with the role "manager" in /etc/tomcat6/tomcat-users.xml before you can access it.
-
 = Installing an STMP server =
 
 ```
@@ -68,22 +54,12 @@ Select "Internet server", use a real domain name that is pointing to your server
 
 = Running op ports below 1024 =
 
-The tomcat user has no rights to bind to ports below 1024, to make the server available on port 80 (the default HTTP port), you can use iptables (you might have to install the package "iptables"):
+The tomcat7 user has no rights to bind to ports below 1024, to make the server available on port 80 (the default HTTP port), you can use iptables (you might have to install the package "iptables"):
 
-{{{
+```
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
-}}}
-
+```
 to store these settings:
-{{{
+```
 iptables-save
-}}}
-
-= Tmp folder =
-
-Sometimes the BIMserver cannot create the tmp folder used by JNA, this folder is usually created in /var/lib/tomcat6/tmp, if you see errors about this in the log, try the following:
-
-{{{
-mkdir /var/lib/tomcat6/tmp
-chown -R tomcat6 /var/lib/tomcat6/tmp
-}}}
+```
