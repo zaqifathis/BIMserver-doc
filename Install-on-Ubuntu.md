@@ -35,7 +35,7 @@ Directories chosen for this installation:
 ```
 nano /opt/tomcat7/conf/server.xml
 ```
-Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024"
+Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024". Also add a new host, see below.
 ```
 <Host name="[YOUR DOMAIN]" appBase="/var/www/[YOUR DOMAIN]" unpackWARs$
     <Context path="" docBase="/var/www/[YOUR DOMAIN]/ROOT.war">
@@ -48,9 +48,13 @@ Edit /etc/default/tomcat7 (with "nano" for example), change the line with "JAVA_
 
 The 12G parameter indicates 12GB of heap memory, please adjust to your server (always keep a few hundred megabytes free for your OS and other apps).
 
+To be able to starts/stop/restart tomcat7 you need an init.d script. You can find one [https://gist.github.com/baylisscg/942150 here]. Copy this file to /etc/init.d/tomcat7 and give it execute permissions (chmod +x /etc/init.d/tomcat7).
+
 Restart Tomcat: service tomcat7 restart
 
 # Installing an STMP server
+
+You only have to do this if you do not already have an accessible SMTP server running in your network or with your ISP. Remember running your own SMTP server is a security/spam risk if you don't know how to properly install/maintain it.
 
 ```
 apt-get install postfix
@@ -58,11 +62,12 @@ apt-get install postfix
 
 Select "Internet server", use a real domain name that is pointing to your server's IP address.
 
-# Running op ports below 1024
+# Running on ports below 1024
 
-The tomcat7 user has no rights to bind to ports below 1024, to make the server available on port 80 (the default HTTP port), you can use iptables (you might have to install the package "iptables"):
+The tomcat7 user has no rights to bind to ports below 1024 (only root can), to make the server available on port 80 (the default HTTP port), you can use iptables (you might have to install the package "iptables"):
 
 ```
+apt-get install iptables
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
 ```
 to store these settings:
