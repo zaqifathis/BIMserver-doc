@@ -34,18 +34,14 @@ Directories chosen for this installation:
 
 ```
 nano /opt/tomcat7/conf/server.xml
-
+```
 Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024"
-
-<Host name="(YOUR DOMAIN)" appBase="/var/www/(YOUR DOMAIN)" unpackWARs$
-            <Alias>sandbox.bimserver.org</Alias>
-            <Context path="" docBase="/var/www/bimserver.logic-labs.nl/ROOT.war">
-                <Parameter name="homedir" value="/opt/bimserver/home"/>
-            </Context>
-            <Valve className="org.apache.catalina.valves.AccessLogValve" directory="/opt/tomcat7$
-               prefix="access_log." suffix=".txt"
-               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
-      </Host>
+```
+<Host name="[YOUR DOMAIN]" appBase="/var/www/[YOUR DOMAIN]" unpackWARs$
+    <Context path="" docBase="/var/www/[YOUR DOMAIN]/ROOT.war">
+        <Parameter name="homedir" value="/var/bimserver/home"/>
+    </Context>
+</Host>
 ```
 
 Edit /etc/default/tomcat7 (with "nano" for example), change the line with "JAVA_OPTS" to: JAVA_OPTS="-Djava.awt.headless=true -Xmx12G -Xss4096k"
