@@ -13,12 +13,12 @@ Paths can be changed to your liking of course. This is just one way of doing thi
 # Commands
 
 | *Command* | *Description* |
-|apt-get update|Update the package index|
-|apt-get upgrade|Upgrade installed packages|
-|apt-get install openjdk-7-jre-headless wget unzip nano|Install JRE 7 and some tools|
-|ntpdate ntp2.xs4all.nl|Update the local time|
-|dpkg-reconfigure tzdata|Select timezone|
-|nano /opt/tomcat7/conf/server.xml|Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024" |
+| apt-get update | Update the package index |
+| apt-get upgrade | Upgrade installed packages |
+| apt-get install openjdk-7-jre-headless wget unzip nano | Install JRE 7 and some tools |
+| ntpdate ntp2.xs4all.nl | Update the local time |
+| dpkg-reconfigure tzdata | Select timezone |
+| nano /opt/tomcat7/conf/server.xml | Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024" |
 
 <Host name="(YOUR DOMAIN)" appBase="/var/www/(YOUR DOMAIN)" unpackWARs$
             <Alias>sandbox.bimserver.org</Alias>
