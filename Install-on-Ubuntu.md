@@ -4,12 +4,6 @@ Note: These instructions are for the 1.2 final release.
 
 The machine this was tested on was a Ubuntu Server 12.04.2 LTS Amazon EC2 server (Ubuntu Cloud Guest AMI ID ami-d0f89fb9 (x86_64)) on an m1.xlarge machine.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
 # Introduction
 
 This guide is used to install a BIMserver on a cloud based server. Root rights are assumed. When running as a normal user, prepend "sudo " to each command (or start your session with sudo -i).
@@ -18,7 +12,8 @@ Paths can be changed to your liking of course. This is just one way of doing thi
 
 # Commands
 
-| *Command* | *Description* |
+| Command | Description |
+| ------------- |:-------------:| -----:|
 | apt-get update | Update the package index |
 | apt-get upgrade | Upgrade installed packages |
 | apt-get install openjdk-7-jre-headless wget unzip nano | Install JRE 7 and some tools |
