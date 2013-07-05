@@ -27,7 +27,7 @@ Directories chosen for this installation:
 | ntpdate ntp2.xs4all.nl | Update the local time, useful when looking in log files |
 | dpkg-reconfigure tzdata | Select timezone |
 | mkdir /var/www | Create a /var/www directory if it's not already there |
-| mkdir /var/www/(YOUR DOMAIN) | Create a directory for you domain |
+| mkdir /var/www/[YOUR DOMAIN] | Create a directory for you domain |
 | chown -R tomcat7 /var/www/(YOUR DOMAIN) | Give rights to tomcat7 user to write |
 | mkdir /var/bimserver | Create a directory for you BIMserver home directory (this has nothing to do with /home on unix systems |
 | chown -R tomcat7 /var/bimserver | Give the appropriate rights to the tomcat7 user |
