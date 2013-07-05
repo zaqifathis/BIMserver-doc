@@ -41,12 +41,18 @@ Directories chosen for this installation:
 | Command | Description |
 | ------------- | ------------- |
 | cd /opt | Goto the /opt directory |
-| wget http://apache.cs.uu.nl/dist/tomcat/tomcat-7/v7.0.41/bin/apache-tomcat-7.0.41.zip | Download tomcat |
+| wget http://apache.cs.uu.nl/dist/tomcat/tomcat-7/v7.0.41/bin/apache-tomcat-7.0.41.zip | Download tomcat (Make sure you replace this with the latest release!) |
 | unzip apache-tomcat-7.0.41.zip | Unzip Tomcat7 |
 | rm apache-tomcat-7.0.41.zip | Remove the downloaded zip file |
 | mv apache-tomcat-7.0.41 tomcat7 | Rename to convenient name |
 | chown -R tomcat7 /opt/tomcat7 | Change owner of directory tot tomcat7 |
 | chmod +x /opt/tomcat7/bin/*.sh | Make .sh files executable |
+
+## Install BIMserver
+| Command | Description |
+| ------------- | ------------- |
+| cd /var/www/[YOUR DOMAIN] | Go to your domain folder |
+| wget http://code.google.com/p/bimserver/downloads/detail?name=bimserver-1.2.RC9-2013-06-25.war&can=2&q=&sort=uploaded+-filename -O ROOT.war | Download the latest BIMserver (Make sure you replace this with the latest version!) |
 
 Change the Tomcat7 configuration file:
 ```
