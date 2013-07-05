@@ -1,6 +1,6 @@
 How to install the BIMserver on a freshly installed Ubuntu 12.04.2 LTS Server
 
-Note: These instructions are for the 1.2 final release.
+> These instructions are for the 1.2 release.
 
 The machine this was tested on was a Ubuntu Server 12.04.2 LTS Amazon EC2 server (Ubuntu Cloud Guest AMI ID ami-d0f89fb9 (x86_64)) on an m1.xlarge machine.
 
@@ -8,7 +8,14 @@ The machine this was tested on was a Ubuntu Server 12.04.2 LTS Amazon EC2 server
 
 This guide is used to install a BIMserver on a cloud based server. Root rights are assumed. When running as a normal user, prepend "sudo " to each command (or start your session with sudo -i).
 
-Paths can be changed to your liking of course. This is just one way of doing thing, yes you can use a different NTP server, yes you can use another JRE implementation etc...
+Paths can be changed to your liking of course. This is just one way of doing things, yes you can use a different NTP server, yes you can use another JRE implementation etc...
+
+Directories chosen for this installation:
+```
+/var/www/[YOUR DOMAIN]/ROOT.war // For the BIMserver WAR file
+/opt/tomcat7 // For the Tomcat7 application
+/var/bimserver/home // For the BIMserver home directory
+```
 
 # Commands
 
@@ -16,8 +23,8 @@ Paths can be changed to your liking of course. This is just one way of doing thi
 | ------------- | ------------- |
 | apt-get update | Update the package index |
 | apt-get upgrade | Upgrade installed packages |
-| apt-get install openjdk-7-jre-headless wget unzip nano | Install JRE 7 and some tools |
-| ntpdate ntp2.xs4all.nl | Update the local time |
+| apt-get install openjdk-7-jre-headless wget unzip nano ntpdate | Install JRE 7 and some tools |
+| ntpdate ntp2.xs4all.nl | Update the local time, useful when looking in log files |
 | dpkg-reconfigure tzdata | Select timezone |
 | mkdir /var/www | Create a /var/www directory if it's not already there |
 | mkdir /var/www/(YOUR DOMAIN) | Create a directory for you domain |
