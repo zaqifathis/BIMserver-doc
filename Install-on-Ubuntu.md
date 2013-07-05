@@ -13,8 +13,8 @@ Paths can be changed to your liking of course. This is just one way of doing thi
 Directories chosen for this installation:
 ```
 /var/www/[YOUR DOMAIN]/ROOT.war // For the BIMserver WAR file
-/opt/tomcat7 // For the Tomcat7 application
-/var/bimserver/home // For the BIMserver home directory
+/opt/tomcat7                    // For the Tomcat7 application
+/var/bimserver/home             // For the BIMserver home directory
 ```
 
 # Commands
@@ -28,14 +28,14 @@ Directories chosen for this installation:
 | dpkg-reconfigure tzdata | Select timezone |
 | mkdir /var/www | Create a /var/www directory if it's not already there |
 | mkdir /var/www/[YOUR DOMAIN] | Create a directory for you domain |
-| chown -R tomcat7 /var/www/(YOUR DOMAIN) | Give rights to tomcat7 user to write |
+| chown -R tomcat7 /var/www/[YOUR DOMAIN] | Give rights to tomcat7 user to write |
 | mkdir /var/bimserver | Create a directory for you BIMserver home directory (this has nothing to do with /home on unix systems |
 | chown -R tomcat7 /var/bimserver | Give the appropriate rights to the tomcat7 user |
 
 ```
 nano /opt/tomcat7/conf/server.xml
 ```
-Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024". Also add a new host, see below.
+Change the port attribute in the Connector tag to the desired port (also see: "Running op ports below 1024". Also add a new host, see below.
 ```
 <Host name="[YOUR DOMAIN]" appBase="/var/www/[YOUR DOMAIN]" unpackWARs$
     <Context path="" docBase="/var/www/[YOUR DOMAIN]/ROOT.war">
