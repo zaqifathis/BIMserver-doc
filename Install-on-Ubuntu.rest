@@ -60,9 +60,9 @@ Access to the manager application is protected by default: you need to define a 
 
 = Installing an STMP server =
 
-{{{
+```
 apt-get install postfix
-}}}
+```
 
 Select "Internet server", use a real domain name that is pointing to your server's IP address.
 
