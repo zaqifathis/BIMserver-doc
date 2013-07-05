@@ -19,6 +19,7 @@ Directories chosen for this installation:
 
 # Commands
 
+## Basic configuration of Ubuntu
 | Command | Description |
 | ------------- | ------------- |
 | apt-get update | Update the package index |
@@ -26,12 +27,28 @@ Directories chosen for this installation:
 | apt-get install openjdk-7-jre-headless wget unzip nano ntpdate | Install JRE 7 and some tools |
 | ntpdate ntp2.xs4all.nl | Update the local time, useful when looking in log files |
 | dpkg-reconfigure tzdata | Select timezone |
+
+## Create directories
+| Command | Description |
+| ------------- | ------------- |
 | mkdir /var/www | Create a /var/www directory if it's not already there |
 | mkdir /var/www/[YOUR DOMAIN] | Create a directory for you domain |
 | chown -R tomcat7 /var/www/[YOUR DOMAIN] | Give rights to tomcat7 user to write |
 | mkdir /var/bimserver | Create a directory for you BIMserver home directory (this has nothing to do with /home on unix systems |
 | chown -R tomcat7 /var/bimserver | Give the appropriate rights to the tomcat7 user |
 
+## Install Tomcat7
+| Command | Description |
+| ------------- | ------------- |
+| cd /opt | Goto the /opt directory |
+| wget http://apache.cs.uu.nl/dist/tomcat/tomcat-7/v7.0.41/bin/apache-tomcat-7.0.41.zip | Download tomcat |
+| unzip apache-tomcat-7.0.41.zip | Unzip Tomcat7 |
+| rm apache-tomcat-7.0.41.zip | Remove the downloaded zip file |
+| mv apache-tomcat-7.0.41 tomcat7 | Rename to convenient name |
+| chown -R tomcat7 /opt/tomcat7 | Change owner of directory tot tomcat7 |
+| chmod +x /opt/tomcat7/bin/*.sh | Make .sh files executable |
+
+Change the Tomcat7 configuration file:
 ```
 nano /opt/tomcat7/conf/server.xml
 ```
