@@ -13,13 +13,22 @@ Paths can be changed to your liking of course. This is just one way of doing thi
 # Commands
 
 | Command | Description |
-| ------------- |:-------------:| -----:|
+| ------------- | ------------- |
 | apt-get update | Update the package index |
 | apt-get upgrade | Upgrade installed packages |
 | apt-get install openjdk-7-jre-headless wget unzip nano | Install JRE 7 and some tools |
 | ntpdate ntp2.xs4all.nl | Update the local time |
 | dpkg-reconfigure tzdata | Select timezone |
-| nano /opt/tomcat7/conf/server.xml | Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024" |
+| mkdir /var/www | Create a /var/www directory if it's not already there |
+| mkdir /var/www/(YOUR DOMAIN) | Create a directory for you domain |
+| chown -R tomcat7 /var/www/(YOUR DOMAIN) | Give rights to tomcat7 user to write |
+| mkdir /var/bimserver | Create a directory for you BIMserver home directory (this has nothing to do with /home on unix systems |
+| chown -R tomcat7 /var/bimserver | Give the appropriate rights to the tomcat7 user |
+
+```
+nano /opt/tomcat7/conf/server.xml
+
+Change the port attribute in the Connector tag to the desired port (please see: "Running op ports below 1024"
 
 <Host name="(YOUR DOMAIN)" appBase="/var/www/(YOUR DOMAIN)" unpackWARs$
             <Alias>sandbox.bimserver.org</Alias>
@@ -30,13 +39,7 @@ Paths can be changed to your liking of course. This is just one way of doing thi
                prefix="access_log." suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
       </Host>
-
-|mkdir /var/www|Create a /var/www directory if it's not already there|
-|mkdir /var/www/(YOUR DOMAIN)|Create a directory for you domain|
-|chown -R tomcat7 /var/www/(YOUR DOMAIN)|Give rights to tomcat7 user to write|
-|mkdir /var/bimserver|Create a directory for you BIMserver home directory (this has nothing to do with /home on unix systems|
-|chown -R tomcat7 /var/bimserver|Give the appropriate rights to the tomcat7 user|
-
+```
 
 Edit /etc/default/tomcat7 (with "nano" for example), change the line with "JAVA_OPTS" to: JAVA_OPTS="-Djava.awt.headless=true -Xmx12G -Xss4096k"
 
