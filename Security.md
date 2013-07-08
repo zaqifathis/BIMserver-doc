@@ -4,7 +4,7 @@ Most application containers (like Tomcat) actually say they haven't tested a lot
 
 Below is a list of permissions you have to add to make BIMserver work, this list will probably have to be updated a lot, please let us know if things are missing or not required anymore:
 
-grant {
+<code>grant {
         // Read only file permissions on eclipse workspace, you won't need this on an application server
         permission java.io.FilePermission "..", "read";
         permission java.io.FilePermission "../-", "read";
@@ -77,3 +77,4 @@ grant {
         permission java.util.PropertyPermission "java.vm.vendor", "read";
         permission java.util.PropertyPermission "java.vm.name", "read";
 };
+</code>
