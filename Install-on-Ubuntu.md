@@ -79,7 +79,7 @@ Change the file:
 '''
 CATALINA_HOME=/opt/$NAME
 CATALINA_BASE=/opt/$NAME
-JAVA_HOME = /usr/lib/jvm/java-7-openjdk-amd64/jre // Change this to your JRE directory
+JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre // Change this to your JRE directory
 '''
 
 Restart Tomcat: service tomcat7 restart
