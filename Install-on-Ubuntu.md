@@ -102,7 +102,7 @@ Restart Tomcat: service tomcat7 restart
 | Command | Description |
 | ------------- | ------------- |
 | cd /var/www/[YOUR DOMAIN] | Go to your domain folder |
-| wget http://code.google.com/p/bimserver/downloads/detail?name=bimserver-1.2.RC9-2013-06-25.war&can=2&q=&sort=uploaded+-filename -O ROOT.war | Download the latest BIMserver (Make sure you replace this with the latest version!) |
+| wget https://bimserver.googlecode.com/files/bimserver-1.2.war -O ROOT.war | Download the latest BIMserver (Make sure you replace this with the latest version!) |
 
 # Installing an STMP server
 
