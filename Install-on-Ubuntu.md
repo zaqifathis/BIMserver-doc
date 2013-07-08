@@ -104,7 +104,7 @@ Restart Tomcat: service tomcat7 restart
 | cd /var/www/[YOUR DOMAIN] | Go to your domain folder |
 | wget https://bimserver.googlecode.com/files/bimserver-1.2.war -O ROOT.war | Download the latest BIMserver (Make sure you replace this with the latest version!) |
 
-After this command, Tomcat 7 should start unpacking the downloaded war file in a directory called ROOT. After a while you should be able to connect to the BIMserver with a browser on your http://[YOUR DOMAIN]:[CONFIGURED PORT]. The page you will see should be showing the version of BIMserver and the status (should be NOT_SETUP if this is your first install). Continue to [Setup setup] for further configuration.
+After this command, Tomcat 7 should start unpacking the downloaded war file in a directory called ROOT. After a while you should be able to connect to the BIMserver with a browser on your http://[YOUR DOMAIN]:[CONFIGURED PORT]. The page you will see should be showing the version of BIMserver and the status (should be NOT_SETUP if this is your first install). Continue to [Setup][setup] for further configuration.
 
 When things are not working, you can look in the Tomcat 7 log file: /opt/tomcat7/logs/catalina.out and the BIMserver log file: /var/bimserver/home/logs/bimserver.log.
 
