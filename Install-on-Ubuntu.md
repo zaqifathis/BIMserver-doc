@@ -85,12 +85,12 @@ The 12G parameter indicates 12GB of heap memory, please adjust to your server (a
 To be able to starts/stop/restart tomcat7 you need an init.d script. You can find one [https://gist.github.com/baylisscg/942150 here]. Copy this file to /etc/init.d/tomcat7 and give it execute permissions (chmod +x /etc/init.d/tomcat7).
 
 Change the file:
-'''
+```
 CATALINA_HOME=/opt/$NAME
 CATALINA_BASE=/opt/$NAME
 TOMCAT7_SECURITY=no // You can change this to yes later on
 JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre // Change this to your JRE directory
-'''
+```
 
 Restart Tomcat: service tomcat7 restart
 
