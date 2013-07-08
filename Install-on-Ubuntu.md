@@ -51,7 +51,6 @@ Directories chosen for this installation:
 | unzip apache-tomcat-7.0.41.zip | Unzip Tomcat7 |
 | rm apache-tomcat-7.0.41.zip | Remove the downloaded zip file |
 | mv apache-tomcat-7.0.41 tomcat7 | Rename to convenient name |
-| chown -R tomcat7 /opt/tomcat7 | Change owner of directory tot tomcat7 |
 | chmod +x /opt/tomcat7/bin/*.sh | Make .sh files executable |
 | mkdir /opt/tomcat7/conf/policy.d | Create a policy directory |
 | nano /opt/tomcat7/conf/policy.d/default.policy | Edit the default policy file |
@@ -62,6 +61,9 @@ grant {
   permission java.security.AllPermission;
 };
 ```
+| Command | Description |
+| ------------- | ------------- |
+| chown -R tomcat7 /opt/tomcat7 | Change owner of directory tot tomcat7 |
 
 Change the Tomcat7 configuration file:
 ```
@@ -76,10 +78,6 @@ Change the port attribute in the Connector tag to the desired port (also see: "R
 </Host>
 ```
 
-Edit /etc/default/tomcat7 (with "nano" for example), change the line with "JAVA_OPTS" to: JAVA_OPTS="-Djava.awt.headless=true -Xmx12G -Xss4096k"
-
-The 12G parameter indicates 12GB of heap memory, please adjust to your server (always keep a few hundred megabytes free for your OS and other apps).
-
 # Startup script
 
 To be able to starts/stop/restart tomcat7 you need an init.d script. You can find one [https://gist.github.com/baylisscg/942150 here]. Copy this file to /etc/init.d/tomcat7 and give it execute permissions (chmod +x /etc/init.d/tomcat7).
@@ -91,6 +89,12 @@ CATALINA_BASE=/opt/$NAME
 TOMCAT7_SECURITY=no // You can change this to yes later on
 JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre // Change this to your JRE directory
 ```
+
+Find the line that says:
+```
+JAVA_OPTS="-Djava.awt.headless=true -Xmx4G"
+```
+and change the amount of heap memory to your liking. Always keep a few hundred megabytes free for your OS and other applications.
 
 Restart Tomcat: service tomcat7 restart
 
