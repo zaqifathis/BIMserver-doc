@@ -1,7 +1,7 @@
 BIMserver has different modes it can be in. One of the modes is "NOT_SETUP", in this case you will to set it up in order to start using BIMserver.
 
 The default Web GUI of BIMserver will show the following page:
-[Not Setup](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/notsetup.png)
+![Not Setup](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/notsetup.png)
 
 You can in theory setup a BIMserver by using API calls, but it's easier to use the Admin GUI. The Admin GUI is being bundled as a Web Module with most builds. You can access it on /admin. So for example: http://[YOUR DOMAIN]:[PORT]/[OPTIONAL CONTEXT PATH]/admin.
 
