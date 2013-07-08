@@ -53,6 +53,15 @@ Directories chosen for this installation:
 | mv apache-tomcat-7.0.41 tomcat7 | Rename to convenient name |
 | chown -R tomcat7 /opt/tomcat7 | Change owner of directory tot tomcat7 |
 | chmod +x /opt/tomcat7/bin/*.sh | Make .sh files executable |
+| mkdir /opt/tomcat7/conf/policy.d | Create a policy directory |
+| nano /opt/tomcat7/conf/policy.d/default.policy | Edit the default policy file |
+
+Paste the following default code (you can change this later!)
+'''
+grant {
+  permission java.security.AllPermission;
+};
+'''
 
 Change the Tomcat7 configuration file:
 ```
@@ -79,6 +88,7 @@ Change the file:
 '''
 CATALINA_HOME=/opt/$NAME
 CATALINA_BASE=/opt/$NAME
+TOMCAT7_SECURITY=no // You can change this to yes later on
 JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre // Change this to your JRE directory
 '''
 
