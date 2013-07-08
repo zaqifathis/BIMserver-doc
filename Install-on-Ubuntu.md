@@ -130,3 +130,5 @@ to store these settings:
 ```
 iptables-save
 ```
+
+> If you are running on Amazon or another Cloud provider, make sure you enable port 80 (or whatever port you redirect) on their firewall as well.
