@@ -57,11 +57,11 @@ Directories chosen for this installation:
 | nano /opt/tomcat7/conf/policy.d/default.policy | Edit the default policy file |
 
 Paste the following default code (you can change this later!)
-'''
+```
 grant {
   permission java.security.AllPermission;
 };
-'''
+```
 
 Change the Tomcat7 configuration file:
 ```
