@@ -1,6 +1,6 @@
 System requirements for running a BIMserver
 
-> Updated for version 1.2_
+> Updated for version 1.2
 
 # Introduction
 
