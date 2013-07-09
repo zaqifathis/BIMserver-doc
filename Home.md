@@ -10,8 +10,10 @@ Contents:
   * [Security](wiki/Security)
   * [Memory Usage](wiki/Memory-usage)
 * Developers
-  * [Eclipse](wiki/Eclipse)
   * [SOAP](wiki/SOAP)
   * [JSON](wiki/JSON)
 * BIMServer Developers
+  * [Eclipse](wiki/Eclipse)
   * [Terminology](wiki/Terminology)
+  * [Database/Versioning](wiki/Database---Versioning)
+  * [IFC STEP Encoding](wiki/IFC-STEP-Encoding)
