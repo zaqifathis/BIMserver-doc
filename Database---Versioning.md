@@ -64,7 +64,7 @@ For all structural features of the class of the object, some bytes are written t
 ## Single references
 A null reference is stored as:
 | Short |
-| --- | --- |
+| --- |
 | -1 |
 
 A non-null reference is stored as:
@@ -91,7 +91,7 @@ When serialized, the values will be
 The person:
 
 | Name | Age | Company |
-| --- | --- |
+| --- | --- | --- |
 | (short)4 + 4 bytes | (int)80 | (short)2 + (long)101 |
 
 The Company:
