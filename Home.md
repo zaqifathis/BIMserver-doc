@@ -1,4 +1,4 @@
 Welcome to the BIMserver wiki!
 
 Contents:
-* [Security](Security)
+* [Security](Wiki/Security)
