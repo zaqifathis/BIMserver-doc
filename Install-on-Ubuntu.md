@@ -92,12 +92,12 @@ JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre // Change this to your JRE direc
 ```
 
 Find the line that says:
-```
+```bash
 JAVA_OPTS="-Djava.awt.headless=true -Xmx4G"
 ```
 and change the amount of heap memory to your liking. Always keep a few hundred megabytes free for your OS and other applications.
 
-Restart Tomcat: service tomcat7 restart
+Restart Tomcat: `service tomcat7 restart`
 
 ## Install BIMserver
 | Command | Description |
