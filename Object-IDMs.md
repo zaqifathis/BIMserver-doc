@@ -4,7 +4,7 @@ To give users and developers the possibility to tweak the objects included in se
 
 An ObjectIDM is a plugin for the BIMserver. This is the interface:
 
-```
+```java
 public interface ObjectIDM {
 
 	boolean shouldFollowReference(EClass originalClass, EClass eClass, EStructuralFeature eStructuralFeature);
@@ -24,7 +24,7 @@ This can be quite tricky though in essense you just have to return whether a cer
 You simply decide whether the given eClass should be included or not.
 
 Example (include all furniture + geometry):
-```
+```java
 	@Override
 	public boolean shouldIncludeClass(EClass eClass) {
 		return !Ifc2x3Package.eINSTANCE.getIfcRoot().isSuperTypeOf(eClass) || eClass == Ifc2x3Package.eINSTANCE.getIfcFurnishingElement(); 
