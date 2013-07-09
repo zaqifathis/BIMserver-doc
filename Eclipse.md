@@ -4,6 +4,8 @@ We use Eclipse to develop BIMserver. Other IDE's should work as well, but this p
 
 It's best to download the "Eclipse Modeling Tools" package, but if you are not going to change the EMF model, you can also just download the "Standard" package, or use your own existing installation.
 
+# GitHub
+
 All BIMserver project are on GitHub. Eclipse should have a Git client already.
 
 * Copy the BIMserver GitHub URL to your clipboard (https://github.com/opensourceBIM/BIMserver.git)
@@ -20,8 +22,10 @@ All BIMserver project are on GitHub. Eclipse should have a Git client already.
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git3.png)
 
-* Finish (Select the checkbox)
+* Finish (Select the "Import all existing projects after clone finishes" checkbox)
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git4.png)
 
 * Switch back to the Java perspective
+
+You now have a working Eclipse environment, we look forward to your pull requests!
