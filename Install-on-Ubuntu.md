@@ -84,7 +84,7 @@ Change the port attribute in the Connector tag to the desired port (also see: "R
 To be able to starts/stop/restart tomcat7 you need an init.d script. You can find one [https://gist.github.com/baylisscg/942150 here]. Copy this file to /etc/init.d/tomcat7 and give it execute permissions (`chmod +x /etc/init.d/tomcat7`).
 
 Change the file:
-```
+```bash
 CATALINA_HOME=/opt/$NAME
 CATALINA_BASE=/opt/$NAME
 TOMCAT7_SECURITY=no // You can change this to yes later on
