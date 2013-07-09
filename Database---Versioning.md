@@ -22,7 +22,7 @@ A key value store is defined as:
 Each record in a table has the following layout:
 
 | Key | Value |
-|-|-|
+| - | - |
 | Pid (4 bytes) + Oid (8 bytes) + Rid (4 bytes) | See description of value |
 
   * Pid = Project Id
