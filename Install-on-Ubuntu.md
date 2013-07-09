@@ -81,7 +81,7 @@ Change the port attribute in the Connector tag to the desired port (also see: "R
 
 # Startup script
 
-To be able to starts/stop/restart tomcat7 you need an init.d script. You can find one [https://gist.github.com/baylisscg/942150 here]. Copy this file to /etc/init.d/tomcat7 and give it execute permissions (chmod +x /etc/init.d/tomcat7).
+To be able to starts/stop/restart tomcat7 you need an init.d script. You can find one [https://gist.github.com/baylisscg/942150 here]. Copy this file to /etc/init.d/tomcat7 and give it execute permissions (`chmod +x /etc/init.d/tomcat7`).
 
 Change the file:
 ```
