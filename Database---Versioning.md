@@ -21,8 +21,9 @@ A key value store is defined as:
 
 Each record in a table has the following layout:
 
-|| *Key* || *Value* ||
-||Pid (4 bytes) + Oid (8 bytes) + Rid (4 bytes)||See description of value||
+| Key | Value |
+|-|-|
+| Pid (4 bytes) + Oid (8 bytes) + Rid (4 bytes) | See description of value |
 
   * Pid = Project Id
   * Oid = Object Id
@@ -48,7 +49,8 @@ For all structural features of the class of the object, some bytes are written t
 ## Single attributes
 
 | Type | Size(bytes) | Serialisation | Null representation |
-| String | 2 + size of UTF-8 encoded bytes | UTF-8 encoded||-1 (as a short) |
+|-|-|-|-|
+| String | 2 + size of UTF-8 encoded bytes | UTF-8 encoded | -1 (as a short) |
 | Integer | 4 | Default java serialisation | Cannot be null |
 | Long | 8 | Default java serialisation | Cannot be null |
 | Float |4 | Default java serialisation | Cannot be null |
@@ -62,10 +64,12 @@ For all structural features of the class of the object, some bytes are written t
 ## Single references
 A null reference is stored as:
 | Short |
+|-|-|
 | -1 |
 
 A non-null reference is stored as:
 | Short | Long |
+|-|-|
 | Cid | Oid |
 
 ## Multiple attributes
@@ -87,9 +91,11 @@ When serialized, the values will be
 The person:
 
 | Name | Age | Company |
+|-|-|
 | (short)4 + 4 bytes | (int)80 | (short)2 + (long)101 |
 
 The Company:
 
 | Name | Employees |
+|-|-|
 | (short)9 + 9 bytes | (short)1 + (short)1 + (long)100 |
