@@ -71,8 +71,8 @@ After you call login/autlogin, you will receive a token, this token must be incl
 </soap:Envelope>
 ```
 
-To enable this kind of functionality in Apache CXF
-```
+To enable this kind of functionality in Apache CXF (Java)
+```java
 	Token token = serviceInterface.getCurrentToken();
 	List<Header> headers = new ArrayList<Header>();
 	Header sessionHeader = new Header(new QName("uri:org.bimserver.shared", "token"), token, new JAXBDataBinding(Token.class));
