@@ -11,6 +11,8 @@ http://bimserver.googlecode.com/svn/wiki/images/jar.png
 
 > (OSX) You can change the default JVM under Applications | Utilities | Java Preferences, on some OSX installations this somehow defaults to Java 5 where the BIMserver needs version 6._
 
+![JAR Runner](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/jar.png)
+
 | Settings | Meaning |
 | ------------- |:-------------:| -----:|
 | JVM | Allows for a JVM other than the default JVM to be selected |
