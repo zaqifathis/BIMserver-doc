@@ -14,7 +14,7 @@ http://bimserver.googlecode.com/svn/wiki/images/jar.png
 ![JAR Runner](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/jar.png)
 
 | Settings | Meaning |
-| ------------- |:-------------:| -----:|
+| ------------- |-------------|
 | JVM | Allows for a JVM other than the default JVM to be selected |
 | Home directory | Location of the home directory, this is where the database, log files etc... are stored |
 | Address||The address the server will be binding on, if you want the BIMserver to be available on other machines than your own, you will have to change this to a real IP address |
