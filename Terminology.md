@@ -1,5 +1,3 @@
-#summary Attempt to explain some concepts in the BIMserver
-
 # Oid
 
 All objects in the BIMserver have a unique identifier, this is called the oid (for object identifier). This oid is of type long. Instances from the Ifc2x3 model (like IfcWall) have oids, but also instances of the Store model (like Project, Revision, User) have an oid. With unique we mean unique within the instance of the BIMserver
