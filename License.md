@@ -15,9 +15,9 @@ A list of projects and their license:
 | [BimServer](../tree/master/BimServer) | AfferoGPLv3 |
 | [BimServerClientLib](../tree/master/BimServerClientLib) | AfferoGPLv3 |
 | [Builds](../tree/master/Builds) | GPL, Affero and LGPL (all 3v) see GIT for details! ||
-| [BuildingSMARTLibrary] | AfferoGPLv3 |
-| [CityGML] | AfferoGPLv3 ||
-| [Collada] | AfferoGPLv3 |
+| [BuildingSMARTLibrary](../tree/master/BuildingSMARTLibrary) | AfferoGPLv3 |
+| [CityGML](../tree/master/CityGML) | AfferoGPLv3 ||
+| [Collada](../tree/master/Collada) | AfferoGPLv3 |
 | [objectIDM FileBasedObjectIDM] | GPLv3 |
 | [ProtocolBuffers GeneratedProtocolBuffersClient] | GPLv3 |
 | [SOAP GeneratedSOAPclient] |  GPLv3 |
