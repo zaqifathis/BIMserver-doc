@@ -28,4 +28,10 @@ All BIMserver project are on GitHub. Eclipse should have a Git client already.
 
 * Switch back to the Java perspective
 
+# Running BIMserver from Eclipse
+
+To run the BIMserver from eclipse, right click the BimServer project, select "Run As" and then "Java Application", eclipse will look for classes with main methods, you have to select "LocalDevBimServerStarter", which is in the package "org.bimserver".
+
+All of the API's are provider at localhost:8080, as well as a basic user interface. The admin interface is available at localhost:8080/admin.
+
 You now have a working Eclipse environment, we look forward to your pull requests!
