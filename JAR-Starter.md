@@ -19,6 +19,6 @@ http://bimserver.googlecode.com/svn/wiki/images/jar.png
 | Home directory | Location of the home directory, this is where the database, log files etc... are stored |
 | Address||The address the server will be binding on, if you want the BIMserver to be available on other machines than your own, you will have to change this to a real IP address |
 | Port | The port must be free, and the firewall must be configured to allow listening on this port |
-| Max heap size | The amount of heap memory appointed to the instance JVM of the BIMserver, more heap means larger models can be stored/retrieved. The amount of heap is limited by the amount of memory available on your machine, but be sure to always save a few hundred of MB's to your OS and other applications. On 32-bit Windows computers, the limit is around 1500MB |
+| Max heap size | The amount of heap memory appointed to the instance JVM of the BIMserver, more heap means larger models can be stored/retrieved. The amount of heap is limited by the amount of memory available on your machine, but be sure to always save a few hundred of MB's to your OS and other applications. On 32-bit Windows computers, the limit is around 1500MB. A Typical BIMserver will need at least 2GB |
 | Max Perm Size | 256MB should be enough, if you are deploying a lot of plugins you might need more |
-| Stack size | The amount of stack size available for every thread, you are probably not ever going to need more than 2MB. With a stack size that is too low, you will probably be getting StackOverflowError messages |
+| Stack size | The amount of stack size available for every thread, you are probably not ever going to need more than 512KB. With a stack size that is too low, you will be getting StackOverflowError messages |
