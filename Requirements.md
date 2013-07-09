@@ -1,7 +1,5 @@
 System requirements for running a BIMserver
 
-> Updated for version 1.2
-
 # Introduction
 
 The amount of required heap memory depends on the size of your models. A rule of thumb is that you need about 15 times the size of the largest (unzipped) IFC file you want to be able to upload. You can find more information [MemoryUsage here].
