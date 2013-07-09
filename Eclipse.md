@@ -11,14 +11,18 @@ All BIMserver project are on GitHub. Eclipse should have a Git client already.
 3. Right click in the "Git Repositories" view and select "Paste Repository Path or URI", or just press ctrl-v
 
 ![Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git1.png)
+
 4. Fill in your GitHub credentials if you have them.
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git2.png)
+
 5. Next
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git3.png)
+
 6. Next
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git4.png)
+
 7. Finish
 8. Switch back to the Java perspective
