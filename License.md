@@ -45,8 +45,8 @@ When license indications on this page or in SVN differ, the SVN (text in code) w
 
 # Links
 
-Information about the different licenses:<br/>
-[http://www.gnu.org/licenses/gpl.html GPL]<br/>
-[http://www.gnu.org/licenses/lgpl.html LGPL]<br/>
-[http://www.gnu.org/licenses/agpl.html Affero]<br/>
-[http://ifcbrowser.com/ IFCEngine DLL]<br/>
+Information about the different licenses:
+[GPL](http://www.gnu.org/licenses/gpl.html)
+[LGPL](http://www.gnu.org/licenses/lgpl.html)
+[Affero](http://www.gnu.org/licenses/agpl.html)
+[DLL](http://ifcbrowser.com/ IFCEngine)
