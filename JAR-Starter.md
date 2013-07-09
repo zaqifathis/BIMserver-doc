@@ -1,5 +1,3 @@
-# summary How to run your own BIMserver without an application server
-
 To make it easier to evaluate BIMserver, a cross platform executable build is created that allows you to run a BIMserver on your desktop computer. The executable is a JAR file, most operating systems allow you to double click the file to start running it.
 
 > (Windows) Make sure you do not put the .jar file in C:\Program Files or C:\Program Files (x86) because Windows plays funky tricks with those directories [http://www.hanselman.com/blog/VistasShowCompatibilityFilesAndTheScrumptiousWonderThatIsFileVirtualization.aspx]
