@@ -1,4 +1,8 @@
 Welcome to the BIMserver wiki!
 
 Contents:
-* [Security](wiki/Security)
+* Deployment
+  * [Security](wiki/Security)
+  * [Ubuntu installation](wiki/Ubuntu)
+* Developers
+  * [Security](wiki/Security)
