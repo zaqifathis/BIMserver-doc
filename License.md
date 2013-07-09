@@ -12,29 +12,28 @@ A list of projects and their license:
 | Project | License |
 | --- | --- |
 | [AdminGUI](../tree/master/AdminGui) | AfferoGPLv3 |
-| BimServer | AfferoGPLv3 |
-| [BimServerClientLib BimServerClientLib] | AfferoGPLv3 |
-| BuildingSMARTLibrary | AfferoGPLv3 |
-| Builds | GPL, Affero and LGPL (all 3v) see svn for details! ||
-| CityGML | AfferoGPLv3 ||
-| Collada | AfferoGPLv3 |
+| [BimServer](../tree/master/BimServer) | AfferoGPLv3 |
+| [BimServerClientLib](../tree/master/BimServerClientLib) | AfferoGPLv3 |
+| [Builds](../tree/master/Builds) | GPL, Affero and LGPL (all 3v) see GIT for details! ||
+| [BuildingSMARTLibrary] | AfferoGPLv3 |
+| [CityGML] | AfferoGPLv3 ||
+| [Collada] | AfferoGPLv3 |
 | [objectIDM FileBasedObjectIDM] | GPLv3 |
 | [ProtocolBuffers GeneratedProtocolBuffersClient] | GPLv3 |
 | [SOAP GeneratedSOAPclient] |  GPLv3 |
-| Ifc | AfferoGPLv3 |
+| [Ifc] | AfferoGPLv3 |
 | [http://www.ifcbrowser.com/ IFCEngine || special non open source license (see svn for details) |
-| IfcPlugins | AfferoGPLv3  |
-| MiscSerializers | GPLv3 |
+| [IfcPlugins] | AfferoGPLv3  |
+| [MiscSerializers] | GPLv3 |
 | [Plugins Plugins] | AfferoGPLv3 |
-| Report1Serializer | GPLv3 |
-| SceneJS | AfferoGPLv3 |
-| Shared | AfferoGPLv3 |
+| [SceneJS] | AfferoGPLv3 |
+| [Shared] | AfferoGPLv3 |
 | [StoreModel Store] | AfferoGPLv3 |
 | TestData | GPLv3 |
 | [UnitTests Tests] | AfferoGPLv3 |
 | TestViewer | GPLv3  |
-| Utils | AfferoGPLv3 |
-| (XsltSerializer) | AfferoGPLv3 |
+| [Utils] | AfferoGPLv3 |
+| [XsltSerializer] | AfferoGPLv3 |
 | ExampleSerializer | GPLv3 |
 | ExampleDeserializer | GPLv3 |
 
