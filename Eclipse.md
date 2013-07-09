@@ -20,9 +20,8 @@ All BIMserver project are on GitHub. Eclipse should have a Git client already.
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git3.png)
 
-* Next
+* Finish (Select the checkbox)
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git4.png)
 
-* Finish
 * Switch back to the Java perspective
