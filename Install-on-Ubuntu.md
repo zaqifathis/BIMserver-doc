@@ -61,6 +61,7 @@ grant {
   permission java.security.AllPermission;
 };
 ```
+
 | Command | Description |
 | ------------- | ------------- |
 | chown -R tomcat7 /opt/tomcat7 | Change owner of directory tot tomcat7 |
