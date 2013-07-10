@@ -12,7 +12,7 @@ public interface ModelMergerPlugin extends Plugin {
 
 The model merger instance looks like this:
 
-```
+```java
 public interface ModelMerger {
 	IfcModelInterface merge(Project project, IfcModelSet modelSet, ModelHelper modelHelper) throws MergeException;
 }
