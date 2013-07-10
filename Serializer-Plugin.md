@@ -28,3 +28,5 @@ public interface Serializer {
 ```
 
 You can subclass [EmfSerializer](../blob/master/Shared/src/org/bimserver/plugins/serializers/EmfSerializer.java?source=c) so you don't have to implement all methods.
+
+You can subclass [AbstractGeometrySerializer](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/serializers/AbstractGeometrySerializer.java?source=cc) if your serializer is going to need triangulated geometry.
