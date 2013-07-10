@@ -1,4 +1,4 @@
-Documentation on the actual calls that are available can be found [here](Service-Interfaces).
+Protocol Buffers is one of the three available channels to access the methods of the [Service Interfaces](Service-Interfaces).
 
 # Introduction
 
