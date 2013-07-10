@@ -6,6 +6,7 @@
 * [Setup](wiki/Setup)
 * [Security](wiki/Security)
 * [Memory Usage](wiki/Memory-usage)
+
 ### Developers
 * [Service Interfaces](Service-Interfaces)
   * [SOAP](wiki/SOAP)
@@ -20,6 +21,7 @@
       * [XSLT Serializer](XSLT-Serializer)
    * [Deserializer Plugin](Deserializer Plugin)
    * etc...
+
 ### BIMServer Developers
 * [Eclipse](wiki/Eclipse)
 * [Eclipse Modeling Framework](Eclipse-Modeling-Framework)
@@ -28,6 +30,7 @@
 * [Database/Versioning](wiki/Database---Versioning)
 * [IFC STEP Encoding](wiki/IFC-STEP-Encoding)
 * [Communication](Communication)
+
 ### General
 * [FAQ](FAQ)
 * [Known Issues](Known-Issues)
