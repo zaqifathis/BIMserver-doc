@@ -1,6 +1,5 @@
 Welcome to the BIMserver wiki!
 
-Contents:
 * Deployment
   * [Requirements](wiki/Requirements)
   * [Download](wiki/Download)
@@ -10,8 +9,10 @@ Contents:
   * [Security](wiki/Security)
   * [Memory Usage](wiki/Memory-usage)
 * Developers
-  * [SOAP](wiki/SOAP)
-  * [JSON](wiki/JSON)
+  * [Service Interfaces](Service-Interfaces)
+    * [SOAP](wiki/SOAP)
+    * [JSON](wiki/JSON API)
+    * [Protocol Buffers](wiki/Protocol Buffers)
 * BIMServer Developers
   * [Eclipse](wiki/Eclipse)
   * [Terminology](wiki/Terminology)
