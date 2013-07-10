@@ -21,19 +21,18 @@ A list of projects and their license:
 | [objectIDM FileBasedObjectIDM] | GPLv3 |
 | [ProtocolBuffers GeneratedProtocolBuffersClient] | GPLv3 |
 | [SOAP GeneratedSOAPclient] |  GPLv3 |
-| [Ifc] | AfferoGPLv3 |
+| [Ifc](../tree/master/Ifc) | AfferoGPLv3 |
 | [http://www.ifcbrowser.com/ IFCEngine || special non open source license (see svn for details) |
-| [IfcPlugins] | AfferoGPLv3  |
-| [MiscSerializers] | GPLv3 |
-| [Plugins Plugins] | AfferoGPLv3 |
-| [SceneJS] | AfferoGPLv3 |
-| [Shared] | AfferoGPLv3 |
-| [StoreModel Store] | AfferoGPLv3 |
-| TestData | GPLv3 |
-| [UnitTests Tests] | AfferoGPLv3 |
-| TestViewer | GPLv3  |
-| [Utils] | AfferoGPLv3 |
-| [XsltSerializer] | AfferoGPLv3 |
+| [IfcPlugins](../tree/master/IfcPlugins) | AfferoGPLv3  |
+| [MiscSerializers](../tree/master/MiscSerializers) | GPLv3 |
+| [Plugins](../tree/master/Plugins) | AfferoGPLv3 |
+| [SceneJS](../tree/master/SceneJS) | AfferoGPLv3 |
+| [Shared](../tree/master/Shared) | AfferoGPLv3 |
+| [TestData](../tree/master/TestData) | GPLv3 |
+| [Tests](../tree/master/Tests) | AfferoGPLv3 |
+| [TestViewer](../tree/master/TestViewer) | GPLv3  |
+| [Utils](../tree/master/Utils) | AfferoGPLv3 |
+| [XsltSerializer](../tree/master/XsltSerializer) | AfferoGPLv3 |
 | ExampleSerializer | GPLv3 |
 | ExampleDeserializer | GPLv3 |
 
@@ -49,4 +48,4 @@ Information about the different licenses:
 
 [Affero](http://www.gnu.org/licenses/agpl.html)
 
-[DLL](http://ifcbrowser.com/IFCEngine)
+[DLL](http://rdf.bg/ifcenginedll/product_ifcdll.html)
