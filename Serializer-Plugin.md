@@ -15,7 +15,7 @@ public interface SerializerPlugin extends Plugin {
 }
 ```
 
-```
+```java
 public interface Serializer {
 	void init(IfcModelInterface model, ProjectInfo projectInfo, PluginManager pluginManager, RenderEnginePlugin renderEnginePlugin, boolean normalizeOids) throws SerializerException;
 	void writeToFile(File file) throws SerializerException;
