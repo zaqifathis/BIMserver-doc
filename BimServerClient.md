@@ -17,10 +17,12 @@ Connecting via SOAP with authentication, and listing all projects
 			
 	// Create a new BimServerClient with authentication
 	BimServerClient bimServerClient = factory.create(new UsernamePasswordAuthenticationInfo("admin@bimserver.org", "admin"));
+
+        // List project names
 	for (SProject project : bimServerClient .getBimsie1ServiceInterface().getAllProjects(true, true)) {
 		System.out.println(project.getName());
 	}
 
 ```
 
-> TODO: Document how to call methods and how to use the client-side EMF model
+> TODO: Document how to call other methods and how to use the client-side EMF model
