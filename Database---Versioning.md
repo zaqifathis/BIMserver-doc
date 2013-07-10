@@ -1,6 +1,6 @@
 # Introduction
 
-The BIMserver is storing all data in a key-value store. The key-value store is being accessed through the [http://tools.bimtoolset.org/BIMserver/nightly%20build%20javadoc/org/bimserver/database/KeyValueStore.html KeyValueStore Interface]. Right now there is only one implementation, which is using the open source [BerkeleyDB Java Edition](http://www.oracle.com/technetwork/database/berkeleydb/overview/index-093405.html).
+The BIMserver is storing all data in a key-value store. The key-value store is being accessed through the [KeyValueStore Interface](http://tools.bimtoolset.org/BIMserver/nightly%20build%20javadoc/org/bimserver/database/KeyValueStore.html ). Right now there is only one implementation, which is using the open source [BerkeleyDB Java Edition](http://www.oracle.com/technetwork/database/berkeleydb/overview/index-093405.html).
 
 A key value store is defined as:
   * A set of named tables
