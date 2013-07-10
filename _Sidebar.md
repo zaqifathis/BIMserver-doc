@@ -11,12 +11,24 @@
      * [SOAP](wiki/SOAP)
      * [JSON](wiki/JSON API)
      * [Protocol Buffers](wiki/Protocol Buffers)
-  * [Clients]
+  * Clients
      * [Java Client](BimServerClient)
      * [PHP Client](PHP-Client-Library)
      * [JavaScript Client](JavaScriptClient)
+  * [Plugin Development](Plugin-Development)
+     * [Serializer Plugin](Serializer Plugin)
+        * [XSLT Serializer](XSLT-Serializer)
+     * [Deserializer Plugin](Deserializer Plugin)
+     * etc...
 * BIMServer Developers
   * [Eclipse](wiki/Eclipse)
+  * [Eclipse Modeling Framework](Eclipse-Modeling-Framework)
+  * [Embedding](Embedding)
   * [Terminology](wiki/Terminology)
   * [Database/Versioning](wiki/Database---Versioning)
   * [IFC STEP Encoding](wiki/IFC-STEP-Encoding)
+  * [Communication](Communication)
+* General
+  * [FAQ](FAQ)
+  * [Known Issues](Known-Issues)
+  * [License](License)
