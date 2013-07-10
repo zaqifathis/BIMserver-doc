@@ -1,5 +1,7 @@
 The `Service Interfaces` are a set of defined interfaces for interaction with BIMserver. These interfaces are defined as (heavily annotated) Java interfaces.
 
+All interfaces with the namespace `org.buildingsmart.bimsie1` are implementations of the [BIMsie standard](http://bimsie.openbimstandards.org/). All calls in the `org.bimserver` namespace are BIMserver specific calls.
+
 # The interfaces
 
 | Namespace | Name | Functionalities | Link |
