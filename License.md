@@ -49,4 +49,4 @@ Information about the different licenses:
 
 [Affero](http://www.gnu.org/licenses/agpl.html)
 
-[DLL](http://ifcbrowser.com/ IFCEngine)
+[DLL](http://ifcbrowser.com/IFCEngine)
