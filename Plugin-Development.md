@@ -1,6 +1,6 @@
 # Introduction
 
-The BIMserver project has a strong focus on interaction with other systems, that's what the (Service Interfaces)[Service Interfaces] are for (accessible via [SOAP](SOAP), [Protocol Buffers](Protocol Buffers) or [JSON](JSON)) but some logic will only work when running within the BIMserver, that's where plugins come into play.
+The BIMserver project has a strong focus on interaction with other systems, that's what the (Service Interfaces)[Service Interfaces] are for (accessible via [SOAP](SOAP), [Protocol Buffers](Protocol Buffers) or [JSON](JSON-API)) but some logic will only work when running within the BIMserver, that's where plugins come into play.
 
 # Types of plugins
 
