@@ -1,3 +1,5 @@
+Documentation on the actual calls that are available can be found [here](Service-Interfaces).
+
 # Introduction
 
 As the BIMserver's main function is to allow other software to store and retrieve information about building information models, it is very important to support a wide variety of programming languages. From the beginning of the BIMserver project a SOAP interface has been available, but SOAP has a few disadvantages:
