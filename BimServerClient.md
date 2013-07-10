@@ -17,6 +17,9 @@ Connecting via SOAP with authentication, and listing all projects
 			
 	// Create a new BimServerClient with authentication
 	BimServerClient bimServerClient = factory.create(new UsernamePasswordAuthenticationInfo("admin@bimserver.org", "admin"));
+	for (SProject project : bimServerClient .getBimsie1ServiceInterface().getAllProjects(true, true)) {
+		System.out.println(project.getName());
+	}
 
 ```
 
