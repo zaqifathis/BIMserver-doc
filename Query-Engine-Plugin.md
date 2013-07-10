@@ -1,13 +1,11 @@
-#summary How to write Query engine plugins
+A Query Engine makes it possible for users to query the BIMserver models.
 
-A Query Engine makes it possible for users to query the BIMserver.
-
-{{{
+```java
 public interface QueryEnginePlugin extends Plugin {
 	/**
 	 * @return A usable QueryEngine implementation
 	 */
-	QueryEngine getQueryEngine();
+	QueryEngine getQueryEngine(PluginConfiguration pluginConfiguration);
 	
 	/**
 	 * @return Return a list of keys (usually file names) corresponding to code examples for this plugin
@@ -20,9 +18,9 @@ public interface QueryEnginePlugin extends Plugin {
 	 */
 	String getExample(String key);
 }
-}}}
+```
 
-{{{
+```java
 public interface QueryEngine {
 	/**
 	 * @param model The complete model
@@ -31,4 +29,4 @@ public interface QueryEngine {
 	 */
 	IfcModelInterface query(IfcModelInterface model, String code, Reporter reporter, ModelHelper modelHelper) throws QueryEngineException;
 }
-}}}
+```
