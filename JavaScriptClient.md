@@ -1,10 +1,8 @@
-# Introduction
-
 To make communication with the BIMserver easier we have made a simple API library you can use. Of course you can also implement your own API in JavaScript.
 
 # Requirements
 
-The API is just one file: bimserverapi.js. You can find it on http://[addressofyourserver]:[port]/js/bimserverapi.js. You can copy it to your own project, but make sure you update the file when you update your BIMserver. There are a few dependencies, which are also on the BIMserver: "sha256.js" for encryption, "String.js" for some additional String manipulation functions, "jquery.cookie.js" for cookie functionality and   "jquery-1.8.2.min.js" as well. For some browsers not supporting "forEach" on arrays you might also need "array.js".
+The API is just one file: bimserverapi.js. You can find it on http://[addressofyourserver]:[port]/[optional context path]/js/bimserverapi.js. You can copy it to your own project, but make sure you update the file when you update your BIMserver. There are a few dependencies, which are also on the BIMserver: "sha256.js" for encryption, "String.js" for some additional String manipulation functions, "jquery.cookie.js" for cookie functionality and   "jquery-2.0.2.min.js" as well. For some browsers not supporting "forEach" on arrays you might also need "array.js".
 
 # Communication
 
@@ -55,7 +53,7 @@ When you use the above snippet, you will get a "serverInfo" object back in the c
 
 # Using the API
 
-All methods in the [http://tools.bimtoolset.org/BIMserver/nightly%20build%20javadoc/org/bimserver/shared/interfaces/ServiceInterface.html ServiceInterface] can be called (make sure you look at the right documentation for your version, this link is pointing to the nightly build documentation). You must always use all parameters that are defined. Also when sending complex objects, you should define all the properties of the objects. The first call you will usually do is to login.
+All methods in the [Service Interfaces](Service-Interfaces) can be called (make sure you look at the right documentation for your version). You must always use all parameters that are defined. Also when sending complex objects, you should define all the properties of the objects. The first call you will usually do is to login.
 
 ```javascript
 	bimServerApi.login(username, password, rememberme, function(data){
@@ -66,9 +64,11 @@ All methods in the [http://tools.bimtoolset.org/BIMserver/nightly%20build%20java
 Not all calls have been implemented in the JavaScript API, but it is very easy to use them anyways. The following example will list all the available projects:
 
 ```javascript
-	bimServerApi.call("ServiceInterface", "getAllProjects", {onlyTopLevel: true}, function(data){
+	bimServerApi.call("Bimsie1ServiceInterface", "getAllProjects", {onlyTopLevel: true, onlyActive: true}, function(data){
 		data.forEach(function(project){
 			console.log(project);
 		});
 	});
 ```
+
+> TODO: Document the use of the Model class
