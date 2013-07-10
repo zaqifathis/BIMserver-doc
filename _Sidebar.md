@@ -1,5 +1,5 @@
 **Deployment**
-* [Requirements](Requirements)
+* [Requirements](wiki/Requirements)
 * [Download](Download)
 * [JAR Starter](JAR-Starter)
 * [Ubuntu installation](Install-on-Ubuntu)
