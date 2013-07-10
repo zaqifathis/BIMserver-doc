@@ -8,9 +8,9 @@
   * [Memory Usage](wiki/Memory-usage)
 * Developers
   * [Service Interfaces](Service-Interfaces)
-    * [SOAP](wiki/SOAP)
-    * [JSON](wiki/JSON API)
-    * [Protocol Buffers](wiki/Protocol Buffers)
+     * [SOAP](wiki/SOAP)
+     * [JSON](wiki/JSON API)
+     * [Protocol Buffers](wiki/Protocol Buffers)
 * BIMServer Developers
   * [Eclipse](wiki/Eclipse)
   * [Terminology](wiki/Terminology)
