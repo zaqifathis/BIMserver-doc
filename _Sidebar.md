@@ -20,7 +20,13 @@
    * [Serializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Serializer Plugin)
       * [XSLT Serializer](https://github.com/opensourceBIM/BIMserver/wiki/XSLT-Serializer)
    * [Deserializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Deserializer Plugin)
-   * etc...
+   * [Model Compare Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Model-Compare-Plugin)
+   * [Model Merge Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Model-Merge-Plugin)
+   * [Query Engine Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Query-Engine-Plugin)
+   * [Render Engine Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Render-Engine-Plugin)
+   * [ObjectIDM Plugin](https://github.com/opensourceBIM/BIMserver/wiki/ObjectIDM-Plugin)
+   * [Schema Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Schema-Plugin)
+   * [Service Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Service-Plugin)
 
 **BIMServer Developers**
 * [Eclipse](https://github.com/opensourceBIM/BIMserver/wiki/Eclipse)
