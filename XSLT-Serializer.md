@@ -1,14 +1,11 @@
-# Introduction
-
 To make it easier to create serializer plugins for the BIMserver, you can also define the serialization logic in an XSLT which takes an IFCXML file as the source file.
 
 # Creating the plugin
 
 Note: Is is usually a lot easier to start from existing code, have a look at the "Cobie2Serializer" project for example.
 
-  * Follow the [Plugins#So_how_to_develop_a_plugin create a plugin tutorial]
+  * Follow the [Plugin Development](Plugin-Development) page
   * Add a dependancy to the "XsltSerializer" project
-http://bimserver.googlecode.com/svn/wiki/images/adddependency.png
   * Create an xslt file in the plugin-project's root
   * Change the "TestPlugin" file:
 
@@ -75,8 +72,8 @@ http://bimserver.googlecode.com/svn/wiki/images/cobieproject.png
 
 # Adding XSLT parameters
 
-You can pass parameters to the XSLT engine the following way, this is also used in the "Report1Plugin" project. You have to add this code to the init method.
+You can pass parameters to the XSLT engine the following way. You have to add this code to the init method.
 
-```
+```java
 	xsltSerializer.addParameter(new XsltParameter("topic", "component"));
 ```
