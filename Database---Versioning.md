@@ -39,7 +39,7 @@ The image below is showing four revisions of a project. There are 3 tables: A, B
 The diagrams on top are showing the objects + relations for each revision. The number between the parenthesis is the Oid (Object Id).
 The tables on the bottom are showing the complete database contents at the end of each revision. The number before the "." is the Object Id, the number after the dot is the Rid (Revision Id).
 
-![db](http://bimserver.googlecode.com/svn/wiki/images/db1.png)
+![db](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/db1.png)
 
 # Value
 
@@ -83,7 +83,7 @@ Multiple references (lists of references to objects) are also stored inline. The
 ## Example
 Let's say we have two classes, Person and Company:
 
-![personcompany](http://bimserver.googlecode.com/svn/wiki/images/PersonCompany.png)
+![personcompany](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/PersonCompany.png)
 
 The Person class has Cid 1, the Company class has Cid 2.
 Both classes have one instance, the person has Oid 100, the Company has Oid 101.
