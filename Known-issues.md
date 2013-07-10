@@ -52,13 +52,13 @@ The workaround: Add "-XX:-UseSplitVerifier" when running.
 
 The following is an example, there could be more.
 
-[http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcpr-30.html IfcPresentationStyleSelect] has [http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcnu-02.html IfcNullStyle] as a 'subtype', but IfcNullStyle is en enum. This is not supported in Java or EMF, files containing this construction will fail to deserialize at the moment.
+[IfcPresentationStyleSelect](http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcpr-30.html) has [IfcNullStyle](http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcnu-02.html) as a 'subtype', but IfcNullStyle is en enum. This is not supported in Java or EMF, files containing this construction will fail to deserialize at the moment.
 
 # Other IFC2x3 problems
 
-[http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcco-03.html IfcCompoundPlaneAngleMeasure] is a type defined as a list, which does not work in EMF/Java
+[IfcCompoundPlaneAngleMeasure](http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcco-03.html) is a type defined as a list, which does not work in EMF/Java
 
-[http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcco-07.html IfcComplexNumber] is a type defined as an array, which does not work in EMF/Java
+[IfcComplexNumber](http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcco-07.html) is a type defined as an array, which does not work in EMF/Java
 
 # More issues
 For more know issues have a look at the [issue list](https://github.com/opensourceBIM/BIMserver/issues?state=open)
