@@ -14,23 +14,26 @@ A list of projects and their license:
 | [AdminGUI](../tree/master/AdminGui) | AfferoGPLv3 |
 | [BimServer](../tree/master/BimServer) | AfferoGPLv3 |
 | [BimServerClientLib](../tree/master/BimServerClientLib) | AfferoGPLv3 |
-| [Builds](../tree/master/Builds) | GPL, Affero and LGPL (all 3v) see GIT for details! ||
 | [BuildingSMARTLibrary](../tree/master/BuildingSMARTLibrary) | AfferoGPLv3 |
+| [Builds](../tree/master/Builds) | GPL, Affero and LGPL (all 3v) see GIT for details! ||
 | [CityGML](../tree/master/CityGML) | AfferoGPLv3 ||
+| [ClashDetection](../tree/master/ClashDetection) | AfferoGPLv3 ||
 | [Collada](../tree/master/Collada) | AfferoGPLv3 |
-| [objectIDM FileBasedObjectIDM] | GPLv3 |
-| [ProtocolBuffers GeneratedProtocolBuffersClient] | GPLv3 |
-| [SOAP GeneratedSOAPclient] |  GPLv3 |
+| [DemoPlugins](../tree/master/DemoPlugins) | AfferoGPLv3 |
+| [FileBasedObjectIDM](../tree/master/FileBasedObjectIDM) | GPLv3 |
+| [GeneratedSOAPclient](../tree/master/GeneratedSoapclient) |  GPLv3 |
 | [Ifc](../tree/master/Ifc) | AfferoGPLv3 |
-| [http://www.ifcbrowser.com/ IFCEngine || special non open source license (see svn for details) |
+| [IFCEngine](http://www.ifcbrowser.com/) | special non open source license (see GIT for details) |
 | [IfcPlugins](../tree/master/IfcPlugins) | AfferoGPLv3  |
+| [JavaQueryEngine](../tree/master/JavaQueryEngine) | GPLv3 |
+| [Mergers](../tree/master/Mergers) | GPLv3 |
 | [MiscSerializers](../tree/master/MiscSerializers) | GPLv3 |
-| [Plugins](../tree/master/Plugins) | AfferoGPLv3 |
 | [SceneJS](../tree/master/SceneJS) | AfferoGPLv3 |
 | [Shared](../tree/master/Shared) | AfferoGPLv3 |
 | [TestData](../tree/master/TestData) | GPLv3 |
-| [Tests](../tree/master/Tests) | AfferoGPLv3 |
 | [TestViewer](../tree/master/TestViewer) | GPLv3  |
+| [Tests](../tree/master/Tests) | AfferoGPLv3 |
+| [Tools](../tree/master/Tools) | AfferoGPLv3 |
 | [Utils](../tree/master/Utils) | AfferoGPLv3 |
 | [XsltSerializer](../tree/master/XsltSerializer) | AfferoGPLv3 |
 | ExampleSerializer | GPLv3 |
