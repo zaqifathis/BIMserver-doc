@@ -16,3 +16,7 @@ The `Service Interfaces` are a set of defined interfaces for interaction with BI
 | org.buildingsmart.bimsie1 | Bimsie1NotificationRegistryInterface | | [Bimsie1NotificationRegistryInterface](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1NotificationRegistryInterface.java)
 | org.buildingsmart.bimsie1 | Bimsie1RemoteServiceInterface | | [Bimsie1RemoteServiceInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1RemoteServiceInterface.java)
 | org.buildingsmart.bimsie1 | Bimsie1ServiceInterface | | [Bimsie1ServiceInterface](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1ServiceInterface.java)
+
+# Access
+
+Access to these methods is provided through 3 different channels: [Protocol Buffers](Protocol Buffers), [SOAP](SOAP) and [JSON](JSON-API).
