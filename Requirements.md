@@ -1,8 +1,10 @@
 System requirements for running a BIMserver
 
-# Introduction
+# Memory
 
 The amount of required heap memory depends on the size of your models. A rule of thumb is that you need about 15 times the size of the largest (unzipped) IFC file you want to be able to upload. You can find more information [MemoryUsage here].
+
+# JRE / JDK
 
 You can download a JRE or JDK [http://www.oracle.com/technetwork/java/javase/downloads/index.html here].
 
