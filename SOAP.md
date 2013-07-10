@@ -1,3 +1,5 @@
+SOAP is one of the three available channels to access the methods of the [Service Interfaces](Service-Interfaces).
+
 This document describes how to use the SOAP interface of BIMserver 1.2
 
 External applications can interact with the BIMserver via SOAP (and [Interfaces other protocols]). For SOAP you'll need a WSDL file which describes all the methods/objects that are available. The BIMserver provides several interfaces and two versions of SOAP (1.1 and 1.2).
