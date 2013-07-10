@@ -1,6 +1,6 @@
 # Introduction
 
-The BIMserver project has a strong focus on interaction with other systems, that's what the (Service Interfaces)[Service Interfaces] are for (accessible via [SOAP](SOAP), [Protocol Buffers](Protocol Buffers) or [JSON](JSON-API)) but some logic will only work when running within the BIMserver, that's where plugins come into play.
+The BIMserver project has a strong focus on interaction with other systems, that's what the (Service Interfaces)[Service Interfaces] are for (accessible via [SOAP](SOAP), [Protocol Buffers](Protocol Buffers) or [JSON](JSON-API)). However, some logic will only work (efficiently) when running within the BIMserver, that's where plugins come into play.
 
 # Types of plugins
 
@@ -17,9 +17,24 @@ public interface Plugin {
 
 Do not implement the Plugin class directly, there are sub-interfaces for the different purposes plugins can have.
 
+# Types of plugins
+
+| Name | Functionality |
+| ---- | ------------- |
+| [Serializer](Serializer Plugin) | |
+| [Deserializer](Deserializer Plugin) | |
+| [Render Engine](Render Engine Plugin) | |
+| [Query Engine](Query Engine Plugin) | |
+| [Schema](Schema Plugin) | |
+| [Object IDM](Object IDM Plugin) | |
+| [Model Merge](Model Merge Plugin) | |
+| [Model Compare](Model Compare Plugin) | |
+| [Service](Service Plugin) | |
+
 # So how to develop a plugin
 
 > This tutorial assumes you use eclipse, but other IDEs should also work
+
 
 > The easiest way to learn is to look how other people have done things, there are quite a few plugins already, so have a look at them.
 
@@ -45,6 +60,8 @@ pluginManager.loadPluginsFromEclipseProject(new File("../PluginTest"));
 ```
 
 Now you can start the BIMserver and your plugin should be available as yet another way to serialize models.
+
+# JAR
 
 To make your plugin available on deployed BIMservers (either WAR or JAR), you have to create a JAR file of your plugin. It should contain the compiled code, your plugin folder (+plugin.xml), and any required JAR files. The place of jar files doesn't matter, as long as they have the extension ".jar".
 
