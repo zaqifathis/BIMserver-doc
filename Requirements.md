@@ -6,7 +6,7 @@ The amount of required heap memory depends on what plugins you install, the size
 
 # JRE / JDK
 
-You can download a JRE or JDK [http://www.oracle.com/technetwork/java/javase/downloads/index.html here].
+You can download a JRE or JDK [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 Make sure you install a 64bit JRE/JDK if you have a 64bit system. The main advantage will be that you are going to be able to reserve more than 1300MB of memory, which you probably will want to.
 
