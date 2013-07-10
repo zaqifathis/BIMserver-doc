@@ -2,5 +2,5 @@ The `Service Interfaces` are a set of defined interfaces for interaction with BI
 
 # The interfaces
 
-| Namespace | Name | Functionalities |
-| --------- | ---- | --------------- |
+| Namespace | Name | Functionalities | Link |
+| --------- | ---- | --------------- | ---- |
