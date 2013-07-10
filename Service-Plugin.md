@@ -35,3 +35,91 @@ register(serverDescriptor, clashDetection, new NotificationInterfaceAdapter(){
 	}
 }
 ```
+
+Example:
+```java
+public class DemoServicePlugin1 extends ServicePlugin {
+
+	private boolean initialized;
+
+	@Override
+	public void init(PluginManager pluginManager) throws PluginException {
+		super.init(pluginManager);
+		initialized = true;
+	}
+	
+	@Override
+	public String getDescription() {
+		return "Demo Service 1";
+	}
+
+	@Override
+	public String getDefaultName() {
+		return "Demo Service 1";
+	}
+
+	@Override
+	public String getVersion() {
+		return "1.0";
+	}
+
+	@Override
+	public ObjectDefinition getSettingsDefinition() {
+		return null;
+	}
+
+	@Override
+	public boolean isInitialized() {
+		return initialized;
+	}
+
+	@Override
+	public String getTitle() {
+		return "Demo Service 1";
+	}
+
+	@Override
+	public void register(PluginConfiguration pluginConfiguration) {
+		ServiceDescriptor serviceDescriptor = StoreFactory.eINSTANCE.createServiceDescriptor();
+		serviceDescriptor.setProviderName("BIMserver");
+		serviceDescriptor.setIdentifier(getClass().getName());
+		serviceDescriptor.setName("Demo Service 1");
+		serviceDescriptor.setDescription("Demo Service 1");
+		serviceDescriptor.setNotificationProtocol(AccessMethod.INTERNAL);
+		serviceDescriptor.setTrigger(Trigger.NEW_REVISION);
+		registerNewRevisionHandler(serviceDescriptor, new NewRevisionHandler() {
+			@Override
+			public void newRevision(BimServerClientInterface bimServerClientInterface, long poid, long roid, long soid, SObjectType settings) throws ServerException, UserException {
+				try {
+					Date startDate = new Date();
+					Long topicId = bimServerClientInterface.getRegistry().registerProgressOnRevisionTopic(SProgressTopicType.RUNNING_SERVICE, poid, roid, "Running Demo Service");
+					for (int i=0; i<100; i++) {
+						SLongActionState state = new SLongActionState();
+						state.setProgress(i);
+						state.setTitle("Demo Service 1");
+						state.setState(SActionState.STARTED);
+						state.setStart(startDate);
+						bimServerClientInterface.getRegistry().updateProgressTopic(topicId, state);
+						try {
+							Thread.sleep(200);
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
+					}
+					SLongActionState state = new SLongActionState();
+					state.setProgress(100);
+					state.setTitle("Demo Service 1");
+					state.setState(SActionState.FINISHED);
+					state.setStart(startDate);
+					state.setEnd(new Date());
+					bimServerClientInterface.getRegistry().updateProgressTopic(topicId, state);
+					
+					bimServerClientInterface.getRegistry().unregisterProgressTopic(topicId);
+				} catch (PublicInterfaceNotFoundException e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+	}
+}
+```
