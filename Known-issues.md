@@ -1,5 +1,3 @@
-# Introduction
-
 Some issues are hard/impossible to fix, therefore we mention them here.
 
 # Paths
