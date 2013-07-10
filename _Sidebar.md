@@ -1,4 +1,4 @@
-Deployment
+### Deployment
 * [Requirements](wiki/Requirements)
 * [Download](wiki/Download)
 * [JAR Starter](wiki/JAR-Starter)
@@ -6,7 +6,7 @@ Deployment
 * [Setup](wiki/Setup)
 * [Security](wiki/Security)
 * [Memory Usage](wiki/Memory-usage)
-Developers
+### Developers
 * [Service Interfaces](Service-Interfaces)
   * [SOAP](wiki/SOAP)
    * [JSON](wiki/JSON API)
@@ -20,7 +20,7 @@ Developers
       * [XSLT Serializer](XSLT-Serializer)
    * [Deserializer Plugin](Deserializer Plugin)
    * etc...
-BIMServer Developers
+### BIMServer Developers
 * [Eclipse](wiki/Eclipse)
 * [Eclipse Modeling Framework](Eclipse-Modeling-Framework)
 * [Embedding](Embedding)
@@ -28,7 +28,7 @@ BIMServer Developers
 * [Database/Versioning](wiki/Database---Versioning)
 * [IFC STEP Encoding](wiki/IFC-STEP-Encoding)
 * [Communication](Communication)
-General
+### General
 * [FAQ](FAQ)
 * [Known Issues](Known-Issues)
 * [License](License)
