@@ -25,6 +25,8 @@ Connecting via SOAP with authentication, and listing all projects
 
 ```
 
-Examples on how to use the client-side EMF model: [https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/emf]
+Examples on how to use the client-library can be found [here](https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/serviceinterface).
 
-> TODO: Document how to call other methods and how to use the client-side EMF model
+Examples on how to use the client-side EMF model can be found [here]( https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/emf)
+
+Examples on how to use the low-level-calls from the client library are [here](https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/lowlevel)
