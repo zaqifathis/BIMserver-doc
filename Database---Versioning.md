@@ -1,6 +1,6 @@
 # Introduction
 
-The BIMserver is storing all data in a key-value store. The key-value store is being accessed through the [http://tools.bimtoolset.org/BIMserver/nightly%20build%20javadoc/org/bimserver/database/KeyValueStore.html KeyValueStore Interface]. Right now there is only one implementation, which is using the open source [http://www.oracle.com/technetwork/database/berkeleydb/overview/index-093405.html BerkeleyDB Java Edition].
+The BIMserver is storing all data in a key-value store. The key-value store is being accessed through the [http://tools.bimtoolset.org/BIMserver/nightly%20build%20javadoc/org/bimserver/database/KeyValueStore.html KeyValueStore Interface]. Right now there is only one implementation, which is using the open source [BerkeleyDB Java Edition](http://www.oracle.com/technetwork/database/berkeleydb/overview/index-093405.html).
 
 A key value store is defined as:
   * A set of named tables
@@ -39,7 +39,7 @@ The image below is showing four revisions of a project. There are 3 tables: A, B
 The diagrams on top are showing the objects + relations for each revision. The number between the parenthesis is the Oid (Object Id).
 The tables on the bottom are showing the complete database contents at the end of each revision. The number before the "." is the Object Id, the number after the dot is the Rid (Revision Id).
 
-http://bimserver.googlecode.com/svn/wiki/images/db1.png
+![db](http://bimserver.googlecode.com/svn/wiki/images/db1.png)
 
 # Value
 
@@ -83,7 +83,7 @@ Multiple references (lists of references to objects) are also stored inline. The
 ## Example
 Let's say we have two classes, Person and Company:
 
-http://bimserver.googlecode.com/svn/wiki/images/PersonCompany.png
+![personcompany](http://bimserver.googlecode.com/svn/wiki/images/PersonCompany.png)
 
 The Person class has Cid 1, the Company class has Cid 2.
 Both classes have one instance, the person has Oid 100, the Company has Oid 101.
