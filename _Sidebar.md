@@ -12,7 +12,7 @@
      * [JSON](wiki/JSON API)
      * [Protocol Buffers](wiki/Protocol Buffers)
   * [Clients]
-     * [Java Client](BimServerClient]
+     * [Java Client](BimServerClient)
      * [PHP Client](PHP-Client-Library)
      * [JavaScript Client](JavaScriptClient)
 * BIMServer Developers
