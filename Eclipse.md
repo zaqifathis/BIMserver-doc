@@ -32,6 +32,17 @@ All BIMserver project are on GitHub. Eclipse should have a Git client already.
 
 To run the BIMserver from eclipse, right click the BimServer project, select "Run As" and then "Java Application", eclipse will look for classes with main methods, you have to select "LocalDevBimServerStarter", which is in the package "org.bimserver".
 
+## Not enough memory
+
+When Java complains there is not enough memory, you can increase the amount of heap memory the BIMserver can use in the "Run configuration". Go to the tab "Arguments" and add the following to the "VM arguments": "-Xmx4g" (this is for 4GB of heap).
+
+![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/runconfigs.png)
+![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/runconfig.png)
+
+>Make sure you are running a 64bit JVM when assigning more than 1300MB of heap!
+
+# Setup
+
 For local development, the BIMserver will be automatically setup. An administrator user with the username "admin@bimserver.org" will be created with the password "admin".
 
 All of the API's are provided at http://localhost:8080, as well as a basic user interface. The admin interface is available at http://localhost:8080/admin.
