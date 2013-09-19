@@ -6,6 +6,7 @@
 * [Setup](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
 * [Security](https://github.com/opensourceBIM/BIMserver/wiki/Security)
 * [Memory Usage](https://github.com/opensourceBIM/BIMserver/wiki/Memory-usage)
+* [Best practices](https://github.com/opensourceBIM/BIMserver/wiki/Best-practices)
 
 **Developers**
 * [Service Interfaces](https://github.com/opensourceBIM/BIMserver/wiki/Service-Interfaces)
