@@ -1,6 +1,6 @@
 For BIMsurfer 2 serializers are being used.
 
-# SceneJSShellSerializer
+# SceneJsShellSerializer
 
 This serializes the semantic information of the IFC model in JSON format. This contains no geometry. It's used by the sidebar showing the tree etc...
 
@@ -21,3 +21,5 @@ Example files:
 [Test 3.json](https://github.com/opensourceBIM/BIMserver/raw/dev/Documentation/files/Test 3.json)
 [Test 4.json](https://github.com/opensourceBIM/BIMserver/raw/dev/Documentation/files/Test 4.json)
 [Test 5.json](https://github.com/opensourceBIM/BIMserver/raw/dev/Documentation/files/Test 5.json)
+
+The older serializers "SceneJSSerializer" and "StreamingSceneJSSerializer" are not used anymore.
