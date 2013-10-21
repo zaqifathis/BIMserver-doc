@@ -5,19 +5,19 @@ For BIMsurfer 2 serializers are being used.
 This serializes the semantic information of the IFC model in JSON format. This contains no geometry. It's used by the sidebar showing the tree etc...
 
 Example files:
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 1 Shell.png)
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 2 Shell.png)
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 3 Shell.png)
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 4 Shell.png)
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 5 Shell.png)
+[Test 1 Shell.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 1 Shell.json)
+[Test 2 Shell.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 2 Shell.json)
+[Test 3 Shell.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 3 Shell.json)
+[Test 4 Shell.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 4 Shell.json)
+[Test 5 Shell.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 5 Shell.json)
 
 # JsonGeometrySerializer
 
-Serializers the geometry in JSON. Right now this serializer is being called for every (enabled and existing) IfcProduct subtype.
+Serializes the geometry in JSON. Right now this serializer is being called for every (enabled and existing) IfcProduct subtype.
 
 Example files:
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 1.png)
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 2.png)
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 3.png)
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 4.png)
-[Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 5.png)
+[Test 1.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 1.json)
+[Test 2.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 2.json)
+[Test 3.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 3.json)
+[Test 4.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 4.json)
+[Test 5.json](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/files/Test 5.json)
