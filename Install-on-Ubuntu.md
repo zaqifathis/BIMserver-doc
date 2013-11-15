@@ -132,4 +132,8 @@ to store these settings:
 iptables-save
 ```
 
+An alternative with IP addresses (useful when multiple IP adressen are being used on 1 server)
+```
+iptables -t nat -d [YOURIP] -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to-destination [YOURIP]:8080
+```
 > If you are running on Amazon or another Cloud provider, make sure you enable port 80 (or whatever port you redirect) on their firewall as well.
