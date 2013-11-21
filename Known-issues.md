@@ -28,6 +28,7 @@ And another:
 
 [And](http://support.bimserver.org/bimserver/topics/ifcelement_containedinspatialstructure_inverse_attribute_not_set)
 
+[Also](https://github.com/opensourceBIM/BIMserver/issues/26)
 # Derived attributes
 
 This is not really an issue, but it's good to know why not all schema data can be stored in the EMF meta model. In IFC, derived attributes can be defined, those attributes are usually calculated based on explicit attributes. Derived attributes usually do not appear in the IFC files, but there is one exception. When a derived attribute is defined, but one of the superclasses of the class has the same attribute, the field should be serialized as a "*". For serializers/deserializers, this information is necessary, but we cannot store this in the EMF meta model. Because in EMF all structural features are created only once (also when subclasses exist), so we cannot store class-specific information in the structural features.
