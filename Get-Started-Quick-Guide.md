@@ -9,7 +9,7 @@
 5. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
 6. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
 
-If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL: http://localhost:8080. If failed, try another port, e.g. instead of 8080, try 8082.
+If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8080. If failed, try again from Step 4 by specifying another port, e.g. instead of 8080, try 8082.
 
 7. If the web page displays the status as "NOT SETUP", go to the admin page at http://localhost:8080/admin
 8. Complete the form and create your account as requested using your email address.
