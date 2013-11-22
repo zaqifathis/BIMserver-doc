@@ -140,6 +140,7 @@ iptables -t nat -d [YOURIP] -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to
 To also forward the local ports do
 ```
 iptables -t nat -I OUTPUT --src 0/0 --dst 127.0.0.1 -p tcp --dport 80 -j REDIRECT --to-ports 8080
+iptables -t nat -I OUTPUT --src 0/0 --dst [PUBLIC IP] -p tcp --dport 80 -j REDIRECT --to-ports 8080
 ```
 
 > If you are running on Amazon or another Cloud provider, make sure you enable port 80 (or whatever port you redirect) on their firewall as well.
