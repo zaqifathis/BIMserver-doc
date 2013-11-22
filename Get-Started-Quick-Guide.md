@@ -1,3 +1,5 @@
+BIMserver is a platform for others to build applications on. We provide a stable and flexible platform to create online (open)BIM tools.
+
 ### **Stand-alone BIMserver (version 1.2)**
 
 1. Read the [System Requirements](https://github.com/opensourceBIM/BIMserver/wiki/Requirements)
