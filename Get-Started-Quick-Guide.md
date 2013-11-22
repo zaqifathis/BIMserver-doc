@@ -11,6 +11,12 @@
 
 If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8080. If failed, try again from Step 4 by specifying another port, e.g. instead of 8080, try 8082.
 
-7. If the web page displays the status as "NOT SETUP", go to the admin page at http://localhost:8080/admin
-8. Complete the form and create your account as requested using your email address.
-9. The current version of BIMserver has no user interface (GUI), but a console page with a list of functionalities can be accessed at http://localhost:8080/console.html
+Once the BIMserver is launched successfully on the web browser, there may be a few things to do yet depending on which mode the BIMserver is in.
+
+1. If the web page displays the status as "NOT SETUP", go to the admin page at http://localhost:8080/admin
+2. Complete the form and create your account as requested using your email address.
+3. The current version of BIMserver has no user interface (GUI), but a console page with a list of functionalities can be accessed at http://localhost:8080/console.html
+
+** Third party GUI:**
+
+There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try.
