@@ -1,4 +1,4 @@
-BIMserver has different modes it can be in. One of the modes is "NOT_SETUP", in this case you will to set it up in order to start using BIMserver.
+BIMserver has different modes it can be in. One of the modes is "NOT_SETUP", in this case you will need to set it up in order to start using BIMserver.
 
 The default Web GUI of BIMserver will show the following page:
 ![Not Setup](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/notsetup.png)
