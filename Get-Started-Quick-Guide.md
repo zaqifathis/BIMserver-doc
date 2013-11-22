@@ -21,3 +21,5 @@ Once the BIMserver is launched successfully on the web browser, there may be a f
 **Third party GUI:**
 
 There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try or shared freely by others. An open source example is http://test.bimvie.ws being developed by [Bimview.ws](http://www.bimvie.ws/).
+
+**Note:** To use test.bimvie.ws, BIMserver must be running. Also, you need to specify the BIMserver's URL, i.e. http://localhost:8080 (or another port that you specified during setup).
