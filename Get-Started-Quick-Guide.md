@@ -20,4 +20,7 @@ Once the BIMserver is launched successfully on the web browser, there may be a f
 
 **Third party GUI:**
 
-There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try.
+There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try or shared freely by others. An open source example is [http://test.bimvie.ws]
+
+
+http://test.bimvie.ws/
