@@ -17,6 +17,6 @@ Once the BIMserver is launched successfully on the web browser, there may be a f
 2. Complete the form and create your account as requested using your email address.
 3. The current version of BIMserver has no user interface (GUI), but a console page with a list of functionalities can be accessed at http://localhost:8080/console.html
 
-** Third party GUI:**
+**Third party GUI:**
 
 There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try.
