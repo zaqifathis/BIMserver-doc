@@ -1,9 +1,12 @@
-**Deployment**
+**Get Started**
+* [Get Started Quick Guide](https://github.com/opensourceBIM/BIMserver/wiki/Get-Started-Quick-Guide)
 * [Requirements](https://github.com/opensourceBIM/BIMserver/wiki/Requirements)
 * [Download](https://github.com/opensourceBIM/BIMserver/wiki/Download)
 * [JAR Starter](https://github.com/opensourceBIM/BIMserver/wiki/JAR-Starter)
-* [Ubuntu installation](https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu)
 * [Setup](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
+
+**Deployment**
+* [Ubuntu installation](https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu)
 * [Security](https://github.com/opensourceBIM/BIMserver/wiki/Security)
 * [Memory Usage](https://github.com/opensourceBIM/BIMserver/wiki/Memory-usage)
 * [Best practices](https://github.com/opensourceBIM/BIMserver/wiki/Best-practices)
