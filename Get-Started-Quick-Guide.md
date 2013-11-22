@@ -1,0 +1,14 @@
+## # **Stand-alone BIMserver**
+
+1. Read the system requirements [System Requirements](https://github.com/opensourceBIM/BIMserver/wiki/Requirements)
+2. Make sure you can execute a JAR file by double-clicking the file. If not, check that Java is installed properly and the environment variables are setup correctly.
+3. Download the latest [BIMserver JAR file](https://github.com/opensourceBIM/BIMserver/wiki/Download)
+4. Read [JAR Starter](https://github.com/opensourceBIM/BIMserver/wiki/JAR-Starter)
+5. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
+6. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
+
+If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL: http://localhost:8080. If failed, try another port, e.g. instead of 8080, try 8082.
+
+1. If the web page displays the status as "NOT SETUP", go to the admin page at http://localhost:8080/admin
+2. Complete the form and setup your email address as requested.
+3. The current version of BIMserver has no user interface (GUI), but a console page with a list of functionalities can be accessed at http://localhost:8080/console.html
