@@ -1,6 +1,6 @@
 **Note:** BIMserver is a platform for others to build applications on. We provide a stable and flexible platform to create online (open)BIM tools.
 
-### **Stand-alone BIMserver (version 1.2)**
+### **Stand-alone BIMserver**
 
 1. Read the [System Requirements](https://github.com/opensourceBIM/BIMserver/wiki/Requirements).
 2. Make sure you can execute a JAR file by double-clicking a JAR file. If not, check that [Java](http://www.java.com) is installed properly and the JAVA environment variables are setup correctly.
