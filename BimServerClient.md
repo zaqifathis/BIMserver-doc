@@ -1,4 +1,4 @@
-To connect to a BIMserver you can use one of the 3 protocols: [SOAP](SOAP), [JSON](JSON) or [Protocol Buffers](Protocol---Buffers). To make connecting to a BIMserver even easier, there also is a Java library you can use.
+To connect to a BIMserver you can use one of the 3 protocols: [SOAP](SOAP), [JSON](JSON API) or [Protocol Buffers](Protocol Buffers). To make connecting to a BIMserver even easier, there also is a Java library you can use.
 
 # Get the client library
 
