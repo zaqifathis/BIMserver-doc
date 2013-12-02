@@ -2,7 +2,7 @@ A lot of different builds have been added in the past, this page should explain 
 
 # Files
 
-Substitute "[version]" with the version, for nightly builds this is something like "nightlybuild-2011-11-15".
+Substitute "[version]" with the version, for nightly builds this is something like "nightlybuild-2013-11-15".
 
 * bimserver-client-lib-[version].zip: Client library, usable for Java projects that want to connect to a BIMserver
 * bimserver-lib-[version].zip: Server library, usable for Java developers that want to embed a BIMserver in their own application
