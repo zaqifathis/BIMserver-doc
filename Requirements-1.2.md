@@ -12,6 +12,8 @@ Make sure you install a 64bit JRE/JDK if you have a 64bit system. The main advan
 
 For advanced queries you will need to use a JDK, for all other features a JRE will suffice.
 
+> For all version >= 1.3, Java 7 is required.
+
 # WAR
 
   * A JRE or JDK 6, update 4 or higher
