@@ -32,3 +32,5 @@ There are a few third party GUI available. Some are commercial products that you
 
 
 ### **BIMserver embedded into an application**
+
+See Developers' Guide.
