@@ -9,7 +9,7 @@ For this purpose we have created a small JavaScript library, this library is bei
   var bimServerApi = new BimServerApi("http://examplebimserver:port");
 ```
 
-Have a look at the [http://code.google.com/p/bimserver/wiki/JavaScriptApi JavaScriptApi] page for more details on the JavaScript API.
+Have a look at the [http://code.google.com/p/bimserver/wiki/JavaScriptApi JavaScriptApi] or [https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient] page for more details on the JavaScript API.
 
 # Connecting from non-javascript applications
 
