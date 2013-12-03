@@ -32,6 +32,6 @@ There are a few third party GUI available. Some are commercial products that you
 **Note:** To use test.bimvie.ws, BIMserver must be running. Also, you need to specify the BIMserver's URL, i.e. http://localhost:8080 (or another port that you specified during setup).
 
 
-### **BIMserver embedded into an application**
+### **Use BIMserver in your application**
 
 See Developers' Guide.
