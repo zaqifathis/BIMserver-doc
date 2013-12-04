@@ -29,7 +29,16 @@ Once the BIMserver is launched successfully on the web browser, there may be a f
 
 There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try or shared freely by others. An open source example is http://test.bimvie.ws being developed by [Bimview.ws](http://www.bimvie.ws/).
 
-**Note:** To use test.bimvie.ws, BIMserver must be running. Also, you need to specify the BIMserver's URL, i.e. http://localhost:8080 (or another port that you specified during setup).
+**Note:** To use test.bimvie.ws, BIMserver must be running. Also, you need to specify the BIMserver's URL, i.e. http://localhost:[port]
+
+**Checkin an IFC model**
+
+1. Use http://localhost:[port]/admin/console.html and run the Checkin API to checkin a model, or
+2. Use a GUI such as http://test.bimvie.ws to checkin a model
+
+**View the model**
+
+Once a model is in the BIMserver, you can use http://test.bimsurfer.org/ to view the model.
 
 
 ### **Use BIMserver in your application**
