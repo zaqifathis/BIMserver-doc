@@ -22,7 +22,7 @@ Once the BIMserver is launched successfully on the web browser, there may be a f
 3. The current version of BIMserver has no user interface (GUI), so you need to use your own GUI to access BIMserver functionalities.
 4. A complete list of API's can be accessed at http://localhost:[port]/console.html
 5. To test uploading an IFC model, click "Common Scenarios" on the top left corner of the Console and complete each step of the procedure, i.e. Login, Create Project, Find Deserializer, Checkin.
-6. There are also a number of resources available under specific sub-folders, e.g. http://locahost:[port]/js
+6. There are also a number of resources available under specific sub-folders, e.g. http://locahost:[port]/js, http://localhost:8082/json?doc
 7. BIMserver must remain running in the background for these functionalities to work via your own interface.
 
 **Third party GUI:**
