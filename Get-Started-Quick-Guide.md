@@ -25,6 +25,8 @@ Once the BIMserver is launched successfully on the web browser, there may be a f
 6. There are also a number of resources available under specific sub-folders, e.g. http://locahost:[port]/js, http://localhost:8082/json?doc
 7. BIMserver must remain running in the background for these functionalities to work via your own interface.
 
+[Here's a short video on how to get started](http://www.youtube.com/watch?v=2PR3P0XKmkA)
+
 **Third party GUI:**
 
 There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try or shared freely by others. An open source example is http://test.bimvie.ws being developed by [Bimview.ws](http://www.bimvie.ws/).
