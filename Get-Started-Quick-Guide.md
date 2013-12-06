@@ -25,7 +25,7 @@ Once the BIMserver is launched successfully on the web browser, there may be a f
 6. There are also a number of resources available under specific sub-folders, e.g. http://locahost:[port]/js, http://localhost:8082/json?doc
 7. BIMserver must remain running in the background for these functionalities to work via your own interface.
 
-[Here's a short video on how to get started](http://www.youtube.com/watch?v=2PR3P0XKmkA)
+Here's a [short video](http://www.youtube.com/watch?v=2PR3P0XKmkA) on how to get started.
 
 **Third party GUI:**
 
