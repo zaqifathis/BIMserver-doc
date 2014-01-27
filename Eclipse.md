@@ -41,6 +41,12 @@ When Java complains there is not enough memory, you can increase the amount of h
 
 >Make sure you are running a 64bit JVM when assigning more than 1300MB of heap!
 
+## Settings the gitdir property
+
+Because GIT does not store the actual data in your workspace directory, BIMserver has no way of finding out where the plugins should be loaded from.
+
+![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/gitdir.png)
+
 # Setup
 
 For local development, the BIMserver will be automatically setup. An administrator user with the username "admin@bimserver.org" will be created with the password "admin".
