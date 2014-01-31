@@ -41,11 +41,18 @@ When Java complains there is not enough memory, you can increase the amount of h
 
 >Make sure you are running a 64bit JVM when assigning more than 1300MB of heap!
 
-## Setting the gitdir property
+## Adding the plugins property
 
-Because GIT does not store the actual data in your eclipse workspace directory, BIMserver has no way of finding out where the plugins should be loaded from. Therefore you can manually set it in your runconfiguration (see image).
+Before BIMserver 1.3 you had to manually edit some source code (LocalDevPluginLoader.java) to add the locations of your own plugins to run them. Now you can edit the Eclipse run configuration.
 
-![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/gitdir.png)
+You can add as many "plugins" parameters. So for example:
+```
+-plugins "C:\Users\My Name\Plugins" -plugins "/home/myname/bimserverplugins"
+```
+
+The directories will be scanned 2 levels deep. So you can for example add your complete GIT directory and it will use all plugins of all workspaces in that directory.
+
+![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/plugins.png)
 
 # Setup
 
