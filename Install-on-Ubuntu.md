@@ -121,7 +121,7 @@ Select "Internet server", use a real domain name that is pointing to your server
 
 ## Alternative to running an SMTP server
 
-Since BIMserver 1.3 there is an alternative for running your own mailserver. You can now choose a lot more options such as the protocol (SMTP/SMTPS), username, password and port. This allows for using a 3rd party e-mail service which is probably a good choose (and doesn't have to cost extra). Examples of these providers are [Mailgun](http://www.mailgun.com), [Amazon SES](http://aws.amazon.com/ses) and [Sendgrid](http://sendgrid.com).
+Since BIMserver 1.3 there is an alternative for running your own mailserver. You can now choose a lot more options such as the protocol (SMTP/SMTPS), username, password and port. This allows for using a 3rd party e-mail service which is probably a good choice (and doesn't have to cost extra). Examples of these providers are [Mailgun](http://www.mailgun.com), [Amazon SES](http://aws.amazon.com/ses) and [Sendgrid](http://sendgrid.com).
 
 # Running on ports below 1024
 
