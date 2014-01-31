@@ -1,4 +1,4 @@
-> These instructions are for the 1.2 release.
+> These instructions are for the 1.3 release.
 
 How to install the BIMserver on a freshly installed Ubuntu 12.04.2 LTS Server Amazon EC2 server.
 
@@ -112,6 +112,8 @@ When things are not working, you can look in the Tomcat 7 log file: /opt/tomcat7
 # Installing an STMP server
 
 You only have to do this if you do not already have an accessible SMTP server running in your network or with your ISP. Remember running your own SMTP server is a security/spam risk if you don't know how to properly install/maintain it.
+
+Since BIMserver 1.3 there is an alternative for running your own mailserver. You can now choose a lot more options such as the protocol (SMTP/SMTPS), username, password and port. This allows for using a 3rd party e-mail service which is probably a good choose (and doesn't have to cost extra). Examples of these providers are [mailgun http://www.mailgun.com/], [Amazon SES http://aws.amazon.com/ses/] and [Sendgrid http://sendgrid.com/].
 
 ```
 apt-get install postfix
