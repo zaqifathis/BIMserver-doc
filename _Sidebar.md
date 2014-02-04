@@ -1,5 +1,5 @@
 **Get Started**
-* [Get Started Quick Guide](https://github.com/opensourceBIM/BIMserver/wiki/Get-Started-Quick-Guide)
+* [Quick Guide](https://github.com/opensourceBIM/BIMserver/wiki/Get-Started-Quick-Guide)
 * [Requirements Version 1.2](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.2)
 * [Requirements Version 1.3](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.3)
 * [Download](https://github.com/opensourceBIM/BIMserver/wiki/Download)
