@@ -82,7 +82,7 @@ Change the port attribute in the Connector tag to the desired port (also see: "R
 
 ## Setting the homedir
 
-By default, BIMserver will store the database folder, the log files etc... in the WEB-INF folder of the extracted .war file of BIMserver. This directory will be removed when you upgrade your BIMserver to a new version because the WEB-INF folder is part of your web application. To tell BIMserver to store your "home" directory somewhere else, you can set a parameter in your application server configuration (in this case, Tomcat).
+By default, BIMserver will store the database folder, the log files etc... in the WEB-INF folder of the extracted .war file of BIMserver. We will call this folder the "home" folder. This directory will be removed when you upgrade your BIMserver to a new version because the WEB-INF folder is part of your web application folder. To tell BIMserver to store your "home" directory somewhere else, you can set a parameter in your application server configuration (in this case, Tomcat).
 
 There are multiple ways, the easiest is to add it to your Host configuration in server.xml.
 ```
