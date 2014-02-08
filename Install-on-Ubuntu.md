@@ -71,6 +71,7 @@ Change the Tomcat7 configuration file:
 nano /opt/tomcat7/conf/server.xml
 ```
 Change the port attribute in the Connector tag to the desired port (also see: "Running op ports below 1024". Also add a new host, see below.
+
 ```
 <Host name="[YOUR DOMAIN]" appBase="/var/www/[YOUR DOMAIN]" unpackWARs="true" autoDeploy="true" xmlValidation="false" xmlNamespaceAware="false">
     <Context path="" docBase="/var/www/[YOUR DOMAIN]/ROOT.war">
@@ -78,6 +79,33 @@ Change the port attribute in the Connector tag to the desired port (also see: "R
     </Context>
 </Host>
 ```
+
+## Setting the homedir
+
+By default, BIMserver will store the database folder, the log files etc... in the WEB-INF folder of the extracted .war file of BIMserver. This directory will be removed when you upgrade your BIMserver to a new version because the WEB-INF folder is part of your web application. To tell BIMserver to store your "home" directory somewhere else, you can set a parameter in your application server configuration (in this case, Tomcat).
+
+There are multiple ways, the easiest is to add it to your Host configuration in server.xml.
+```
+<Host name="[YOUR DOMAIN]" appBase="/var/www/[YOUR DOMAIN]" unpackWARs="true" autoDeploy="true" xmlValidation="false" xmlNamespaceAware="false">
+    <Context path="" docBase="/var/www/[YOUR DOMAIN]/ROOT.war">
+        <Parameter name="homedir" value="/var/bimserver/home"/>
+    </Context>
+</Host>
+```
+
+Another way is to add it to a default context of a configured virtual host:
+```
+<Context path="" docBase="/var/www/[YOUR DOMAIN]/ROOT.war">
+        <Parameter name="homedir" value="/var/bimserver/home"/>
+</Context>
+```
+
+This default context file can be found/created here:
+```
+[TOMCAT INSTALLATION]/conf/Catalina/[VIRTUALHOST]/context.xml.default
+```
+
+There are other options as well, for those please see the [Tomcat website](http://tomcat.apache.org/tomcat-7.0-doc/config/context.html).
 
 # Startup script
 
