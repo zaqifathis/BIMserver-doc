@@ -17,7 +17,7 @@
   * [SOAP](https://github.com/opensourceBIM/BIMserver/wiki/SOAP)
    * [JSON](https://github.com/opensourceBIM/BIMserver/wiki/JSON-API)
    * [Protocol Buffers](https://github.com/opensourceBIM/BIMserver/wiki/Protocol-Buffers)
-  * [Low Level Calls](https://github.com/opensourceBIM/BIMserver/wiki/Low-Level-Calls)
+* [Low Level Calls](https://github.com/opensourceBIM/BIMserver/wiki/Low-Level-Calls)
 
 **Clients**
    * [Java Client](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClient)
