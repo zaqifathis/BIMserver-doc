@@ -21,3 +21,11 @@ It's the same for changing attributes. For example you can call.
 ```
 Bimsie1LowLevelInterface.setStringAttribute(tid, oid, "GlobalId", "GUID123455");
 ```
+
+## Commit / Abort
+
+After changing the model, you can decide to either commit the changes, or abort the transaction. When you abort the transaction all changes will be discarded, and there will not be a new revision. When you commit the changes, a new revision will be made.
+
+```
+bimsie1LowLevelInterface.commit(tid, "Comment");
+```
