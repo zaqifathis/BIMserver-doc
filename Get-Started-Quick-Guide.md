@@ -18,9 +18,9 @@ If the above steps are followed correctly, you should have BIMserver launched su
 Once the BIMserver is launched successfully on the web browser, there may be a few more things to do  depending on which mode the BIMserver is in.
 
 1. If the web page displays the status as "NOT SETUP", go to the admin page at http://localhost:[port]/admin, e.g. http://localhost:8080/admin, and complete the setup procedure.
-2. Use the default login credentials: username: admin@bimserver.org and password: admin
+2. During setup you are asked to create an administrator user and set some other settings.
 3. The current version of BIMserver has no user interface (GUI), so you need to use your own GUI to access BIMserver functionalities.
-4. A complete list of API's can be accessed at http://localhost:[port]/console.html
+4. A complete list of API's can be accessed at http://localhost:[port]/admin/console.html
 5. To test uploading an IFC model, click "Common Scenarios" on the top left corner of the Console and complete each step of the procedure, i.e. Login, Create Project, Find Deserializer, Checkin.
 6. There are also a number of resources available under specific sub-folders, e.g. http://locahost:[port]/js, http://localhost:8082/json?doc
 7. BIMserver must remain running in the background for these functionalities to work via your own interface.
@@ -31,7 +31,7 @@ Here's a [short video](http://www.youtube.com/watch?v=2PR3P0XKmkA) on how to get
 
 There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try or shared freely by others. An open source example is http://test.bimvie.ws being developed by [Bimview.ws](http://www.bimvie.ws/).
 
-**Note:** To use test.bimvie.ws, BIMserver must be running. Also, you need to specify the BIMserver's URL, i.e. http://localhost:[port]
+**Note:** To use test.bimvie.ws, a BIMserver must be running. Also, you need to specify the BIMserver's URL, i.e. http://yourbimserveradress:[port]
 
 **Checkin an IFC model**
 
