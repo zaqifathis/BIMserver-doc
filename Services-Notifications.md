@@ -122,3 +122,12 @@ A List of [SProfileDescriptor]
 | userToken| String | A token the service provider can use to identify a certain user |
 | token| String | A token the service provider can use to identify a certain user |
 | apiUrl| String | A token the service provider can use to identify a certain user |
+
+# Libraries
+
+To make working with notifications easier, we have developed extensions for the existing BIMserver libraries
+
+| Language | URL |
+|-|-|
+| Java | https://github.com/opensourceBIM/BIMserver/tree/master/BimServerClientLib |
+| PHP | https://github.com/opensourceBIM/phpClientLib |
