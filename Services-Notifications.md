@@ -57,6 +57,7 @@ The fields:
 Arguments:
 
 | Name | Type | Description |
+| ------------- |-------------| -----|
 | serviceIdentifier | String | Identifier of the service, should be unique per server |
 | token | String | A token the service provider can use to identify a certain user |
 
@@ -65,7 +66,20 @@ Result:
 A List of SProfileDescriptor:
 
 | Name | Type | Description |
+| ------------- |-------------| -----|
 | name | String | User-readable name of the profile |
 | description | String | Description of this profile |
 | publicProfile | boolean | Whether this profile is public (can be used without a token) |
 | identifier | String | An identifier for this profile |
+
+## getPublicProfiles
+
+Arguments:
+
+| Name | Type | Description |
+| ------------- |-------------| -----|
+| serviceIdentifier | String | Identifier of the service, should be unique per server |
+
+Result:
+
+A List of [SProfileDescriptor]:
