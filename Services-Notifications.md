@@ -1,0 +1,51 @@
+BIMserver allows for extending the BIMserver functionalities by creating plugins. These plugins however are always running within a BIMserver and consequently must be written in Java. To allow for 3rd parties to write software in other languages and software running on other servers, the concept of services and notifications has been added.
+
+# Notifications
+
+Notifications are JSON messages being send to listening web servers. They will be sent on certain events, such as a user checking in a new revision or extendeddata being added to a project or revision.
+
+To be consistent, notifications are being sent just like normal BIMserver API calls. So for example the notification of a new revision looks like this:
+```
+{
+  request: {
+    interface: "Bimsie1RemoteServiceInterface",
+    method: "newRevision",
+    arguments: {
+        poid: 12345,
+        roid: 123,
+        serviceIdentifier: "Furniture Placer",
+        profileIdentifier: "Furniture Placer",
+        userToken: "ABC",
+        token: "CDE",
+        apiUrl: "http://localhost:8080/json"
+    }
+  }
+}
+```
+
+In this example, the poid and roid correspond to the project and new revision. The serviceIdentifier should be used to differentiate between different kinds of services being hosted by the same server. The profileIdentifier can be used to use specific settings. The userToken can be used to identify a certain user on the server the service is running on. The token and apiUrl are optional and can - if provided - allow a service to do API calls to the originating BIMserver. In typical cases the service will use these credentials to download the specific revision.
+
+# Bimsie1RemoteServiceInterface
+
+This interface contains all methods a service provider should implement.
+
+## getService
+
+This method provides the caller with information about a specific service.
+The fields:
+||Name||Type||Description||
+||name||String||The user-readable name of this service||
+||url||String||The URL to which the notifications should be send||
+||token||String||||
+||identifier||String||||
+||notificationProtocol||SAccessMethod||The protocol that should be used for notifications, should always be "json"||
+||description||String||A user-readable description of this service||
+||trigger||STrigger||What should trigger this service (can be NEW_REVISION, NEW_PROJECT or NEW_EXTENDED_DATA)||
+||readRevision||boolean||Whether this service requires reading the revision||
+||readExtendedData||String||An optional ExtendedDataSchema namespace this service requires reading||
+||writeRevision||boolean||Whether this service requires checking in a new revision||
+||writeExtendedData||String||An optional ExtendedDataSchema namespace for which this service needs to write data||
+||providerName||String||User-readable name of the provider of this service||
+||companyUrl||String||URL to company website||
+||tokenUrl||String||URL to page where a user can create a token (usually some kind of register page)||
+||newProfileUrl||String||URL to page where a user can create a new profile||
