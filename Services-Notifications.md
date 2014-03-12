@@ -86,42 +86,49 @@ A List of [SProfileDescriptor]
 
 ## newRevision
 
+Called when a new revision has been added.
+
 | Name | Type | Description |
 | ------------- |-------------| -----|
 | poid| long | Project on which the new revision was added |
 | roid| long | Revision that has been created |
 | soid| long | User-specific identifier of the service on the BIMserver (can be used to gather settings) |
-| serviceIdentifier| String | A token the service provider can use to identify a certain user |
-| profileIdentifier| String | A token the service provider can use to identify a certain user |
+| serviceIdentifier| String | Unique service identifier |
+| profileIdentifier| String | Unique profile identifier |
 | userToken| String | A token the service provider can use to identify a certain user |
-| token| String | A token the service provider can use to identify a certain user |
-| apiUrl| String | A token the service provider can use to identify a certain user |
+| token| String | Optional token that can be used to connect to the originating BIMserver (see apiUrl) |
+| apiUrl| String | URL of the API of the originating BIMserver |
 
 ## newExtendedDataOnProject
 
+Called when new extended data has been added to a project
+
 | Name | Type | Description |
 | ------------- |-------------| -----|
-| poid| long | Project on which the new revision was added |
-| roid| long | Revision that has been created |
+| poid| long | Project on which the new extended data was added |
+| edid| long | Object ID of the extended data that has been added |
 | soid| long | User-specific identifier of the service on the BIMserver (can be used to gather settings) |
-| serviceIdentifier| String | A token the service provider can use to identify a certain user |
-| profileIdentifier| String | A token the service provider can use to identify a certain user |
+| serviceIdentifier| String | Unique service identifier |
+| profileIdentifier| String | Unique profile identifier |
 | userToken| String | A token the service provider can use to identify a certain user |
-| token| String | A token the service provider can use to identify a certain user |
-| apiUrl| String | A token the service provider can use to identify a certain user |
+| token| String | Optional token that can be used to connect to the originating BIMserver (see apiUrl) |
+| apiUrl| String | URL of the API of the originating BIMserver |
 
 ## newExtendedDataOnRevision
 
+Called when new extended data has been added to a revision
+
 | Name | Type | Description |
 | ------------- |-------------| -----|
 | poid| long | Project on which the new revision was added |
 | roid| long | Revision that has been created |
+| edid| long | Object ID of the extended data that has been added |
 | soid| long | User-specific identifier of the service on the BIMserver (can be used to gather settings) |
-| serviceIdentifier| String | A token the service provider can use to identify a certain user |
-| profileIdentifier| String | A token the service provider can use to identify a certain user |
+| serviceIdentifier| String | Unique service identifier |
+| profileIdentifier| String | Unique profile identifier |
 | userToken| String | A token the service provider can use to identify a certain user |
-| token| String | A token the service provider can use to identify a certain user |
-| apiUrl| String | A token the service provider can use to identify a certain user |
+| token| String | Optional token that can be used to connect to the originating BIMserver (see apiUrl) |
+| apiUrl| String | URL of the API of the originating BIMserver |
 
 # Libraries
 
