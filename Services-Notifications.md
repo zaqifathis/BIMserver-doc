@@ -128,7 +128,7 @@ A List of [SProfileDescriptor]
 To make working with notifications easier, we have developed extensions for the existing BIMserver libraries
 
 | Language | URL |
-| -- | -- |
+| --- | --- |
 | Java | <https://github.com/opensourceBIM/BIMserver/tree/master/BimServerClientLib> |
 | JavaScript | <https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/www/js/bimserverapi.js> |
 | PHP | <https://github.com/opensourceBIM/phpClientLib> |
