@@ -25,6 +25,14 @@ To be consistent, notifications are being sent just like normal BIMserver API ca
 
 In this example, the poid and roid correspond to the project and new revision. The serviceIdentifier should be used to differentiate between different kinds of services being hosted by the same server. The profileIdentifier can be used to use specific settings. The userToken can be used to identify a certain user on the server the service is running on. The token and apiUrl are optional and can - if provided - allow a service to do API calls to the originating BIMserver. In typical cases the service will use these credentials to download the specific revision.
 
+# A typical workflow
+
+1. A service must be provided somewhere. This means a webserver has to run, and JSON messages being posted must be processed correctly and according to the Bimsie1RemoteServiceInterface interface.
+2. The user calls ServiceInterface.addServiceToProject. The SService object is described [here]
+3. A user checks in a new revision
+4. The service will be triggered, a JSON message will be send to the address provided by the service provider
+5. The service will will usually download the revision from the originating BIMserver and do some things with it
+
 # Bimsie1RemoteServiceInterface
 
 This interface contains all methods a service provider should implement.
