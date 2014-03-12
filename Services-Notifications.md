@@ -35,7 +35,7 @@ This method provides the caller with information about a specific service.
 The fields:
 
 | Name | Type | Description |
-| ------------- |:-------------:| -----:|
+| ------------- |-------------| -----|
 | name | String | The user-readable name of this service |
 | url | String | The URL to which the notifications should be send |
 | token | String| |
