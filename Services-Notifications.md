@@ -51,3 +51,21 @@ The fields:
 | companyUrl | String | URL to company website |
 | tokenUrl | String | URL to page where a user can create a token (usually some kind of register page) |
 | newProfileUrl | String | URL to page where a user can create a new profile |
+
+## getPrivateProfiles
+
+Arguments:
+
+| Name | Type | Description |
+| serviceIdentifier | String | Identifier of the service, should be unique per server |
+| token | String | A token the service provider can use to identify a certain user |
+
+Result:
+
+A List of SProfileDescriptor:
+
+| Name | Type | Description |
+| name | String | User-readable name of the profile |
+| description | String | Description of this profile |
+| publicProfile | boolean | Whether this profile is public (can be used without a token) |
+| identifier | String | An identifier for this profile |
