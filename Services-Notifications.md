@@ -99,4 +99,26 @@ A List of [SProfileDescriptor]
 
 ## newExtendedDataOnProject
 
+| Name | Type | Description |
+| ------------- |-------------| -----|
+| poid| long | Project on which the new revision was added |
+| roid| long | Revision that has been created |
+| soid| long | User-specific identifier of the service on the BIMserver (can be used to gather settings) |
+| serviceIdentifier| String | A token the service provider can use to identify a certain user |
+| profileIdentifier| String | A token the service provider can use to identify a certain user |
+| userToken| String | A token the service provider can use to identify a certain user |
+| token| String | A token the service provider can use to identify a certain user |
+| apiUrl| String | A token the service provider can use to identify a certain user |
+
 ## newExtendedDataOnRevision
+
+| Name | Type | Description |
+| ------------- |-------------| -----|
+| poid| long | Project on which the new revision was added |
+| roid| long | Revision that has been created |
+| soid| long | User-specific identifier of the service on the BIMserver (can be used to gather settings) |
+| serviceIdentifier| String | A token the service provider can use to identify a certain user |
+| profileIdentifier| String | A token the service provider can use to identify a certain user |
+| userToken| String | A token the service provider can use to identify a certain user |
+| token| String | A token the service provider can use to identify a certain user |
+| apiUrl| String | A token the service provider can use to identify a certain user |
