@@ -35,18 +35,18 @@ This method provides the caller with information about a specific service.
 The fields:
 | Name | Type | Description |
 | ------------- |:-------------:| -----:|
-|name||String|The user-readable name of this service|
-|url|String|The URL to which the notifications should be send|
-|token|String||
-|identifier|String||
-|notificationProtocol|SAccessMethod|The protocol that should be used for notifications, should always be "json"|
-|description|String|A user-readable description of this service|
-|trigger|STrigger|What should trigger this service (can be NEW_REVISION, NEW_PROJECT or NEW_EXTENDED_DATA)|
-|readRevision|boolean|Whether this service requires reading the revision|
-|readExtendedData|String|An optional ExtendedDataSchema namespace this service requires reading|
-|writeRevision|boolean|Whether this service requires checking in a new revision|
-|writeExtendedData|String|An optional ExtendedDataSchema namespace for which this service needs to write data|
-|providerName|String|User-readable name of the provider of this service|
-|companyUrl|String|URL to company website|
-|tokenUrl|String|URL to page where a user can create a token (usually some kind of register page)|
-|newProfileUrl|String|URL to page where a user can create a new profile|
+| name | String | The user-readable name of this service |
+| url | String|The URL to which the notifications should be send |
+| token | String| |
+| identifier | String |
+| notificationProtocol | SAccessMethod | The protocol that should be used for notifications, should always be "json" |
+| description | String | A user-readable description of this service |
+| trigger | STrigger | What should trigger this service (can be NEW_REVISION, NEW_PROJECT or NEW_EXTENDED_DATA) |
+| readRevision | boolean | Whether this service requires reading the revision |
+| readExtendedData | String | An optional ExtendedDataSchema namespace this service requires reading |
+| writeRevision | boolean | Whether this service requires checking in a new revision |
+| writeExtendedData | String|An optional ExtendedDataSchema namespace for which this service needs to write data |
+| providerName | String | User-readable name of the provider of this service |
+| companyUrl | String | URL to company website |
+| tokenUrl | String | URL to page where a user can create a token (usually some kind of register page) |
+| newProfileUrl | String | URL to page where a user can create a new profile |
