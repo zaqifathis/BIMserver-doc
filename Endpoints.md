@@ -25,6 +25,8 @@ Then BIMserver will send you an EndPointID, this EndPoint will be matched with t
 }
 ```
 
+# Step 2 - Register events
+
 Now you can use this EndPointID when registering for certain events, such as progress on some action:
 ``` 
 Bimsie1NotificationRegistryInterface.registerProgressHandler(topicId, endPointId);
