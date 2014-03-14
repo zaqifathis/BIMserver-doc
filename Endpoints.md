@@ -43,3 +43,7 @@ bimServerApi.registerProgressHandler(topicId, handler, callback);
 ```
 
 In this example, *handler* should be a function reference to the function that should be executed when the progress changes, the *callback* will be called after the *handler* is successfully registered.
+
+# Unregistering
+
+To make sure no memory and processing power is wasted, please remember to unregister any unused handlers.
