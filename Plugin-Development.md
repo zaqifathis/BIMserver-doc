@@ -39,7 +39,7 @@ Do not implement the Plugin class directly, there are sub-interfaces for the dif
 > The easiest way to learn is to look how other people have done things, there are quite a few plugins already, so have a look at them.
 
   * Create a new java project for your plugin, for example "PluginTest"
-http://bimserver.googlecode.com/svn/wiki/images/newproject.png
+![new project](http://bimserver.googlecode.com/svn/wiki/images/newproject.png)
   * Create your plugin class, this class must implement the plugin interface you want to write a plugin for, make sure you implement all methods correctly. For this example we will create a serializer and we will name the plugin "TestSerializerPlugin" in the package "test".
   * Create a plugin folder under your project
   * Create a plugin.xml file under the plugin folder, the content should like like this:
@@ -67,6 +67,6 @@ To make your plugin available on deployed BIMservers (either WAR or JAR), you ha
 
 # License
 
-The license under which the BIMserver.org software is released is a combination of Affero GPL, GPLv3 and/or LGPL (for binaries) from the GNU project. The different projects in our SVN repository are diffently licensed. More info on that can be found on our wiki.
+The license under which the BIMserver.org software is released is mainly Affero GPL from the GNU project. More info on that can be found on http://bimserver.org/license/.
 
-Part of this license outlines requirements for derivative works, such as Plugins, GUI (themes), ObjectIDMs and (de)Serializers. Derivatives of BIMserver.org code inherit the Affero and/or GPL license.  There is some legal grey area regarding what is considered a derivative work, but we feel strongly that Plugins, Themes, ObjectIDMs and (de)Serializers are derivative work and thus inherit the Affero or GPL license. If you disagree, you might want to consider a different (open or closed source) project. We suggest some at http://osbim.org/projects/
+Part of this license outlines requirements for derivative works, such as Plugins. Derivatives of BIMserver.org code inherit the Affero GPL license.  There is some legal grey area regarding what is considered a derivative work, but we feel strongly that Plugins are derivative work and thus inherit the Affero license. If you disagree, you might want to consider a different (open or closed source) project. 
