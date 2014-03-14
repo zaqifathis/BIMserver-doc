@@ -31,3 +31,13 @@ Bimsie1NotificationRegistryInterface.registerProgressHandler(topicId, endPointId
 ```
 
 In the previuos example the topicId is being returned by for example the Bimsie1ServiceInterface.checkin method.
+
+# JavaScript
+
+Are you using the BIMserver JavaScript API? Then you can register events a bit easier. The API will setup the WebSocket for you.
+
+```
+bimServerApi.registerProgressHandler(topicId, handler, callback);
+```
+
+In this example, *handler* should be a function reference to the function that should be executed when the progress changes, the *callback* will be called after the *handler* is successfully registered.
