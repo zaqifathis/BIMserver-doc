@@ -4,11 +4,13 @@ Sometimes you want the communication to be issued the other way around. You want
 
 # Step 1 - Register an endpoint
 
-The remote side has to register an Endpoint. For now the only type of Endpoint available is a WebSocket. You have to setup a WebSocket to http://[YOUR HOST]:[OPTIONAL PORT]/[OPTIONAL CONTEXT]/stream. BIMserver will send a JSON message:
+The remote side has to register an EndPoint. For now the only type of EndPoint available is a WebSocket. You have to setup a WebSocket to http://[YOUR HOST]:[OPTIONAL PORT]/[OPTIONAL CONTEXT]/stream. BIMserver will send a JSON message:
 ```
 {
   welcome: 12345
 }
+
+The number in this message is the current time as UTC milliseconds from the epoch.
 ```
 You have to send your token next, this is the same token you use for normal calls to BIMserver
 ```
@@ -16,16 +18,16 @@ You have to send your token next, this is the same token you use for normal call
   token: ABCDE...
 }
 ```
-Then BIMserver will send you an EndpointID, this Endpoint will be matched with the User linked to the token yo sent earlier.
+Then BIMserver will send you an EndPointID, this EndPoint will be matched with the User linked to the token you sent earlier.
 ```
 {
-  endPointId: 12345...
+  endpointid: 12345...
 }
 ```
 
-Now you can use this EndpointID when registering for certain events, such as progress on some action:
+Now you can use this EndPointID when registering for certain events, such as progress on some action:
 ``` 
 Bimsie1NotificationRegistryInterface.registerProgressHandler(topicId, endPointId);
 ```
 
-In the previos example the topicId is being returned by for example the Bimse1ServiceInterface.checkin method.
+In the previuos example the topicId is being returned by for example the Bimsie1ServiceInterface.checkin method.
