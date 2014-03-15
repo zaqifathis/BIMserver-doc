@@ -1,2 +1,3 @@
-Welcome to the BIMserver wiki!
+Working in the Hackathon?  
+We've got a special page for you guys: https://github.com/opensourceBIM/AECHackathon/wiki  
 
