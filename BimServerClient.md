@@ -26,7 +26,7 @@ Connecting via SOAP with authentication, and listing all projects
 ```
 
 Connecting with JSON and checking in a file:
-```
+```java
 	// Create a BimServerClientFactory, change Json to ProtocolBuffers or Soap if you like
 	BimServerClientFactory factory = new JsonBimServerClientFactory("http://localhost:8080");
 
@@ -34,10 +34,10 @@ Connecting with JSON and checking in a file:
 	BimServerClientInterface bimServerClient = getFactory().create(new UsernamePasswordAuthenticationInfo("admin@bimserver.org", "admin"));
 
 	// Create a new project
-	SProject newProject = bimServerClient.getBimsie1ServiceInterface().addProject("test" + Math.random());
+	SProject newProject = bimServerClient.getBimsie1ServiceInterface().addProject("New project name");
 			
 	// This is the file we will be checking in
-	File ifcFile = new File("../TestData/data/AC11-FZK-Haus-IFC.ifc");
+	File ifcFile = new File("location of the file you want to checkin");
 			
 	// Find a deserializer to use
 	SDeserializerPluginConfiguration deserializer = bimServerClient.getBimsie1ServiceInterface().getSuggestedDeserializerForExtension("ifc");
@@ -48,7 +48,7 @@ Connecting with JSON and checking in a file:
 ```
 
 Connect via JSON and Download a revision as IFC
-```
+```java
 	// Create a BimServerClientFactory, change Json to ProtocolBuffers or Soap if you like
 	BimServerClientFactory factory = new JsonBimServerClientFactory("http://localhost:8080");
 
