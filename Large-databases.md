@@ -10,4 +10,4 @@ That's why we also added the [low level calls](https://github.com/opensourceBIM/
 
 # Other data
 
-Apart from the Building Information Models BIMserver also stores information about projects, revisions, users, checkouts, history etc... This data is also being versioned, but on a per-object basis. So if you change the name of a project, the project will be stored again in the database with a new revision number. Usually these objects don't take up too much space, but certain access patterns can definitely make this explode.
+Apart from the Building Information Models BIMserver also stores information about projects, revisions, users, checkouts, history etc... This data is also being versioned, but on a per-object basis. So if you change the name of a project, the project (object) will be stored again in the database with a new revision number. Usually these objects don't take up too much space, but certain access patterns can definitely make this explode.
