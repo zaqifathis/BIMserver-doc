@@ -4,7 +4,7 @@ This page tries to explain why your database grows the way it does.
 
 Obviously Building Information Models take up most of the space. BIMserver does versioning based on revisions. This means that every object will be stored with information about the project it belongs to, the revision it belongs to and it's own identifier.
 
-When you are uploading multiple IFC files to the same project, all data will be stored. Even if only small parts of the model have changed, every object is stored again. The reason for this is that it's impossible for BIMserver to figure out what has changed.
+When you are uploading multiple IFC files to the same project, all data will be stored. Even if only small parts of the model have changed, every object is stored again. The reason for this is that it's impossible for BIMserver to figure out what has changed, and which object have stayed the same.
 
 That's why we also added the low level calls, to actually change models by telling what has changed, instead of telling what the new complete model looks like.
 
