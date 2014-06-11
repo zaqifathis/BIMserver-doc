@@ -23,12 +23,7 @@
 
 10. Copy bimvie-[version].jar file into the plugins subfolder under the bimserver-[version] folder
 
-11. Click the Start button to restart BIMserver.
-
-12. Once the BIMserver has restarted, click Launch Browser.
-
-13. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
-14. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
+11. Click the Start button to restart BIMserver. Once the BIMserver has restarted, click Launch Browser
 
 If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8082. If failed, try specifying another port.
 
@@ -47,18 +42,21 @@ Here's a [short video](http://www.youtube.com/watch?v=2PR3P0XKmkA) on how to get
 
 **Third party GUI:**
 
-There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try or shared freely by others. An open source example is http://test.bimvie.ws being developed by [Bimview.ws](http://www.bimvie.ws/).
-
-**Note:** To use test.bimvie.ws, a BIMserver must be running. Also, you need to specify the BIMserver's URL, i.e. http://yourbimserveradress:[port]
+There are a few third party GUI available. Some are commercial products that you have to purchase a licence for, but there are a few that are free to try or shared freely by others, such as the open source bimvie.ws
 
 **Checkin an IFC model**
 
 1. Use http://localhost:[port]/admin/console.html and run the Checkin API to checkin a model, or
-2. Use a GUI such as http://test.bimvie.ws to checkin a model
+2. Use a GUI such as the bimvie.ws to checkin a model either into a new or an existing project.
 
 **View the model**
 
-Once a model is in the BIMserver, you can use http://test.bimsurfer.org/ to view the model.
+bimvie.ws allows viewing of the model. Alternatively, one can use the bimsurfer.org
+
+** Additional Info **
+
+1. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
+2. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
 
 
 ### **Use BIMserver in your application**
