@@ -6,12 +6,16 @@
 
 2. Make sure you can execute a JAR file by double-clicking a JAR file. If not, check that [Java](http://www.java.com) is installed properly and the JAVA environment variables are setup correctly.
 
-3. Read about [which type of files to download](https://github.com/opensourceBIM/BIMserver/wiki/Download). Download the latest [file(s)](https://github.com/opensourceBIM/BIMserver/releases).
-4. Read [JAR Starter](https://github.com/opensourceBIM/BIMserver/wiki/JAR-Starter). 
+3. Download the latest [file(s)](https://github.com/opensourceBIM/BIMserver/releases). If needed, read about [which type of files to download](https://github.com/opensourceBIM/BIMserver/wiki/Download).
+
+4. Assuming this is your first installation, create a new folder in your system, e.g. C:\BIMserver
+**Note**: avoid creating BIMserver subfolder under C:\Program Files or C:\Program Files (x86)
+
+5. Read [JAR Starter](https://github.com/opensourceBIM/BIMserver/wiki/JAR-Starter). 
 **Note**: After clicking the START button, it may take up to a few minutes for the BIMserver to load and configure various components. Wait until you see something like "INFO  org.bimserver.JarBimServer - Server started successfully" before clicking on "Launch Webbrowser".
 
-5. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
-6. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
+6. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
+7. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
 
 If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8080. If failed, try again from Step 4 by specifying another port, e.g. instead of 8080, try 8082.
 
