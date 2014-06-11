@@ -11,18 +11,32 @@
 4. Assuming this is your first installation, create a new folder in your system, e.g. C:\BIMserver
 **Note**: avoid creating BIMserver subfolder under C:\Program Files or C:\Program Files (x86)
 
-5. Read [JAR Starter](https://github.com/opensourceBIM/BIMserver/wiki/JAR-Starter). 
-**Note**: After clicking the START button, it may take up to a few minutes for the BIMserver to load and configure various components. Wait until you see something like "INFO  org.bimserver.JarBimServer - Server started successfully" before clicking on "Launch Webbrowser".
+5. Copy the downloaded bimserver-[version].jar into the above folder, e.g. C:\BIMserver
 
-6. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
-7. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
+6. Double-click on the bimserver-[version].jar file to execute it. This will extract the content of the jar file and create two subfolders, i.e. home and bimserver-[version].
 
-If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8080. If failed, try again from Step 4 by specifying another port, e.g. instead of 8080, try 8082.
+7. Wait for BIMserver to expand all the files and configure itself and until the phrase "Server started successfully" appears.
+
+8. Click the Stop button to stop the BIMserver.
+
+9. Download the latest bimvie-[version].jar from [here](https://github.com/opensourceBIM/bimvie.ws/releases).
+
+10. Copy bimvie-[version].jar file into the plugins subfolder under the bimserver-[version] folder
+
+11. Click the Start button to restart BIMserver.
+
+12. Once the BIMserver has started, click Launch Browser.
+
+13. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
+14. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
+
+If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8082. If failed, try specifying another port.
 
 Once the BIMserver is launched successfully on the web browser, there may be a few more things to do  depending on which mode the BIMserver is in.
 
-1. If the web page displays the status as "NOT SETUP", go to the admin page at http://localhost:[port]/admin, e.g. http://localhost:8080/admin, and complete the setup procedure.
-2. During setup you are asked to create an administrator user and set some other settings.
+15. If the status is "NOT_SETUP", then click on the Admin Page and configure the administration login.
+
+
 3. The current version of BIMserver has no user interface (GUI), so you need to use your own GUI to access BIMserver functionalities.
 4. A complete list of API's can be accessed at http://localhost:[port]/admin/console.html
 5. To test uploading an IFC model, click "Common Scenarios" on the top left corner of the Console and complete each step of the procedure, i.e. Login, Create Project, Find Deserializer, Checkin.
