@@ -53,7 +53,7 @@ There are a few third party GUI available. Some are commercial products that you
 
 bimvie.ws allows viewing of the model. Alternatively, one can use the bimsurfer.org
 
-** Additional Info **
+**Additional Info**
 
 1. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
 2. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
