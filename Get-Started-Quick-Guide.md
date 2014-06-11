@@ -25,11 +25,9 @@
 
 11. Click the Start button to restart BIMserver. Once the BIMserver has restarted, click Launch Browser
 
-**If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8082. If failed, try specifying another port.**
+**If the above steps are followed correctly, you should have BIMserver launched successfully on a browser.** If failed, restart BIMserver with another port number, e.g. http://localhost:8082
 
-Once the BIMserver is launched successfully on the web browser, there may be a few more things to do  depending on which mode the BIMserver is in.
-
-1. If the status is "NOT_SETUP", then click on the Admin Page and configure the administration login.
+The first time BIMserver is launched, you will need to set up the administration login.
 
 
 **Third party GUI:**
