@@ -19,9 +19,9 @@
 
 8. Click the Stop button to stop the BIMserver.
 
-9. Download the latest bimvie-[version].jar from [here](https://github.com/opensourceBIM/bimvie.ws/releases).
+9. Download the latest open source BIMserver client, i.e. bimvie-[version].jar from [here](https://github.com/opensourceBIM/bimvie.ws/releases).
 
-10. Copy bimvie-[version].jar file into the plugins subfolder under the bimserver-[version] folder
+10. Copy the bimvie-[version].jar file into the plugins subfolder under the bimserver-[version] folder
 
 11. Click the Start button to restart BIMserver. Once the BIMserver has restarted, click Launch Browser
 
