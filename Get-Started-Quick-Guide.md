@@ -25,7 +25,7 @@
 
 11. Click the Start button to restart BIMserver.
 
-12. Once the BIMserver has started, click Launch Browser.
+12. Once the BIMserver has restarted, click Launch Browser.
 
 13. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
 14. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
