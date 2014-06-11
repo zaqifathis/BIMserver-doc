@@ -25,20 +25,12 @@
 
 11. Click the Start button to restart BIMserver. Once the BIMserver has restarted, click Launch Browser
 
-If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8082. If failed, try specifying another port.
+**If the above steps are followed correctly, you should have BIMserver launched successfully on a browser with the URL and specified port number: http://localhost:8082. If failed, try specifying another port.**
 
 Once the BIMserver is launched successfully on the web browser, there may be a few more things to do  depending on which mode the BIMserver is in.
 
-15. If the status is "NOT_SETUP", then click on the Admin Page and configure the administration login.
+1. If the status is "NOT_SETUP", then click on the Admin Page and configure the administration login.
 
-
-3. The current version of BIMserver has no user interface (GUI), so you need to use your own GUI to access BIMserver functionalities.
-4. A complete list of API's can be accessed at http://localhost:[port]/admin/console.html
-5. To test uploading an IFC model, click "Common Scenarios" on the top left corner of the Console and complete each step of the procedure, i.e. Login, Create Project, Find Deserializer, Checkin.
-6. There are also a number of resources available under specific sub-folders, e.g. http://locahost:[port]/js, http://localhost:8082/json?doc
-7. BIMserver must remain running in the background for these functionalities to work via your own interface.
-
-Here's a [short video](http://www.youtube.com/watch?v=2PR3P0XKmkA) on how to get started (note: this is for previous versions with a GUI)
 
 **Third party GUI:**
 
