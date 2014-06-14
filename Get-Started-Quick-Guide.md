@@ -47,7 +47,7 @@ bimvie.ws allows viewing of the model. Alternatively, one can use the bimsurfer.
 
 1. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
 2. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
-
+3. As a rule of thumb, set the heap size according to: 170MB per 1MB of IFC file, e.g. for 30MB of IFC file, the heap size should be at least 5GB
 
 ### **Use BIMserver in your application**
 
