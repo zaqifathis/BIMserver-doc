@@ -37,7 +37,7 @@ There are a few third party GUI available. Some are commercial products that you
 **Checkin an IFC model**
 
 1. Use http://localhost:[port]/admin/console.html and run the Checkin API to checkin a model, or
-2. Use a GUI such as the bimvie.ws to checkin a model either into a new or an existing project.
+2. Use a GUI such as the bimvie.ws to checkin a model either into an existing project.
 
 **View the model**
 
