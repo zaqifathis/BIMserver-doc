@@ -1,3 +1,3 @@
 1. Notifications are being send via HTTP, so the first thing you need is an HTTP server (this can be Apache for PHP, Jetty/Tomcat for Java etc...)
 2. There should be 1 URL on which you will be receiving HTTP requests, for example: "http://myserver/json"
-3. These requests will contain JSON messages encoded in UTF-8. The message format is the same as normal JSON messages that you use to access the BIMserver API.
+3. These requests will contain JSON messages encoded in UTF-8. The message format is the same as normal JSON messages that you use to access the BIMserver API (https://github.com/opensourceBIM/BIMserver/wiki/JSON-API).
