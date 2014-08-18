@@ -16,7 +16,7 @@ Optional:
 
 After you have this running, register your service on a certain BIMserver project. You can use a graphical interface like BIMvie.ws for that, or use the API
 
-First call: Bimsie1RemoteServiceInterface.getService(), call it on you own server. This will result in an SService object, which you can then send to the BIMserver:
+First call: Bimsie1RemoteServiceInterface.getService(), call it on you own server. This will result in an SService object, which you can then (with you own modifications) send to the BIMserver:
 ```
 
 ServiceInterface.addServiceToProject(poid, sService);
