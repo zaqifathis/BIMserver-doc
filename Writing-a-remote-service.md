@@ -16,7 +16,7 @@ Optional:
 
 After you have this running, register your service on a certain BIMserver project. You can use a graphical interface like BIMvie.ws for that, or use the API
 
-First call
+First call: Bimsie1RemoteServiceInterface.getService(), call it on you own server. This will result in an SService object, which you can then send to the BIMserver:
 ```
 
 ServiceInterface.addServiceToProject(poid, sService);
@@ -39,9 +39,8 @@ The SService looks like this (in JSON):
 		profilePublic: true|false,
 		readRevision: othis.serviceDescriptor.readRevision,
 		readExtendedDataId: othis.readExtendedDataOid,
-		writeRevisionId: othis.serviceDescriptor.writeRevision ? $(".addservice2 .projectSelect").val() : -1,
-				writeExtendedDataId: othis.writeExtendedDataOid,
-				modelCheckers: othis.modelCheckers
-			};
-
+		writeRevisionId: ,
+		writeExtendedDataId: othis.writeExtendedDataOid,
+		modelCheckers: []
+	};
 ```
