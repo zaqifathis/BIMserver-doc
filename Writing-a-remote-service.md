@@ -44,3 +44,5 @@ The SService looks like this (in JSON):
 		modelCheckers: []
 	};
 ```
+
+When there are notifications, josn messages will arrive on your URL. They will usually contain a token, which can then (for a limited time) use to identify yourself on the BIMserver to for example download a revision.
