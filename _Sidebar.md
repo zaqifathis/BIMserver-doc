@@ -20,6 +20,7 @@
    * [Protocol Buffers](https://github.com/opensourceBIM/BIMserver/wiki/Protocol-Buffers)
 * [Low Level Calls](https://github.com/opensourceBIM/BIMserver/wiki/Low-Level-Calls)
 * [Endpoints](https://github.com/opensourceBIM/BIMserver/wiki/Endpoints)
+* [Writing a remote service](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-remote-service)
 
 **Clients**
    * [Java Client](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClient)
