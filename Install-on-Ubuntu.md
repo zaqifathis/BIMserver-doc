@@ -1,5 +1,11 @@
 > These instructions are for the 1.3 release.
 
+> Updated on 06-10-2014 while installing BIMserver 1.3 on a 122GB AWS machine
+
+> This tutorial assumes "root" privileges, you might have to add "sudo" to all statements.
+
+> This tutorial assumes you already have a working (AWS) server. Make sure you enable the right ports on it as well (80 or 8080)
+
 How to install the BIMserver on a freshly installed Ubuntu 12.04.2 LTS Server Amazon EC2 server.
 
 AMI: Ubuntu Cloud Guest AMI ID ami-d0f89fb9 (x86_64)
@@ -47,10 +53,10 @@ Directories chosen for this installation:
 | Command | Description |
 | ------------- | ------------- |
 | cd /opt | Goto the /opt directory |
-| wget http://apache.cs.uu.nl/dist/tomcat/tomcat-7/v7.0.41/bin/apache-tomcat-7.0.41.zip | Download tomcat (Make sure you replace this with the latest release!) |
-| unzip apache-tomcat-7.0.41.zip | Unzip Tomcat7 |
-| rm apache-tomcat-7.0.41.zip | Remove the downloaded zip file |
-| mv apache-tomcat-7.0.41 tomcat7 | Rename to convenient name |
+| wget http://apache.mirrors.tds.net/tomcat/tomcat-7/v7.0.55/bin/apache-tomcat-7.0.55.zip -O tomcat7.zip | Download tomcat (Make sure you replace this with the latest release!) |
+| unzip apache7.zip | Unzip Tomcat7 |
+| rm tomcat7.zip | Remove the downloaded zip file |
+| mv apache-tomcat-7.0.55 tomcat7 | Rename to convenient name |
 | chmod +x /opt/tomcat7/bin/*.sh | Make .sh files executable |
 | mkdir /opt/tomcat7/conf/policy.d | Create a policy directory |
 | nano /opt/tomcat7/conf/policy.d/default.policy | Edit the default policy file |
@@ -84,7 +90,7 @@ Change the port attribute in the Connector tag to the desired port (also see: "R
 
 By default, BIMserver will store the database folder, the log files etc... in the WEB-INF folder of the extracted .war file of BIMserver. We will call this folder the "home" folder. This directory will be removed when you upgrade your BIMserver to a new version because the WEB-INF folder is part of your web application folder. To tell BIMserver to store your "home" directory somewhere else, you can set a parameter in your application server configuration (in this case, Tomcat).
 
-There are multiple ways, the easiest is to add it to your Host configuration in server.xml.
+There are multiple ways, the easiest is to add it to your Host configuration in server.xml (you might already have done this while setting up the host)
 ```
 <Host name="[YOUR DOMAIN]" appBase="/var/www/[YOUR DOMAIN]" unpackWARs="true" autoDeploy="true" xmlValidation="false" xmlNamespaceAware="false">
     <Context path="" docBase="/var/www/[YOUR DOMAIN]/ROOT.war">
@@ -111,12 +117,12 @@ There are other options as well, for those please see the [Tomcat website](http:
 
 To be able to starts/stop/restart tomcat7 you need an init.d script. You can find one [https://gist.github.com/baylisscg/942150 here]. Copy this file to /etc/init.d/tomcat7 and give it execute permissions (`chmod +x /etc/init.d/tomcat7`).
 
-Change the file:
+Open the file for editing and find the following variable declarations and change them to:
 ```bash
 CATALINA_HOME=/opt/$NAME
 CATALINA_BASE=/opt/$NAME
 TOMCAT7_SECURITY=no // You can change this to yes later on
-JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre // Change this to your JRE directory
+JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre // Change this to a JRE directory of your choosing, run 'update-alternatives --list java' to see the available ones. Make sure you point to a JRE directory, for example: /usr/lib/jvm/java-7-openjdk-amd64/jre
 ```
 
 Find the line that says:
@@ -131,7 +137,7 @@ Restart Tomcat: `service tomcat7 restart`
 | Command | Description |
 | ------------- | ------------- |
 | cd /var/www/[YOUR DOMAIN] | Go to your domain folder |
-| wget https://bimserver.googlecode.com/files/bimserver-1.2.war -O ROOT.war | Download the latest BIMserver (Make sure you replace this with the latest version!) |
+| wget https://github.com/opensourceBIM/BIMserver/releases/download/1.3.2-FINAL-2014-08-21/bimserver-1.3.2-FINAL-2014-08-21.war -O ROOT.war | Download the latest BIMserver (Make sure you replace this with the latest version!) |
 
 After this command, Tomcat 7 should start unpacking the downloaded war file in a directory called ROOT. After a while you should be able to connect to the BIMserver with a browser on your http://[YOUR DOMAIN]:[CONFIGURED PORT]. The page you will see should be showing the version of BIMserver and the status (should be NOT_SETUP if this is your first install). Continue to [Setup][setup] for further configuration.
 
@@ -140,6 +146,8 @@ When things are not working, you can look in the Tomcat 7 log file: /opt/tomcat7
 # Installing an STMP server
 
 You only have to do this if you do not already have an accessible SMTP server running in your network or with your ISP. Remember running your own SMTP server is a security/spam risk if you don't know how to properly install/maintain it.
+
+> It really is way easier to use a third party for email, usually can use those for free, mailgun works very nice.
 
 ```
 apt-get install postfix
