@@ -43,7 +43,7 @@ When Java complains there is not enough memory, you can increase the amount of h
 
 ## Adding the plugins property
 
-Before BIMserver 1.3 you had to manually edit some source code (LocalDevPluginLoader.java) to add the locations of your own plugins to run them. Now you can edit the Eclipse run configuration.
+Before BIMserver 1.3 you had to manually edit some source code (LocalDevPluginLoader.java) to add the locations of your own plugins to run them. Now you can edit the Eclipse run configuration. The reason behind this is that people don't accidentally check-in the LocalDevPluginLoader file, and to make things configurable without source-code-modification.
 
 You can add as many "plugins" parameters. So for example:
 ```
@@ -51,6 +51,8 @@ You can add as many "plugins" parameters. So for example:
 ```
 
 The directories will be scanned 2 levels deep. So you can for example add your complete GIT directory and it will use all plugins of all workspaces in that directory.
+
+> The BIMserver itself uses a few plugins internally as well. You can run BIMserver without them, but most things wont work. So in most cases you probably want to add the BIMserver root directory to the plugins path.
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/plugins.png)
 
