@@ -187,3 +187,21 @@ iptables -t nat -I OUTPUT --src 0/0 --dst [PUBLIC IP] -p tcp --dport 80 -j REDIR
 
 
 > If you are running on Amazon or another Cloud provider, make sure you enable port 80 (or whatever port you redirect) on their firewall as well.
+
+# Multicast on loopback interface
+
+On ubuntu you can apparently run into this error (thanks https://github.com/hlg):
+
+When running BIMserver locally on Ubuntu without any internet connection using the JAR starter, then server startup fails with:
+
+java.net.SocketException: No such device
+  at java.net.PlainDatagramSocketImpl.join(Native Method)
+  at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:178)
+  at java.net.MulticastSocket.joinGroup(MulticastSocket.java:319)
+  at org.apache.cxf.transport.udp.UDPDestination.activate(UDPDestination.java:168)
+  ... 35 more
+This is due to the loopback interface not having multicast traffic allowed by default. This can be enabled with:
+
+sudo ifconfig lo multicast
+sudo route add -net 224.0.0.0 netmask 240.0.0.0 dev lo
+The solution was found at ubuntuforms.org. Please add this information to the BIMserver wiki.
