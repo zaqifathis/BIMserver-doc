@@ -63,6 +63,8 @@ endPointId: othis.server.endPointId
 }
 ```
 
+Read https://github.com/opensourceBIM/BIMserver/wiki/Endpoints to learn how to acquire an endPointId.
+
 When there is new progress, the Bimsie1NotificationInterface.progress method will be called on the client.
 ```
 {
