@@ -32,21 +32,48 @@ If something goes wrong, it will return:
 }
 ```
 
-# Using the checkinid
+# Using the checkinid/topicId. CheckinId and TopicId are the same thing, should be renamed everywhere to TopicId.
 
+Get progress
+```
 Bimsie1NotificationRegistryInterface.getProgress
 {
 topicId
 }
+```
 
+This will return:
+```
+{
+  state: "STARTED" | "DONE" | "NONE" | "AS_ERROR",
+  stage: "Name of the stage",
+  title: "Title",
+  progress: Percentage
+}
+```
+
+Register to be notified on a change in progress:
+```
 Bimsie1NotificationRegistryInterface.registerProgressHandler
 {
 topicId: topicId
 endPointId: othis.server.endPointId
 }
+```
 
+When there is new progress, the Bimsie1NotificationInterface.progress method will be called on the client.
+```
+{
+  topicId: "",
+  state: The same state object that is being returned by the call to Bimsie1NotificationRegistryInterface.getProgress.
+}
+```
+
+Don't forget to unregister
+```
 Bimsie1NotificationRegistryInterface.unregisterProgressHandler
 {
 topicId: topicId
 endPointId: othis.server.endPointId
 }
+```
