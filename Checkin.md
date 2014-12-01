@@ -4,7 +4,9 @@ Checkin is the term used to upload complete models to a BIMserver. Because there
 
 # Usual way
 
-The usual way would be to call the checkin method on the Bimsie1ServiceInterface. Just look at the documentation for the method. Skip to 
+The usual way would be to call the checkin method on the Bimsie1ServiceInterface. Just look at the documentation for the method. It will return a topicId/checkinId, of which the use is explained (here)[# CheckinId / TopicId].
+
+Any immediate exception will be in the return message as well, just as all other calls to BIMserver. See [https://github.com/opensourceBIM/BIMserver/wiki/JSON-API#Exception]
 
 # Other way
 
