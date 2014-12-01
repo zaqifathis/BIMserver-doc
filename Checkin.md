@@ -6,11 +6,11 @@ Checkin is the term used to upload complete models to a BIMserver. Because there
 
 The usual way would be to call the checkin method on the Bimsie1ServiceInterface. Just look at the documentation for the method. It will return a topicId/checkinId, of which the use is explained (here)[# CheckinId / TopicId].
 
-Any immediate exception will be in the return message as well, just as all other calls to BIMserver. See [https://github.com/opensourceBIM/BIMserver/wiki/JSON-API#Exception]
+Any immediate exception will be in the return message as well, just as all other calls to BIMserver. See [https://github.com/opensourceBIM/BIMserver/wiki/JSON-API#exception] for the JSON interface.
 
 # Other way
 
-Because of the overhead of the different implementations of the Service Interfaces, and because of the nature of the checkin method (pushing a lot of data) there is another way. You can (HTTP) POST the data to /upload. The required fields are:
+Because of the overhead of the different implementations of the Service Interfaces (SOAP, PB, JSON), and because of the nature of the checkin method (pushing a lot of data, which makes streaming more suited) there is another way. You can (HTTP) POST the data to /upload. The required fields are:
 ```
 token: The token you are using, this is the token you get from calling login
 deserializerOid: Id of the deserializer you want to use
@@ -56,6 +56,9 @@ This will return:
 }
 ```
 
+When something went wrong (for example, the IFC file is supposedly invalid) the state will be "AS_ERROR". A description will be in the title field. The "stage" field contains a string describing the current stage of the process, which for example can be "Generating geometry...".
+
+# Using notification
 Register to be notified on a change in progress:
 ```
 Bimsie1NotificationRegistryInterface.registerProgressHandler
