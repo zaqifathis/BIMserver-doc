@@ -38,6 +38,7 @@ A typical response for a "login" call looks like this:
 }
 ```
 
+#Exception
 When an exception occurs the message looks like this:
 ```
 {
