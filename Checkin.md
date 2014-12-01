@@ -32,7 +32,9 @@ If something goes wrong, it will return:
 }
 ```
 
-# Using the checkinid/topicId. CheckinId and TopicId are the same thing, should be renamed everywhere to TopicId.
+# CheckinId / TopicId
+
+CheckinId and TopicId are the same thing, should be renamed everywhere to TopicId.
 
 Get progress
 ```
