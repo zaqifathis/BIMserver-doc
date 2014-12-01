@@ -34,3 +34,19 @@ If something goes wrong, it will return:
 
 # Using the checkinid
 
+Bimsie1NotificationRegistryInterface.getProgress
+{
+topicId
+}
+
+Bimsie1NotificationRegistryInterface.registerProgressHandler
+{
+topicId: topicId
+endPointId: othis.server.endPointId
+}
+
+Bimsie1NotificationRegistryInterface.unregisterProgressHandler
+{
+topicId: topicId
+endPointId: othis.server.endPointId
+}
