@@ -68,3 +68,4 @@ To make your plugin available on deployed BIMservers (either WAR or JAR), you ha
 # License
 
 BIMserver is an open framework that uses Plugins. Derivatives of bimserver.org code inherit the Affero GPL code. Plugins build from scratch can also be licensed under the GPL license (and used as plugin in BIMserver).  This does not go for snippets, GUIs and some separate (or remote) running services where BIMserver is a client to that service. Again: when in doubt, feel free to contact us.
+More details and examples on [http://bimserver.org/license/](http://bimserver.org/license/)
