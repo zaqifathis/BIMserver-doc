@@ -1,6 +1,4 @@
-For BIMsurfer 2 serializers are being used.
-
-# Current serializer
+# Current serializers (used by BIMvie.ws and BIMsurfer)
 
 ## BinaryGeometrySerializer
 
@@ -9,6 +7,8 @@ This serializer writes the geometry in a binary format that in most cases can ea
 ## MessagingBinaryGeometrySerializer
 
 Because at this time, JavaScript is not able to load binary data in a streaming way, there is also a messaging implementation. This implementation sends the geometry in batches via WebSocket. https://github.com/opensourceBIM/BIMserver/blob/master/MiscSerializers/src/org/bimserver/serializers/binarygeometry/BinaryGeometryMessagingSerializer.java
+
+This serializer is used by BIMvie.ws and BIMsurfer.
 
 # Older serializers
 
