@@ -1,6 +1,6 @@
 When you are getting the "websocket error", this page helps you find the reason.
 
-> Note, if you are using Tomcat 7, there is a special WAR build that uses an older API for supporting Web Sockets. For tomcat 8 and other application containers you can use the normal WAR file.
+> Note, if you are using Tomcat 7, there is a special WAR build that uses an older API for supporting Web Sockets. For Tomcat 8 and other application containers you can use the normal WAR file (which uses JSR-356 for Web Sockets).
 
 The webbased user interface that is currently being shipped with BIMserver is BIMvie.ws. BIMvie.ws requires a working WebSocket implementation in your browser. 
 Usually when web sockets do not work, it's either one of the following: 
