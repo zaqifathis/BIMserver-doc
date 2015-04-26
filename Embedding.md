@@ -4,7 +4,8 @@ Sometimes it is useful to embed BIMserver in another application, this page desc
 
 ## Details
 
-### Create a BimServerConfig instance (documentation: https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/src/org/bimserver/BimServerConfig.java)
+### Create a BimServerConfig instance
+(documentation: https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/src/org/bimserver/BimServerConfig.java)
 ```java
 // Example
 BimServerConfig config = new BimServerConfig();
