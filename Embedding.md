@@ -2,9 +2,9 @@
 
 Sometimes it is useful to embed BIMserver in another application, this page describes how to do this.
 
-# Details
+## Details
 
-1. Create a BimServerConfig instance (documentation: https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/src/org/bimserver/BimServerConfig.java)
+### Create a BimServerConfig instance (documentation: https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/src/org/bimserver/BimServerConfig.java)
 ```java
 // Example
 BimServerConfig config = new BimServerConfig();
@@ -17,23 +17,23 @@ config.setStartCommandLine(false);
 config.setLocalDev(true);
 config.setAutoMigrate(false);
 ```
-2. Create a BIMserver instance
+### Create a BIMserver instance
 ```java
 BimServer bimServer = new BimServer(config);
 ```
 
-2. Load plugins
+### Load plugins
 ```java
 // Example, if you point [LOCATION] to the BIMserver workspace directory, all plugins delivered with BIMserver will be loaded
 LocalDevPluginLoader.loadPlugins(bimServer.getPluginManager(), new File[]{new File("[LOCATION]")});
 ```
 
-3. Start the server
+### Start the server
 ```java
 bimServer.start();
 ```
 
-4. Use the BIMserver. All useful objects are available with getters on the BimServer object.
+### Use the BIMserver. All useful objects are available with getters on the BimServer object.
 ```java
 BimDatabase bimDatabase = bimServer.getDatabase();
 SettingsManager settingsManager = bimServer.getSettingsManager();
