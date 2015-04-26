@@ -1,5 +1,7 @@
 # Introduction
 
+> Updated for BIMserver 1.4
+
 Sometimes it is useful to embed BIMserver in another application, this page describes how to do this.
 
 ## Details
