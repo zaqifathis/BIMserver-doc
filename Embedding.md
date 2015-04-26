@@ -1,24 +1,31 @@
 # Introduction
 
-Sometimes it is useful to embed the BIMserver in another application, this page describes how to do this.
-
-Note: This way no webserver will be started so the web userinterface and SOAP/REST are not available.
+Sometimes it is useful to embed BIMserver in another application, this page describes how to do this.
 
 # Details
 
-1. Create a BIMserver instance
+1. Create a BimServerConfig instance (documentation: https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/src/org/bimserver/BimServerConfig.java)
 ```java
-BimServer bimServer = new BimServer(new File("home"), new LocalDevelopmentResourceFetcher());
+// Example
+BimServerConfig config = new BimServerConfig();
+config.setStartEmbeddedWebServer(false);
+config.setHomeDir(new File("[LOCATION]"));
+config.setResourceFetcher(new LocalDevelopmentResourceFetcher(new File("[LOCATION]")));
+config.setClassPath(System.getProperty("java.class.path"));
+config.setPort(8080);
+config.setStartCommandLine(false);
+config.setLocalDev(true);
+config.setAutoMigrate(false);
+```
+2. Create a BIMserver instance
+```java
+BimServer bimServer = new BimServer(config);
 ```
 
 2. Load plugins
 ```java
-bimServer.getPluginManager().loadPluginsFromEclipseProject(new File("../CityGML"));
-bimServer.getPluginManager().loadPluginsFromEclipseProject(new File("../Collada"));
-bimServer.getPluginManager().loadPluginsFromEclipseProject(new File("../IfcPlugins"));
-bimServer.getPluginManager().loadPluginsFromEclipseProject(new File("../MiscSerializers"));
-bimServer.getPluginManager().loadPluginsFromEclipseProject(new File("../IfcEngine"));
-bimServer.getPluginManager().loadPluginsFromEclipseProject(new File("../buildingSMARTLibrary"));
+// Example, if you point [LOCATION] to the BIMserver workspace directory, all plugins delivered with BIMserver will be loaded
+LocalDevPluginLoader.loadPlugins(bimServer.getPluginManager(), new File[]{new File("[LOCATION]")});
 ```
 
 3. Start the server
@@ -40,4 +47,11 @@ MailSystem mailSystem = bimServer.getMailSystem();
 PluginManager pluginManager = bimServer.getPluginManager();
 MergerFactory mergerFactory = bimServer.getMergerFactory();
 LongActionManager longActionManager = bimServer.getLongActionManager();
+// Etcetera
+```
+
+The main interfaces (that are also available via SOAP/ProtocolBuffers/JSON):
+```java
+// Example getting the ServiceInterface
+ServiceInterface si = bimServer.getServiceFactory().get(AccessMethod.INTERNAL).getServiceInterface();
 ```
