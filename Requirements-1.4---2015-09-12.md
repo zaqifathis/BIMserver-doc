@@ -1,5 +1,7 @@
 System requirements for running a BIMserver version 1.4 starting with https://github.com/opensourceBIM/BIMserver/releases/tag/1.4.0-FINAL-2015-09-12
 
+Before this build there were separate releases for Tomcat 7 and Tomcat 8, this was unmaintainable, hence the updated requirements.
+
 # Memory
 
 The amount of required heap memory depends on what plugins you install, the size of your models and the amount of concurrent users of BIMserver. A rule of thumb is that you need about 15 times the size of the largest (unzipped) IFC file you want to be able to upload, times the maximum number of concurrent users. You can find more information [here](Memory-usage).
