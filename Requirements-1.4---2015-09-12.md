@@ -1,4 +1,4 @@
-System requirements for running a BIMserver version 1.4 after 12-09-2015
+System requirements for running a BIMserver version 1.4 starting with https://github.com/opensourceBIM/BIMserver/releases/tag/1.4.0-FINAL-2015-09-12
 
 # Memory
 
