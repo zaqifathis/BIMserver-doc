@@ -11,6 +11,7 @@ Requirements
 - Should basically be possible to create a query to get any sub-graph of any given model
 - Should have the possibility to traverse a model (recursively)
 - Should allow for having reusable pieces of query that are used a lot
+- Should have the possibility to simplify for example the concept of Ifc properties via IfcPropertySet etc...
 
 ## Current preload query in BIMvie.ws
 
