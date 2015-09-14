@@ -17,7 +17,7 @@ For advanced queries you will need to use a JDK, for all other features a JRE wi
 # WAR
 
   * A JRE or JDK 7
-  * A Servlet Specification 3.0 or higher based Container with WebSocket JSR-356 support (**Tomcat 7.0.47** or higher, Tomcat 8, Jetty 8 or higher)
+  * A Servlet Specification 3.0 or higher based Container with WebSocket JSR-356 (1.1) support (**Tomcat 7.0.56** or higher, Tomcat 8, Jetty 8 or higher)
 
 # JAR
   * A JRE or JDK 7
