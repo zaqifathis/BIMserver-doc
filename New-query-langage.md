@@ -13,6 +13,10 @@ Requirements
 - Should allow for having reusable pieces of query that are used a lot
 - Should have the possibility to simplify for example the concept of Ifc properties via IfcPropertySet etc...
 
+## Possible standards/influences
+- http://www.jsoniq.org/
+- XQuery
+
 ## Current preload query in BIMvie.ws
 
 This is not very intuitive, but can be used to query a model quite precisely.
@@ -148,4 +152,3 @@ Using AND, OR, XOR
   }]
 }
 ```
-
