@@ -9,11 +9,18 @@ Requirements
 - Use functions like substr etc...
 - An efficient implementation should be possible (using indices, not loading the complete model in advance)
 - Should basically be possible to create a query to get any sub-graph of any given model
-- Should have the possibility to traverse a model
+- Should have the possibility to traverse a model (recursively)
+- Should allow for having reusable pieces of query that are used a lot
 
 ## Current preload query in BIMvie.ws
 
 This is not very intuitive, but can be used to query a model quite precisely.
+
+The "defines" section declares reusable query-parts, the "queries" section the actual queries (which are all joined as OR)
+
+The first query get's all IfcProject objects (usually just one). For every IfcProject, 2 includes are traversed. "IsDecomposedByDefine" will follow the "IsDecomposedBy" field, for every object it will follow "RelatedObjects", it will then recursively call itself, and "ContainsElementsDefine" and "Representation". And so on... This will basically read the whole decomposes-tree, with some sidesteps.
+
+This example script is used in BIMvie.ws to preload the minimal amount of objects needed to create the tree/types/classifications/layers tabs on the left.
 
 ```javascript
 var preLoadQuery = {
