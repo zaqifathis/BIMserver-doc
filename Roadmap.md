@@ -22,7 +22,7 @@ November 2015
 - Implement useful query method, replace current query methods (https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
 
 December 2015
-- Remove deprecated code
+- Remove deprecated code (https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
 - Add get/list/read methods to low level interface, remove data object calls
 - Notifications on object-level
 - Implement useful logging system (inc. notifications, log on disk)
