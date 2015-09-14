@@ -18,6 +18,10 @@ Requirements
 - XQuery
 - OQL
 
+## Other considerations
+
+- Will not be supplied as a plugin but integated in BIMserver. Code will be way to complex to support other "query engines" in a useful way.
+
 ## Current preload query in BIMvie.ws
 
 This is not very intuitive, but can be used to query a model quite precisely.
