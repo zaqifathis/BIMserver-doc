@@ -33,7 +33,7 @@ January 2016
 - Move usage of EMF model from server side to client side
 
 Februari 2016
-- Proof of concept scalable database implementation
+- Proof of concept scalable database implementation (branch)
 
 Items to put on roadmap:
 - Create HA ability (at least with 2 servers, 1 in standby)
