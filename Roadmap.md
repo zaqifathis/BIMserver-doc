@@ -4,6 +4,7 @@ September 2015
 - Create roadmap
 - Standardize on topicId, downloadId, laid, longActionId etc... and document
 - Write more documentation
+- Write a test that creates a 100GB database
 
 Oktober 2015
 - Convert to maven, publish on maven repository
