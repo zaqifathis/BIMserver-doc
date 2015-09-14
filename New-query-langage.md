@@ -16,6 +16,7 @@ Requirements
 ## Possible standards/influences
 - http://www.jsoniq.org/
 - XQuery
+- OQL
 
 ## Current preload query in BIMvie.ws
 
