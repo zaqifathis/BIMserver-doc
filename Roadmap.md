@@ -27,7 +27,7 @@ December 2015
 - Remove deprecated code (https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
 - Add get/list/read methods to low level interface, remove data object calls
 - Notifications on object-level
-- Implement useful logging system (inc. notifications, log on disk)
+- Implement useful functional logging system (inc. notifications, log on disk)
 
 January 2016
 - Move usage of EMF model from server side to client side
