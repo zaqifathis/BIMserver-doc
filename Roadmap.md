@@ -1,3 +1,5 @@
+This is just a proposal, lots of changes expected
+
 September 2015
 - Create roadmap
 - Standardize on topicId, downloadId, laid, longActionId etc... and document
