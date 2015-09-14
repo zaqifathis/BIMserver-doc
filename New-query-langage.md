@@ -99,3 +99,52 @@ var preLoadQuery = {
 	]
 };
 ```
+
+## JSON Based Query Language
+
+Query on type
+```
+{
+  type: "IfcProject"
+}
+```
+
+Query on oid
+```
+{
+  oid: 12345
+}
+```
+
+Query on oids (OR)
+```
+{
+  oids: [12346, 56789]
+}
+```
+
+Query on GUID
+```
+{
+  guid: "EBEBEBEBE"
+}
+```
+
+Query on GUID's (OR)
+```
+{
+  guids: ["EBEBEBEBEB", "CDCDCDCDCD"]
+}
+```
+
+Using AND, OR, XOR
+```
+{
+  or: [{
+    type: "IfcWall"
+  }, {
+    type: "IfcWallStandardCase"
+  }]
+}
+```
+
