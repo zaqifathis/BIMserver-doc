@@ -11,80 +11,84 @@ Requirements
 - Should basically be possible to create a query to get any sub-graph of any given model
 - Should have the possibility to traverse a model
 
+## Current preload query in BIMvie.ws
+
+This is not very intuitive, but can be used to query a model quite precisely.
+
 ```javascript
-				var preLoadQuery = {
-					defines: {
-						Representation: {
-							field: "Representation"
-						},
-						ContainsElementsDefine: {
-							field: "ContainsElements",
-							include: {
-								field: "RelatedElements",
-								include: [
-									"IsDecomposedByDefine",
-									"ContainsElementsDefine",
-									"Representation"
-								]
-							}
-						},
-						IsDecomposedByDefine: {
-							field: "IsDecomposedBy",
-							include: {
-								field: "RelatedObjects",
-								include: [
-									"IsDecomposedByDefine",
-									"ContainsElementsDefine",
-									"Representation"
-								]
-							}
-						}
-					},
-					queries: [
-					    {
-							type: "IfcProject",
-							include: [
-								"IsDecomposedByDefine",
-								"ContainsElementsDefine"
-							]
-					    },
-					    {
-					    	type: "IfcRepresentation",
-					    	includeAllSubtypes: true
-					    },
-					    {
-					    	type: "IfcProductRepresentation"
-					    },
-					    {
-					    	type: "IfcPresentationLayerWithStyle"
-					    },
-					    {
-					    	type: "IfcProduct",
-					    	includeAllSubTypes: true
-					    },
-					    {
-					    	type: "IfcProductDefinitionShape"
-					    },
-					    {
-					    	type: "IfcPresentationLayerAssignment"
-					    },
-					    {
-					    	type: "IfcRelAssociatesClassification",
-					    	include: [
-					    		{
-					    			field: "RelatedObjects"
-					    		},
-					    		{
-					    			field: "RelatingClassification"
-					    		}
-					    	]
-					    },
-					    {
-					    	type: "IfcSIUnit"
-					    },
-					    {
-					    	type: "IfcPresentationLayerAssignment"
-					    }
-					]
-				};
+var preLoadQuery = {
+	defines: {
+		Representation: {
+			field: "Representation"
+		},
+		ContainsElementsDefine: {
+			field: "ContainsElements",
+			include: {
+				field: "RelatedElements",
+				include: [
+					"IsDecomposedByDefine",
+					"ContainsElementsDefine",
+					"Representation"
+				]
+			}
+		},
+		IsDecomposedByDefine: {
+			field: "IsDecomposedBy",
+			include: {
+				field: "RelatedObjects",
+				include: [
+					"IsDecomposedByDefine",
+					"ContainsElementsDefine",
+					"Representation"
+				]
+			}
+		}
+	},
+	queries: [
+	    {
+			type: "IfcProject",
+			include: [
+				"IsDecomposedByDefine",
+				"ContainsElementsDefine"
+			]
+	    },
+	    {
+	    	type: "IfcRepresentation",
+	    	includeAllSubtypes: true
+	    },
+	    {
+	    	type: "IfcProductRepresentation"
+	    },
+	    {
+	    	type: "IfcPresentationLayerWithStyle"
+	    },
+	    {
+	    	type: "IfcProduct",
+	    	includeAllSubTypes: true
+	    },
+	    {
+	    	type: "IfcProductDefinitionShape"
+	    },
+	    {
+	    	type: "IfcPresentationLayerAssignment"
+	    },
+	    {
+	    	type: "IfcRelAssociatesClassification",
+	    	include: [
+	    		{
+	    			field: "RelatedObjects"
+	    		},
+	    		{
+	    			field: "RelatingClassification"
+	    		}
+	    	]
+	    },
+	    {
+	    	type: "IfcSIUnit"
+	    },
+	    {
+	    	type: "IfcPresentationLayerAssignment"
+	    }
+	]
+};
 ```
