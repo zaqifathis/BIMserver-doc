@@ -3,7 +3,9 @@ This is just a proposal, lots of changes expected
 September 2015
 - Create roadmap
 - Standardize on topicId, downloadId, laid, longActionId etc... and document
-- Write more documentation
+- Create calls to get information about "background" processes, also implement in BIMvie.ws
+- Extend Metrics with percentile info and more
+- Write more documentation (maybe work on scenarios)
 - Write a test that creates a 100GB database
 
 Oktober 2015
