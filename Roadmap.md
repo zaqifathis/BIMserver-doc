@@ -16,7 +16,7 @@ November 2015
 - Remove query-plugin extensionpoint
 - Implement indices for model-data
 - Move GUID/Name indices to generic indexing system
-- Implement useful query method, replace current query methods
+- Implement useful query method, replace current query methods (https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
 
 December 2015
 - Remove deprecated code
