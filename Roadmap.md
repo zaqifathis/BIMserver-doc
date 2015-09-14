@@ -26,5 +26,8 @@ December 2015
 - Notifications on object-level
 - Implement useful logging system (inc. notifications, log on disk)
 
+January 2016
+- Move usage of EMF model from server side to client side
+
 Items to put on roadmap:
 - Create HA ability (at least with 2 servers, 1 in standby)
