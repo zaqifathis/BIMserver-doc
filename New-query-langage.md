@@ -17,6 +17,7 @@ Requirements
 - http://www.jsoniq.org/
 - XQuery
 - OQL
+- GraphQL (intro + good description of why REST sucks: https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html)
 
 ## Other considerations
 
