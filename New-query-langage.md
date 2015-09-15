@@ -19,6 +19,12 @@ Requirements
 - OQL
 - GraphQL (intro + good description of why REST sucks: https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html)
 
+## GraphQL
+
+Looks pretty cool. Main reasons for not choosing it:
+- The actual query part seems to be quite limited, for example no range queries (>, <). We could implement a "oid" and "guid" root calls server side. Maybe even as lists, and combined with type as well...
+- Not only a new language, but also a new syntax, but there is a Java implementation of the parsing already (https://github.com/andimarek/graphql-java)
+
 ## Other considerations
 
 - Will not be supplied as a plugin but integated in BIMserver. Code will be way to complex to support other "query engines" in a useful way.
