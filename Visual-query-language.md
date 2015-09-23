@@ -1,8 +1,5 @@
 This page explains a visual query language. This will not necessarily become a real way of quering BIM models. For now it serves as tool to develop/explain a potential new query language.
 
-# Current considerations
-- The condition blocks (gray blocks) seem to use a text-based expression, this is just a simplification. The actual query model will represent these with more building blocks such as "Equal", "Literal" etc...
-
 # Building blocks
 
 ## Root
@@ -15,17 +12,27 @@ Consideration: Remove the "Root" node, if you consider all the blocks with no in
 
 ## Type query
 
+Query by type. By default all subtypes will be queried as well. You can disable the subtypes by adding "No subtypes"
+
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querytype.png)
 
 ## Reference
+
+Follow a reference from the previous object. These can be single/multi references.
 
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryreference.png)
 
 ## Conditions
 
+The condition blocks (gray blocks) seem to use a text-based expression, this is just a simplification. The actual query model will represent these with more building blocks such as "Equal", "Literal" etc...
+
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querycondition.png)
 
 ## Reusable query blocks
+
+Reuse a query block defined somewhere else. Possible properties
+- Recurse (this will short-circuit the IN and OUT on the reusable code block), (default: false)
+- Exclude, the objects will only be used to traverse the model, but not included in the result (default: false)
 
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryreuse.png)
 
