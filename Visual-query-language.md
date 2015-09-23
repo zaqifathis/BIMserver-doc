@@ -1,3 +1,8 @@
+This page explains a visual query language. This will not necessarily become a real way of quering BIM models, for now it serves as tool to develop/explain the new query language.
+
+# Current considerations
+- Remove the "Root" node, if you consider all the blocks with no input's as starting points, there is no need to have a "Root" node.
+
 # Examples
 
 ## Query a list of GUID's
