@@ -33,6 +33,8 @@ This will return all IfcWall objects that have a Representation. Could maybe als
 
 These are not direct object-properties, but properties that are attached to the object via IfcPropertySet/IfcPropertySingleValue etc...
 
+This functionality makes the query engine less schema-agnostic, another way of making it easier to query complex properties and also keep the query engine schema-less would be to use a [reusable query block](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Properties%22) for it, for example the [Properties](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Properties%22) block.
+
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querycomplexproperties.png)
 
 ## Query object with certain property value, but exclude and get referenced
@@ -44,6 +46,5 @@ The [Decomposes](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-
 Finally the IfcDoor and IfcWindow objects are selected, those are included in the results.
 
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/query1storeywindowsanddoors.png)
-
 
 
