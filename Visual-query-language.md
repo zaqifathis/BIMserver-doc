@@ -39,7 +39,7 @@ These are not direct object-properties, but properties that are attached to the 
 
 This query first selects all IfcBuildingStorey objects that have the name "Storey 2", which would usually be used to get one single storey (using a GUID here would be better). However this storey is not added to the resultset (note the "exclude" attribute). The Storey is only used as a path to get to the Window/Door objects that are linked to it.
 
-The [Decomposes](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Decomposes%22) and [Contains](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Contains%22) blocks are uses of reusable blocks. These blocks will recurse through the decomposes and contains relations. The objects encountered on the way also excluded (in this case).
+The [Decomposes](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Decomposes%22) and [Contains](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Contains%22) blocks are uses of [reusable query blocks](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-blocks). These blocks will recurse through the decomposes and contains relations. The objects encountered on the way also excluded (in this case).
 
 Finally the IfcDoor and IfcWindow objects are selected, those are included in the results.
 
