@@ -1,8 +1,33 @@
 This page explains a visual query language. This will not necessarily become a real way of quering BIM models. For now it serves as tool to develop/explain a potential new query language.
 
 # Current considerations
-- Remove the "Root" node, if you consider all the blocks with no input's as starting points, there is no need to have a "Root" node.
 - The condition blocks (gray blocks) seem to use a text-based expression, this is just a simplification. The actual query model will represent these with more building blocks such as "Equal", "Literal" etc...
+
+# Building blocks
+
+## Root
+
+This is where the query "starts".
+
+Consideration: Remove the "Root" node, if you consider all the blocks with no input's as starting points, there is no need to have a "Root" node.
+
+![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/root.png)
+
+## Type query
+
+![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querytype.png)
+
+## Reference
+
+![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryreference.png)
+
+## Conditions
+
+![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querycondition.png)
+
+## Reusable query blocks
+
+![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryreuse.png)
 
 # Examples
 
