@@ -12,6 +12,9 @@ Requirements
 - Should have the possibility to traverse a model (recursively)
 - Should allow for having reusable pieces of query that are used a lot
 - Should have the possibility to simplify for example the concept of Ifc properties via IfcPropertySet etc...
+- It should be possible to "overlay" one query over another query. An example would be a model view definition, governing a specific view of the model, and a user querying within that domain.
+- Programmatic extensibility, for complex query blocks
+- Should at least be possible to have an idea of spatial queries
 
 ## Possible standards/influences
 - http://www.jsoniq.org/
