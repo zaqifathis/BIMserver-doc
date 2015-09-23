@@ -8,13 +8,19 @@ This page explains a visual query language. This will not necessarily become a r
 
 ## Query a list of GUID's
 
+Returns all IfcRoot (and subclasses) objects with the given GUID's (if they exist in the model). Of course these types of queries can also be done for "Name", "ObjectID" etc...
+
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryguids.png)
 
 ## Query multiple types
 
+Queries all doors/windows, plus their subtypes, if any.
+
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/query2types.png)
 
 ## Query name property
+
+Get all walls with name "Muur 1".
 
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querynameproperty.png)
 
