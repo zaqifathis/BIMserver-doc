@@ -25,7 +25,7 @@ This will return all IfcWall objects with a OverallWidth > 2 AND OverallHeight >
 
 ## Query NOT + null
 
-This will return all IfcWall objects that have a Representation
+This will return all IfcWall objects that have a Representation. Could maybe also be visualized by adding an explicite NOT block.
 
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querynotnull.png)
 
@@ -34,5 +34,14 @@ This will return all IfcWall objects that have a Representation
 These are not direct object-properties, but properties that are attached to the object via IfcPropertySet/IfcPropertySingleValue etc...
 
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querycomplexproperties.png)
+
+## Query object with certain property value, but exclude and get referenced
+
+This query first selects all IfcBuildingStorey objects that have the name "Storey 2", which would usually be used to get one single storey (using a GUID here would be better). However this storey is not added to the resultset (note the "exclude" attribute). The Storey is only used as a path to get to the Window/Door objects that are linked to it.
+
+The "Decomposes" and "Contains" blocks are uses of reusable blocks that are defined here and here respectively.
+
+![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/query1storeywindowsanddoors.png)
+
 
 
