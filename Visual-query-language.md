@@ -25,7 +25,7 @@ This will return all IfcWall objects with a OverallWidth > 2 AND OverallHeight >
 
 ## Query NOT + null
 
-This will return all IfcWall objects that have a Representation. Could maybe also be visualized by adding an explicite NOT block.
+This will return all IfcWall objects that have a Representation. Could maybe also be visualized by adding an explicit NOT block.
 
 ![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querynotnull.png)
 
