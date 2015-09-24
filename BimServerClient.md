@@ -2,7 +2,7 @@ To connect to a BIMserver you can use one of the 3 protocols: [SOAP](SOAP), [JSO
 
 # Get the client library
 
-You can download a nightly build [here](http://archive.opensourcebim.org/BIMserver/nightly%20builds/), select the latest date, and then the file named "bimserver-client-lib-[date].zip". Or download a release.
+You can download a recent release from https://github.com/opensourceBIM/BIMserver/releases, and then the file named "bimserver-client-lib-[date].zip". Make sure it matches with your BIMserver version.
 
 Extract the zipfile, copy the jar files from the "lib" and "dep" folders to your own project and include them in the build path.
 
