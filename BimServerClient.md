@@ -9,7 +9,6 @@ Extract the zipfile, copy the jar files from the "lib" and "dep" folders to your
 Of course you can also use the client from source code, in that case download a source zip file, or checkout the projects from GIT.
 
 # Examples
-Connecting via SOAP with authentication, and listing all projects
 
 ```java
 import java.io.File;
