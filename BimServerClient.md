@@ -12,51 +12,70 @@ Of course you can also use the client from source code, in that case download a 
 Connecting via SOAP with authentication, and listing all projects
 
 ```java
-// Create a BIMserver client, this uses a convenience method that logs in as admin@bimserver.org/admin, just copy/paste the code of setupJson and change to your needs
-BimServerClientInterface bimServerClient = LocalDevSetup.setupSoap("http://localhost:8080");
+import java.io.File;
+import java.util.List;
 
-// List project names
-for (SProject project : bimServerClient .getBimsie1ServiceInterface().getAllProjects(true, true)) {
-	System.out.println(project.getName());
+import org.bimserver.LocalDevPluginLoader;
+import org.bimserver.client.json.JsonBimServerClientFactory;
+import org.bimserver.emf.IfcModelInterface;
+import org.bimserver.emf.MetaDataManager;
+import org.bimserver.interfaces.objects.SProject;
+import org.bimserver.plugins.PluginException;
+import org.bimserver.plugins.PluginManager;
+import org.bimserver.plugins.services.BimServerClientException;
+import org.bimserver.plugins.services.BimServerClientInterface;
+import org.bimserver.shared.BimServerClientFactory;
+import org.bimserver.shared.ChannelConnectionException;
+import org.bimserver.shared.PublicInterfaceNotFoundException;
+import org.bimserver.shared.UsernamePasswordAuthenticationInfo;
+import org.bimserver.shared.exceptions.ServiceException;
+
+/**
+ * @author Ruben de Laat
+ * 
+ * This example shows how to connect to a remote BIMserver, using the bimserver-client-download (a bunch of JAR files you have to link in your IDE)
+ * Make sure you actually link the JAR files in you IDE (in eclipse add to build-path), otherwise the PluginManager won't find certain plugins
+ *
+ */
+public class ClientLibDownloadExample {
+	public static void main(String[] args) {
+		try {
+			// Client-side, we also use a PluginManager, for example to be able to use the (IFC) schemas
+			PluginManager pluginManager = LocalDevPluginLoader.createPluginManager(new File("home"));
+			
+			// Create a MetaDataManager, and initialize it, this code will be simplified/hidden in the future
+			MetaDataManager metaDataManager = new MetaDataManager(pluginManager);
+			pluginManager.setMetaDataManager(metaDataManager);	
+			metaDataManager.init();
+
+			// Initialize all loaded plugins
+			pluginManager.initAllLoadedPlugins();
+			
+			// Create a factory for BimServerClients, connnect via JSON in this case
+			BimServerClientFactory factory = new JsonBimServerClientFactory(metaDataManager, "http://localhost:8080");
+			
+			// Create a new client, with given authorization, replace this with your credentials
+			BimServerClientInterface client = factory.create(new UsernamePasswordAuthenticationInfo("admin@bimserver.org", "admin"));
+
+			// Example code assuming at least 1 project in your BIMserver
+			List<SProject> projects = client.getBimsie1ServiceInterface().getAllProjects(true, true);
+			SProject project = projects.get(0);
+
+			// Load a model
+			IfcModelInterface model = client.getModel(project, project.getLastRevisionId(), false, false);
+		} catch (PluginException e) {
+			e.printStackTrace();
+		} catch (ServiceException e) {
+			e.printStackTrace();
+		} catch (ChannelConnectionException e) {
+			e.printStackTrace();
+		} catch (BimServerClientException e) {
+			e.printStackTrace();
+		} catch (PublicInterfaceNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
 }
-```
-
-Connecting with JSON and checking in a file:
-```java
-// Create a BIMserver client, this uses a convenience method that logs in as admin@bimserver.org/admin, just copy/paste the code of setupJson and change to your needs
-BimServerClientInterface bimServerClient = LocalDevSetup.setupJson("http://localhost:8080");
-
-// Create a new project
-SProject newProject = bimServerClient.getBimsie1ServiceInterface().addProject("New project name");
-			
-// This is the file we will be checking in
-File ifcFile = new File("location of the file you want to checkin");
-			
-// Find a deserializer to use
-SDeserializerPluginConfiguration deserializer = bimServerClient.getBimsie1ServiceInterface().getSuggestedDeserializerForExtension("ifc");
-			
-// Checkin
-bimServerClient.checkin(newProject.getOid(), "test", deserializer.getOid(), false, true, ifcFile);
-```
-
-Connect via JSON and Download a revision as IFC
-```java
-// Create a BIMserver client, this uses a convenience method that logs in as admin@bimserver.org/admin, just copy/paste the code of setupJson and change to your needs
-BimServerClientInterface bimServerClient = LocalDevSetup.setupJson("http://localhost:8080");
-
-// Find a serializer
-SSerializerPluginConfiguration serializer = bimServerClient.getBimsie1ServiceInterface().getSerializerByContentType("application/ifc");
-			
-// Get the project details
-SProject project = bimServerClient.getBimsie1ServiceInterface().getProjectByPoid([INSERT OID OF YOUR PROJECT]);
-			
-// Download the latest revision
-Long downloadId = bimServerClient.getBimsie1ServiceInterface().download(project.getLastRevisionId(), colladaSerializer.getOid(), true, false); // Note: sync: false
-InputStream downloadData = bimServerClient.getDownloadData(downloadId, serializer .getOid());
-ByteArrayOutputStream baos = new ByteArrayOutputStream();
-IOUtils.copy(downloadData, baos);
-System.out.println(baos.size() + " bytes downloaded");
-
 ```
 Examples on how to use the client-library can be found [here](https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/serviceinterface).
 
