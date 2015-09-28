@@ -167,3 +167,20 @@ Using AND, OR, XOR
   }]
 }
 ```
+
+# Indices
+
+Right now, BIMserver allows for indices on String fields, but only for the "Store" model, this is the model that contains all the meta-data like Project, Revision, User etc...
+
+This system will have to be extended for the IFC models and for more types
+
+## Types
+
+- String, only exact matching for now, maybe add a case-insensitive one
+- Integer, exact and comparative matching (=, >, >=, <, <=)
+- Double, exact and comparative matching (=, >, >=, <, <=), have to look into the binary encoding of Java's double and weather it allows for lexicographic indexing
+- Boolean, only exact matching (duh)
+
+## Revisions
+
+The complicating factor for the IFC models is that those are versioned.
