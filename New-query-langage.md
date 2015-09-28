@@ -192,3 +192,7 @@ There are a few strategies
 - Simply index everything (all types), this will slow down the write operations a lot, and also increase the database size.
 - Add explicit indices to commonly queried fields in the code. Problem: how to determine the commonly queried fields. We could ask people to (automatically) share their query-patterns.
 - Add dynamic indices based on usage pattern of a specific instance of BIMserver. This is the most complicated, although a very basic implementation (for example, just index every field that has ever been explicitly queried) should be possible.
+
+## To figure out
+
+- Do we want to be able to do queries over multiple projects? This has huge implication on the way indices are stored.
