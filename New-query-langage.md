@@ -193,6 +193,8 @@ There are a few strategies
 - Add explicit indices to commonly queried fields in the code. Problem: how to determine the commonly queried fields. We could ask people to (automatically) share their query-patterns.
 - Add dynamic indices based on usage pattern of a specific instance of BIMserver. This is the most complicated, although a very basic implementation (for example, just index every field that has ever been explicitly queried) should be possible.
 
+Because deleting objects should not happen too often, we just leave the indices (we need them for previous revisions anyways). When a deleted object has been found via an expired index (for that particular revision), we just treat it as if there was no index at all.
+
 ## To figure out
 
-- Do we want to be able to do queries over multiple projects? This has huge implication on the way indices are stored.
+- Do we want to be able to do queries over multiple projects? This has huge implication on the way indices are stored. For now I think no, user always has to provide the poid(s) and roid(s) that are to be queried.
