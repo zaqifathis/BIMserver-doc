@@ -180,6 +180,7 @@ This system will have to be extended for the IFC models and for more types
 - Integer, exact and comparative matching (=, >, >=, <, <=)
 - Double, exact and comparative matching (=, >, >=, <, <=), have to look into the binary encoding of Java's double and weather it allows for lexicographic indexing
 - Boolean, only exact matching (duh)
+- References, to be determined
 
 ## Revisions
 
