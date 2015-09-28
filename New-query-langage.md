@@ -170,9 +170,9 @@ Using AND, OR, XOR
 
 # Indices
 
-Right now, BIMserver allows for indices on String fields, but only for the "Store" model, this is the model that contains all the meta-data like Project, Revision, User etc...
+Right now, BIMserver allows for indices on String fields, but only for the "Store" model, this is the model that contains all the meta-data like Project, Revision, User etc... With these indices it's a lot quicker to for example get a User by username, or Project by name.
 
-This system will have to be extended for the IFC models and for more types
+This system will have to be extended for the IFC models and for more types.
 
 ## Types
 
@@ -185,3 +185,10 @@ This system will have to be extended for the IFC models and for more types
 ## Revisions
 
 The complicating factor for the IFC models is that those are versioned.
+
+## When to index
+
+There are a few strategies
+- Simply index everything (all types), this will slow down the write operations a lot, and also increase the database size.
+- Add explicit indices to commonly queried fields in the code. Problem: how to determine the commonly queried fields. We could ask people to (automatically) share their query-patterns.
+- Add dynamic indices based on usage pattern of a specific instance of BIMserver. This is the most complicated, although a very basic implementation (for example, just index every field that has ever been explicitly queried) should be possible.
