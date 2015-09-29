@@ -201,7 +201,7 @@ Because deleting objects should not happen too often, we just leave the indices 
 
 # List of queries
 
-- Get all IfcTask objects that are planned between date X and Y
-- Get all IfcTask objects that are planned between Project start and now
-- Get all IfcTask objects that are planned for today
+- Get all IfcTask objects that are planned between date X and Y and get the related objects (IfcTask.OperatesOn)
+- Get all IfcTask objects that are planned between Project start and now and get the related objects (IfcTask.OperatesOn)
+- Get all IfcTask objects that are planned for today and get the related objects (IfcTask.OperatesOn)
 - Get all objects linked to a given task with name/id X
