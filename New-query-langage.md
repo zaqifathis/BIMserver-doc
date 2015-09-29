@@ -198,3 +198,10 @@ Because deleting objects should not happen too often, we just leave the indices 
 ## To figure out
 
 - Do we want to be able to do queries over multiple projects? This has huge implication on the way indices are stored. For now I think no, user always has to provide the poid(s) and roid(s) that are to be queried.
+
+# List of queries
+
+- Get all IfcTask objects that are planned between date X and Y
+- Get all IfcTask objects that are planned between Project start and now
+- Get all IfcTask objects that are planned for today
+- Get all objects linked to a given task with name/id X
