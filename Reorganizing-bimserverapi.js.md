@@ -6,6 +6,7 @@
 - Use requirejs for dependency loading
 - Create a build script that concatenates(/minifies) all JS (and CSS)
 - Should also work without the build script, useful for debugging
+- Remove jquery dependency
 - Add JSDOC
 
 # Next step
