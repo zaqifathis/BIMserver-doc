@@ -49,6 +49,7 @@ Do not implement the Plugin class directly, there are sub-interfaces for the dif
 	<PluginImplementation>
 		<interfaceClass>org.bimserver.plugins.serializers.SerializerPlugin</interfaceClass>
 		<implementationClass>test.TestSerializerPlugin</implementationClass>
+		<enabled>true</enabled>
 	</PluginImplementation>
 </PluginDescriptor>
 ```
