@@ -7,7 +7,7 @@ These services are triggered by a new revision, and add extended data to the rev
 First subclass "AbstractAddExtendedDataService", which can be found in the package "org.bimserver.plugins.services" in the "Shared" project.
 
 - Create a constructor and call the super constructor with 2 arguments, name and description.
-- Implement [newRevision](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/services/AbstractService.java#L92)
+- Implement [newRevision](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/services/AbstractService.java#L88)
 - (Optional) Implement [getProgressType](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/services/AbstractService.java#L98) If you want to report progress-data, the default is UNKNOWN
 - (Optional) Implement [getSettingsDefinition](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/Plugin.java#L64) to tell BIMserver you require certain user-defined settings
 
