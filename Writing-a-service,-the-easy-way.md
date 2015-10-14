@@ -26,7 +26,7 @@ public class HtmlService extends AbstractAddExtendedDataService {
 		super("HTML Demo Service", "HTML Demo Service");
 	}
 
-        // This is the method that gets called when there is a new revision, have a look at the documentation for the details
+        // This is the method that gets called when there is a new revision, have a look at the [documentation](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/services/AbstractService.java#L92) for the details
 	@Override
 	public void newRevision(RunningService runningService, BimServerClientInterface bimServerClientInterface, long poid, long roid, String userToken, long soid, SObjectType settings) throws Exception {
 		byte[] bytes = IOUtils.toByteArray(getPluginContext().getResourceAsInputStream("data/example.html"));
