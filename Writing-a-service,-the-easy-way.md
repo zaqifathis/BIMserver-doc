@@ -1,10 +1,14 @@
-(This)[https://github.com/opensourceBIM/BIMserver/wiki/Service-Plugin] page has a description how to write internal services, but as most internal services seem to either checkin an updated revision, or add extended data, some convenience classes have been written that make it a lot easier to write an internal service. This page describes how to use those classes.
+[This](https://github.com/opensourceBIM/BIMserver/wiki/Service-Plugin) page has a description how to write internal services, but as most internal services seem to either checkin an updated revision, or add extended data, some convenience classes have been written that make it a lot easier to write an internal service. This page describes how to use those classes.
 
 # A service that adds extended data
 
 These services are triggered by a new revision, and add extended data to the revision.
 
 First subclass "AbstractAddExtendedDataService", which can be found in the package "org.bimserver.plugins.services" in the "Shared" project.
+
+Then you need to create a constructor and implement 2 methods:
+- [newRevision](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/services/AbstractService.java#L92)
+- [getProgressType](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/services/AbstractService.java#L98)
 
 Full code:
 
