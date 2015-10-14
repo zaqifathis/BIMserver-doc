@@ -38,10 +38,18 @@ public class HtmlService extends AbstractAddExtendedDataService {
 		addExtendedData(bytes, "example.html", "HTML Demo Results", "text/html", bimServerClientInterface, roid, NAMESPACE);
 	}
 
-        // Method to let BIMserver know whether you are going to provide progress-data, only required to implement if progress will be KNOWN
+        // (Optional) Method to let BIMserver know whether you are going to provide progress-data, only required to implement if progress will be KNOWN
 	@Override
 	public ProgressType getProgressType() {
 		return ProgressType.KNOWN;
 	}
 }
 ```
+
+# A service that checks in a new revision
+
+TODO
+
+# Traversing a model
+
+TODO
