@@ -25,10 +25,10 @@ public class HtmlService extends AbstractAddExtendedDataService {
         // A unique namespace, this is used by other software to determine the type of file you uploaded as extended data
 	private static final String NAMESPACE = "htmldemo";
 
-        // Constructor
+        // Constructor, make sure it is a no-arg constructor
 	public HtmlService() {
                 // Give a sensible name and description for the service
-		super("HTML Demo Service", "HTML Demo Service");
+		super("HTML Demo Service", "HTML Demo Service", NAMESPACE);
 	}
 
         // This is the method that gets called when there is a new revision, have a look at the [documentation](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/services/AbstractService.java#L92) for the details
@@ -38,10 +38,10 @@ public class HtmlService extends AbstractAddExtendedDataService {
 		addExtendedData(bytes, "example.html", "HTML Demo Results", "text/html", bimServerClientInterface, roid, NAMESPACE);
 	}
 
-        // Method to let BIMserver know whether you are going to provide progress-data
+        // Method to let BIMserver know whether you are going to provide progress-data, only required to implement if progress will be KNOWN
 	@Override
 	public ProgressType getProgressType() {
-		return ProgressType.UNKNOWN;
+		return ProgressType.KNOWN;
 	}
 }
 ```
