@@ -1,5 +1,7 @@
 Service plugins can extend the functionality of a BIMserver by listening to notifications and acting upon them. For example a ClashDetection Service plugin could create a ClashDetection report as [ExtendedData] when a user checks in a new revision.
 
+Have a look [here](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-service,-the-easy-way) for an easier implementation of services.
+
 # Details
 
 For this plugin you do not need implement any specific methods as long as you subclass [ServicePlugin]. You can register your services by calling the [register] method:
