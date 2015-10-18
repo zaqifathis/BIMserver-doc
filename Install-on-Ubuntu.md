@@ -6,6 +6,8 @@
 
 > This tutorial assumes you already have a working (AWS) server. Make sure you enable the right ports on it as well (80 or 8080)
 
+> For a newer installation tutorial click [here](https://bhushanbharat.wordpress.com/2015/10/13/install-bimserver-on-ubuntu-14-04/)
+
 How to install the BIMserver on a freshly installed Ubuntu 12.04.2 LTS Server Amazon EC2 server.
 
 AMI: Ubuntu Cloud Guest AMI ID ami-d0f89fb9 (x86_64)
