@@ -25,7 +25,6 @@ From 2015-10-14 on, the old bimserverapi.js file has been splitted into multiple
 	}, function (err) {
 		// Error
 	});
-}
 ```
 
 This new API is not depending on jquery anymore.
