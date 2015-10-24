@@ -2,54 +2,37 @@ To make communication with the BIMserver easier we have made a simple API librar
 
 # Requirements
 
-The API is just one file: bimserverapi.js. You can find it on http://[addressofyourserver]:[port]/[optional context path]/js/bimserverapi.js. You can copy it to your own project, but make sure you update the file when you update your BIMserver. There are a few dependencies, which are also on the BIMserver: "sha256.js" for encryption, "String.js" for some additional String manipulation functions, "jquery.cookie.js" for cookie functionality and   "jquery-2.0.2.min.js" as well. For some browsers not supporting "forEach" on arrays you might also need "array.js".
+From 2015-10-14 on, the old bimserverapi.js file has been splitted into multiple files. Here is a little bit of boilerplate code to load it, make sure you include "require.js":
 
-# Communication
+```
+	requirejs.config({
+	    baseUrl: address + "/js", // address should be the address of your bimserver, including optional port
+	    urlArgs: "bust=" + version // the version you use here will be used for caching
+	});
 
-The JavaScript API will communicate via JSON for most of the functions. Only downloading and uploading will sometimes be done without using JSON for performance reasons.
-
-# Bootstrapping
-
-Here is a little code snippet to bootstrap loading a BimServerApi. The notifier object should have the "error" method. The callback will be called on success.
-```javascript
-function loadBimServerApi(address, notifier, callback) {
-	var timeoutId = window.setTimeout(function() {
-		notifier.error("Could not connect");
-	}, 3000);
-	$.getScript(address + "/js/bimserverapi.js").done(function(){
-		window.clearTimeout(timeoutId);
-		Global.bimServerApi = new BimServerApi(address, notifier);
-		Global.bimServerApi.init(function(){
-			Global.bimServerApi.call("ServiceInterface", "getServerInfo", {}, function(serverInfo){
-				callback(serverInfo);
+	requirejs(["bimserverapi_BimServerApi", "bimserverapi_BimServerApiPromise"], function(BimServerApi, BimServerApiPromise) {
+		if (address.endsWith("/")) {
+			address = address.substring(0, address.length - 1);
+		}
+		if (BimServerApi != null) {
+			var bimServerApi = new BimServerApi(address, notifier);
+			bimServerApi.init(function(){
+				// This function gets called in success
 			});
-		});
-	}).fail(function(jqxhr, settings, exception){
-		window.clearTimeout(timeoutId);
-		notifier.error("Could not connect");
+		} else {
+			// error
+		}
+	}, function (err) {
+		// Error
 	});
 }
 ```
 
-When you use the above snippet, you will get a "serverInfo" object back in the callback, this will indicate the state of the running BIMserver:
-```javascript
-	if (serverInfo.serverState == "NOT_SETUP") {
-		// The server has not yet been setup, maybe your GUI can provide a way of doing this
-	} else if (serverInfo.serverState == "UNDEFINED") {
-		// This should never happen...
-	} else if (serverInfo.serverState == "MIGRATION_REQUIRED") {
-		// Migration is required before the BIMserver can function again, maybe you GUI can provide a way of doing this
-	} else if (serverInfo.serverState == "MIGRATION_IMPOSSIBLE") {
-		// There is no migration possible from the current database to the BIMserver version you are using, remove your database, or rollback to a previous version of BIMserver
-	} else if (serverInfo.serverState == "FATAL_ERROR") {
-		// Something fatal has occured, usually this has to do with limited resources such as memory or harddisk space
-	} else if (serverInfo.serverState == "RUNNING") {
-		var username = $("#inputEmail").val()
-		Global.bimServerApi.login(username, $("#inputPassword").val(), $("#rememberMe").is(":checked"), function(data){
-			// Success, we can nog login if we want
-		});
-	}
-```
+This new API is not depending on jquery anymore.
+
+# Communication
+
+The JavaScript API will communicate via JSON for most of the functions. Only downloading and uploading will sometimes be done without using JSON for performance reasons.
 
 # Using the API
 
