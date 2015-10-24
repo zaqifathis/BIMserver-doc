@@ -17,7 +17,7 @@ From 2015-10-14 on, the old bimserverapi.js file has been splitted into multiple
 		if (BimServerApi != null) {
 			var bimServerApi = new BimServerApi(address, notifier);
 			bimServerApi.init(function(){
-				// This function gets called in success
+				// This function gets called on success, you can use bimServerApi now
 			});
 		} else {
 			// error
