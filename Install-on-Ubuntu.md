@@ -55,10 +55,10 @@ Directories chosen for this installation:
 | Command | Description |
 | ------------- | ------------- |
 | cd /opt | Goto the /opt directory |
-| wget http://apache.mirrors.tds.net/tomcat/tomcat-7/v7.0.55/bin/apache-tomcat-7.0.55.zip -O tomcat7.zip | Download tomcat (Make sure you replace this with the latest release!) |
-| unzip apache7.zip | Unzip Tomcat7 |
-| rm tomcat7.zip | Remove the downloaded zip file |
-| mv apache-tomcat-7.0.55 tomcat7 | Rename to convenient name |
+| wget [location of tomcat] -O tomcat7.zip | Download tomcat (Make sure you replace this with the latest release!) |
+| unzip [filename] | Unzip Tomcat7 |
+| rm [filename] | Remove the downloaded zip file |
+| mv [extracted directory] tomcat7 | Rename to convenient name |
 | chmod +x /opt/tomcat7/bin/*.sh | Make .sh files executable |
 | mkdir /opt/tomcat7/conf/policy.d | Create a policy directory |
 | nano /opt/tomcat7/conf/policy.d/default.policy | Edit the default policy file |
