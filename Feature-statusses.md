@@ -1,5 +1,7 @@
 This page should reflect the current status of BIMserver features
 
+If you test a functionality and it works, but it says "test" in this table, please let us know and we will update this document. If you are missing features, please let us know too. If you do not agree on certain decisions, also please let us know! If you want to adopt a feature, well you get the idea...
+
 | Feature | Status | Future plans |
 | ------------- | ------------- | ----- | ------ | 
 | CityGML Serializer | Not working | Move to own repository |
@@ -22,3 +24,6 @@ This page should reflect the current status of BIMserver features
 | IFC 4 Step Deserializer | Working | |
 | IFC 2x3tc1 XML Deserializer | Unknown | Test |
 | IFC 4 XML Deserializer | Unknown | Test |
+| Basic Model Merger | Unknown | Test |
+| GUID Based Model Merger | Unknown | Test |
+| Name Based Model Merger | Unknown | Test |
