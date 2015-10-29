@@ -7,4 +7,4 @@ Samsung SSD (m.2)
 
 | Date | Unzipped IFC File Size | Time (s) | Max Memory | Database size | Result |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| 29-10-2015 | 3.7GB | Long | 25GB | Unknown | Did not finish (stopped during deserialization) |
+| 29-10-2015 | 3.7GB | Long | 25GB | Unknown | Did not finish (stopped during deserialization, Java heap space) |
