@@ -16,14 +16,20 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | FileBasedObjectIDM | Remove, all ObjectIDM stuff will be removed, and replaced by better Query engine |
 | IfcEngine | Working | Move to own repository |
 | XSLT Serializer | Unknown|Remove, not used, inefficient |
-| IFC 2x3tc1 Step Serializer | Working | |
-| IFC 4 Step Serializer | Working | |
+| IFC 2x3tc1 Step Serializer | Working | Stable |
+| IFC 4 Step Serializer | Working | Stable |
 | IFC 2x3tc1 XML Serializer | Unknown | Test |
 | IFC 4 XML Serializer | Unknown | Test |
-| IFC 2x3tc1 Step Deserializer | Working | |
-| IFC 4 Step Deserializer | Working | |
+| IFC 2x3tc1 Step Deserializer | Working | Stable |
+| IFC 4 Step Deserializer | Working | Stable |
 | IFC 2x3tc1 XML Deserializer | Unknown | Test |
 | IFC 4 XML Deserializer | Unknown | Test |
 | Basic Model Merger | Unknown | Test |
 | GUID Based Model Merger | Unknown | Test |
 | Name Based Model Merger | Unknown | Test |
+| Sending Emails | Working | Remove, never seen a database server that sends emails |
+| JSON API | Working | Stable |
+| SOAP API | Unknown | |
+| Protocol Buffers API | Unknown | |
+| org.bimserver.database.query.conditions.* | Working | Will be removed in favor of a new query language |
+| Database migrations | Working | Stable |
