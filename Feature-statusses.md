@@ -42,3 +42,4 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | Plugin Manager | Working | Stable |
 | Running services | Working | Stable, but not intuitive |
 | console.html | Working | Not all features implemented, needs an update |
+| User/rights management | Not fully implemented | Check all actions |
