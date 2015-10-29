@@ -43,3 +43,4 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | Running services | Working | Stable, but not intuitive |
 | console.html | Working | Not all features implemented, needs an update |
 | User/rights management | Not fully implemented | Check all actions |
+| IFC Schema | Working | Will remove as plugin and integrate directly because there is only one implementation and interface is (too) large |
