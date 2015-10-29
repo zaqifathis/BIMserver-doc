@@ -1,6 +1,6 @@
 This page should reflect the current status of BIMserver features
 
-| Short | Status | Plan |
+| Feature | Status | Future plans |
 | ------------- | ------------- | ----- | ------ | 
 | CityGML Serializer | Not working | Move to own repository |
 | Collada Serializer| Not working | Move to own repository |
