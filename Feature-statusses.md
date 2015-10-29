@@ -14,3 +14,11 @@ This page should reflect the current status of BIMserver features
 | FileBasedObjectIDM | Remove, all ObjectIDM stuff will be removed, and replaced by better Query engine |
 | IfcEngine | Working | Move to own repository |
 | XSLT Serializer | Unknown|Remove, not used, inefficient |
+| IFC 2x3tc1 Step Serializer | Working | |
+| IFC 4 Step Serializer | Working | |
+| IFC 2x3tc1 XML Serializer | Unknown | Test |
+| IFC 4 XML Serializer | Unknown | Test |
+| IFC 2x3tc1 Step Deserializer | Working | |
+| IFC 4 Step Deserializer | Working | |
+| IFC 2x3tc1 XML Deserializer | Unknown | Test |
+| IFC 4 XML Deserializer | Unknown | Test |
