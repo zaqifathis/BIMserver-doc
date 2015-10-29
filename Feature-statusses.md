@@ -1,6 +1,6 @@
 This page should reflect the current status of BIMserver features
 
-|Short|Long|Status|Plan
+|Short|Long|Status|Plan|
 |CityGML|CityGML Serializer|Not working|Move to own repository|
 |Collada|Collada Serializer|Not working|Move to own repository|
 |Clash Detection||Not working|Remove entirely, maybe move BCF classes to Shared|
