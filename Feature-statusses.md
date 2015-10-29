@@ -6,7 +6,7 @@ This page should reflect the current status of BIMserver features
 | Collada Serializer| Not working | Move to own repository |
 | Clash Detection | Not working, has been removed from Bonsma Engine | Remove entirely, maybe move BCF classes to Shared |
 | BIMQL | Working, but not as documented (e.a. no geometry) | Decide whether to improve/fix or create a new query language |
-| SceneJS Serializers | Not working | Remove entirely, not used anymore for SceneJS-based tools (BIMsurfer, BIMvie.ws) |
+| SceneJS Serializers | Not working, not updated | Remove entirely, not used anymore for SceneJS-based tools (BIMsurfer, BIMvie.ws) |
 | Java Query Engine | Working | Remove entirely, not used, too complex, inefficient, easier to write a plugin |
 | AdminGUI | Working | Remove, all functionalities available in BIMvie.ws |
 | Charting | Working | Move to own repository |
