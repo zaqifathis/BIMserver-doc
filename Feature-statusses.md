@@ -48,3 +48,4 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | Revision tags | Unknown | Test, maybe add to bimvie.ws |
 | Revision summary | Working | Maybe replace by new query function, for now stays supported |
 | Checkouts | Unknown | Think about the usefulness, was meant for people working on the same model... |
+| Model Checkers | Working | Stable, more implementations needed |
