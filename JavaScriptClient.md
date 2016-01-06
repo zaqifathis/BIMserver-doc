@@ -4,6 +4,8 @@ To make communication with the BIMserver easier we have made a simple API librar
 
 From 2015-10-14 on, the old bimserverapi.js file has been splitted into multiple files. Here is a little bit of boilerplate code to load it, make sure you include "require.js":
 
+Note: This is not yet working on NodeJS, if you figure out how to get it working, please let us know!
+
 ```
 	requirejs.config({
 	    baseUrl: address + "/js", // address should be the address of your bimserver, including optional port
