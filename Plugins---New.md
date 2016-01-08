@@ -7,6 +7,7 @@ Just thinking out load how plugins should be working.
 - Github looks like a good place for a repository
 - WebModule plugins should have no Java code at all, configration should be done with json files, this makes the build process easier for plugin developers. All web modules should also be able to run on a remote host of course.
 - Already an open issue for a long time: Plugins should be running in a sandboxed environment
+- There should be a "template" project developers can use to start with, which includes build scripts and script for uploading releases to github
 
 # Dependencies
 
