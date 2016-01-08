@@ -18,6 +18,8 @@ For example the COBie plugin has dependencies on a separate Java project. This s
 - Will dependencies be included in dependant plugins, or will they simply require the dependency-plugin to be available (and should BIMserver go and get it)?
 - What happens when multiple plugins have the same dependencies? Load them multiple times?
 
+- How to build plugins? They all depend on "Shared". Should we automatically download a specific version of "shared.jar" and compile agains that? Or checkout a specific revision/part of BIMserver?
+
 ## WebModule plugins
 
 Those have been added to BIMserver mainly for development ease, but have been used on deployments a lot as well (you don't need a separate webserver).
