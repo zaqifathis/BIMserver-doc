@@ -18,3 +18,4 @@ Change the "Java Build Path | Source", remove the "PluginBase/genclasses" altoge
 
 Then go to "Libraries" and add a class-folder, "PluginBase/genclasses".
 
+![PluginBase deps](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/pluginbasedeps2.png)
