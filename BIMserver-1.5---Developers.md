@@ -14,5 +14,7 @@ This will criple the eclipse project configuration. After doing maven update, yo
 
 Change the "Java Build Path | Source", remove the "PluginBase/genclasses" altogether, and clear the "Excluded" part of "PluginBase/generated"
 
+![PluginBase deps](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/pluginbasedeps.png)
+
 Then go to "Libraries" and add a class-folder, "PluginBase/genclasses".
 
