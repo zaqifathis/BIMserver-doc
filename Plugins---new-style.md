@@ -10,13 +10,19 @@ BIMserver specific terminology:
 
 Most Java IDEs should support this. The pom file should have:
 
-```<groupId>org.opensourcebim</groupId>```
+```xml
+<groupId>org.opensourcebim</groupId>
+```
 For most plugins for bimserver this is org.opensourcebim, but this can be anything of course, make sure to use lowercase, which is the convention
 
-```<artifactId>ifcplugins</artifactId>```
+```xml
+<artifactId>ifcplugins</artifactId>
+```
 This should describe your plugin bundle, also make sure it is lowercase
 
-```<version>0.0.8-SNAPSHOT</version>```
+```xml
+<version>0.0.8-SNAPSHOT</version>
+```
 Make sure your version on SCM always ends in -SNAPSHOT and releases always omit -SNAPSHOT
 
 ```xml
