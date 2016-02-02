@@ -56,20 +56,22 @@ This is used by the maven release plugin to push/pull to the SCM.
 ```
 Some information about the organization, of course you should fill in the details about your organization.
 
-```
+```xml
 	<issueManagement>
 		<system>GitHub</system>
 		<url>https://github.com/opensourceBIM/IfcOpenShell-BIMserver-plugin/issues</url>
 	</issueManagement>
 ```
 
-```
+```xml
 	<name>IfcOpenShellPlugin</name>
 ```
 
-```	<url>https://github.com/opensourceBIM/IfcOpenShell-BIMserver-plugin</url>
+```xml
+	<url>https://github.com/opensourceBIM/IfcOpenShell-BIMserver-plugin</url>
 ```
-```
+
+```xml
 	<licenses>
 		<license>
 			<name>GNU Affero General Public License</name>
@@ -79,7 +81,7 @@ Some information about the organization, of course you should fill in the detail
 	</licenses>
 ```
 
-```
+```xml
 	<developers>
 		<developer>
 			<email>ruben@logic-labs.nl</email>
