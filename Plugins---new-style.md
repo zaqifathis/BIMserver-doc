@@ -19,7 +19,7 @@ This should describe your plugin bundle, also make sure it is lowercase
 ```<version>0.0.8-SNAPSHOT</version>```
 Make sure your version on SCM always ends in -SNAPSHOT and releases always omit -SNAPSHOT
 
-```
+```xml
 <properties>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
