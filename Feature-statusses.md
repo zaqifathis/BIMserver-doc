@@ -4,16 +4,16 @@ If you test a functionality and it works, but it says "test" in this table, plea
 
 | Feature | Status | Future plans |
 | ------------- | ------------- | ----- | ------ | 
-| CityGML Serializer | Not working | Move to own repository |
-| Collada Serializer| Not working | Move to own repository |
-| Clash Detection | Not working, has been removed from Bonsma Engine | Remove entirely, maybe move BCF classes to Shared |
+| CityGML Serializer | Not working | Moved to own repository |
+| Collada Serializer| Not working | Moved to own repository |
+| Clash Detection | Not working | Moved to own repository. Maybe move BCF classes to Shared |
 | BIMQL | Working, but not as documented (e.a. no geometry) | Decide whether to improve/fix or create a new query language |
-| SceneJS Serializers | Not working, not updated | Remove entirely, not used anymore for SceneJS-based tools (BIMsurfer, BIMvie.ws) |
-| Java Query Engine | Working | Remove entirely, not used, too complex, inefficient, easier to write a plugin |
-| AdminGUI | Working | Remove, all functionalities available in BIMvie.ws |
-| Charting | Working | Move to own repository |
-| JavaModelChecker | Working | Remove, same reason as JavaQueryEngine |
-| FileBasedObjectIDM | Remove, all ObjectIDM stuff will be removed, and replaced by better Query engine |
+| SceneJS Serializers | Not working, not updated | Have been removed entirely, not used anymore for SceneJS-based tools (BIMsurfer, BIMvie.ws) |
+| Java Query Engine | Working | Moved to own repository. Remove entirely, not used, too complex, inefficient, easier to write a plugin |
+| AdminGUI | Removed | Removed |
+| Charting | Working | Moved to own repository |
+| JavaModelChecker | Working | Moved to own repository. Remove, same reason as JavaQueryEngine |
+| FileBasedObjectIDM | Removed | Removed |
 | IfcEngine | Working | Move to own repository |
 | XSLT Serializer | Unknown|Remove, not used, inefficient |
 | IFC 2x3tc1 Step Serializer | Working | Stable |
