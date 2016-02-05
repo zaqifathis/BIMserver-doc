@@ -1,4 +1,4 @@
-> Last updated for Eclipse Kepler
+> Last updated for Eclipse Mars and BIMserver 1.5
 
 We use Eclipse to develop BIMserver. Other IDE's should work as well, but this page describes how to get started with Eclipse.
 
@@ -14,7 +14,7 @@ All BIMserver project are on GitHub. Eclipse should have a Git client already.
 
 ![Add Repository](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git1.png)
 
-* Fill in your GitHub credentials if you have them.
+* Fill in your GitHub credentials if you have them (only required if you are planning to, and have the rights to commit).
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/git2.png)
 
@@ -34,12 +34,12 @@ To run the BIMserver from eclipse, right click the BimServer project, select "Ru
 
 ## Not enough memory
 
-When Java complains there is not enough memory, you can increase the amount of heap memory the BIMserver can use in the "Run configuration". Go to the tab "Arguments" and add the following to the "VM arguments": "-Xmx4g" (this is for 4GB of heap).
+When Java complains there is not enough memory, you can increase the amount of heap memory the BIMserver can use in the "Run configuration". Please read these [notes](https://github.com/opensourceBIM/BIMserver/wiki/Memory-and-Java) on memory in general. Go to the tab "Arguments" and add the following to the "VM arguments": "-Xmx4g" (this is for 4GB of heap).
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/runconfigs.png)
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/runconfig.png)
 
->Make sure you are running a 64bit JVM when assigning more than 1300MB of heap!
+> Make sure you are running a 64bit JVM when assigning more than 1300MB of heap!
 
 ## Adding the plugins property
 
@@ -51,8 +51,6 @@ You can add as many "plugins" parameters. So for example:
 ```
 
 The directories will be scanned 2 levels deep. So you can for example add your complete GIT directory and it will use all plugins of all workspaces in that directory.
-
-> The BIMserver itself uses a few plugins internally as well. You can run BIMserver without them, but most things wont work. So in most cases you probably want to add the BIMserver root directory to the plugins path.
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/plugins.png)
 
