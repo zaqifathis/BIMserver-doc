@@ -33,7 +33,8 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | Protocol Buffers API | Unknown | |
 | org.bimserver.database.query.conditions.* | Working | Will be removed in favor of a new query language |
 | Database migrations | Working | Stable |
-| BimServerClient Library | Working | Stable |
+| BimServerClient Library Basics | Working | Stable |
+| BimServerClient Library - Model modification| Unknown | Test |
 | LowLevelCalls | More tests required | |
 | JAR Starter | Working | Stable |
 | WAR Build | Working | Stable |
