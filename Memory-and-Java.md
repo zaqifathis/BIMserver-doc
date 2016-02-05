@@ -2,11 +2,14 @@ Since a lot of people ask questions about BIMserver and configuring it's Heap Si
 
 Java, unlike most native software, needs to know the maximum amount of memory it can use upfront. You have to tell the JVM with the following argument: 
 
-``` For 4GB
+
+For 4GB
+```
 -Xmx4g
 ```
 
-``` For 16GB
+For 16GB
+```
 -Xmx16g
 ```
 
