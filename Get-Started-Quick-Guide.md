@@ -2,7 +2,7 @@
 
 ### **Stand-alone BIMserver**
 
-1. Read [System Requirements for Ver 1.2](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.2) or [Sytem Requirements for Ver 1.3](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.3)
+1. Read the wiki page for the relevant version of [System Requirements], e.g. (https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.4)
 
 2. Make sure you can execute a JAR file by double-clicking a JAR file. If not, check that [Java](http://www.java.com) is installed properly and the JAVA environment variables are setup correctly.
 
