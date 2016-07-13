@@ -17,6 +17,8 @@ Of course you can also use the client from source code, in that case download a 
 
 # Examples
 
+This example connects to a locally running BIMserver on port 8080, authenticates with the default username/password and then creates a new project.
+
 ```java
 package org.opensourcebim;
 
