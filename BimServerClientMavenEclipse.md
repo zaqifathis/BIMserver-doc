@@ -27,7 +27,27 @@ Add a new Class
 
 Copy and paste the following test-snippet:
 ```java
+import org.bimserver.client.BimServerClient;
+import org.bimserver.client.json.JsonBimServerClientFactory;
+import org.bimserver.shared.ChannelConnectionException;
+import org.bimserver.shared.UsernamePasswordAuthenticationInfo;
+import org.bimserver.shared.exceptions.BimServerClientException;
+import org.bimserver.shared.exceptions.PublicInterfaceNotFoundException;
+import org.bimserver.shared.exceptions.ServiceException;
 
+public class Main {
+	public static void main(String[] args) {
+		try {
+			JsonBimServerClientFactory clientFactory = new JsonBimServerClientFactory("http://localhost:8080");
+			BimServerClient client = clientFactory.create(new UsernamePasswordAuthenticationInfo("admin@bimserver.org", "admin"));
+			client.getServiceInterface().addProject("test", "ifc2x3tc1");
+		} catch (BimServerClientException | ServiceException | ChannelConnectionException e) {
+			e.printStackTrace();
+		} catch (PublicInterfaceNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}
 ```
 
 Run as Java application
