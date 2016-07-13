@@ -16,7 +16,9 @@ If you load a model from an IFC-Step file, the String values of floating point n
 
 # Three models
 
-BIMserver consists of 3 different EMF models:
-*  the IFC Schema model (as described above) that holds IFC data.
-*  the Log schema for logging
-*  the 'store' model that  holds typical BIMserver data like projects, users, revisions etc. 
+BIMserver consists of 5 different EMF models:
+*  The IFC2x3tc1 Schema model (as described above) that holds IFC data.
+*  The IFC4 Schema model (as described above) that holds IFC data.
+*  The Log schema for logging
+*  The Store model that  holds typical BIMserver data like projects, users, revisions etc. 
+*  The Geometry model that stores geometry like vertices/indices/normals/colors
