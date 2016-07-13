@@ -18,88 +18,32 @@ Of course you can also use the client from source code, in that case download a 
 # Examples
 
 ```java
-import java.io.File;
-import java.io.IOException;
+package org.opensourcebim;
 
+import org.bimserver.client.BimServerClient;
 import org.bimserver.client.json.JsonBimServerClientFactory;
-import org.bimserver.emf.IfcModelInterface;
-import org.bimserver.emf.MetaDataManager;
-import org.bimserver.interfaces.objects.SDeserializerPluginConfiguration;
 import org.bimserver.interfaces.objects.SProject;
-import org.bimserver.models.ifc2x3tc1.IfcWall;
-import org.bimserver.plugins.PluginException;
-import org.bimserver.plugins.PluginManager;
-import org.bimserver.plugins.services.BimServerClientException;
-import org.bimserver.plugins.services.BimServerClientInterface;
-import org.bimserver.shared.BimServerClientFactory;
 import org.bimserver.shared.ChannelConnectionException;
-import org.bimserver.shared.PublicInterfaceNotFoundException;
 import org.bimserver.shared.UsernamePasswordAuthenticationInfo;
+import org.bimserver.shared.exceptions.BimServerClientException;
+import org.bimserver.shared.exceptions.PublicInterfaceNotFoundException;
 import org.bimserver.shared.exceptions.ServiceException;
 
-/**
- * @author Ruben de Laat
- * 
- * This example shows how to connect to a remote BIMserver, using the bimserver-client-download (a bunch of JAR files you have to link in your IDE)
- * Make sure you actually link the JAR files in you IDE (in eclipse add to build-path), otherwise the PluginManager won't find certain plugins
- *
- */
-public class ClientLibDownloadExample {
+public class ClientDemo {
 	public static void main(String[] args) {
 		try {
-			// Define the home directory, this is the base for the extracted plugins and more
-			File home = new File("home");
-
-			if (!home.exists()) {
-				home.mkdir();
-			}
-
-			// Client-side, we also use a PluginManager, for example to be able to use the (IFC) schemas
-			PluginManager pluginManager = new PluginManager(new File(home, "tmp"), System.getProperty("java.class.path"), null, null, null);
+			JsonBimServerClientFactory factory = new JsonBimServerClientFactory("http://localhost:8080");
+			BimServerClient client = factory.create(new UsernamePasswordAuthenticationInfo("admin@bimserver.org", "admin"));
 			
-			// Load all plugins available on the classpath
-			pluginManager.loadPluginsFromCurrentClassloader();
-			
-			// Initialize all loaded plugins
-			pluginManager.initAllLoadedPlugins();
-
-			// Create a MetaDataManager, and initialize it, this code will be simplified/hidden in the future
-			MetaDataManager metaDataManager = new MetaDataManager(pluginManager);
-			pluginManager.setMetaDataManager(metaDataManager);	
-			metaDataManager.init();
-
-			// Create a factory for BimServerClients, connnect via JSON in this case
-			BimServerClientFactory factory = new JsonBimServerClientFactory(metaDataManager, "http://localhost:8080");
-			
-			// Create a new client, with given authorization, replace this with your credentials
-			BimServerClientInterface client = factory.create(new UsernamePasswordAuthenticationInfo("admin@bimserver.org", "admin"));
-
-			SProject project = client.getBimsie1ServiceInterface().addProject("test" + Math.random(), "ifc2x3tc1");
-
-			// Look for a deserializer
-			SDeserializerPluginConfiguration deserializer = client.getBimsie1ServiceInterface().getSuggestedDeserializerForExtension("ifc", project.getOid());
-			
-			// Checkin file
-			client.checkin(project.getOid(), "test", deserializer.getOid(), false, true, new File("C:/Git/BIMserver2/TestData/data/AC11-Institute-Var-2-IFC.ifc"));
-			
-			// Refresh project
-			project = client.getBimsie1ServiceInterface().getProjectByPoid(project.getOid());
-			
-			// Load model without lazy loading (complete model at once)
-			IfcModelInterface model = client.getModel(project, project.getLastRevisionId(), true, false);
-			
-			System.out.println(model.getAllWithSubTypes(IfcWall.class).size());
-		} catch (PluginException e) {
+			SProject newProject = client.getServiceInterface().addProject("Test Project", "ifc2x3tc1");
+			System.out.println(newProject.getOid());
+		} catch (BimServerClientException e) {
 			e.printStackTrace();
 		} catch (ServiceException e) {
 			e.printStackTrace();
 		} catch (ChannelConnectionException e) {
 			e.printStackTrace();
-		} catch (BimServerClientException e) {
-			e.printStackTrace();
 		} catch (PublicInterfaceNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
