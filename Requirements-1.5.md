@@ -1,4 +1,4 @@
-System requirements for running a BIMserver version 1.4
+System requirements for running a BIMserver version 1.5
 
 # Memory
 
