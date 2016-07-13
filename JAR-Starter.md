@@ -3,7 +3,7 @@ To make it easier to evaluate BIMserver, a cross platform executable build is cr
 > (Windows) Make sure you do not put the .jar file in C:\Program Files or C:\Program Files (x86) because Windows plays funky tricks with those directories [http://www.hanselman.com/blog/VistasShowCompatibilityFilesAndTheScrumptiousWonderThatIsFileVirtualization.aspx]
 
   * Make sure you have a recent version of a Java Runtime Environment (JRE) or Java Development Kit (JDK), a JRE can be downloaded here http://java.com.
-  * Download the latest JAR build from http://download.bimserver.org/
+  * Download the latest JAR build from https://github.com/opensourceBIM/BIMserver/releases
   * Some browsers rename the JAR file, make sure it ends with ".jar"
   * Start the program by double clicking, you should see the following window:
 http://bimserver.googlecode.com/svn/wiki/images/jar.png
