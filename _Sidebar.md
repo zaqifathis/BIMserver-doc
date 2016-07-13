@@ -4,6 +4,7 @@
 * [Requirements Version 1.3](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.3)
 * [Requirements Version 1.4](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.4)
 * [Requirements Version 1.4 > 2015-09-12](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.4---2015-09-12)
+* [Requirements Version 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.5)
 * [Download](https://github.com/opensourceBIM/BIMserver/wiki/Download)
 * [JAR Starter](https://github.com/opensourceBIM/BIMserver/wiki/JAR-Starter)
 * [Setup](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
