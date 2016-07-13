@@ -11,10 +11,10 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | SceneJS Serializers | Not working, not updated | Have been removed entirely, not used anymore for SceneJS-based tools (BIMsurfer, BIMvie.ws). Geometry can now be downloaded with https://github.com/opensourceBIM/BinarySerializers |
 | Java Query Engine | Working | Moved to own repository. Remove entirely, not used, too complex, inefficient, easier to write a plugin |
 | AdminGUI | Removed | Removed |
-| Charting | Working | Moved to own repository |
-| JavaModelChecker | Working | Moved to own repository. Remove, same reason as JavaQueryEngine |
+| (https://github.com/opensourceBIM/Charting)[Charting] | Working | Moved to own repository |
+| (https://github.com/opensourceBIM/JavaModelChecker)[JavaModelChecker] | Working | Moved to own repository. Remove, same reason as JavaQueryEngine |
 | FileBasedObjectIDM | Removed | Removed |
-| IfcEngine | Working | Move to own repository |
+| (https://github.com/opensourceBIM/IfcEngine)[IfcEngine] | Not working| Move to own repository |
 | XSLT Serializer | Unknown|Remove, not used, inefficient |
 | IFC 2x3tc1 Step Serializer | Working | Stable |
 | IFC 4 Step Serializer | Working | Stable |
