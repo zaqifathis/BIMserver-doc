@@ -1,8 +1,24 @@
+First, make sure your Eclipse version has maven support, if it hasn't you need to install the m2e plugin first.
+
+Create a new Maven project (you can also convert an existing project to a Maven project if you want).
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/createproject.png)
+
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/createmavenproject.png)
+
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/createmavenproject2.png)
+
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/createmavenproject3.png)
-![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/createmavenproject3.png)
+
+Edit the pom.xml file. Add the following (make sure the version of the bimserverclientlib matches with the version of BIMserver you want to connect to):
+```xml
+	<dependencies>
+		<dependency>
+			<groupId>org.opensourcebim</groupId>
+			<artifactId>bimserverclientlib</artifactId>
+			<version>1.5.51</version>
+		</dependency>
+	</dependencies>
+```
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/editpom.png)
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/runasjava.png)
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/runasjavaresults.png)
