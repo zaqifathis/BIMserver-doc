@@ -42,7 +42,7 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | Logging of events | Not working | Update |
 | Plugin Manager | Working | Stable |
 | Running services | Working | Stable, but not intuitive |
-| (https://github.com/opensourceBIM/Console)[Console] | Working | Moved to own repository |
+| [https://github.com/opensourceBIM/Console](Console) | Working | Moved to own repository |
 | User/rights management | Not fully implemented | Check all actions |
 | IFC Schema | Working | Will remove as plugin and integrate directly because there is only one implementation and interface is (too) large. Maybe even move .exp parsing logic to build process, and store serialized version of schema |
 | GeoTag | Unknown | Test, maybe add to bimvie.ws |
