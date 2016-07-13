@@ -4,7 +4,7 @@ If you test a functionality and it works, but it says "test" in this table, plea
 
 | Feature | Status | Future plans |
 | ------------- | ------------- | ----- | ------ | 
-| CityGML Serializer | Not working | Moved to own repository |
+| (https://github.com/opensourceBIM/CityGML)[CityGML Serializer] | Not working | Moved to own repository |
 | Collada Serializer| Not working | Moved to own repository |
 | Clash Detection | Not working | Moved to own repository. Maybe move BCF classes to Shared |
 | BIMQL | Working, but not as documented (e.a. no geometry) | Decide whether to improve/fix or create a new query language |
