@@ -2,9 +2,16 @@ To connect to a BIMserver you can use one of the 3 protocols: [SOAP](SOAP), [JSO
 
 # Get the client library
 
-You can download a recent release from https://github.com/opensourceBIM/BIMserver/releases, and then the file named "bimserver-client-lib-[date].zip". Make sure it matches with your BIMserver version.
+From version 1.5 on we are using Maven for all dependency management. We suggest you do too when using the BIMserver Client library as it makes installing all the required dependencies a lot easier.
 
-Extract the zipfile, copy the jar files from the "lib" and "dep" folders to your own project and include them in the build path.
+You can find the Maven XML snippet in the latest release notes (for example https://github.com/opensourceBIM/BIMserver/releases/tag/parent-1.5.51). Make sure you match the version of the client with the version of your BIMserver. It  looks something like this:
+```xml
+<dependency>
+    <groupId>org.opensourcebim</groupId>
+    <artifactId>bimserverclientlib</artifactId>
+    <version>1.5.51</version>
+</dependency>
+```
 
 Of course you can also use the client from source code, in that case download a source zip file, or checkout the projects from GIT.
 
