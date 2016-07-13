@@ -13,7 +13,7 @@ You can find the Maven XML snippet in the latest release notes (for example http
 </dependency>
 ```
 
-If you are using Eclipse for development, and you are not familiar with Maven yet, use (BimServerClientMavenEclipse)[This tutorial].
+If you are using Eclipse for development, and you are not familiar with Maven yet, use [BimServerClientMavenEclipse)This tutorial).
 
 Of course you can also use the client from source code, in that case download a source zip file, or checkout the projects from GIT.
 
