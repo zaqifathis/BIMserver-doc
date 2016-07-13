@@ -1,1 +1,1 @@
-The downloads are available at the (https://github.com/opensourceBIM/BIMserver/releases)[Releases] page
+The downloads are available at the [https://github.com/opensourceBIM/BIMserver/releases](Releases) page
