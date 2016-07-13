@@ -6,8 +6,8 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | ------------- | ------------- | ----- | ------ | 
 | [https://github.com/opensourceBIM/CityGML](CityGML Serializer) | Not working | Moved to own repository |
 | [https://github.com/opensourceBIM/Collada](Collada Serializer)| Not working | Moved to own repository |
-| Clash Detection | Not working | Moved to own repository. Maybe move BCF classes to Shared |
-| BIMQL | Working, but not as documented (e.a. no geometry) | Decide whether to improve/fix or create a new query language |
+| [https://github.com/opensourceBIM/ClashDetectionService](Clash Detection) | Not working | Moved to own repository. Maybe move BCF classes to Shared |
+| [https://github.com/opensourceBIM/bimql](BIMQL) | Working, but not as documented (e.a. no geometry) | Decide whether to improve/fix or create a new query language |
 | SceneJS Serializers | Not working, not updated | Have been removed entirely, not used anymore for SceneJS-based tools (BIMsurfer, BIMvie.ws) |
 | Java Query Engine | Working | Moved to own repository. Remove entirely, not used, too complex, inefficient, easier to write a plugin |
 | AdminGUI | Removed | Removed |
