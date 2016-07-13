@@ -30,7 +30,7 @@ All BIMserver project are on GitHub. Eclipse should have a Git client already.
 
 # Running BIMserver from Eclipse
 
-To run the BIMserver from eclipse, right click the BimServer project, select "Run As" and then "Java Application", eclipse will look for classes with main methods, you have to select "LocalDevBimServerStarter", which is in the package "org.bimserver".
+To run the BIMserver from eclipse, right click the BimServer**Jar** project, select "Run As" and then "Java Application", eclipse will look for classes with main methods, you have to select "LocalDevBimServerStarter", which is in the package "org.bimserver".
 
 ## Not enough memory
 
