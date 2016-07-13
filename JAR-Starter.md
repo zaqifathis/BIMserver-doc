@@ -5,8 +5,7 @@ To make it easier to evaluate BIMserver, a cross platform executable build is cr
   * Make sure you have a recent version of a Java Runtime Environment (JRE) or Java Development Kit (JDK), a JRE can be downloaded here http://java.com.
   * Download the latest JAR build from https://github.com/opensourceBIM/BIMserver/releases
   * Some browsers rename the JAR file, make sure it ends with ".jar"
-  * Start the program by double clicking, you should see the following window:
-http://bimserver.googlecode.com/svn/wiki/images/jar.png
+  * Start the program by double clicking
   * Normally you wont have to change any settings and you can simply start the BIMserver by clicking "Start"
 
 > (OSX) You can change the default JVM under Applications | Utilities | Java Preferences, on some OSX installations this somehow defaults to Java 5 where the BIMserver needs version 6._
