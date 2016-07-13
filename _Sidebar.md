@@ -12,7 +12,6 @@
 * [Ubuntu installation](https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu)
 * [Security](https://github.com/opensourceBIM/BIMserver/wiki/Security)
 * [Memory Usage](https://github.com/opensourceBIM/BIMserver/wiki/Memory-usage)
-* [Best practices](https://github.com/opensourceBIM/BIMserver/wiki/Best-practices)
 * [Large databases](https://github.com/opensourceBIM/BIMserver/wiki/Large-databases)
 
 **Developers**
