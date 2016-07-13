@@ -19,7 +19,20 @@ Edit the pom.xml file. Add the following (make sure the version of the bimserver
 		</dependency>
 	</dependencies>
 ```
+
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/editpom.png)
+
+Add a new Class
+![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/addclass.png)
+
+Copy and paste the following test-snippet:
+```java
+
+```
+
+Run as Java application
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/runasjava.png)
+
+The results (note: When you run the application a second time, you will get an error saying the project name is already used).
 ![](https://github.com/opensourceBIM/BIMserver/blob/master/Documentation/img/runasjavaresults.png)
 
