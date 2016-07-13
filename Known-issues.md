@@ -13,6 +13,8 @@ For linux:
 
 # Inverses
 
+> Update: This has actually been fixed within BIMserver. These 12 combinations of incomplete inverses will be set by BIMserver on checkin.
+
 IFC has the notion of "inverse" relations. EMF has the notion of "opposites", where possible those have been mapped, but it's not always possible so sometimes "inverses" won't work the way you would think.
 
 The problem with inverses in IFC is that one can be defined on type "A", referencing a certain field on type "B" which in turn does not point to the field of type "A", but to a field on a super- or subtype of "A". EMF does not support these kind of opposites. The effect of this is that opposites won't automatically be set when setting one reference, you will have to set the other as well.
