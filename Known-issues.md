@@ -40,6 +40,7 @@ This is not really an issue, but it's good to know why not all schema data can b
 
 # Eclipse/Java 7
 
+> Note: BIMserver > 1.5 will only run on Java 8 or higher
 > Note: This problem has been resolved in Eclipse Kepler
 
 Compiling the BIMserver in Eclipse 3.7.1 and then running in Java 7 (update 2) currently generates the following error, which is probably a bug in the eclipse compiler:
