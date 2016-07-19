@@ -65,6 +65,8 @@ https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJa
 ### Checkin IFC file
 https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/CheckinIfcFile.java
 
+# Older examples (might not work anymore in 1.5)
+
 Examples on how to use the client-library can be found [here](https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/serviceinterface).
 
 Examples on how to use the client-side EMF model can be found [here]( https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/emf)
