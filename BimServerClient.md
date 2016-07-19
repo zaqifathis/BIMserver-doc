@@ -53,6 +53,18 @@ public class ClientDemo {
 	}
 }
 ```
+
+BIMserver 1.5 examples:
+
+### Connect to a BIMserver
+https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/Connecting.java
+
+### Create a project
+https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/CreateProject.java
+
+### Checkin IFC file
+https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/CheckinIfcFile.java
+
 Examples on how to use the client-library can be found [here](https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/serviceinterface).
 
 Examples on how to use the client-side EMF model can be found [here]( https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/emf)
