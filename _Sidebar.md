@@ -10,7 +10,7 @@
 * [Setup](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
 
 **Deployment**
-* [Ubuntu installation](https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu)
+* [Ubuntu installation 1.3](https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu)
 * [Security](https://github.com/opensourceBIM/BIMserver/wiki/Security)
 * [Memory Usage](https://github.com/opensourceBIM/BIMserver/wiki/Memory-usage)
 * [More memory](https://github.com/opensourceBIM/BIMserver/wiki/Memory-and-Java)
