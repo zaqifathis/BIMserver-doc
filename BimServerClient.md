@@ -47,8 +47,6 @@ public class ClientDemo {
 			e.printStackTrace();
 		} catch (ChannelConnectionException e) {
 			e.printStackTrace();
-		} catch (PublicInterfaceNotFoundException e) {
-			e.printStackTrace();
 		}
 	}
 }
