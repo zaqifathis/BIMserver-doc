@@ -56,6 +56,14 @@
 * [IFC STEP Encoding](https://github.com/opensourceBIM/BIMserver/wiki/IFC-STEP-Encoding)
 * [Communication](https://github.com/opensourceBIM/BIMserver/wiki/Communication)
 * [Global changes in 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Global-changes-in-1.5)
+* [Writing a service](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-service,-the-easy-way)
+* [Services/Notifications](https://github.com/opensourceBIM/BIMserver/wiki/Services-Notifications)
+* [BIMserver 1.5 Developers](https://github.com/opensourceBIM/BIMserver/wiki/BIMserver-1.5---Developers)
+* [Checkin](https://github.com/opensourceBIM/BIMserver/wiki/Checkin)
+* [Extended data](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data)
+* [Extended data schema](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data-Schema)
+* [Object IDM](https://github.com/opensourceBIM/BIMserver/wiki/Object-IDMs)
+
 * New developments
   * [Depricated](https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
   * [New query language](https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
@@ -65,6 +73,7 @@
     * [DecomposesContains](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22DecomposesContains%22)
     * [Properties](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Properties%22)
     * [Reusable](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-blocks)
+  * [Reorganizing BIMserver JavaScript API](https://github.com/opensourceBIM/BIMserver/wiki/Reorganizing-bimserverapi.js)
 
 **General**
 * [FAQ](https://github.com/opensourceBIM/BIMserver/wiki/FAQ)
@@ -74,13 +83,3 @@
 * [License](https://github.com/opensourceBIM/BIMserver/wiki/License)
 * [Feature statusses](https://github.com/opensourceBIM/BIMserver/wiki/Feature-statusses)
 * [Roadmap](https://github.com/opensourceBIM/BIMserver/wiki/Roadmap)
-
-** Other **
-* [](https://github.com/opensourceBIM/BIMserver/wiki/BIMserver-1.5---Developers)
-* [](https://github.com/opensourceBIM/BIMserver/wiki/Checkin)
-* [](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data)
-* [](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data-Schema)
-* [](https://github.com/opensourceBIM/BIMserver/wiki/Object-IDMs)
-* [](https://github.com/opensourceBIM/BIMserver/wiki/Reorganizing-bimserverapi.js)
-* [](https://github.com/opensourceBIM/BIMserver/wiki/Services-Notifications)
-* [](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-service,-the-easy-way)
