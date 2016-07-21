@@ -65,7 +65,7 @@
 * [Object IDM](https://github.com/opensourceBIM/BIMserver/wiki/Object-IDMs)
 
 * New developments
-  * [Depricated](https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
+  * [Deprecated](https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
   * [New query language](https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
   * [Visual query language](https://github.com/opensourceBIM/BIMserver/wiki/Visual-query-language)
     * [Contains](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Contains%22)
