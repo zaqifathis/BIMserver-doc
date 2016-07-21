@@ -51,6 +51,8 @@
 * [Database/Versioning](https://github.com/opensourceBIM/BIMserver/wiki/Database---Versioning)
 * [IFC STEP Encoding](https://github.com/opensourceBIM/BIMserver/wiki/IFC-STEP-Encoding)
 * [Communication](https://github.com/opensourceBIM/BIMserver/wiki/Communication)
+* New developments
+  * [Visual query language](https://github.com/opensourceBIM/BIMserver/wiki/Visual-query-language)
 
 **General**
 * [FAQ](https://github.com/opensourceBIM/BIMserver/wiki/FAQ)
@@ -80,6 +82,5 @@
 * [](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-blocks)
 * [](https://github.com/opensourceBIM/BIMserver/wiki/Roadmap)
 * [](https://github.com/opensourceBIM/BIMserver/wiki/Services-Notifications)
-* [](https://github.com/opensourceBIM/BIMserver/wiki/Visual-query-language)
 * [](https://github.com/opensourceBIM/BIMserver/wiki/Web-socket-error)
 * [](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-service,-the-easy-way)
