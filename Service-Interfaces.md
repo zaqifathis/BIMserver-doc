@@ -4,20 +4,20 @@ In BIMserver 1.3/1.4 a lot of methods were moved to interfaces that are prefixed
 
 # The interfaces
 
-| Namespace | Name | Functionalities | Link |
+| Namespace | Name | Link |
 | --------- | ---- | --------------- | ---- |
-| org.bimserver | AdminInterface | | [AdminInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/AdminInterface.java) |
-| org.bimserver | AuthInterface | | [AuthInterface.java] (https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/AuthInterface.java)
-| org.bimserver | MetaInterface | | [MetaInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/MetaInterface.java)
-| org.bimserver | PluginInterface | | [PluginInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/PluginInterface.java)
-| org.bimserver | ServiceInterface | | [ServiceInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/ServiceInterface.java)
-| org.bimserver | SettingsInterface | | [SettingsInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/SettingsInterface.java)
-| org.buildingsmart.bimsie1 | Bimsie1AuthInterface | | [Bimsie1AuthInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1AuthInterface.java)
-| org.buildingsmart.bimsie1 | Bimsie1LowLevelInterface | | [Bimsie1LowLevelInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1LowLevelInterface.java)
-| org.buildingsmart.bimsie1 | Bimsie1NotificationInterface | | [Bimsie1NotificationInterface](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1NotificationInterface.java)
-| org.buildingsmart.bimsie1 | Bimsie1NotificationRegistryInterface | | [Bimsie1NotificationRegistryInterface](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1NotificationRegistryInterface.java)
-| org.buildingsmart.bimsie1 | Bimsie1RemoteServiceInterface | | [Bimsie1RemoteServiceInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1RemoteServiceInterface.java)
-| org.buildingsmart.bimsie1 | Bimsie1ServiceInterface | | [Bimsie1ServiceInterface](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1ServiceInterface.java)
+| org.bimserver | AdminInterface | [AdminInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/AdminInterface.java) |
+| org.bimserver | AuthInterface | [AuthInterface.java] (https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/AuthInterface.java)
+| org.bimserver | MetaInterface | [MetaInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/MetaInterface.java)
+| org.bimserver | PluginInterface | [PluginInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/PluginInterface.java)
+| org.bimserver | ServiceInterface | [ServiceInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/ServiceInterface.java)
+| org.bimserver | SettingsInterface | [SettingsInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/shared/interfaces/SettingsInterface.java)
+| org.buildingsmart.bimsie1 | Bimsie1AuthInterface | [Bimsie1AuthInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1AuthInterface.java)
+| org.buildingsmart.bimsie1 | Bimsie1LowLevelInterface | [Bimsie1LowLevelInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1LowLevelInterface.java)
+| org.buildingsmart.bimsie1 | Bimsie1NotificationInterface | [Bimsie1NotificationInterface](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1NotificationInterface.java)
+| org.buildingsmart.bimsie1 | Bimsie1NotificationRegistryInterface | [Bimsie1NotificationRegistryInterface](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1NotificationRegistryInterface.java)
+| org.buildingsmart.bimsie1 | Bimsie1RemoteServiceInterface | [Bimsie1RemoteServiceInterface.java](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1RemoteServiceInterface.java)
+| org.buildingsmart.bimsie1 | Bimsie1ServiceInterface | [Bimsie1ServiceInterface](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/bimsie1/Bimsie1ServiceInterface.java)
 
 # Access
 
