@@ -1,3 +1,5 @@
+Update: This is not the current roadmap
+
 This is just a proposal, lots of changes expected
 
 September 2015
