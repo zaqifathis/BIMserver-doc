@@ -13,6 +13,7 @@
 * [Ubuntu installation](https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu)
 * [Security](https://github.com/opensourceBIM/BIMserver/wiki/Security)
 * [Memory Usage](https://github.com/opensourceBIM/BIMserver/wiki/Memory-usage)
+* [More memory](https://github.com/opensourceBIM/BIMserver/wiki/Memory-and-Java)
 * [Large databases](https://github.com/opensourceBIM/BIMserver/wiki/Large-databases)
 
 **Developers**
@@ -26,6 +27,7 @@
 
 **Clients**
    * [Java Client](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClient)
+     * [](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClientMavenEclipse)
    * [PHP Client](https://github.com/opensourceBIM/BIMserver/wiki/PHP-Client-Library)
    * [JavaScript Client](https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient)
    * [Plugin Development](https://github.com/opensourceBIM/BIMserver/wiki/Plugin-Development)
@@ -54,3 +56,30 @@
 * [FAQ](https://github.com/opensourceBIM/BIMserver/wiki/FAQ)
 * [Known Issues](https://github.com/opensourceBIM/BIMserver/wiki/Known-Issues)
 * [License](https://github.com/opensourceBIM/BIMserver/wiki/License)
+
+** Other **
+* [](https://github.com/opensourceBIM/BIMserver/wiki/BIMserver-1.5---Developers)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/BIMsurfer-Serializers)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Checkin)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data-Schema)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Feature-statusses)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Global-changes-in-1.5)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Object-IDMs)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Performance-statistics)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---New)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---new-style)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Problems-with-querying-IFC)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Reorganizing-bimserverapi.js)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Contains%22)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Decomposes%22)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22DecomposesContains%22)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Properties%22)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-blocks)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Roadmap)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Services-Notifications)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Visual-query-language)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Web-socket-error)
+* [](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-service,-the-easy-way)
