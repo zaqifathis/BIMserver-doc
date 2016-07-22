@@ -28,7 +28,7 @@
 
 **Clients**
 * [Java Client](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClient)
-     * [](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClientMavenEclipse)
+     * [Java Client (Maven)](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClientMavenEclipse)
 * [PHP Client](https://github.com/opensourceBIM/BIMserver/wiki/PHP-Client-Library)
 * [JavaScript Client](https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient)
 
