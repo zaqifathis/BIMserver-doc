@@ -63,6 +63,7 @@
 * [Object IDM](https://github.com/opensourceBIM/BIMserver/wiki/Object-IDMs)
 
 **New developments**
+* [New remote service interface](https://github.com/opensourceBIM/BIMserver/wiki/New-remote-service-interface)
 * [Plugins new](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---New)
 * [Deprecated](https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
 * [New query language](https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
