@@ -33,8 +33,7 @@
 * [JavaScript Client](https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient)
 
 **BIMServer Developers**
-* [Plugins new](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---New)
-* [Plugins new 2](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---new-style)
+* [Plugins in 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---new-style)
 * [BIMsurfer serializers](https://github.com/opensourceBIM/BIMserver/wiki/BIMsurfer-Serializers)
  * [Plugin Development](https://github.com/opensourceBIM/BIMserver/wiki/Plugin-Development)
    * [Serializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Serializer Plugin)
@@ -65,6 +64,7 @@
 * [Object IDM](https://github.com/opensourceBIM/BIMserver/wiki/Object-IDMs)
 
 **New developments**
+* [Plugins new](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---New)
 * [Deprecated](https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
 * [New query language](https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
 * [Visual query language](https://github.com/opensourceBIM/BIMserver/wiki/Visual-query-language)
