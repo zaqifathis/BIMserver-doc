@@ -27,10 +27,12 @@
 * [Writing a remote service](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-remote-service)
 
 **Clients**
-   * [Java Client](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClient)
+* [Java Client](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClient)
      * [](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClientMavenEclipse)
-   * [PHP Client](https://github.com/opensourceBIM/BIMserver/wiki/PHP-Client-Library)
-   * [JavaScript Client](https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient)
+* [PHP Client](https://github.com/opensourceBIM/BIMserver/wiki/PHP-Client-Library)
+* [JavaScript Client](https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient)
+
+**BIMServer Developers**
   * [Plugins new](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---New)
   * [Plugins new 2](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---new-style)
   * [BIMsurfer serializers](https://github.com/opensourceBIM/BIMserver/wiki/BIMsurfer-Serializers)
@@ -46,8 +48,6 @@
      * [ObjectIDM Plugin](https://github.com/opensourceBIM/BIMserver/wiki/ObjectIDM-Plugin)
      * [Schema Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Schema-Plugin)
      * [Service Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Service-Plugin)
-
-**BIMServer Developers**
 * [Eclipse](https://github.com/opensourceBIM/BIMserver/wiki/Eclipse)
 * [Eclipse Modeling Framework](https://github.com/opensourceBIM/BIMserver/wiki/Eclipse-Modeling-Framework)
 * [Embedding](https://github.com/opensourceBIM/BIMserver/wiki/Embedding)
