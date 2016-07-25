@@ -21,7 +21,7 @@
 
 # Namespaces
 
-|Short name|Long name||
+| Short name | Long name | |
 |IFC2X3TC1_STEP|Ifc2x3tc1 STEP|
 |IFC4_STEP|Ifc4 STEP|
 |IFC2x3TC1_XML|Ifc2x3tc1 XML|
