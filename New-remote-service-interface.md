@@ -19,6 +19,16 @@
 - Step
 - Xml
 
+# Namespaces
+
+|Short name|Long name||
+|IFC2X3TC1_STEP|Ifc2x3tc1 STEP|
+|IFC4_STEP|Ifc4 STEP|
+|IFC2x3TC1_XML|Ifc2x3tc1 XML|
+|IFC4_XML|Ifc4 XML|
+|BCF1.0_ZIP|BCF 1.0 ZIP|
+|BCF2.0_ZIP|BCF_2.0 ZIP|
+
 - Setup OAuth
 - Setup ServiceConfig
 ```java
