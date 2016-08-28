@@ -6,10 +6,8 @@ For windows:
 Paths can contain spaces, but not multiple spaces together:
   * Right: "C:\Program Files\BIMserver 1.0"
   * Wrong: "C:\Program Files\BIMserver  1.0"
-For OSX:
-  * Paths cannot contain any spaces at all
-For linux:
-  * Paths cannot contain any spaces at all
+  * For OSX: Paths cannot contain any spaces at all
+  * For linux: Paths cannot contain any spaces at all
 
 # Inverses
 
