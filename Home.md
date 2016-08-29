@@ -1,6 +1,5 @@
 ## The links you need:
 
-* **Support**: http://support.opensourcebim.org (if you can't login, send an e-mail to help@opensourcebim.org)
 * **Issues**: http://issues.bimserver.org
 * **Wiki**: you found it already
 
