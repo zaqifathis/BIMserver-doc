@@ -1,1 +1,1 @@
-To be written
+See: https://github.com/opensourceBIM/BIMserver-Repository/wiki/Extended-Data-Schemas
