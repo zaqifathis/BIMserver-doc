@@ -29,6 +29,8 @@
 | IFC_XML_4 |http://www.buildingsmart-tech.org/specifications/ifcxml-releases/ifcxml4-release/ifcxml4-release-summary |
 | IFC_JSON_2x3TC1 | No formal specification |
 | IFC_JSON_4 | No formal specification |
+| IFC_JSON_GEOM_2x3TC1 | No formal specification |
+| IFC_JSON_GEOM_4 | No formal specification |
 | BCF_ZIP_1.0 | http://www.buildingsmart-tech.org/specifications/bcf-releases/bcfxml-v1 |
 | BCF_ZIP_2.0 | https://github.com/BuildingSMART/BCF-XML |
 | GLTF_1.0 | https://github.com/KhronosGroup/glTF/blob/master/specification/README.md |
