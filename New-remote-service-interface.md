@@ -36,7 +36,7 @@
 | GLTF_1.0 | https://github.com/KhronosGroup/glTF/blob/master/specification/README.md |
 | GLTF_BIN_1.0 | https://github.com/KhronosGroup/glTF/blob/master/extensions/Khronos/KHR_binary_glTF/README.md |
 | COLLADA_1.5 | https://www.khronos.org/files/collada_spec_1_5.pdf |
-| 
+| KMZ_2.2.0 | http://schemas.opengis.net/kml/2.2.0/ |
 
 - Setup OAuth
 - Setup ServiceConfig
