@@ -21,14 +21,20 @@
 
 # Namespaces
 
-| Short name | Long name | |
+| Short name | Long name | URL |
 |---|---|---|
-| IFC2X3TC1_STEP | Ifc2x3tc1 STEP |
-| IFC4_STEP | Ifc4 STEP |
-| IFC2x3TC1_XML | Ifc2x3tc1 XML |
-| IFC4_XML | Ifc4 XML |
-| BCF1.0_ZIP | BCF 1.0 ZIP |
-| BCF2.0_ZIP | BCF_2.0 ZIP |
+| IFC_STEP_2X3TC1 | Ifc2x3tc1 STEP | http://www.buildingsmart-tech.org/specifications/ifc-releases/ifc2x3-tc1-release |
+| IFC_STEP_4 | Ifc4 STEP | http://www.buildingsmart-tech.org/specifications/ifc-releases/ifc4-release |
+| IFC_XML_2x3TC1 | Ifc2x3tc1 XML | http://www.buildingsmart-tech.org/specifications/ifcxml-releases/ifcxml2x3-release/summary |
+| IFC_XML_4 | Ifc4 XML | http://www.buildingsmart-tech.org/specifications/ifcxml-releases/ifcxml4-release/ifcxml4-release-summary |
+| IFC_JSON_2x3TC1 | IFC JSON 2x3tc1 | No format specification |
+| IFC_JSON_4 | IFC JSON 4 | No formal specification |
+| BCF_ZIP_1.0 | BCF 1.0 ZIP | http://www.buildingsmart-tech.org/specifications/bcf-releases/bcfxml-v1 |
+| BCF_ZIP_2.0 | BCF_2.0 ZIP | https://github.com/BuildingSMART/BCF-XML |
+| GLTF_1.0 | GLTF 1.0 | https://github.com/KhronosGroup/glTF/blob/master/specification/README.md |
+| GLTF_BIN_1.0 | Binary GLTF 1.0 | https://github.com/KhronosGroup/glTF/blob/master/extensions/Khronos/KHR_binary_glTF/README.md |
+| COLLADA_1.5 | Collada 1.5 | https://www.khronos.org/files/collada_spec_1_5.pdf |
+| 
 
 - Setup OAuth
 - Setup ServiceConfig
