@@ -16,4 +16,9 @@ There are two reasons why this alternative method exists:
 - To allow the models to be downloaded by browsers, in a way that the downloaded file does not have to be "extracted" from another file (for example JSON).
 - For efficiency reasons (for example JSON would have to encode binary data in base64)
 
-The way to use this method is to send a HTTP GET to [yourbimserver]/download. You have to include the TopicId as a URL parameter.
+The way to use this method is to send a HTTP GET to [yourbimserver]/download. The required parameters:
+| Name | Description | Required |
+| token | | Yes |
+| topicId | | Yes |
+| serializerOid | | Yes |
+| zip | Whether to download the content in a ZIP file | No |
