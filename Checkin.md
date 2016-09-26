@@ -4,13 +4,15 @@ Checkin is the term used to upload complete models to a BIMserver. Because there
 
 # Usual way
 
-The usual way would be to call the checkin method on the Bimsie1ServiceInterface. Just look at the documentation for the method. It will return a topicId/checkinId, of which the use is explained (here)[# CheckinId / TopicId].
+The usual way would be to call the [https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/ServiceInterface.java#L547](checkin) method on the ServiceInterface. Just look at the documentation for the method. It will return a topicId/checkinId, of which the use is explained (here)[# TopicId].
+
+If you are using JSON, you'll have to encode the actual data (the ``data`` argument) in base64. Because of this, using this method is not the most efficient way of checking-in a file in BIMserver. It is however the most consistent way, because this call works just like all other (300) BIMserver calls.
 
 Any immediate exception will be in the return message as well, just as all other calls to BIMserver. See [https://github.com/opensourceBIM/BIMserver/wiki/JSON-API#exception] for the JSON interface.
 
 # Other way
 
-Because of the overhead of the different implementations of the Service Interfaces (SOAP, PB, JSON), and because of the nature of the checkin method (pushing a lot of data, which makes streaming more suited) there is another way. You can (HTTP) POST the data to /upload. The required fields are:
+Because of the overhead of the different implementations of the Service Interfaces (SOAP, PB, JSON) and because of the nature of the checkin method (pushing a lot of data, which makes streaming more suitable) there is another way. You can (HTTP) POST the data to ```/upload```. The required fields are:
 ```
 token: The token you are using, this is the token you get from calling login
 deserializerOid: Id of the deserializer you want to use
@@ -23,7 +25,7 @@ sync: Whether to call this synchronous or not
 The upload servlet will return a bit of json, the structure:
 ```
 {
-  checkinid: The checkinid
+  topicId: The topicId // Just like the one you get from calling ServiceInterface.checkin
 }
 ```
 
@@ -36,7 +38,7 @@ If something goes wrong, it will return:
 
 # CheckinId / TopicId
 
-CheckinId and TopicId are the same thing, should be renamed everywhere to TopicId.
+CheckinId and TopicId are the same thing, recently this has been renamed everywhere to TopicId.
 
 Get progress
 ```
