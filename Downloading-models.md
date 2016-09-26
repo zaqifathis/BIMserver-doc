@@ -17,6 +17,7 @@ There are two reasons why this alternative method exists:
 - For efficiency reasons (for example JSON would have to encode binary data in base64)
 
 The way to use this method is to send a HTTP GET to [yourbimserver]/download. The required parameters:
+
 | Name | Description | Required |
 |---|---|---|
 | token | Your BIMserver auth token | Yes |
