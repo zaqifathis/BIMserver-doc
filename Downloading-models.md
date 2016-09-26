@@ -23,4 +23,4 @@ The way to use this method is to send a HTTP GET to [yourbimserver]/download. Th
 | token | Your BIMserver auth token | Yes |
 | topicId | The TopicId returned by either downloadRevisions or downloadByNewJsonQuery | Yes |
 | serializerOid | The serializer you want to use | Yes |
-| zip | Whether to download the content in a ZIP file, even if this is "no", the content might still be compressed, this depends on the HTTP headers sent/received | No |
+| zip | Whether to download the content in a ZIP file. Even if this is "no", the content might still be compressed, this depends on the HTTP headers sent/received | No |
