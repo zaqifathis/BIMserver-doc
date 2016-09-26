@@ -22,6 +22,8 @@
   * [SOAP](https://github.com/opensourceBIM/BIMserver/wiki/SOAP)
    * [JSON](https://github.com/opensourceBIM/BIMserver/wiki/JSON-API)
    * [Protocol Buffers](https://github.com/opensourceBIM/BIMserver/wiki/Protocol-Buffers)
+* Common functions
+  * [Checkin](https://github.com/opensourceBIM/BIMserver/wiki/Checkin)
 * [Low Level Calls](https://github.com/opensourceBIM/BIMserver/wiki/Low-Level-Calls)
 * [Endpoints](https://github.com/opensourceBIM/BIMserver/wiki/Endpoints)
 * [Writing a remote service](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-remote-service)
@@ -57,7 +59,6 @@
 * [Writing a service](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-service,-the-easy-way)
 * [Services/Notifications](https://github.com/opensourceBIM/BIMserver/wiki/Services-Notifications)
 * [BIMserver 1.5 Developers](https://github.com/opensourceBIM/BIMserver/wiki/BIMserver-1.5---Developers)
-* [Checkin](https://github.com/opensourceBIM/BIMserver/wiki/Checkin)
 * [Extended data](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data)
 * [Extended data schema](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data-Schema)
 * [Object IDM](https://github.com/opensourceBIM/BIMserver/wiki/Object-IDMs)
