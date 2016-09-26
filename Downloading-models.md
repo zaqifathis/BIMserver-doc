@@ -18,7 +18,8 @@ There are two reasons why this alternative method exists:
 
 The way to use this method is to send a HTTP GET to [yourbimserver]/download. The required parameters:
 | Name | Description | Required |
-| token | | Yes |
-| topicId | | Yes |
-| serializerOid | | Yes |
+| - | - | - |
+| token | Your BIMserver auth token | Yes |
+| topicId | The TopicId returned by either downloadRevisions or downloadByNewJsonQuery | Yes |
+| serializerOid | The serializer you want to use | Yes |
 | zip | Whether to download the content in a ZIP file | No |
