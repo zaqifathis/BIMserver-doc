@@ -1,4 +1,11 @@
-System requirements for running a BIMserver version 1.5
+System requirements for running a BIMserver version 1.5:
+- A working (outgoing) internet connection (from your BIMserver). BIMserver needs this in order to
+  - Install plugins that are hosted on the internet
+  - Send emails (via SMTP)
+  - Connect to other BIMservers (for example when running remote services)
+- A working (incoming) internet connection (to allow other people to connect)
+- Disk (to store the database, logs, plugins etc...)
+- Java 8 (or higher)
 
 # Memory
 
