@@ -31,8 +31,8 @@
 | IFC_JSON_4 | application/json | No formal specification |
 | IFC_JSON_GEOM_2x3TC1 | | No formal specification |
 | IFC_JSON_GEOM_4 | | No formal specification |
-| BCF_ZIP_1.0 | Not specified | http://www.buildingsmart-tech.org/specifications/bcf-releases/bcfxml-v1 |
-| BCF_ZIP_2.0 | Not specified | https://github.com/BuildingSMART/BCF-XML |
+| BCF_ZIP_1.0 | application/zip | http://www.buildingsmart-tech.org/specifications/bcf-releases/bcfxml-v1 |
+| BCF_ZIP_2.0 | application/zip | https://github.com/BuildingSMART/BCF-XML |
 | GLTF_1.0 | model/gltf+json | https://github.com/KhronosGroup/glTF/blob/master/specification/README.md |
 | GLTF_BIN_1.0 | model/gltf.binary | https://github.com/KhronosGroup/glTF/blob/master/extensions/Khronos/KHR_binary_glTF/README.md |
 | COLLADA_1.5 | model/vnd.collada+xml | https://www.khronos.org/files/collada_spec_1_5.pdf |
