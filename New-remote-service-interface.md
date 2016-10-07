@@ -37,7 +37,7 @@
 | GLTF_BIN_1.0 | model/gltf.binary | https://github.com/KhronosGroup/glTF/blob/master/extensions/Khronos/KHR_binary_glTF/README.md |
 | COLLADA_1.5 | model/vnd.collada+xml | https://www.khronos.org/files/collada_spec_1_5.pdf |
 | KMZ_2.2.0 | application/vnd.google-earth.kml+xml .kml | http://schemas.opengis.net/kml/2.2.0/ |
-| BINARY_GEOMETRY_6 | | No formal specification |
+| BINARY_GEOMETRY_6 | binarygeometry | No formal specification |
 | CITYGML_2.0.0 | application/gml | https://portal.opengeospatial.org/files/?artifact_id=47842 |
 
 - Setup OAuth
