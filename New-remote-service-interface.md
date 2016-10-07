@@ -41,6 +41,7 @@
 | CITYGML_2.0.0 | application/gml | https://portal.opengeospatial.org/files/?artifact_id=47842 |
 | 3D_VIS_JSON_1.0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/3D-Visualization-Effects |
 | VALIDATION_JSON_1.0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/Validation-Report |
+| LOD_CSV_1.0 | text/csv | https://github.com/opensourceBIM/BIMserver-Repository/wiki/LOD-CSV |
 
 - Setup OAuth
 - Setup ServiceConfig
