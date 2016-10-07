@@ -19,7 +19,7 @@
 - Step
 - Xml
 
-# Namespaces
+# Schemas
 
 | Short name | Content-Type | URL |
 |---|---|---|
