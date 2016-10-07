@@ -39,6 +39,8 @@
 | KMZ_2.2.0 | application/vnd.google-earth.kml+xml .kml | http://schemas.opengis.net/kml/2.2.0/ |
 | BINARY_GEOMETRY_6 | binarygeometry | No formal specification |
 | CITYGML_2.0.0 | application/gml | https://portal.opengeospatial.org/files/?artifact_id=47842 |
+| 3D_VIS_JSON_1.0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/3D-Visualization-Effects |
+| VALIDATION_JSON_1.0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/Validation-Report |
 
 - Setup OAuth
 - Setup ServiceConfig
