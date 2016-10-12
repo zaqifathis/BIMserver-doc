@@ -2,13 +2,7 @@ Downloading models from a BIMserver can be done in different ways.
 
 # Using JSON/SOAP/Protocol Buffers
 
-This is the most consistent way, because all other communications with BIMserver happens in the same way. The are 2 methods available. Both methods return a TopicId. This TopicId can be passed to ServiceInterface.getDownloadData to get the actual data.
-
-## ServiceInterface.downloadRevisions
-This will just download 1 or more revisions.
-
-## ServiceInterface.downloadByNewJsonQuery
-This method allows you to do some filtering by supplying a query.
+This is the most consistent way, because all other communications with BIMserver happens in the same way. The method you call is "ServiceInterface.download". This method returns a TopicId (Long). This TopicId can be passed to ServiceInterface.getDownloadData to get the actual data. This process has been splitted over 2 methods because the process potentially takes a long time and could produce errors along the way. The TopicId can also be used to get information about the progress.
 
 # Using the download servlet (direct HTTP)
 
