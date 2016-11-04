@@ -11,6 +11,7 @@
 
 **Deployment**
 * [Ubuntu installation 1.3](https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu)
+* [Windows installation](https://github.com/opensourceBIM/BIMserver/wiki/Tomcat-on-windows)
 * [Security](https://github.com/opensourceBIM/BIMserver/wiki/Security)
 * [Memory Usage](https://github.com/opensourceBIM/BIMserver/wiki/Memory-usage)
 * [More memory](https://github.com/opensourceBIM/BIMserver/wiki/Memory-and-Java)
