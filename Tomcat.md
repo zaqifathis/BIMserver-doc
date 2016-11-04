@@ -9,8 +9,9 @@ Use the "32-bit/64-bit Windows Service Installer". This will install tomcat as a
 
 ## Setting the amount of heap memory
 
-On windows. tomcat installs this little icon in your system tray. Right-Click on the icon and select "Configure...". The following window will appear.
+On windows. tomcat installs this little icon in your system tray. ![](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/tomcaticon.png)
+ Right-Click on the icon and select "Configure...". The following window will appear.
 
-
+![](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/tomcatconfigwindows.png)
 
 Open the Java tab and you can change the max amount of memory. Make sure you restart tomcat after changing anything.
