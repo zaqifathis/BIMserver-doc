@@ -1,4 +1,4 @@
-Although installing and configuring tomcat has been documented plenty on the web, this page will try and cover the main problems people have encountered when running BIMserver on tomcat.
+Although installing and configuring tomcat has been documented plenty on the web, this page will try and cover the main problems people have encountered when running BIMserver on tomcat on windows.
 
 # Version
 To run BIMserver on Tomcat, you need version 8 or higher. 8.5 and 9 have both been tested and work.
