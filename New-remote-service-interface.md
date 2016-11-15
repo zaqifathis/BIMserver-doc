@@ -42,6 +42,7 @@
 | 3D_VIS_JSON_1.0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/3D-Visualization-Effects |
 | VALIDATION_JSON_1.0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/Validation-Report |
 | LOD_CSV_1.0 | text/csv | https://github.com/opensourceBIM/BIMserver-Repository/wiki/LOD-CSV |
+| 3D_INFO_EXCEL_1.0 | application/excel | |
 
 - Setup OAuth
 - Setup ServiceConfig
