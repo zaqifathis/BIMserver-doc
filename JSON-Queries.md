@@ -80,3 +80,33 @@ Example of the body of an IFC file for the IfcWall query:
 #4= IFCWALLSTANDARDCASE('1EzyXtTtv7RAinwkFVr6_I',$,'SW - 012',$,$,$,$,'4EF7C877-777E-476C-AB-31-EAE3DFD46F92');
 #5= IFCWALLSTANDARDCASE('08u2EMNSnBL8Izk3LNHAwK',$,'SW - 013',$,$,$,$,'08E02396-5DCC-4B54-84-BD-B8355744AE94');
 ```
+
+The above IFC file is invalid because none of the IfcWallStandardCase entities references an IfcOwnerHistory, also no IfcProject is there. Also note that no geometry is present, so you won't see anything in an IFC viewer.
+
+To make creating valid IFC files with queries easier, a few predefined includes are available.
+
+To make the IfcWall example work, this would be the new query:
+```json
+{
+  "type": "IfcWall",
+  "includeAllSubtypes": true,
+  "includes": [
+    "validifc:ContainedInStructure",
+    "validifc:OwnerHistory",
+    "validifc:Representation",
+    "validifc:ObjectPlacement"
+  ]
+}
+```
+
+Each include has a different function.
+validifc:ContainedInStructure will make sure all the containment references "up" will be followed.
+
+```
+IfcProject
+  IfcSite
+    IfcBuilding
+      IfcBuildingStorey
+        IfcSpace
+          IfcWall
+```
