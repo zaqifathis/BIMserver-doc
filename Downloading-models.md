@@ -14,7 +14,7 @@ The download method has 4 parameters.
 
 More information about [Projects](https://github.com/opensourceBIM/BIMserver/wiki/SProject)
 More information about [Revisions](https://github.com/opensourceBIM/BIMserver/wiki/SRevision)
-More information about [Serializer](https://github.com/opensourceBIM/BIMserver/wiki/SRevision)
+More information about [Serializers](https://github.com/opensourceBIM/BIMserver/wiki/SSerializerPluginConfiguration)
 
 # Step 2, downloading the data
 
