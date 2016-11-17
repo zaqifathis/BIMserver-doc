@@ -1,5 +1,7 @@
 Downloading models from a BIMserver is a two-step process.
 
+> Note, when you are using a BIMserver client API, you probably don't need to implement any of this
+
 # Step 1, initiate the download
 
 The method you call is [ServiceInterface.download](https://thisisanexperimentalserver.com/apps/console/?interface=ServiceInterface&method=download). This method returns a TopicId (Long). This TopicId can be used to get the actual data described in [step2](#step-2-downloading-the-data). This process has been split over 2 methods because the process potentially takes a long time and could produce errors along the way. The TopicId can also be used to get information about the progress.
