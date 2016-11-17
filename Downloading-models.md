@@ -12,16 +12,9 @@ The download method has 4 parameters.
 - serializerOid. Tell BIMserver how to serialize the results of the query. See (Acquire serializer)
 - sync. Whether this method should return right away (async) or wait for the process to finsh (sync)
 
-An example of a few methods you can use to get all the required arguments for "download"
-```
-project = [ServiceInterface.getProjectsByName](https://thisisanexperimentalserver.com/apps/console/?interface=ServiceInterface&method=getProjectsByName)("project name")[0];
-serializer = ServiceInterface.getSerializerByContentType("application/ifc");
-roid = project.getLastRevisionId;
-long topicId = ServiceInterface.download([roid], query, serializer.oid, false);
-```
-
 More information about [Projects](https://github.com/opensourceBIM/BIMserver/wiki/SProject)
 More information about [Revisions](https://github.com/opensourceBIM/BIMserver/wiki/SRevision)
+More information about [Serializer](https://github.com/opensourceBIM/BIMserver/wiki/SRevision)
 
 # Step 2, downloading the data
 
