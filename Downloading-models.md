@@ -5,7 +5,7 @@ Downloading models from a BIMserver is a two-step process.
 The method you call is "ServiceInterface.download". This method returns a TopicId (Long). This TopicId can be passed to ServiceInterface.getDownloadData to get the actual data (see step 2). This process has been split over 2 methods because the process potentially takes a long time and could produce errors along the way. The TopicId can also be used to get information about the progress.
 
 The download method method has 4 parameters.
-- roids (A set/list of roid). A roid can be acquired by called .oid on a Revision, .lastRevisionId on a Project
+- roids (A set/list of roid). A roid can be acquired by called .oid on a Revision, .lastRevisionId on a Project, also see (https://github.com/opensourceBIM/BIMserver/wiki/Revision)
 - query (A valid JSON query) When you are using the BIMserver API over JSON, you need to base64 this
 - serializerOid. Tell BIMserver how to serialize the results of the query. See (Acquire serializer)
 - sync. Whether this method should return right away (async) or wait for the process to finsh (sync)
@@ -18,7 +18,7 @@ roid = project.getLastRevisionId;
 long topicId = ServiceInterface.download([roid], query, serializer.oid, false);
 ```
 
-More information about (Projects)[]
+More information about (Projects)[https://github.com/opensourceBIM/BIMserver/wiki/Project]
 
 # Step 2, downloading the data
 
