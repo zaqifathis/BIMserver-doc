@@ -68,6 +68,20 @@ The same as for GUIDs, you can also query by OID (ObjectID)
 }
 ```
 
+# Properties
+
+Every IFC object has a fixed set of fields. For example the IfcWindow has the fields "OverallWidth" and "OverallHeight" and [many more](http://www.buildingsmart-tech.org/ifc/IFC2x4/rc2/html/schema/ifcsharedbldgelements/lexical/ifcwindow.htm). To use properties that are not defined in the schema, every object can be extended with more properties by adding them by using IfcPropertySet and IfcProperty. For example to query all IfcWall objecst that are external:
+
+```json
+{
+  "type": "IfcWall",
+  "includeAllSubtypes": true,
+  "properties": {
+    "IsExternal": true
+  }
+}
+```
+
 # Serializing to IFC
 
 In a lot of cases, the results of the query will be serialized as IFC. The previous examples would however not result in valid IFC files. For an IFC file to be valid, it not only has to solely contain objects that conform to the IFC schema, also certain references should always be included. For example every object must have an IfcOwnerHistory. Also there must always be an 1 IfcProject object.
