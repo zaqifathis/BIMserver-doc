@@ -44,6 +44,12 @@ When your model for example only contains IfcWallStandardCase objects, this quer
 }
 ```
 
+You can also query multiple types, the next example would give you all IfcDoor and IfcWindow objects
+```json
+{
+  "types": ["IfcDoor", "IfcWindow"]
+}
+
 # GUID query
 
 When you already know the GUID(s) of (an) object(s), you can query those directly:
@@ -62,3 +68,15 @@ The same as for GUIDs, you can also query by OID (ObjectID)
 }
 ```
 
+# Serializing to IFC
+
+In a lot of cases, the results of the query will be serialized as IFC. The previous examples would however not result in valid IFC files. For an IFC file to be valid, it not only has to solely contain objects that conform to the IFC schema, also certain references should always be included. For example every object must have an IfcOwnerHistory. Also there must always be an 1 IfcProject object.
+
+Example of the body of an IFC file for the IfcWall query:
+```
+#1= IFCWALLSTANDARDCASE('1hmUg1hfv4UPf0UtHFe7ta',$,'SW - 009',$,$,$,$,'6BC1EA81-AE9E-4479-9A-40-7B744FA07DE4');
+#2= IFCWALLSTANDARDCASE('05UYVl82vAa8mFc3FMTYL7',$,'SW - 010',$,$,$,$,'057A27EF-202E-4A90-8C-0F-9833D6762547');
+#3= IFCWALLSTANDARDCASE('37ZZt1nzL2nu6PjSr0Wa2a',$,'SW - 011',$,$,$,$,'C78E3DC1-C7D5-42C7-81-99-B5CD408240A4');
+#4= IFCWALLSTANDARDCASE('1EzyXtTtv7RAinwkFVr6_I',$,'SW - 012',$,$,$,$,'4EF7C877-777E-476C-AB-31-EAE3DFD46F92');
+#5= IFCWALLSTANDARDCASE('08u2EMNSnBL8Izk3LNHAwK',$,'SW - 013',$,$,$,$,'08E02396-5DCC-4B54-84-BD-B8355744AE94');
+```
