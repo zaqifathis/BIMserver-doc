@@ -24,22 +24,25 @@ More information about (Projects)[https://github.com/opensourceBIM/BIMserver/wik
 
 ## Using JSON/SOAP/Protocol Buffers
 
-This is the most consistent way, because all other communications with BIMserver happens in the same way. 
+This is the most consistent way, because all other communications with BIMserver happens in the same way.
 
 ```
-ServiceInterface.getDownloadData(topicId);
+SDownloadResult result = ServiceInterface.getDownloadData(topicId);
+DataHandler dataHandler = result.file;
 ```
 
 ## Using the download servlet (direct HTTP)
 
+This is the preferred way.
+
 There are two reasons why this alternative method exists:
 - To allow the models to be downloaded by browsers, in a way that the downloaded file does not have to be "extracted" from another file (for example JSON).
-- For efficiency reasons (for example JSON would have to encode binary data in base64)
+- For efficiency reasons (for example when using the API over JSON, data would have to be encoded in base64, SOAP would have to do some mtom magic etc...)
 
 The way to use this method is to send a HTTP GET to [yourbimserver]/download. The required parameters:
 
 | Name | Description | Required |
 |---|---|---|
 | token | Your BIMserver auth token | Yes |
-| topicId | The TopicId returned by either the download method | Yes |
+| topicId | The TopicId returned by the download method | Yes |
 | zip | Whether to download the content in a ZIP file. Even if this argument is not "on" or not supplied, the content might still be compressed, this depends on the HTTP headers sent/received | No |
