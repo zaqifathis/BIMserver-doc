@@ -27,7 +27,7 @@
   * [Checkin](https://github.com/opensourceBIM/BIMserver/wiki/Checkin)
   * [Download](https://github.com/opensourceBIM/BIMserver/wiki/Downloading-models)
 * Data Model
-  * [Project](https://github.com/opensourceBIM/BIMserver/wiki/Checkin)
+  * [Project](https://github.com/opensourceBIM/BIMserver/wiki/Project)
   * [Revision](https://github.com/opensourceBIM/BIMserver/wiki/Revision)
 * [Low Level Calls](https://github.com/opensourceBIM/BIMserver/wiki/Low-Level-Calls)
 * [Endpoints](https://github.com/opensourceBIM/BIMserver/wiki/Endpoints)
