@@ -18,14 +18,7 @@ roid = project.getLastRevisionId;
 long topicId = ServiceInterface.download([roid], query, serializer.oid, false);
 ```
 
-Alternative methods of getting hold of a project are
-```
-ServiceInterface.getProjectByPoid(poid);
-ServiceInterface.getTopLevelProjectByName(name);
-ServiceInterface.getAllProjects(Boolean onlyTopLevel, Boolean onlyActive);
-ServiceInterface.getAllReadableProjects();
-ServiceInterface.getAllWritableProjects();
-```
+More information about (Projects)[]
 
 # Step 2, downloading the data
 
