@@ -2,7 +2,7 @@ Downloading models from a BIMserver is a two-step process.
 
 # Step 1, initiate the download
 
-The method you call is (ServiceInterface.download)[https://thisisanexperimentalserver.com/apps/console/?interface=ServiceInterface&method=download]. This method returns a TopicId (Long). This TopicId can be passed to ServiceInterface.getDownloadData to get the actual data (see step 2). This process has been split over 2 methods because the process potentially takes a long time and could produce errors along the way. The TopicId can also be used to get information about the progress.
+The method you call is [ServiceInterface.download](https://thisisanexperimentalserver.com/apps/console/?interface=ServiceInterface&method=download). This method returns a TopicId (Long). This TopicId can be passed to ServiceInterface.getDownloadData to get the actual data (see step 2). This process has been split over 2 methods because the process potentially takes a long time and could produce errors along the way. The TopicId can also be used to get information about the progress.
 
 The download method method has 4 parameters.
 - roids (A set/list of roid). A roid can be acquired by called .oid on a Revision, .lastRevisionId on a Project, also see (https://github.com/opensourceBIM/BIMserver/wiki/Revision)
