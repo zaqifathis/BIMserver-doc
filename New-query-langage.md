@@ -1,4 +1,4 @@
-> This was the design document, the actual implementation is documented [here]()
+> This was the design document, the actual implementation is documented [here](https://github.com/opensourceBIM/BIMserver/wiki/JSON-Queries)
 
 BIMserver has had several ways of querying the stored models, but none have been very useful so far. This page will describe the requirements of a new query language that should replace all the other ways of querying data.
 
