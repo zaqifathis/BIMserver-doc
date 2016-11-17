@@ -100,8 +100,11 @@ To make the IfcWall example work, this would be the new query:
 ```
 
 Each include has a different function.
+
+## validifc:ContainedInStructure
 validifc:ContainedInStructure will make sure all the containment references "up" will be followed.
 
+Example project structure
 ```
 IfcProject
   IfcSite
@@ -110,3 +113,16 @@ IfcProject
         IfcSpace
           IfcWall
 ```
+
+For each IfcWall encountered, the tree will be "walked" all the way up. This automatically includes the IfcProject which is a requirement for a valid IFC file
+
+## validifc:OwnerHistory
+
+For every IfcWall, the OwnerHistory will be included
+
+## validifc:Representation
+
+For every IfcWall, the Representation will be included. This can be a very large network/tree of objects. Representation is what gives object geometry in a viewer
+
+## validifc:ObjectPlacement
+This makes sure that all objects will also include their placement, which put's the object's geometry in the right place.
