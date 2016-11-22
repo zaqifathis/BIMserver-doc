@@ -31,18 +31,18 @@
 | IFC_JSON_4 | application/json | No formal specification |
 | IFC_JSON_GEOM_2x3TC1 | application/json | No formal specification |
 | IFC_JSON_GEOM_4 | application/json | No formal specification |
-| BCF_ZIP_1.0 | application/zip | http://www.buildingsmart-tech.org/specifications/bcf-releases/bcfxml-v1 |
-| BCF_ZIP_2.0 | application/zip | https://github.com/BuildingSMART/BCF-XML |
-| GLTF_1.0 | model/gltf+json | https://github.com/KhronosGroup/glTF/blob/master/specification/README.md |
-| GLTF_BIN_1.0 | model/gltf.binary | https://github.com/KhronosGroup/glTF/blob/master/extensions/Khronos/KHR_binary_glTF/README.md |
-| COLLADA_1.5 | model/vnd.collada+xml | https://www.khronos.org/files/collada_spec_1_5.pdf |
-| KMZ_2.2.0 | application/vnd.google-earth.kml+xml .kml | http://schemas.opengis.net/kml/2.2.0/ |
+| BCF_ZIP_1_0 | application/zip | http://www.buildingsmart-tech.org/specifications/bcf-releases/bcfxml-v1 |
+| BCF_ZIP_2_0 | application/zip | https://github.com/BuildingSMART/BCF-XML |
+| GLTF_1_0 | model/gltf+json | https://github.com/KhronosGroup/glTF/blob/master/specification/README.md |
+| GLTF_BIN_1_0 | model/gltf.binary | https://github.com/KhronosGroup/glTF/blob/master/extensions/Khronos/KHR_binary_glTF/README.md |
+| COLLADA_1_5 | model/vnd.collada+xml | https://www.khronos.org/files/collada_spec_1_5.pdf |
+| KMZ_2_2_0 | application/vnd.google-earth.kml+xml .kml | http://schemas.opengis.net/kml/2.2.0/ |
 | BINARY_GEOMETRY_6 | binarygeometry | No formal specification |
-| CITYGML_2.0.0 | application/gml | https://portal.opengeospatial.org/files/?artifact_id=47842 |
-| 3D_VIS_JSON_1.0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/3D-Visualization-Effects |
-| VALIDATION_JSON_1.0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/Validation-Report |
+| CITYGML_2_0_0 | application/gml | https://portal.opengeospatial.org/files/?artifact_id=47842 |
+| VIS_3D_JSON_1_0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/3D-Visualization-Effects |
+| VALIDATION_JSON_1_0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/Validation-Report |
 | LOD_CSV_1.0 | text/csv | https://github.com/opensourceBIM/BIMserver-Repository/wiki/LOD-CSV |
-| 3D_INFO_EXCEL_1.0 | application/excel | |
+| INFO_3D_EXCEL_1.0 | application/excel | |
 
 - Setup OAuth
 - Setup ServiceConfig
