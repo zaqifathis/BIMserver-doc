@@ -20,6 +20,7 @@ comment: A comment for this checkin
 merge: Whether to merge or not (not working properly, just keep it to false)
 poid: Id of the project
 sync: Whether to call this synchronous or not
+file: The actual data of the file you are uploading, make sure this is the last field
 ```
 
 The upload servlet will return a bit of json, the structure:
