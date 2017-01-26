@@ -1,5 +1,7 @@
 BIMserver 1.5 has undergone a few changes in order to reduce the amount of memory used during checkin and download.
 
+# Checkin
+
 Basically before the checkin process looked like this:
 1. User uploads IFC file, deserializer parses it and stores it in an EMF model, inverses are generated automatically by EMF.
 2. Geometry is generated using a Render Engine, all the geometry (can be a lot, depending on the model) is also stored in the in-memory EMF model.
@@ -11,3 +13,7 @@ Now it looks like this (when you select a "Streaming" deserializer, the old one 
 3. With some special queries, the geometry parts are queried and split into small groups of objects which are then serialized and sent to the Ifc Engine, the results are stored in the database as well. Only 10 elements are selected for each small IFC file, and the amount of IFC Render instances is never greater than the amount of cores in the machine. This step greatly improved the processing time on multi-core machines.
 
 You will still see the amount of memory increase quite quickly during checken, a large portion can be attributed to the fact that BerkeleyDB is quite the aggressive cacher.
+
+# Download
+
+When downloading the same improvement has been made. Previously the complete model was loaded from the database into an EMF model, after that it would be serialized. Now this just happens in one go.
