@@ -20,9 +20,9 @@ When downloading the same improvement has been made. Previously the complete mod
 
 # Example
 
-This is when checking in a 280MB IFC file non-streaming. The green area indicates the amount of actual JVM memory being used. The steep dropoffs are the GC taking place. Base memory at the peak is about 9GB. You can see the amount of memory gradually increasing as it's building up the EMF model.
+This is when checking in a 280MB IFC file non-streaming. The blue area indicates the amount of memory being used within the JVM (green is the amount of memory the JVM uses from the system). The steep dropoffs are the GC taking place. Base memory at the peak is about 9GB. You can see the amount of memory gradually increasing as it's building up the EMF model.
 
 ![](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/nonstreamingcheckin.png)
 
-Streaming HEAP usage. Note that the base memory never exceeds 2.5GB. Also note that it only takes 5 minutes instead of 11 minutes.
+Streaming HEAP usage. Note that the base memory never exceeds 2.5GB. Also note that it only takes 5 minutes instead of 11 minutes to checkin the IFC file.
 ![](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/streamingcheckin.png)
