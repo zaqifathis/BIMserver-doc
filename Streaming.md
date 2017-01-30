@@ -18,6 +18,11 @@ You will still see the amount of memory increase quite quickly during checken, a
 
 When downloading the same improvement has been made. Previously the complete model was loaded from the database into an EMF model, after that it would be serialized. Now this just happens in one go.
 
+# Example
+
+This is when checking in a 280MB IFC file non-streaming. The green area indicates the amount of actual JVM memory being used. The steep dropoffs are the GC taking place. Base memory at the peak is about 9GB. You can see the amount of memory gradually increasing as it's building up the EMF model.
+
 ![](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/nonstreamingcheckin.png)
 
+Streaming HEAP usage. Note that the base memory never exceeds 2.5GB. Also note that it only takes 5 minutes instead of 11 minutes.
 ![](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/streamingcheckin.png)
