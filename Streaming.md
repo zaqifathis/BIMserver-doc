@@ -17,3 +17,7 @@ You will still see the amount of memory increase quite quickly during checken, a
 # Download
 
 When downloading the same improvement has been made. Previously the complete model was loaded from the database into an EMF model, after that it would be serialized. Now this just happens in one go.
+
+![](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/nonstreamingcheckin.png)
+
+![](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/streamingcheckin.png)
