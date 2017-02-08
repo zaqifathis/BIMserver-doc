@@ -41,6 +41,7 @@
 | CITYGML_2_0_0 | application/gml | https://portal.opengeospatial.org/files/?artifact_id=47842 |
 | VIS_3D_JSON_1_0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/3D-Visualization-Effects |
 | VALIDATION_JSON_1_0 | application/json | https://github.com/opensourceBIM/BIMserver-Repository/wiki/Validation-Report |
+| VALIDATION_XLSX_1_0 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Same as above, but as excel sheet |
 | LOD_CSV_1.0 | text/csv | https://github.com/opensourceBIM/BIMserver-Repository/wiki/LOD-CSV |
 | INFO_3D_EXCEL_1.0 | application/excel | |
 
