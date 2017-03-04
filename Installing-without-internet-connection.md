@@ -1,4 +1,4 @@
-Starting with BIMserver 1.5.69 it is possible to install BIMserver plugins during the setup procedure when there is no working outgoing internet connection. This page describes how to do this. Mind you that this is not the recommended way to install plugins. If you have a working internet connection, just select the plugins you want during setup.
+Starting with BIMserver (1.5.69)[https://github.com/opensourceBIM/BIMserver/releases/tag/parent-1.5.69] it is possible to install BIMserver plugins during the setup procedure when there is no working outgoing internet connection. This page describes how to do this. Mind you that this is not the recommended way to install plugins. If you have a working internet connection, just select the plugins you want during setup.
 
 # Selecting the plugins to install
 
