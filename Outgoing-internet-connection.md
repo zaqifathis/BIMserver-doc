@@ -1,4 +1,6 @@
-BIMserver (> 1.5) needs a working outgoing internet connection for the following:
+BIMserver (> 1.5) needs a working outgoing internet connection for the following purposes.
+
+> Node: If you don't have a working outgoing internet connection, have a look [here](https://github.com/opensourceBIM/BIMserver/wiki/Installing-without-internet-connection)
 
 # Updating/installing plugins
 Address: http://central.maven.org/maven2
