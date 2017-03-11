@@ -27,7 +27,7 @@ Example of one single entry (the actual json would be an array of these objects)
 
 The inputs array describes the input types this service is able to handle. The outputs array describes which output formats it is able output. Tje registerUrl, authorizationUrl, tokenUrl and resourceUrl are used for OAuth (described later in this document).
 
-1. Register application
+# 1. Register application
 
 Oauth requires to register applications first. "A" will send an OAuth registration request to the registration endpoint of B (this is the "registerUrl" field of the JSON configuration). When implementing A, it can be useful to try and use an OAuth library. The registration JSON looks like this:
 
@@ -56,7 +56,7 @@ B will come up with a client_id (usually based on client_name) and client_secret
 
 The above process is only needed once per server-server link.
 
-2. Authorization
+# 2. Authorization
 
 This happens when a user of A adds a service. A will create a forward URL based on the "authorizationUrl" and client_id/secret generated in the previous step. The browser is then forwarded to this URL. B will have to handle this request. Depending on factors like available cookies/session and other settings, B can show multiple pages to the user asking for login credentials and/or the user's consent to allow A to send data to B. The last step in this process is to redirect the user back to A.
 
@@ -67,8 +67,8 @@ client_id, response_type, state. B can use the client_id to match with the datab
 
 In the final URL to which the user is forwarded, B should include a "code". A will use this code combined with the client_secret to get a token from B.
 
-3. Getting a token
-A will send a JSON to B:
+# 3. Getting a token
+`A` will send a JSON to B:
 ```json
 {
   grant_type:
@@ -87,7 +87,7 @@ B responds with:
 
 A should store this access_token. The authentication is now successfull and A will be allowed to authenticate on B on the user's behalve.
 
-4. Using resource
+# 4. Using resource
 At a certain point, A will trigger B. This can be triggered manually by a user, or automatically as a response to a newly uploaded revision for example. A will send a HTTP POST request to B ("resourceUrl" in the JSON). This POST request should have a HTTP header:
 ```
 Authorization: Bearer [access_token]
