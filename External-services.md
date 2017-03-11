@@ -6,6 +6,27 @@ B: Server that will be receiving the notifications (and returns data)
 
 To find services that are available, A can use https://github.com/opensourceBIM/BIMserver-Repository/blob/master/servicesnew.json.
 
+# JSON format
+This JSON describes the services available. At the moment there can be only one repository setup in a BIMserver, in the future you'll be able to store more repository addresses.
+
+Example of one single entry (the actual json would be an array of these objects)
+```json
+"services": [
+    {
+      "name": "Fake clashdetection service",
+      "description": "Fake clashdetection service",
+      "provider": "Provider",
+      "inputs": ["IFC_JSON_2x3TC1", "IFC_JSON_4"],
+      "outputs": ["BCF_ZIP_1_0", "BCF_ZIP_2_0"],
+      "resourceUrl": "https://test.logic-labs.nl/services/clashdetection.php",
+      "authorizationUrl": "https://test.logic-labs.nl/authorize.php",
+      "registerUrl": "https://test.logic-labs.nl/register.php",
+      "tokenUrl": "https://test.logic-labs.nl/token.php" 
+    }
+```
+
+The inputs array describes the input types this service is able to handle. The outputs array describes which output formats it is able output. Tje registerUrl, authorizationUrl, tokenUrl and resourceUrl are used for OAuth (described later in this document).
+
 1. Register application
 
 Oauth requires to register applications first. "A" will send an OAuth registration request to the registration endpoint of B (this is the "registerUrl" field of the JSON configuration). When implementing A, it can be useful to try and use an OAuth library. The registration JSON looks like this:
