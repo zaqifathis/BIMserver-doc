@@ -25,7 +25,7 @@ Example of one single entry (the actual json would be an array of these objects)
     }
 ```
 
-The inputs array describes the input types this service is able to handle. The outputs array describes which output formats it is able output. The registerUrl, authorizationUrl, tokenUrl and resourceUrl are used for OAuth (described later in this document).
+The inputs array describes the input types this service is able to handle. The outputs array describes which output formats it is able output. The registerUrl, authorizationUrl, tokenUrl and resourceUrl are used for OAuth (described later in this document). A list of input/output types can be found here https://github.com/opensourceBIM/BIMserver/wiki/New-remote-service-interface#schemas
 
 # 1. Register application
 
@@ -91,6 +91,7 @@ In the final URL to which the user is forwarded, B should include a "code". A wi
 At a certain point, `A` will trigger `B`. This can be triggered manually by a user, or automatically as a response to a newly uploaded revision for example. `A` will send a HTTP POST request to `B` ("resourceUrl" in the JSON). This POST request should have a HTTP header:
 ```
 Authorization: Bearer [access_token]
+Input-Type: [The selected input type]
 ```
 
 This header tells `B` that `A` will be authorized as user X.
