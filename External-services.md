@@ -101,4 +101,5 @@ Extra HTTP response header fields that will be processed when available:
 ```
 Content-Disposition (for example 'attachment; filename="[filename]"')
 Content-Type (for example: "application/json")
+Output-Type (see https://github.com/opensourceBIM/BIMserver/wiki/New-remote-service-interface#schemas)
 ```
