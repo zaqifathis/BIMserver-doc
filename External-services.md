@@ -91,7 +91,8 @@ In the final URL to which the user is forwarded, B should include a "code". A wi
 At a certain point, `A` will trigger `B`. This can be triggered manually by a user, or automatically as a response to a newly uploaded revision for example. `A` will send a HTTP POST request to `B` ("resourceUrl" in the JSON). This POST request should have a HTTP header:
 ```
 Authorization: Bearer [access_token]
-Input-Type: [The selected input type]
+Input-Type: [The selected input type] (only added recently)
+Output-Type: [The selected output type] (only added recently)
 ```
 
 This header tells `B` that `A` will be authorized as user X.
