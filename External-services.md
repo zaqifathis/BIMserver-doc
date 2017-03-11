@@ -74,3 +74,9 @@ Authorization: Bearer [access_token]
 
 This header tells B that A will be authorized as user X.
 The request body should contain the data A wants to send to B. The format of this data can be anything, but it should be negotiated earlier. B will keep the HTTP request open until it is reading processing the data. B will then put the resulting data in the POST response body. A will then usually store this data (as extended data on BIMserver).
+
+Extra HTTP response header fields that will be processed when available:
+```
+Content-Disposition (for example 'attachment; filename="[filename]"')
+Content-Type (for example: "application/json")
+```
