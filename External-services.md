@@ -1,8 +1,8 @@
 > Work in progress
 
 Definition:
-`A`: Server that will be sending the notifications, usually triggered by a new revision
-`B`: Server that will be receiving the notifications (and returns data)
+- `A`: Server that will be sending the notifications, usually triggered by a new revision
+- `B`: Server that will be receiving the notifications (and returns data)
 
 To find services that are available, `A` can use https://github.com/opensourceBIM/BIMserver-Repository/blob/master/servicesnew.json.
 
