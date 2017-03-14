@@ -47,10 +47,20 @@ Before BIMserver 1.3 you had to manually edit some source code (LocalDevPluginLo
 
 You can add as many "plugins" parameters. So for example:
 ```
--plugins "C:\Users\My Name\Plugins" -plugins "/home/myname/bimserverplugins"
+-plugins "C:\Users\My Name\Plugin 1" -plugins "/home/myname/plugin2"
 ```
 
-The directories will be scanned 2 levels deep. So you can for example add your complete GIT directory and it will use all plugins of all workspaces in that directory.
+Typical projects you'd want to link are:
+https://github.com/opensourceBIM/bimvie.ws.git
+https://github.com/opensourceBIM/BIMserver-JavaScript-API.git
+https://github.com/opensourceBIM/BIMsurfer.git
+https://github.com/opensourceBIM/BinarySerializers.git
+https://github.com/opensourceBIM/IfcOpenShell-BIMserver-plugin.git
+https://github.com/opensourceBIM/IfcPlugins.git
+
+For every project, you have to clone the git repository and import the projects. Then copy the location on disk and add it as a "-plugins" argument.
+
+If you are not planning to change any of these projects, you can of course also just install plugins the regular way.
 
 ![Credentials](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/plugins.png)
 
