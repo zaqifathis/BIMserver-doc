@@ -11,7 +11,8 @@ This JSON describes the services available. At the moment there can be only one 
 
 Example of one single entry (the actual json would be an array of these objects)
 ```json
-"services": [
+{
+  "services": [
     {
       "name": "Fake clashdetection service",
       "description": "Fake clashdetection service",
@@ -19,13 +20,20 @@ Example of one single entry (the actual json would be an array of these objects)
       "inputs": ["IFC_JSON_2x3TC1", "IFC_JSON_4"],
       "outputs": ["BCF_ZIP_1_0", "BCF_ZIP_2_0"],
       "resourceUrl": "https://test.logic-labs.nl/services/clashdetection.php",
-      "authorizationUrl": "https://test.logic-labs.nl/authorize.php",
-      "registerUrl": "https://test.logic-labs.nl/register.php",
-      "tokenUrl": "https://test.logic-labs.nl/token.php" 
+      "oauth": {
+        "authorizationUrl": "https://test.logic-labs.nl/authorize.php",
+        "registerUrl": "https://test.logic-labs.nl/register.php",
+        "tokenUrl": "https://test.logic-labs.nl/token.php"
+      }
     }
+  ]
+}
 ```
 
 The inputs array describes the input types this service is able to handle. The outputs array describes which output formats it is able output. The registerUrl, authorizationUrl, tokenUrl and resourceUrl are used for OAuth (described later in this document). A list of input/output types can be found here https://github.com/opensourceBIM/BIMserver/wiki/New-remote-service-interface#schemas
+
+# 0. Using no OAuth
+When no authentication is required (for example when running a service on the same machine) only the "resourceUrl" parameter is needed and the "oauth" part can be omitted.
 
 # 1. Register application
 
