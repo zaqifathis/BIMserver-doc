@@ -178,8 +178,18 @@ Content-Disposition: attachment; filename="export3.ifc"
 ```
 HTTP Response Body
 ```
-ISO-10303-21;
-HEADER;
-FILE_DESCRIPTION(('ViewDefinition [CoordinationView]','Option [Filter: ]'),'2;1');
+{  
+   "items":[  
+      {  
+         "type":"header",
+         "text":"PROJECT"
+      },
+      {  
+         "type":"line",
+         "status":"SUCCESS",
+         "oid":-1,
+         "identification":"Number of projects",
+         "value":"1 projects",
+         "shouldBe":"Exactly 1 IfcProject objec
 ...
 ```
