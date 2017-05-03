@@ -142,7 +142,8 @@ User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_101)
 Accept-Encoding: gzip,deflate 
 Input-Type: "IFC_STEP_2x3TC1"
 Output-Type: "VALIDATION_JSON_1_0"
-
+```
+```ifc
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION ((''), '2;1');
