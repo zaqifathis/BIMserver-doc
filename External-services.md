@@ -10,8 +10,6 @@ Definitions:
 - `A`: Application that will be sending the notifications, usually triggered by a new revision
 - `B`: Application that will be receiving the notifications (and returns data)
 
-To find services that are available, `A` can use https://github.com/opensourceBIM/BIMserver-Repository/blob/master/servicesnew.json.
-
 # Techniques
 - HTTP is used for the transportation of data (https://www.w3.org/Protocols/rfc2616/rfc2616.txt)
 - JSON is used to describe structured data
@@ -21,6 +19,8 @@ To find services that are available, `A` can use https://github.com/opensourceBI
 `B` should be allowed to connect to over HTTP, and it should be running a basic web server
 
 # Service descriptor (JSON format)
+To find services that are available, `A` can use a special JSON document that contains a description of services, called a "service repository". An example is hosted on https://github.com/opensourceBIM/BIMserver-Repository/blob/master/servicesnew.json. Anyone can host their own "service repository".
+
 This JSON describes the services available. At the moment there can be only one repository setup in a BIMserver, in the future you'll be able to store more repository addresses.
 
 Example of one single entry (the actual json would be an array of these objects)
