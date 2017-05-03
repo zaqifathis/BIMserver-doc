@@ -53,7 +53,7 @@ You can add as many "plugins" parameters. So for example:
 Typical projects you'd want to link are:
 https://github.com/opensourceBIM/bimvie.ws.git
 https://github.com/opensourceBIM/BIMserver-JavaScript-API.git
-https://github.com/opensourceBIM/BIMsurfer.git
+https://github.com/opensourceBIM/BIMsurfer.git (Version 1 is required for BIMvie.ws to run at the moment, make sure you pick the right branch)
 https://github.com/opensourceBIM/BinarySerializers.git
 https://github.com/opensourceBIM/IfcOpenShell-BIMserver-plugin.git
 https://github.com/opensourceBIM/IfcPlugins.git
