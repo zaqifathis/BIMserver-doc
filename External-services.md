@@ -13,7 +13,7 @@ Definitions:
 To find services that are available, `A` can use https://github.com/opensourceBIM/BIMserver-Repository/blob/master/servicesnew.json.
 
 # Techniques
-- HTTP is used for the transportation of data
+- HTTP is used for the transportation of data (https://www.w3.org/Protocols/rfc2616/rfc2616.txt)
 - JSON is used to describe structured data
 
 `A` should be allowed to initiate HTTP connections to all instances of `B` that is wishes to communicate with.
@@ -132,6 +132,7 @@ Data-Title (when used, this will be the title of the extended data, or the comme
 
 Full request:
 
+HTTP Request Header
 ```http
 POST /services/returnifc.php HTTP/1.1
 Authorization: Bearer 4c93d2755e8aa69270eb5a1333e8b7b35969e325
@@ -143,6 +144,7 @@ Accept-Encoding: gzip,deflate
 Input-Type: "IFC_STEP_2x3TC1"
 Output-Type: "VALIDATION_JSON_1_0"
 ```
+HTTP Request Body
 ```ifc
 ISO-10303-21;
 HEADER;
@@ -159,6 +161,7 @@ ENDSEC;
 END-ISO-10303-21;
 ```
 
+HTTP Response Header
 ```http
 HTTP/1.1 200 OK
 Server: nginx/1.10.0 (Ubuntu)
@@ -173,7 +176,7 @@ Pragma: public
 Content-Description: File Transfer
 Content-Disposition: attachment; filename="export3.ifc"
 ```
-
+HTTP Response Body
 ```
 ISO-10303-21;
 HEADER;
