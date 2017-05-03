@@ -174,7 +174,7 @@ Expires: 0
 Cache-Control: must-revalidate
 Pragma: public
 Content-Description: File Transfer
-Content-Disposition: attachment; filename="export3.ifc"
+Content-Disposition: attachment; filename="validationresults.json"
 ```
 HTTP Response Body
 ```
