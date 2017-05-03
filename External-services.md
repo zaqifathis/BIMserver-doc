@@ -158,3 +158,25 @@ DATA;
 ENDSEC;
 END-ISO-10303-21;
 ```
+
+```http
+HTTP/1.1 200 OK
+Server: nginx/1.10.0 (Ubuntu)
+Date: Wed, 03 May 2017 10:05:16 GMT
+Content-Type: application/ifc
+Content-Length: 280191
+Connection: keep-alive
+Set-Cookie: PHPSESSID=5u98is6n313fnpkosoodgobcn5; path=/
+Expires: 0
+Cache-Control: must-revalidate
+Pragma: public
+Content-Description: File Transfer
+Content-Disposition: attachment; filename="export3.ifc"
+```
+
+```
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [CoordinationView]','Option [Filter: ]'),'2;1');
+...
+```
