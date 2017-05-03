@@ -1,12 +1,25 @@
 > Work in progress
 
-Definition:
-- `A`: Server that will be sending the notifications, usually triggered by a new revision
-- `B`: Server that will be receiving the notifications (and returns data)
+#Introduction
+
+BIM is getting more popular and the amount of applications is ever increasing. A lot of applications could benefit from being able to communicate with each other. Because there are a many different data structures (such as IFC, BCF etc...) that can contain BIM data, a very simple and generic protocol has been developed, described in this document.
+
+All communication is based on notifications.
+
+Definitions:
+- `A`: Application that will be sending the notifications, usually triggered by a new revision
+- `B`: Application that will be receiving the notifications (and returns data)
 
 To find services that are available, `A` can use https://github.com/opensourceBIM/BIMserver-Repository/blob/master/servicesnew.json.
 
-# JSON format
+# Techniques
+- HTTP is used for the transportation of data
+- JSON is used to describe structured data
+
+`A` should be allowed to initiate HTTP connections to all instances of `B` that is wishes to communicate with
+`B` should be allowed to connect to over HTTP, and it should be running a basic web server
+
+# Service descriptor (JSON format)
 This JSON describes the services available. At the moment there can be only one repository setup in a BIMserver, in the future you'll be able to store more repository addresses.
 
 Example of one single entry (the actual json would be an array of these objects)
