@@ -1,6 +1,6 @@
 > Work in progress
 
-#Introduction
+# Introduction
 
 BIM is getting more popular and the amount of applications is ever increasing. A lot of applications could benefit from being able to communicate with each other. Because there are a many different data structures (such as IFC, BCF etc...) that can contain BIM data, a very simple and generic protocol has been developed, described in this document.
 
@@ -16,7 +16,8 @@ To find services that are available, `A` can use https://github.com/opensourceBI
 - HTTP is used for the transportation of data
 - JSON is used to describe structured data
 
-`A` should be allowed to initiate HTTP connections to all instances of `B` that is wishes to communicate with
+`A` should be allowed to initiate HTTP connections to all instances of `B` that is wishes to communicate with.
+
 `B` should be allowed to connect to over HTTP, and it should be running a basic web server
 
 # Service descriptor (JSON format)
@@ -125,4 +126,34 @@ Content-Disposition (for example 'attachment; filename="[filename]"')
 Content-Type (for example: "application/json")
 Output-Type (see https://github.com/opensourceBIM/BIMserver/wiki/New-remote-service-interface#schemas)
 Data-Title (when used, this will be the title of the extended data, or the comment of a new revision in BIMserver)
+```
+
+# Examples
+
+Full request:
+
+```http
+POST /services/returnifc.php HTTP/1.1
+Authorization: Bearer 4c93d2755e8aa69270eb5a1333e8b7b35969e325
+Content-Length: 2809608  
+Host: test.logic-labs.nl
+Connection: Keep-Alive  
+User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_101)
+Accept-Encoding: gzip,deflate 
+Input-Type: "IFC_STEP_2x3TC1"
+Output-Type: "VALIDATION_JSON_1_0"
+
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION ((''), '2;1');
+FILE_NAME ('', '2017-05-03T11:13:21', (''), (''), '', 'BIMserver', '');
+FILE_SCHEMA (('IFC2X3'));
+ENDSEC;
+DATA;
+#1= IFCPROPERTYSINGLEVALUE('ConstructionMode',$,IFCLABEL('Massivbau'),$);
+#2= IFCPROPERTYSINGLEVALUE('BuildingPermitId',$,IFCIDENTIFIER('4711'),$);
+#3= IFCPROPERTYSINGLEVALUE('GrossAreaPlanned',$,IFCAREAMEASURE(1000.),$);
+...
+ENDSEC;
+END-ISO-10303-21;
 ```
