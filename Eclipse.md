@@ -68,6 +68,6 @@ If you are not planning to change any of these projects, you can of course also 
 
 For local development, the BIMserver will be automatically setup. An administrator user with the username "admin@bimserver.org" will be created with the password "admin".
 
-All of the API's are provided at http://localhost:8080, as well as a basic user interface. The admin interface is available at http://localhost:8080/admin.
+All of the API's are provided at http://localhost:8080, as well as a basic user interface. The admin interface is available at http://localhost:8080/apps/console.
 
 You now have a working Eclipse environment, we look forward to your pull requests!
