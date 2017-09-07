@@ -1,3 +1,4 @@
+# Latest updates
 
 The instructions below are outdated (for version 1.3; last update 2014).
 
@@ -9,6 +10,11 @@ Feel free to add your link to this list:
 
 
 ***
+***
+
+
+
+# Outdated instructions
 
 > These instructions are for the 1.3 release.
 > Updated on 06-10-2014 while installing BIMserver 1.3 on a 122GB AWS machine
@@ -21,10 +27,6 @@ AMI: Ubuntu Cloud Guest AMI ID ami-d0f89fb9 (x86_64)
 Instance: m1.xlarge machine
 
 Of course most (if not all) of the instructions are generic enough for any Ubuntu installation.
-
-> For a newer installation tutorial click [here](https://bhushanbharat.wordpress.com/2015/10/13/install-bimserver-on-ubuntu-14-04/)
-
-# Introduction
 
 This guide can be used to install a BIMserver on a cloud based server. Root rights are assumed. When running as a normal user, prepend "sudo " to each command (or start your session with sudo -i).
 
