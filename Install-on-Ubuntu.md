@@ -1,9 +1,18 @@
+
+The instructions below are outdated (for version 1.3; last update 2014).
+
+Other users also wrote instructions about installation of BIMserver on several systems.
+Feel free to add your link to this list:
+* (June 2017) https://fumblehool.wordpress.com/2017/06/17/install-bim-server-on-ubuntu-server/
+* (October 2015) https://bhushanbharat.wordpress.com/2015/10/13/install-bimserver-on-ubuntu-14-04/
+* (July 2014) https://arshpreetsingh.wordpress.com/2014/07/20/install-bimserver-on-ubuntu/ 
+
+
+***
+
 > These instructions are for the 1.3 release.
-
 > Updated on 06-10-2014 while installing BIMserver 1.3 on a 122GB AWS machine
-
 > This tutorial assumes "root" privileges, you might have to add "sudo" to all statements.
-
 > This tutorial assumes you already have a working (AWS) server. Make sure you enable the right ports on it as well (80 or 8080)
 
 How to install the BIMserver on a freshly installed Ubuntu 12.04.2 LTS Server Amazon EC2 server.
