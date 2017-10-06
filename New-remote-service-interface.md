@@ -25,11 +25,11 @@
 |---|---|---|
 | IFC_STEP_2X3TC1 | application/ifc | http://www.buildingsmart-tech.org/specifications/ifc-releases/ifc2x3-tc1-release |
 | IFC_STEP_4 | application/ifc | http://www.buildingsmart-tech.org/specifications/ifc-releases/ifc4-release |
-| IFC_XML_2x3TC1 | application/ifcxml | http://www.buildingsmart-tech.org/specifications/ifcxml-releases/ifcxml2x3-release/summary |
+| IFC_XML_2X3TC1 | application/ifcxml | http://www.buildingsmart-tech.org/specifications/ifcxml-releases/ifcxml2x3-release/summary |
 | IFC_XML_4 | application/ifcxml | http://www.buildingsmart-tech.org/specifications/ifcxml-releases/ifcxml4-release/ifcxml4-release-summary |
-| IFC_JSON_2x3TC1 | application/json | No formal specification |
+| IFC_JSON_2X3TC1 | application/json | No formal specification |
 | IFC_JSON_4 | application/json | No formal specification |
-| IFC_JSON_GEOM_2x3TC1 | application/json | No formal specification |
+| IFC_JSON_GEOM_2X3TC1 | application/json | No formal specification |
 | IFC_JSON_GEOM_4 | application/json | No formal specification |
 | BCF_ZIP_1_0 | application/zip | http://www.buildingsmart-tech.org/specifications/bcf-releases/bcfxml-v1 |
 | BCF_ZIP_2_0 | application/zip | https://github.com/BuildingSMART/BCF-XML |
