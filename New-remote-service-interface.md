@@ -9,16 +9,6 @@
 - All communication will be JSON. For two methods (sending and receiving data), there will be alternative methods that perform better
 - All authentication will be done with OAuth2
 
-# List of schemas
-- Ifc2x3tc1
-- Ifc4
-- BCF1.0
-- BCF2.0
-
-# List of formats
-- Step
-- Xml
-
 # Schemas
 
 | Short name | Content-Type | URL |
