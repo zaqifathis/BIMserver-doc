@@ -2,9 +2,11 @@ Since version 1.5.88 any BIMserver instance is capable of running services on mo
 
 The previous protocol basically only support sending/receiving notifications which contained the proper credentials to subsequently use the BIMserver API to query the model. Services could optionally attach extended data to a revision, but were not required to do so.
 
-The BimBots interface is a little more strict in the sense that it has a pre-defined input _and_ output. For this reason, writing services in BIMserver that can be run as a BimBit is slightly different, but existing services can be easily retrofitted and that's what's described on this page.
+The BimBots interface is a little more strict in the sense that it has a pre-defined input _and_ output. For this reason, writing services in BIMserver that can be run as a BimBot is slightly different. Nontheless existing services can be easily retrofitted and that's what this page is about.
 
 # BimBots interface
+
+> Note, when talking about an interface on this page we mean an actual Java interface. The BimBots protocol itself however is language independent (see: https://github.com/opensourceBIM/BIMserver/wiki/External-services).
 
 > Note this interface is still subject to change.
 
