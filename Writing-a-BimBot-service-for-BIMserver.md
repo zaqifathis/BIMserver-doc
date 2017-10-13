@@ -4,11 +4,13 @@ The previous protocol basically only support sending/receiving notifications whi
 
 The BimBots interface is a little more strict in the sense that it has a pre-defined input _and_ output. For this reason, writing services in BIMserver that can be run as a BimBit is slightly different, but existing services can be easily retrofitted and that's what's described on this page.
 
+# BimBots interface
+
 > Note this interface is still subject to change.
 
 The main interface you have to implement is 'BimBotsServiceInterface'. There are currently 3 methods you should provide.
 
-#getAvailableInputs
+## getAvailableInputs
 
 ```java
 Set<SchemaName> getAvailableInputs();
@@ -16,13 +18,13 @@ Set<SchemaName> getAvailableInputs();
 
 This should return a list of SchemaName (enum) values that this service can interpret as an input. In most cases this will be either IFC_STEP_2X3TC1, IFC_STEP_4, IFC_XML_2X3TC1 or IFC_XML_4.
 
-#getAvailableOutputs
+## getAvailableOutputs
 
 ```java
 Set<SchemaName> getAvailableOutputs();
 ```
 
-#runBimbot
+## runBimbot
 
 ```java
 BimBotsOutput runBimBot(BimBotsInput input, SObjectType settings) throws BimBotsException;
