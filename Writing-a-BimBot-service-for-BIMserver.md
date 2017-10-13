@@ -31,3 +31,11 @@ BimBotsOutput runBimBot(BimBotsInput input, SObjectType settings) throws BimBots
 This method is where the service is called. The input object will usually contain an already parsed ifc model (which you can get by calling `getIfcModel`).
 
 The result of this function should be of type BimBotsOutput, which should contain the actual data, the schema used and other info such as the ContentType.
+
+# Converting an existing service
+
+Services that have been written earlier (for example subclasses of AbstractAddExtendedDataService or AbstractModifyRevisionService) should now subclass BimBotAbstractService.
+
+New services can also just implement BimBotsServiceInterface, but then the services won't be available as a service in the old style.
+
+Example: https://github.com/opensourceBIM/DemoPlugins/blob/master/DemoPlugins/src/org/bimserver/demoplugins/bimbotdemo/BimBotDemoService.java
