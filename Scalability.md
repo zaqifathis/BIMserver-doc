@@ -8,7 +8,7 @@ BIMserver stores data on disk. To make sure this data can be retrieved in an eff
 
 > A few notes
 - BIMserver can serve so called "web modules", static files (html, css, js). That functionality is only there to make development of plugins/BIMserver easier. In production those files should be served by a webserver good at serving static files like nginx.
-- BIMserver is not supposed to be connected to the internet directly. In production you'd have your users connect to your application, which in turn connects to BIMserver.
+- BIMserver is not supposed to be connected to the internet directly. In production you'd have your users connect to your application, which in turn connects to BIMserver. You can see BIMserver as a database specific for BIM(odels). You wouldn't let your users connect directly to a MySQL database.
 
 ## Embedded database
 
@@ -45,3 +45,7 @@ Making software scalable is not free. For most databases, you'd have to switch t
 
 ## Use of (human) resources
 I don't think the time is right to start using (programming) resources to work on scalability yet. There is no point in making software scalable when it's not widely used (_in production_), there is probably better things to work on.
+
+# Technical
+
+BDB is transactional. Transactional is hard in a scalable database.
