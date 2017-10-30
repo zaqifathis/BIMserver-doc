@@ -48,4 +48,14 @@ I don't think the time is right to start using (programming) resources to work o
 
 # Technical
 
-BDB is transactional. Transactional is hard in a scalable database.
+BDB is transactional. Transactional is hard in scalable databases.
+
+# Other ways of scaling (not using a different database)
+
+## Partition by project
+
+This would be simple to implement, it doesn't even require any changes to BIMserver. You can just run X instances of BIMserver, and depending on certain metrics decide on which server to create a new project. Your application could even be in charge of duplication by simply doing every action on multiple servers.
+
+## Fault tolerancy / recovery
+
+For this specific task BDB actually has the ability built-in. It would be interesting to see whether this can be used easily as non of the code accessing the database would have to change.
