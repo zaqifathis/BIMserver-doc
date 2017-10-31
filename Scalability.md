@@ -30,10 +30,10 @@ BDB can be seen as one big Map<byte[], byte[]>. All keys are sorted. BIMserver c
 So far I haven't seen a whole lot of good reasons to make BIMserver scalable, please let me know.
 
 ## CPU
-About 99% percent of CPU is used by the engine used to convert geometry from IFC's definition to triangles. In my view focus should be on scaling that out.
+About 99% percent of CPU is used by the plugin used to convert geometry from IFC's definition to triangles. Focus should be on scaling that out.
 
 ## Memory
-Memory usage has been greatly reduced in 1.5. Very big models can be uploaded to a 64GB server, which you can buy for the price of a laptop.
+Memory usage has been greatly reduced in 1.5. Very big models (terrabytes) can be uploaded to a 64GB server, which you can buy for the price of a laptop.
 
 ## Disk
 SSD disks are recommended, I'd like to see the first person using up all diskspace of a $200 SSD by using BIMserver.
@@ -43,10 +43,10 @@ SSD disks are recommended, I'd like to see the first person using up all diskspa
 BIMserver is not a website. It does not have a gazillion users using it at the same time. If there is a BIMserver in the wild serving more than 10 concurrent users for parts of the day, I'd be surprised if they existed, but even more surprised if they had any performance problems.
 
 ## Not free
-Making software scalable is not free. For most databases, you'd have to switch to that database fully (meaning no BDB possible anymore). Most people will still run BIMserver on a single machine. Those BIMservers will definitely become slower. Also a scalable BIMserver would make testing a whole lot more complex. Most probably a non-embeddable database would be used (probably not Java too), which would require all sorts of setup to even start testing.
+Making software scalable is not free. For most databases, you'd have to switch to that database fully (meaning no BDB possible anymore). Most people will still run BIMserver on a single machine. Most probably a non-embeddable database would be used (probably not Java too), which would require all sorts of setup to even start testing.
 
-## Use of (human) resources
-I don't think the time is right to start using (programming) resources to work on scalability yet. There is no point in making software scalable when it's not widely used (_in production_), there is probably better things to work on.
+## Roadmap (use of recources)
+I don't think the time is right to start using (programming) resources to work on scalability yet. There is no point in making software scalable when it's not neccesary.
 
 # Technical
 
