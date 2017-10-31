@@ -33,7 +33,7 @@ So far I haven't seen a whole lot of good reasons to make BIMserver scalable, pl
 About 99% percent of CPU is used by the plugin used to convert geometry from IFC's definition to triangles. Focus should be on scaling that out.
 
 ## Memory
-Memory usage has been greatly reduced in 1.5. Very big models (terrabytes) can be uploaded to a 64GB server, which you can buy for the price of a laptop.
+Memory usage has been greatly reduced in 1.5. Very big models (gigabytes) can be uploaded to a 64GB server, which you can buy for the price of a laptop.
 
 ## Disk
 SSD disks are recommended, I'd like to see the first person using up all diskspace of a $200 SSD by using BIMserver.
