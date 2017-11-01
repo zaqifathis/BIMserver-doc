@@ -30,7 +30,7 @@ BDB can be seen as one big Map<byte[], byte[]>. All keys are sorted. BIMserver c
 So far I haven't seen a whole lot of good reasons to make BIMserver scalable, please let me know.
 
 ## CPU
-About 99% percent of CPU is used by the plugin used to convert geometry from IFC's definition to triangles. Focus should be on scaling that out.
+About 99% percent of CPU is used by the plugin used to convert geometry from IFC's definition to triangles. Focus should be on scaling that out. BIMserver itself makes good use of the multiple cores if available. But there is of course a limit to this type of scaling (vertical).
 
 ## Memory
 Memory usage has been greatly reduced in 1.5. Very big models (gigabytes) can be uploaded to a 64GB server, which you can buy for the price of a laptop.
