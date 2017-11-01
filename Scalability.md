@@ -1,4 +1,4 @@
-> Work in progress,,,
+> Work in progress...
 
 Lately a lot of questions have been asked about BIMserver's scalability. This document tries to explain the current situation and possible future implementations. A lot of what's written here is just my opinion.
 
@@ -50,7 +50,7 @@ I don't think the time is right to start using (programming) resources to work o
 
 # Technical
 
-BDB is transactional. Transactional is hard in scalable databases.
+BDB is transactional. Transactional is hard in scalable databases. Most scalable databases are "eventually consistent", which requires a different way of programming, much harder than for a normal database (the application becomes responsible for figuring out discrepancies).
 
 # Other ways of scaling (not using a different database)
 
