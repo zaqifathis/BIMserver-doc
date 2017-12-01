@@ -1,6 +1,6 @@
 # Intro
 
-To allow for more granular access to information stored in BIMserver, the "Low Level Calls" have been added. They are an alternative to the checkin/download calls.
+To allow for more granular access to information stored in BIMserver, the "Low Level Calls" have been added.
 
 # Workflow
 
