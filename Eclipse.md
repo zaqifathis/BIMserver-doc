@@ -57,6 +57,7 @@ https://github.com/opensourceBIM/BIMsurfer.git (Version 1 is required for BIMvie
 https://github.com/opensourceBIM/BinarySerializers.git
 https://github.com/opensourceBIM/IfcOpenShell-BIMserver-plugin.git
 https://github.com/opensourceBIM/IfcPlugins.git
+"https://github.com/opensourceBIM/console.git
 
 For every project, you have to clone the git repository and import the projects. Then copy the location on disk and add it as a "-plugins" argument.
 
