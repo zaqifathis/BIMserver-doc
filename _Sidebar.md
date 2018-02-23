@@ -41,10 +41,10 @@
 **BIMServer Developers**
 * [Plugins in 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---new-style)
 * [Plugin Development](https://github.com/opensourceBIM/BIMserver/wiki/Plugin-Development)
-  * [Serializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Serializer Plugin)
+  * [Serializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Serializer-Plugin)
     * [XSLT Serializer](https://github.com/opensourceBIM/BIMserver/wiki/XSLT-Serializer)
     * [BIMsurfer Serializers](https://github.com/opensourceBIM/BIMserver/wiki/BIMsurfer-Serializers)
-  * [Deserializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Deserializer Plugin)
+  * [Deserializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Deserializer-Plugin)
   * [Model Compare Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Model-Compare-Plugin)
   * [Model Merge Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Model-Merge-Plugin)
   * [Query Engine Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Query-Engine-Plugin)
