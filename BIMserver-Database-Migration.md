@@ -42,8 +42,12 @@ Depending on your situation, you might get away with the following:
 
 This solution has worked for a few people migration 1.3 to 1.4. You might get a headstart by studying https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/src/org/bimserver/BimServerImporter.java. Which is non-maintained code, but at least it still compiles...
 
-The most important part of most BIMserver databases would be the models. Since sometimes bugs exist in older version of BIMserver, you might want to consider getting the original IFC file (stored in "{homedir}/incoming" and checking those into your new server instead of serializing those models in the original server.
+Problems you might run into with this approach is the fact that different versions of BIMserver have different API calls/layout, so a statically linked API implementation might be problematic.
+
+The most important part of most BIMserver databases would be the models. Since sometimes bugs exist in older version of BIMserver, you might want to consider getting the original IFC file (stored in "{homedir}/incoming") and checking those into your new server instead of serializing those models in the original server.
+
+> Important note: Using migration methods like these will never result in the same Object IDs. You should assume all ID's to be different. There is no way to do this kind of an import and force the ID's to stay the same, at least not with the current design of the database layer in BIMserver.
 
 ## ServiceInterface.importData
 
-This method is not maintained (internally it uses the earlier mentioned BimServerImporter). It might still work. Just give it the address of the old BIMserver + username + password. The 4th parameter should point to a locally available copy (or direct link) to the "{homedir}/incoming" folder of your old BIMserver.
+This method is not maintained (internally it uses the earlier mentioned BimServerImporter), it's basically an implementation of the above, only it runs on the target BIMserver. It might still work. Just give it the address of the old BIMserver + username + password. The 4th parameter should point to a locally available copy (or direct link) to the "{homedir}/incoming" folder of your old BIMserver.
