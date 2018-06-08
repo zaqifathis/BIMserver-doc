@@ -43,3 +43,7 @@ Depending on your situation, you might get away with the following:
 This solution has worked for a few people migration 1.3 to 1.4. You might get a headstart by studying https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/src/org/bimserver/BimServerImporter.java. Which is non-maintained code, but at least it still compiles...
 
 The most important part of most BIMserver databases would be the models. Since sometimes bugs exist in older version of BIMserver, you might want to consider getting the original IFC file (stored in "{homedir}/incoming" and checking those into your new server instead of serializing those models in the original server.
+
+## ServiceInterface.importData
+
+This method is not maintained (internally it uses the earlier mentioned BimServerImporter). It might still work. Just give it the address of the old BIMserver + username + password. The 4th parameter should point to a locally available copy (or direct link) to the "{homedir}/incoming" folder of your old BIMserver.
