@@ -23,13 +23,15 @@ There are a few reasons why database upgrades do not always work:
 - Not all database changes are cleanly documented in migration steps. For example, a while back we migrated from IFC4 to IFC4Add2. This was done by changing Step0013. When a (already published) migration step is changed, this breaks the migration system.
 
 # Current policy
-Major **releases** should be migratable to newer version within that major **release**. For example 1.4 should be upgradable to 1.4.1 without problems. Major releases are usually not upgradable to new major releases (1.4 to 1.5 for example is not possible).
+Major **releases** should be migratable to newer versions within that major **release**. For example 1.4 should be upgradable to 1.4.1 without problems. Major releases are usually not upgradable to new major releases (1.4 to 1.5 for example is not possible).
 
-> Important: The current 1.5 releases are still marked "Pre-release", the description says "Developers release". As long as a major version number is not officially released (1.5), we put in no effort whatsoever to keep migations working. You should not be running a production server on a non-released version of any software.
+> Important: The current 1.5 releases are still marked "Pre-release", the description says "Developers release". As long as a major version number is not officially released (1.5), we put in no effort whatsoever to keep migations working. As soon as 1.5 is officially released, we intend to support that version for a while and only do bug fixes that don't require incompatible database changes.
 
-Could we put more effort into making sure databases are upgradable? Yes. At the moment though, we think fixing bugs, adding features etcetera is more important.
+Could we put more effort into making sure databases are upgradable? Yes. At the moment though, we think fixing bugs and adding features etcetera is more important.
 
 # What to do if you want to upgrade, but no upgrade-path is available?
+
+So for example when you are running an unreleased 1.5 BIMserver and you want to upgrade to a newer (unreleased) version.
 
 Depending on your situation, you might get away with the following:
 1. Keep your old BIMserver running
@@ -37,5 +39,7 @@ Depending on your situation, you might get away with the following:
 3. Write a piece of code that connects with both BIMservers
 4. Query the first BIMserver for the information you want to migrate (for example Projects, Users, etc...)
 5. Use the BIMserver API of the second BIMserver to insert that data
+
+This solution has worked for a few people migration 1.3 to 1.4. You might get a headstart by studying https://github.com/opensourceBIM/BIMserver/blob/master/BimServer/src/org/bimserver/BimServerImporter.java. Which is non-maintained code, but at least it still compiles...
 
 The most important part of most BIMserver databases would be the models. Since sometimes bugs exist in older version of BIMserver, you might want to consider getting the original IFC file (stored in "{homedir}/incoming" and checking those into your new server instead of serializing those models in the original server.
