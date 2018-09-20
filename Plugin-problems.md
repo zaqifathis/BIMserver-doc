@@ -8,3 +8,15 @@ This fixes to known problems:
 
 This also introduces a few new problems, but hopefully less annoying ones:
 - A smaller amount of plugins is usually available shortly after a new BIMserver release, since new builds have to be made for all plugins, linked specifically to this version of BIMserver
+
+# So how is this better than before the plugin system was added?
+
+Before the plugin system was implemented in BIMserver, all (what are now plugins) functionality was embedded in BIMserver itself. An important reason for introducing a plugin system was that we wanted a smaller core system, where we could do bugfixes etcetera of the plugins without releasing a new version of BIMserver. This is still possible, a developer of a plugin can release a new version with bugfixes. When a plugin developer is sure that multiple versions of BIMserver are compatible with a new version, a Maven-specific dependency can be added:
+
+```
+<dependency>
+	<groupId>org.opensourcebim</groupId>
+	<artifactId>pluginbase</artifactId>
+	<version>[1.5.106, 1.5.108]</version>
+</dependency>
+```
