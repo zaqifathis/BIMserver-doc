@@ -11,9 +11,11 @@ This also introduces a few new problems, but hopefully less annoying ones:
 
 # So how is this better than before the plugin system was added?
 
-Before the plugin system was implemented in BIMserver, all (what are now plugins) functionality was embedded in BIMserver itself. An important reason for introducing a plugin system was that we wanted a smaller core system, where we could do bugfixes etcetera of the plugins without releasing a new version of BIMserver. This is still possible, a developer of a plugin can release a new version with bugfixes. When a plugin developer is sure that multiple versions of BIMserver are compatible with a new version, a Maven-specific dependency can be added:
+Before the plugin system was implemented in BIMserver, all (what are now plugins) functionality was embedded in BIMserver itself. An important reason for introducing a plugin system was that we wanted a smaller core system, where we could do bugfixes etcetera of the plugins without releasing a new version of BIMserver.
 
-```
+This is still possible. A developer of a plugin can release a new version with bugfixes. When a plugin developer is sure that multiple versions of BIMserver are compatible with a new version, a Maven-specific dependency can be added. For example works with all versions between 1.5.106(inc) and 1.5.108(inc):
+
+```xml
 <dependency>
 	<groupId>org.opensourcebim</groupId>
 	<artifactId>pluginbase</artifactId>
