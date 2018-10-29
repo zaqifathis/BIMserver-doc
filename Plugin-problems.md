@@ -2,6 +2,8 @@ This page aims to explain the problems that we had with the plugin system so far
 
 From version 1.5.108 on, strict plugin checking is enabled by default. What this means is that plugins have to be built for a specific version of BIMserver. Only plugins built for the exact BIMserver version you are using will be allowed to be installed.
 
+> A quick side note: When installing plugins via the API (or BIMvie.ws), this strict checking applies since version 1.5.108. For the initial setup of a BIMserver this check was added in version 1.5.111.
+
 This fixes 2 known problems:
 - People that downloaded/installed a version of BIMserver a while ago would be tempted to upgrade installed plugins as new versions of plugins became available. Those plugins however were in most cases not compatible with the older version of BIMserver. There was no way to know this up-front. This also went wrong when settings up a new (but older) BIMserver, the setup process would simply download the latest version of each plugin.
 - People that downloaded the newest version of BIMserver would see all kinds of plugins to be available, some of them more than a year old (some more than 2 years old!). These plugins usually don't work anymore since nobody is maintaining them.
