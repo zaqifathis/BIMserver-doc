@@ -1,11 +1,11 @@
-BIMserver has a built-in schema migration system. This system works by keeping track of the current schema version in the database and also in the sofware itself. On startup, both version are compared and the server either starts up without a problem (RUNNING), goes into (MIGRATION_REQUIRED) mode when a migration is required, or to (MIGRATION_IMPOSSIBLE).
+BIMserver has a built-in schema migration system. This system works by keeping track of the current schema version in the database and also in the sofware itself. On startup, both version are compared and the server either starts up without a problem (`RUNNING`), goes into (`MIGRATION_REQUIRED`) mode when a migration is required, or to (`MIGRATION_IMPOSSIBLE`).
 
 The next few sections describe the database upgrade system, but please make sure to read the last chapter as well because that describes when the database migration system _DOES NOT WORK_
 
-## MIGRATION_IMPOSSIBLE
-Reverse migrations are never possible, so when your database for example has version 15 and the software has version 14, BIMserver will always go into MIGRATION_IMPOSSIBLE state. The only solution for this is to download the right version of the software.
+## `MIGRATION_IMPOSSIBLE`
+Reverse migrations are never possible, so when your database for example has version 15 and the software has version 14, BIMserver will always go into `MIGRATION_IMPOSSIBLE` state. The only solution for this is to download the right version of the software.
 
-## MIGRATION_REQUIRED
+## `MIGRATION_REQUIRED`
 BIMserver goes into this state when the database version is lower than the software version of the schema. BIMserver will not automatically migrate the database, because you should always (manually) MAKE A BACKUP OF YOUR DATABASE FIRST. When you have made a backup, you can either:
 - Type "migrate" into the console, this only works when you actually have a console into BIMserver (local dev)
 - Use the API call AdminInterface.migrateDatabase
