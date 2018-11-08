@@ -4,7 +4,7 @@ We use Eclipse to develop BIMserver. Other IDE's should work as well, but this p
 
 It's best to download the "Eclipse Modeling Tools" package, but if you are not going to change the EMF model, you can also just download the "Standard" package, or use your own existing installation.
 
-> This page describes the manual checkout of a lot of required repositories, to speed things up a bit, you can also use (Eclipse Team Project Set)[https://github.com/opensourceBIM/BIMserver/wiki/Eclipse-setup-with-%22Team-project-set%22]
+> This page describes the manual checkout of a lot of required repositories, to speed things up a bit, you can also use [Eclipse Team Project Set](https://github.com/opensourceBIM/BIMserver/wiki/Eclipse-setup-with-%22Team-project-set%22)
 
 # GitHub
 
