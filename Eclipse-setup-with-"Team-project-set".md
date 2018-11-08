@@ -4,7 +4,7 @@
 
 * Start with an empty workspace
 * Go to File | Import | Team | Team Project Set
-* Select the given file and import it, this can take a while
+* Select the (given file)[https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/projectSet.psf] and import it, this can take a while
 
 > Sometimes eclipse has a problem loading big projects. If you have a lot of compile/dependency problems right away, you can try the following two things:
 
