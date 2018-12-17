@@ -24,5 +24,7 @@ For advanced queries you will need to use a JDK, for all other features a JRE wi
   * A JRE or JDK 8
   * A Servlet Specification 3.0 or higher based Container with WebSocket support (Tomcat 8 or higher, Jetty 8 or higher)
 
+See [also](https://github.com/opensourceBIM/BIMserver/wiki/Tested-web-containers)
+
 # JAR
   * A JRE or JDK 8
