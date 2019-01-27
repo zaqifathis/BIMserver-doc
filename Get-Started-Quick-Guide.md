@@ -15,6 +15,9 @@
 
 6. Double-click on the bimserver-[version].jar file to execute it. This will extract the content of the jar file and create two subfolders, i.e. home and bimserver-[version].
 
+**JAVA version 9** since a required module has been removed(set to deprecated) from Java 9 it has to be reanabled. Go to the directory to which you downloaded the .jar and type 
+`java --add-modules java.xml.bind -jar "bimserverjar-1.5.120.jar"`
+
 7. Wait for BIMserver to expand all the files and configure itself and until the phrase "Server started successfully" appears.
 
 8. Click the Stop button to stop the BIMserver.
