@@ -21,6 +21,7 @@ It might be obvious or not, but once a database migration has been published (by
 There are a few reasons why database upgrades do not always work:
 - Not all database changes can be described in the migration steps. A migration step can only change the schema (add a class, add an attribute, remove an attribute etc...). Some database changes do not change the schema, but the way the data is stored in the key-value store.
 - Not all database changes are cleanly documented in migration steps. For example, a while back we migrated from IFC4 to IFC4Add2. This was done by changing Step0013. When a (already published) migration step is changed, this breaks the migration system.
+- Some changes are not really schema changes, for example between 1.5.122 and 1.5.123 we changed how vertices are stored (float->double). Since vertices are stored in a byte[], the type (in the sense of the schema) was unchanged. This could actually be reflected in a database migration step by doing a data-conversion (but leaving the database schema the same).
 
 # Current policy
 Major **releases** should be migratable to newer versions within that major **release**. For example 1.4 should be upgradable to 1.4.1 without problems. Major releases are usually not upgradable to new major releases (1.4 to 1.5 for example is not possible).
