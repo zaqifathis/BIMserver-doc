@@ -10,6 +10,7 @@ Legenda:
 * -: Not supported
 
 Goal:
+
 | |IFC STEP | IFC XML | JSON |
 |---|---|---|---|
 | Serialize | V | V | V |
