@@ -1,5 +1,3 @@
-> Work in progress...
-
 Lately a lot of questions have been asked about BIMserver's scalability. This document tries to explain the current situation and possible future implementations. A lot of what's written here is just my opinion.
 
 # Current situation
