@@ -24,7 +24,11 @@ So another type of database had to be selected to store the data in. BDB was cho
 BDB can be seen as one big (Tree)Map<byte[], byte[]>. All keys are sorted. BIMserver converts all objects to byte[], those become the values. In BIMserver keys usually consist of several identifiers concatenated (project id, revision id, object id). BDB indexes the keys for fast retrieval. Any database that can replicate this behaviour can be relatively easily be used as a replacement database.
 
 ## In-depth description of the current database interface
-The interface between BIMserver and BDB is pretty slim, but there are some very important features that any such scalable database should have (in order to not have to rewrite huge parts of BIMserver):- The datamodel can map variable length byte[] keys to variable length byte[] values. In practice the keys are pretty small in BIMserver, but the values can be > 100MB- The keys must always be sorted lexicographically- It must provide ACID transactions- It must provide cursors that allow you to iterate over the sorted keys.
+The interface between BIMserver and BDB is pretty slim, but there are some very important features that any such scalable database should have (in order to not have to rewrite huge parts of BIMserver):
+- The datamodel can map variable length byte[] keys to variable length byte[] values. In practice the keys are pretty small in BIMserver, but the values can be > 100MB
+- The keys must always be sorted lexicographically
+- It must provide ACID transactions
+- It must provide cursors that allow you to iterate over the sorted keys.
 
 # Why scaling
 
