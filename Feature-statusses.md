@@ -4,17 +4,17 @@ If you test a functionality and it works, but it says "test" in this table, plea
 
 | Feature | Status | Future plans |
 | ------------- | ------------- | ----- |
-| [https://github.com/opensourceBIM/CityGML](CityGML-Serializer) | Not working | Moved to own repository |
-| [https://github.com/opensourceBIM/Collada](Collada-Serializer)| Not working | Moved to own repository |
-| [https://github.com/opensourceBIM/ClashDetectionService](Clash-Detection) | Not working | Moved to own repository. Maybe move BCF classes to Shared |
-| [https://github.com/opensourceBIM/bimql](BIMQL) | Working, but not as documented (e.a. no geometry) | Decide whether to improve/fix or create a new query language |
+| [CityGML Serializer](https://github.com/opensourceBIM/CityGML) | Not working | Moved to own repository |
+| [Collada Serializer](https://github.com/opensourceBIM/Collada)| Not working | Moved to own repository |
+| [Clash Detection](https://github.com/opensourceBIM/ClashDetectionService) | Not working | Moved to own repository. Maybe move BCF classes to Shared |
+| [BIMQL](https://github.com/opensourceBIM/bimql) | Working, but not as documented (e.a. no geometry) | Decide whether to improve/fix or create a new query language |
 | SceneJS Serializers | Not working, not updated | Have been removed entirely, not used anymore for SceneJS-based tools (BIMsurfer, BIMvie.ws). Geometry can now be downloaded with https://github.com/opensourceBIM/BinarySerializers |
 | Java Query Engine | Working | Moved to own repository. Remove entirely, not used, too complex, inefficient, easier to write a plugin |
 | AdminGUI | Removed | Removed |
-| (https://github.com/opensourceBIM/Charting)[Charting] | Working | Moved to own repository |
-| (https://github.com/opensourceBIM/JavaModelChecker)[JavaModelChecker] | Working | Moved to own repository. Remove, same reason as JavaQueryEngine |
+| [Charting](https://github.com/opensourceBIM/Charting) | Working | Moved to own repository |
+| [JavaModelChecker](https://github.com/opensourceBIM/JavaModelChecker) | Working | Moved to own repository. Remove, same reason as JavaQueryEngine |
 | FileBasedObjectIDM | Removed | Removed |
-| (https://github.com/opensourceBIM/IfcEngine)[IfcEngine] | Not working| Move to own repository |
+| [IfcEngine](https://github.com/opensourceBIM/IfcEngine) | Not working| Move to own repository |
 | XSLT Serializer | Unknown|Remove, not used, inefficient |
 | IFC 2x3tc1 Step Serializer | Working | Stable |
 | IFC 4 Step Serializer | Working | Stable |
@@ -42,7 +42,7 @@ If you test a functionality and it works, but it says "test" in this table, plea
 | Logging of events | Not working | Update |
 | Plugin Manager | Working | Stable |
 | Running services | Working | Stable, but not intuitive |
-| [https://github.com/opensourceBIM/Console](Console) | Working | Moved to own repository |
+| [Console](https://github.com/opensourceBIM/Console) | Working | Moved to own repository |
 | User/rights management | Not fully implemented | Check all actions |
 | IFC Schema | Working | Will remove as plugin and integrate directly because there is only one implementation and interface is (too) large. Maybe even move .exp parsing logic to build process, and store serialized version of schema |
 | GeoTag | Unknown | Test, maybe add to bimvie.ws |
