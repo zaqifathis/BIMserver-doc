@@ -1,4 +1,4 @@
-To connect to a BIMserver you can use one of the 3 protocols: [SOAP](SOAP), [JSON](JSON API) or [Protocol Buffers](Protocol Buffers). To make connecting to a BIMserver even easier, there also is a Java library you can use.
+To connect to a BIMserver you can use one of the 3 protocols: [SOAP](SOAP), [JSON](JSON-API) or [Protocol Buffers](Protocol-Buffers). To make connecting to a BIMserver even easier, there also is a Java library you can use.
 
 # Get the client library
 
@@ -67,6 +67,6 @@ https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJa
 
 Examples on how to use the client-library can be found [here](https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/serviceinterface).
 
-Examples on how to use the client-side EMF model can be found [here]( https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/emf)
+Examples on how to use the client-side EMF model can be found [here](https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/emf)
 
 Examples on how to use the low-level-calls from the client library are [here](https://github.com/opensourceBIM/BIMserver/tree/master/Tests/test/org/bimserver/tests/lowlevel)
