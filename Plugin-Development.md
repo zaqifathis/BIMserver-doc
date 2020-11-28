@@ -26,7 +26,7 @@ Do not implement the Plugin class directly, there are sub-interfaces for the dif
 | [Render Engine](Render-Engine-Plugin) | Triangulates IFC geometry |
 | [Query Engine](Query-Engine-Plugin) | Provides a way of querying a model |
 | [Schema](Schema-Plugin) | Provides the BIMserver with metadata about the models |
-| [Object IDM](Object-IDM-Plugin) | Provides the BIMserver with a way of traversing objects |
+| [Object IDM](ObjectIDM-Plugin) | Provides the BIMserver with a way of traversing objects |
 | [Model Merge](Model-Merge-Plugin) | Merge multiple models into one model |
 | [Model Compare](Model-Compare-Plugin) | Compare 2 models |
 | [Service](Service-Plugin) | Services can be triggered by certain events |
