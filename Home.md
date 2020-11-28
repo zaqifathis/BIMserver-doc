@@ -1,6 +1,6 @@
 ## The links you need:
 
-* **Issues**: http://issues.bimserver.org
+* **Issues**: https://github.com/opensourceBIM/BIMserver/issues
 * **Wiki**: you found it already
 
 ## Some nice stuff that might help:
