@@ -15,4 +15,4 @@ public interface Deserializer {
 }
 ```
 
-You can subclass [EmfDeserializer](https://github.com/opensourceBIM/BIMserver/blob/master/Shared/src/org/bimserver/plugins/deserializers/EmfDeserializer.java) so you don't have to implement all methods.
+You can subclass [EmfDeserializer](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/plugins/deserializers/EmfDeserializer.java) so you don't have to implement all methods.
