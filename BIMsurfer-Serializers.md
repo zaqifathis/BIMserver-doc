@@ -33,11 +33,11 @@ Example files:
 Serializes the geometry in JSON. Right now this serializer is being called for every (enabled and existing) IfcProduct subtype.
 
 Example files:
-* [Test%201%20.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%201%20.json)
-* [Test%202%20.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%202%20.json)
-* [Test%203%20.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%203%20.json)
-* [Test%204%20.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%204%20.json)
-* [Test%205%20.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%205%20.json)
+* [Test 1.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%201.json)
+* [Test 2.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%202.json)
+* [Test 3.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%203.json)
+* [Test 4.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%204.json)
+* [Test 5.json](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/files/Test%205.json)
 
 ## Even older serializers
 
