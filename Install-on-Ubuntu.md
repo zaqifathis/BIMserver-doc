@@ -156,7 +156,7 @@ After this command, Tomcat 7 should start unpacking the downloaded war file in a
 
 When things are not working, you can look in the Tomcat 7 log file: /opt/tomcat7/logs/catalina.out and the BIMserver log file: /var/bimserver/home/logs/bimserver.log.
 
-# Installing an STMP server
+# Installing an SMTP server
 
 You only have to do this if you do not already have an accessible SMTP server running in your network or with your ISP. Remember running your own SMTP server is a security/spam risk if you don't know how to properly install/maintain it.
 
