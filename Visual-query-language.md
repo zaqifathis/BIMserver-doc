@@ -8,25 +8,25 @@ This is where the query "starts".
 
 Consideration: Remove the "Root" node, if you consider all the blocks with no input's as starting points, there is no need to have a "Root" node.
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/root.png)
+![](img/root.png)
 
 ## Type query
 
 Query by type. By default all subtypes will be queried as well. You can disable the subtypes by adding "No subtypes"
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querytype.png)
+![](img/querytype.png)
 
 ## Reference
 
 Follow a reference from the previous object. These can be single/multi references.
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryreference.png)
+![](img/queryreference.png)
 
 ## Conditions
 
 The condition blocks (gray blocks) seem to use a text-based expression, this is just a simplification. The actual query model will represent these with more building blocks such as "Equal", "Literal" etc...
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querycondition.png)
+![](img/querycondition.png)
 
 ## Reusable query blocks
 
@@ -34,7 +34,7 @@ Reuse a query block defined somewhere else. Possible properties
 - Recurse (this will short-circuit the IN and OUT on the reusable code block), (default: false)
 - Exclude, the objects will only be used to traverse the model, but not included in the result (default: false)
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryreuse.png)
+![](img/queryreuse.png)
 
 # Examples
 
@@ -42,31 +42,31 @@ Reuse a query block defined somewhere else. Possible properties
 
 Returns all IfcRoot (and subclasses) objects with the given GUID's (if they exist in the model). Of course these types of queries can also be done for "Name", "ObjectID" etc...
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryguids.png)
+![](img/queryguids.png)
 
 ## Query multiple types
 
 Queries all doors/windows, plus their subtypes, if any.
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/query2types.png)
+![](img/query2types.png)
 
 ## Query name property
 
 Get all walls with name "Muur 1".
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querynameproperty.png)
+![](img/querynameproperty.png)
 
 ## Query AND + Comparators
 
 This will return all IfcWall objects with a OverallWidth > 2 AND OverallHeight > 3
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/queryand.png)
+![](img/queryand.png)
 
 ## Query NOT + null
 
 This will return all IfcWall objects that have a Representation. Could maybe also be visualized by adding an explicit NOT block.
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querynotnull.png)
+![](img/querynotnull.png)
 
 ## Query IFC properties
 
@@ -74,7 +74,7 @@ These are not direct object-properties, but properties that are attached to the 
 
 This functionality makes the query engine less schema-agnostic, another way of making it easier to query complex properties and also keep the query engine schema-less would be to use a [reusable query block](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Properties%22) for it, for example the [Properties](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-%22Properties%22) block.
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/querycomplexproperties.png)
+![](img/querycomplexproperties.png)
 
 ## Query object with certain property value, but exclude and get referenced
 
@@ -84,6 +84,6 @@ The [Decomposes](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-
 
 Finally the IfcDoor and IfcWindow objects are selected, those are included in the results.
 
-![](https://raw.githubusercontent.com/opensourceBIM/BIMserver/master/Documentation/img/query1storeywindowsanddoors.png)
+![](img/query1storeywindowsanddoors.png)
 
 

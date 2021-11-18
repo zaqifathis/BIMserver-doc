@@ -8,7 +8,7 @@ https://oss.sonatype.org/content/groups/public/org/opensourcebim/bimviews
 
 Make sure you download the JAR file of the most recent version.
 
-![JAR Runner](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/bimviejar.png)
+![JAR Runner](img/bimviejar.png)
 
 > Please note that unfortunately the maven repository is cluttered with old versions. All the plugins that are completely undercased are the recent ones.
 
@@ -19,4 +19,4 @@ BIMvie.ws has two dependencies which will not be automatically installed, so mak
 # Installing the plugins
 You can do this during the setup process in the "Plugins" tab.
 
-![JAR Runner](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/setuplocalplugins.png)
+![JAR Runner](img/setuplocalplugins.png)

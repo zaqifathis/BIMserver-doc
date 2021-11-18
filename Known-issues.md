@@ -19,11 +19,11 @@ The problem with inverses in IFC is that one can be defined on type "A", referen
 
 Real IFC Example:
 
-![Inverse](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/inverseproblem.png)
+![Inverse](img/inverseproblem.png)
 
 And another:
 
-![Inverse2](https://github.com/opensourceBIM/BIMserver/raw/master/Documentation/img/inverses2.png)
+![Inverse2](img/inverses2.png)
 [Discussion](http://support.bimserver.org/bimserver/topics/initialization_of_inverse_slots_in_ifcobject_hasassociations)
 
 [And](http://support.bimserver.org/bimserver/topics/ifcelement_containedinspatialstructure_inverse_attribute_not_set)
