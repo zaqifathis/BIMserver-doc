@@ -5,10 +5,10 @@ You can read the original motivations to write this language [here](https://gith
 # Intro
 
 Some characteristics to of this language to keep in mind:
-- The data model of the "queried" is the same data model as the "query results". In most cases it will be Ifc2x3tc1 or Ifc4
-- The previous also explains why there are no aggregates, because there is no place to store those
-- A query result is always a subset of the original model
-- Query language is probably not the best term here, a "filter language" might be better
+- The data model of the "queried" is the same data model as the "query results". In most cases it will be Ifc2x3tc1 or Ifc4.
+- The previous also explains why there are no aggregates (such as `COUNT`, `AVG`, `MAX`, etc. in SQL), because there is no place to store those.
+- A query result is always a subset of the original model.
+- Query language is probably not the best term here, a "filter language" might be better.
 - The queries are based on objects. Geometry is not treated any other way. If you don't ask for geometry, you won't get it.
 
 # JSON
@@ -49,6 +49,7 @@ You can also query multiple types, the next example would give you all IfcDoor a
 {
   "types": ["IfcDoor", "IfcWindow"]
 }
+```
 
 # GUID query
 
@@ -70,14 +71,16 @@ The same as for GUIDs, you can also query by OID (ObjectID)
 
 # Properties
 
-Every IFC object has a fixed set of fields. For example the IfcWindow has the fields "OverallWidth" and "OverallHeight" and [many more](http://www.buildingsmart-tech.org/ifc/IFC2x4/rc2/html/schema/ifcsharedbldgelements/lexical/ifcwindow.htm). To use properties that are not defined in the schema, every object can be extended with more properties by adding them by using IfcPropertySet and IfcProperty. For example to query all IfcWall objecst that are external:
+Every IFC object has a fixed set of fields. For example the IfcWindow has the fields "OverallWidth" and "OverallHeight" and [many more](http://www.buildingsmart-tech.org/ifc/IFC2x4/rc2/html/schema/ifcsharedbldgelements/lexical/ifcwindow.htm). To use properties that are not defined in the schema, every object can be extended with more properties by adding them using IfcPropertySet and IfcProperty. For example IfcWall objects that are external can be queried via the property `IsExternal` in property set `Pset_WallCommon`:
 
 ```json
 {
   "type": "IfcWall",
   "includeAllSubtypes": true,
   "properties": {
-    "IsExternal": true
+    "Pset_WallCommon": {
+      "IsExternal": true
+    }
   }
 }
 ```
@@ -97,26 +100,27 @@ Example of the body of an IFC file for the IfcWall query:
 
 The above IFC file is invalid because none of the IfcWallStandardCase entities references an IfcOwnerHistory, also no IfcProject is there. Also note that no geometry is present, so you won't see anything in an IFC viewer.
 
-To make creating valid IFC files with queries easier, a few predefined includes are available.
+To make creating valid IFC files with queries easier, a few predefined includes are available for the IFC versions supported in BIMserver.
+For every IFC schema, there is a respective "standard library" holding these predefined includes, for example `ifc2x3-stdlib` and `ifc4-stdlib`.
 
-To make the IfcWall example work, this would be the new query:
+To make the IfcWall example work in IFC4, this would be the new query:
 ```json
 {
   "type": "IfcWall",
   "includeAllSubtypes": true,
   "includes": [
-    "validifc:ContainedInStructure",
-    "validifc:OwnerHistory",
-    "validifc:Representation",
-    "validifc:ObjectPlacement"
+    "ifc4-stdlib:ContainedInStructure",
+    "ifc4-stdlib:OwnerHistory",
+    "ifc4-stdlib:Representation",
+    "ifc4-stdlib:ObjectPlacement"
   ]
 }
 ```
 
 Each include has a different function.
 
-## validifc:ContainedInStructure
-validifc:ContainedInStructure will make sure all the containment references "up" will be followed.
+## ifc4-stdlib:ContainedInStructure
+ifc4-stdlib:ContainedInStructure will make sure all the spatial containment references "up" will be followed.
 
 Example project structure
 ```
@@ -130,13 +134,15 @@ IfcProject
 
 For each IfcWall encountered, the tree will be "walked" all the way up. This automatically includes the IfcProject which is a requirement for a valid IFC file
 
-## validifc:OwnerHistory
+## ifc4-stdlib:OwnerHistory
 
 For every IfcWall, the OwnerHistory will be included
 
-## validifc:Representation
+
+## ifc4-stdlib:Representation
 
 For every IfcWall, the Representation will be included. This can be a very large network/tree of objects. Representation is what gives object geometry in a viewer
 
-## validifc:ObjectPlacement
+## ifc4-stdlib:ObjectPlacement
+
 This makes sure that all objects will also include their placement, which put's the object's geometry in the right place.
