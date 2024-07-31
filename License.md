@@ -1,7 +1,6 @@
 # FAQ
 
-Information about usage and interpretation of the licenses of BIMserver.org projects can be found on http://bimserver.org/license/
-If you have any questions or remarks on the use of BIMserver in your project, please contact [mailto:license@bimserver.org license@bimserver.org]
+Information about usage and interpretation of the licenses of BIMserver.org projects can be found on [http://bimserver.org/license/](https://web.archive.org/web/20191031195220/http://bimserver.org/license/) (archived version from 2019). If you have any questions or remarks on the use of BIMserver in your project, please contact [license@bimserver.org](mailto:license@bimserver.org).
 
 # Licenses of projects
 
