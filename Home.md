@@ -3,7 +3,7 @@ This wiki has grown over the years and contains older and newer information. Som
 ## The links you need:
 
 * **Issues**: https://github.com/opensourceBIM/BIMserver/issues
-* **Wiki**: you found it already
+* **Wiki**: you found it already.
 
 ## Some notes:
 * If you see a message about 'heap size' in your error log, increase your heap size memory.
