@@ -1,11 +1,14 @@
-Although installing and configuring tomcat has been documented plenty on the web, this page will try and cover the main problems people have encountered when running BIMserver on tomcat on windows.
+This page will help you install and configure Tomcat on Windows, focusing more on common issues when running BIMserver on Tomcat. 
 
-# Version
-To run BIMserver on Tomcat, you need version 8 or higher. 8.5 and 9 have both been tested and work.
+# Version Requirements
+To run BIMserver on Tomcat, you need version 8 or higher. Versions 8.5 and 9 have been tested and recommended.
 
-# Tomcat on windows
+# Steps to install Tomcats on Windows
 
-Use the "32-bit/64-bit Windows Service Installer". This will install tomcat as a service. Installing it as a service makes it easier to configure for automatic start on boot.
+- Download Tomcat: visit [Tomcat download page](https://tomcat.apache.org/download-80.cgi).
+- Choose the "32-bit/64-bit Windows Service Installer" under the core section.
+- Download the installer file and dowllow the installation wizard steps. 
+When prompted, select the option to install Tomcat as a service. This will make it easier to configure Tomcat to start automatically when your computer boots up. 
 
 ## Setting the amount of heap memory
 

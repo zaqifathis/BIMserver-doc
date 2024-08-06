@@ -13,6 +13,10 @@ The amount of required heap memory depends on what plugins you install, the size
 
 # JRE / JDK
 
+JRE allows you to run Java applications on your computer, including includes Java Virtual Machine (JVM), core libraries, and other components to run applications written in Java.
+
+JDK allows you to write and compile your own Java programs, including JRE, javac, debugger, and other necessary Java development tools.
+
 You can download a JRE or JDK [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 Make sure you install a 64bit JRE/JDK if you have a 64bit system. The main advantage will be that you are going to be able to reserve more than 1300MB of memory, which you probably will want to.
@@ -21,10 +25,17 @@ For advanced queries you will need to use a JDK, for all other features a JRE wi
 
 # WAR
 
+WAR is a package used to distribute and deploy web applications. 
+
+Requirements for using WAR files:
   * A JRE or JDK 8
   * A Servlet Specification 3.0 or higher based Container with WebSocket support (Tomcat 8 or higher, Jetty 8 or higher)
 
 See [also](https://github.com/opensourceBIM/BIMserver/wiki/Tested-web-containers)
 
 # JAR
+
+JAR is a package file format used to aggregate many Java files and connected metadata and resources into one file for distribution. Read more about JAR [here](https://github.com/opensourceBIM/BIMserver/wiki/JAR-starter).
+
+Requirements for using JAR files:
   * A JRE or JDK 8
