@@ -2,7 +2,7 @@
 
 ### **Stand-alone BIMserver**
 
-1. Read the wiki page for the relevant version of [Requirements Version] document, e.g. (https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.5)
+1. Read the wiki page for the relevant version of the requirements document, e.g. [Requirements 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.5)
 
 2. Make sure you can execute a JAR file by double-clicking a JAR file. If not, check that [Java](http://www.java.com) is installed properly and the JAVA environment variables are setup correctly. On your Mac, Oracle advises to install the JDK (instead of the JRE). Make sure you have 64bit Java installed.
 
@@ -14,10 +14,6 @@
 5. Copy the downloaded bimserver-[version].jar into the above folder, e.g. C:\BIMserver
 
 6. Double-click on the bimserver-[version].jar file to execute it. This will extract the content of the jar file and create two subfolders, i.e. home and bimserver-[version].
-
-**[JAVA version 9](https://www.oracle.com/java/java9/):** A required module has been removed (deprecated) in Java 9 and must be re-enabled. To do this, navigate to the directory where you downloaded the .jar file and run the following command:
-
-`java --add-modules java.xml.bind -jar "bimserverjar-1.5.120.jar"`
 
 7. Wait for BIMserver to expand all the files and configure itself and until the phrase "Server started successfully" appears.
 

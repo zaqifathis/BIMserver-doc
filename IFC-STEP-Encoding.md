@@ -1,12 +1,12 @@
 IFC Encoding
 
-> Updated for version 1.2
+> Updated for version 1.2, TODO latest improvements in 1.5
 
 # Introduction
 
 As of version 1.2, all types of STEP's String encoding are supported by the IfcStepSerializer and IfcStepDeserializer.
 
-Also see: http://support.bimserver.org/bimserver/topics/make_bimserver_harmonize_string_encodings_in_a_bim_project#reply_8132322
+Also see [this discussion](https://web.archive.org/web/20130315184316/http://support.bimserver.org/bimserver/topics/make_bimserver_harmonize_string_encodings_in_a_bim_project) (archived version from 2013).
 
 Further development of the serializers/deserializers encoding/decoding depends on the availability of test files, so if you have problems with certain files, please contact us.
 
