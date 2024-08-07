@@ -28,7 +28,7 @@ Depending on usage and plugins, BIMserver might require up to 100GB.
 See [Memory usage](https://github.com/opensourceBIM/BIMserver/wiki/Memory-usage).
 
 
-## External Limitations:
+### External Limitations:
 
 The available and usable amount of memory is also limited by various factors, namely your machine's physical resources, the operating system and the JVM bitness.
 
