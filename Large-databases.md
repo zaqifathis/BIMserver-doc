@@ -9,7 +9,12 @@ When you are uploading multiple IFC files to the same project, all data will be 
 That's why we also added the [low level calls](https://github.com/opensourceBIM/BIMserver/wiki/Low-Level-Calls), to actually change models by telling what has changed, instead of telling what the new complete model looks like.
 
 # Geometry
-In IFC geometry can be stored in a lot of different ways (extrusion, bounding box, b-splines, triangles etc...). Most software (and especially 3D viewers) can only handle one type of geometry: triangles. The process of converting the IFC geometry to triangles has been offloaded to the "render engine" in BIMserver, in most cases this is (https://github.com/IfcOpenShell/IfcOpenShell). Because this process can take quite a while we only want to go through it once and not every time a user for example visualizes a model. Therefore the triangles are also stored in the database. The amount of data this requires is very dependent on the types of geometry in the IFC file.
+
+In IFC (Industry Foundation Classes), 3D model geometry can be represented in various complex ways such as extrusion, bounding box, B-splines, triangles, and more. However, most 3D software and viewers can only handle one type of geometry: triangles.
+
+To display these models correctly, we need to convert all the different types of geometry into triangles. This conversion process is handled by the "render engine" in BIMserver, typically using a library like [IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell). However, this conversion can be time-consuming.
+
+To avoid repeated conversions every time a model is viewed, we store the converted triangle data directly in the database. The amount of data needed for this depends on the complexity and types of geometry present in the IFC file.
 
 # Other data
 
