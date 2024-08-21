@@ -1,8 +1,10 @@
-# JVM Security Manager
+# Java Virtual Machine (JVM) Security Manager
 
-Most application containers (like Tomcat) actually say they havent tested a lot with security managers, so expect weird errors.
+The Java Security Manager is a framework that controls the permission of Java applications. It is essential to run BIMserver in environments where security restrictions are required.
 
-Below is a list of permissions you have to add to make BIMserver work, this list will probably have to be updated a lot, please let us know if things are missing or not required anymore:
+**Note:** Tomcat does have support for running with the Java Security Manager, but historically, it hasn't been extensively tested in production environments with the Security Manager enabled. The Tomcat team has recognized that the Security Manager might lead to unexpected issues or require significant customization. As a result, enabling the Security Manager might lead to unexpected errors or behaviors. We recommend thorough testing in your environment.
+
+Below is the list of permissions that should be added to your security policy file to allow BIMserver to function correctly. The policy file should be updated as follows. Please let us know if things are missing or not required anymore:
 
 ```
 grant { 
