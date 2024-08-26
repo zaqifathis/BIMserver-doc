@@ -4,16 +4,16 @@ The JSON interface is mainly there to facilitate connecting to the BIMserver fro
 
 # Connecting from a web application/web site
 
-For this purpose we have created a small JavaScript library, this library is being served by all BIMservers on [address]/js/bimserverapi.js. Your code should download it, and then instantiate the API like this: 
+For this purpose we have created a small JavaScript library, this library is being served by all BIMservers on [address]/js/bimserverapi.js. Your code should download it, and then instantiate the API like this:
 ```
   var bimServerApi = new BimServerApi("http://examplebimserver:port");
 ```
 
-Have a look at the [http://code.google.com/p/bimserver/wiki/JavaScriptApi JavaScriptApi] or [https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient] page for more details on the JavaScript API.
+Have a look at the [JavaScriptApi](http://code.google.com/p/bimserver/wiki/JavaScriptApi) or [JavaScriptClient](https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient) page for more details on the JavaScript API.
 
 # Connecting from non-javascript applications
 
-For every call you should send an HTTP POST request to http://[address]:[port]/[optional context]/json. The body of this request should be an UTF-8 encoded JSON message. The structure of this message is the following:
+For every call you should send an HTTP POST request to ``http://[address]:[port]/[optional context]/json``. The body of this request should be an UTF-8 encoded JSON message. The structure of this message is the following:
 ```
 {
   token: "ABCDEF1234567890",
@@ -27,9 +27,9 @@ For every call you should send an HTTP POST request to http://[address]:[port]/[
 }
 ```
 
-Of course the required parameters depend on the actual method you are calling. All parameters are always required. For almost all calls you have to include a valid token. The token can be obtained by 2 methods: "login" or "autologin". Those 2 methods do not require a token themselves.
+Of course the required parameters depend on the actual method you are calling. All parameters are always required. For almost all calls you have to include a valid token. The token can be obtained by 2 methods: ``login`` or ``autologin``. Those 2 methods do not require a token themselves.
 
-A typical response for a "login" call looks like this:
+A typical response for a ``login`` call looks like this:
 ```
 {
   response: {
@@ -51,7 +51,7 @@ When an exception occurs the message looks like this:
 }
 ```
 
-The "__type" parameters here helps client-side libraries to construct and throw appropriate exception.
+The ``__type`` parameters here helps client-side libraries to construct and throw appropriate exception.
 
 # Multiple calls in one request
 
