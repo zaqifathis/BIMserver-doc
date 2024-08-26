@@ -82,7 +82,7 @@
 
 **General**
 * [FAQ](https://github.com/opensourceBIM/BIMserver/wiki/FAQ)
-* [Known Issues](https://github.com/opensourceBIM/BIMserver/wiki/Known-Issues)
+* [Known Issues](https://github.com/opensourceBIM/BIMserver/issues?q=label%3AFAQ+is%3Aclosed)
   * [Problems querying IFC](https://github.com/opensourceBIM/BIMserver/wiki/Problems-with-querying-IFC)
   * [Web Sockets](https://github.com/opensourceBIM/BIMserver/wiki/Web-socket-error)
 * [License](https://github.com/opensourceBIM/BIMserver/wiki/License)
