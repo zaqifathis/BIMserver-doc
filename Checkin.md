@@ -4,7 +4,7 @@ Checkin is the term used to upload complete models to a BIMserver. Because there
 
 # Usual way
 
-The usual way would be to call the [https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/ServiceInterface.java#L547](checkin) method on the ServiceInterface. Just look at the documentation for the method. It will return a topicId/checkinId, of which the use is explained (here)[# TopicId].
+The usual way would be to call the [checkin method](https://github.com/opensourceBIM/BIMserver/blob/master/PluginBase/src/org/bimserver/shared/interfaces/ServiceInterface.java#L534-L553) on the ServiceInterface. Just look at the documentation for the method. It will return a topicId/checkinId, of which the use is explained (here)[#TopicId].
 
 If you are using JSON, you'll have to encode the actual data (the ``data`` argument) in base64. Because of this, using this method is not the most efficient way of checking-in a file in BIMserver. It is however the most consistent way, because this call works just like all other (300) BIMserver calls.
 
@@ -37,9 +37,9 @@ If something goes wrong, it will return:
 }
 ```
 
-# CheckinId / TopicId
+# TopicId
 
-CheckinId and TopicId are the same thing, recently this has been renamed everywhere to TopicId.
+In the past, the TopicId was also called CheckinId - both denote the same concept.
 
 Get progress:
 ```
@@ -73,7 +73,7 @@ endPointId: othis.server.endPointId
 
 Read about [Endpoints](https://github.com/opensourceBIM/BIMserver/wiki/Endpoints) to learn how to acquire an endPointId.
 
-When there is new progress, the Bimsie1NotificationInterface.progress method will be called on the client.
+When there is new progress, the ``Bimsie1NotificationInterface.progress`` method will be called on the client.
 ```
 {
   topicId: "",
