@@ -11,12 +11,12 @@ The necessary height of the HEAP is difficult to predict because it depends on t
 
 # BerkeleyDB Cache
 
-BerkeleyDB (the database engine the BIMserver uses) has a setting for the amount of heap memory it can use for caching (which will speedup reads), we have set it to 25%. So if you give your BIMserver 4GB of heap, it will soon be using 1GB of memory for caching. You can change this and other parameters only if you build/fork [your own version of BIMserver](https://github.com/opensourceBIM/BIMserver).
+BerkeleyDB (the database engine the BIMserver uses) has a setting for the amount of heap memory it can use for caching (which will speedup reads), we have set it to 30%. So if you give your BIMserver 4GB of heap, it will soon be using more than 1GB of memory for caching. You can change this and other parameters only in the development setup or if you build [your own version of BIMserver](https://github.com/opensourceBIM/BIMserver) for production.
 
-See [the BerkeleyDB documentation](http://docs.oracle.com/cd/E17277_02/html/java/com/sleepycat/je/EnvironmentMutableConfig.html#setCachePercent(int)) for more information.
+See [the BerkeleyDB documentation](http://docs.oracle.com/cd/E17277_02/html/java/com/sleepycat/je/EnvironmentMutableConfig.html#setCachePercent-int-) for more information.
 
 # Compressed Oops
 
 Running a 64bit system with less than 32GB of memory, you can use [Compressed Oops](http://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html#compressedOop) (Ordinary Object Pointers). This feature reduces memory overhead, allowing for more efficient memory usage.
 
-> Update: This is by default enabled on recent OpenJDK 6 and 7 implementations, so you probably won't have to do anything.
+> Update: This is by default enabled on recent OpenJDK 6 and 7 implementations and onwards, so you probably won't have to do anything.

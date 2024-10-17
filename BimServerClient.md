@@ -54,11 +54,9 @@ public class ClientDemo {
 
 BIMserver 1.5 examples:
 
-### [Connect to a BIMserver](https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/Connecting.java)
-
-### [Create a project](https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/CreateProject.java)
-
-### [Checkin IFC file](https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/CheckinIfcFile.java)
+* Connect to a BIMserver: [org.opensourcebim.clientdemo.Connecting](https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/Connecting.java)
+* Create a project: [org.opensourcebim.clientdemo.CreateProject](https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/CreateProject.java)
+* Checkin IFC file: [org.opensourcebim.clientdemo.CheckinIfcFile](https://github.com/opensourceBIM/BimServerJavaClientDemo/blob/master/BimServerJavaClientDemo/src/org/opensourcebim/clientdemo/CheckinIfcFile.java)
 
 # Older examples (might not work anymore in 1.5)
 
