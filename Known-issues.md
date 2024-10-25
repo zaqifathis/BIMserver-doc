@@ -24,11 +24,8 @@ Real IFC Example:
 And another:
 
 ![Inverse2](img/inverses2.png)
-[Discussion](http://support.bimserver.org/bimserver/topics/initialization_of_inverse_slots_in_ifcobject_hasassociations)
 
-[And](http://support.bimserver.org/bimserver/topics/ifcelement_containedinspatialstructure_inverse_attribute_not_set)
-
-[Also](https://github.com/opensourceBIM/BIMserver/issues/26)
+You can check [here](https://github.com/opensourceBIM/BIMserver/issues/26) for the discussion regarding the problem with inverse attribute.
 
 Another case: IfcRelAssociates.RelatedObjects (IfcRoot) and the inverse IfcObject.HasAssociations (IfcRelAssociates) do not match.
 
@@ -55,13 +52,13 @@ The workaround: Add "-XX:-UseSplitVerifier" when running.
 
 The following is an example, there could be more.
 
-[IfcPresentationStyleSelect](http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcpr-30.html) has [IfcNullStyle](http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcnu-02.html) as a 'subtype', but IfcNullStyle is en enum. This is not supported in Java or EMF, files containing this construction will fail to deserialize at the moment.
+[IfcPresentationStyleSelect](https://www.steptools.com/docs/ifcbim/html/t_ifcpresentationstyleselect.html) has [IfcNullStyle](https://www.steptools.com/docs/ifcbim/html/t_ifcnullstyle.html)  as a 'subtype', but IfcNullStyle is en enum. This is not supported in Java or EMF, files containing this construction will fail to deserialize at the moment.
 
 # Other IFC2x3 problems
 
-[IfcCompoundPlaneAngleMeasure](http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcco-03.html) is a type defined as a list, which does not work in EMF/Java
+[IfcCompoundPlaneAngleMeasure](https://www.steptools.com/docs/ifcbim/html/t_ifccompoundplaneanglemeasure.html) is a type defined as a list, which does not work in EMF/Java
 
-[IfcComplexNumber](http://www.steptools.com/support/stdev_docs/express/ifc2x3/html/t_ifcco-07.html) is a type defined as an array, which does not work in EMF/Java
+[IfcComplexNumber](https://www.steptools.com/docs/ifcbim/html/t_ifccomplexnumber.html) is a type defined as an array, which does not work in EMF/Java
 
 # More issues
 For more know issues have a look at the [issue list](https://github.com/opensourceBIM/BIMserver/issues?state=open)

@@ -13,9 +13,9 @@ Some characteristics to of this language to keep in mind:
 
 # JSON
 
-All queries must be valid JSON. This means that all keys must be quoted, all strings must be quoted. When you send your query to BIMserver via the [ServiceInterface.download](https://thisisanexperimentalserver.com/apps/console?interface=ServiceInterface&method=download) call via JSON, make sure to base64 encode your query.
+All queries must be valid JSON. This means that all keys must be quoted, all strings must be quoted. When sending a query to BIMserver using the [ServiceInterface.download](https://github.com/opensourceBIM/BIMserver/blob/0c7e37092045d08a4ae8ca836026823f02a977b2/PluginBase/src/org/bimserver/shared/interfaces/ServiceInterface.java#L102-L116) method through JSON, ensure that your query is base64 encoded.
 
-[Downloading models](https://github.com/opensourceBIM/BIMserver/wiki/Downloading-models)
+For further information regarding downloading the data via queries, please check [Downloading models](https://github.com/opensourceBIM/BIMserver/wiki/Downloading-models)
 
 # Base query
 
@@ -71,7 +71,7 @@ The same as for GUIDs, you can also query by OID (ObjectID)
 
 # Properties
 
-Every IFC object has a fixed set of fields. For example the IfcWindow has the fields "OverallWidth" and "OverallHeight" and [many more](http://www.buildingsmart-tech.org/ifc/IFC2x4/rc2/html/schema/ifcsharedbldgelements/lexical/ifcwindow.htm). To use properties that are not defined in the schema, every object can be extended with more properties by adding them using IfcPropertySet and IfcProperty. For example IfcWall objects that are external can be queried via the property `IsExternal` in property set `Pset_WallCommon`:
+Every IFC object has a fixed set of fields. For example the IfcWindow has the fields "OverallWidth" and "OverallHeight" and [many more](https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcwindow.htm). To use properties that are not defined in the schema, every object can be extended with more properties by adding them using IfcPropertySet and IfcProperty. For example IfcWall objects that are external can be queried via the property `IsExternal` in property set `Pset_WallCommon`:
 
 ```json
 {

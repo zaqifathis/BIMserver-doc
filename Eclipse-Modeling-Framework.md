@@ -4,7 +4,7 @@ Building Information Models (BIM) are typically Object Oriented and tend to be l
 
 # IFC Schema
 
-Most BIM meta models are described in a data format. As IFC is based on [STEP/EXPRESS](http://en.wikipedia.org/wiki/EXPRESS_(data_modeling_language)) technology, the schema is available as an .EXP file. This file has been converted to an [EMF Core](http://download.eclipse.org/modeling/emf/emf/javadoc/2.6.0/org/eclipse/emf/ecore/package-summary.html#details ) file with the [BuildingSMARTLibrary](https://github.com/opensourceBIM/BIMserver/tree/master/BuildingSMARTLibrary) (part of BIMserver project).
+Most BIM meta models are described in a data format. As IFC is based on [STEP/EXPRESS](http://en.wikipedia.org/wiki/EXPRESS_(data_modeling_language)) technology, the schema is available as an .EXP file. This file has been converted to an [EMF Core](http://download.eclipse.org/modeling/emf/emf/javadoc/2.6.0/org/eclipse/emf/ecore/package-summary.html#details ) file with the [BuildingSMARTLibrary](https://github.com/opensourceBIM/BuildingSMARTLibrary) (part of BIMserver project).
 
 # Generating Code
 
