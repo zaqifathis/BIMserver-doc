@@ -25,9 +25,10 @@ And another:
 
 ![Inverse2](img/inverses2.png)
 
-You can check [here](https://github.com/opensourceBIM/BIMserver/issues/26) for the discussion regarding the problem with inverse attribute.
+Another case is IfcRelAssociates.RelatedObjects (IfcRoot) which does not match with its inverse IfcObject.HasAssociations (IfcRelAssociates).
 
-Another case: IfcRelAssociates.RelatedObjects (IfcRoot) and the inverse IfcObject.HasAssociations (IfcRelAssociates) do not match.
+You can read part of the very early discussion [here](https://github.com/opensourceBIM/BIMserver/issues/26). There is also a publication about inverse references (Section 2.2 on this mismatch issue): Tauscher H. (2022). _Analysis and effective use of inverse relation attributes in IFC_. In: Proc. 14th European Conference on Product and Process Modelling (ECPPM), Trondheim, Norway, 2022. Doi: [10.1201/9781003354222-95](https://doi.org/10.1201/9781003354222-95).
+
 
 # Derived attributes
 
@@ -52,13 +53,17 @@ The workaround: Add "-XX:-UseSplitVerifier" when running.
 
 The following is an example, there could be more.
 
-[IfcPresentationStyleSelect](https://www.steptools.com/docs/ifcbim/html/t_ifcpresentationstyleselect.html) has [IfcNullStyle](https://www.steptools.com/docs/ifcbim/html/t_ifcnullstyle.html)  as a 'subtype', but IfcNullStyle is en enum. This is not supported in Java or EMF, files containing this construction will fail to deserialize at the moment.
+[IfcPresentationStyleSelect](https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcpresentationstyleselect.htm) has [IfcNullStyle](https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcnullstyle.htm) as a 'subtype', but IfcNullStyle is en enum. This is not supported in Java or EMF, files containing this construction will fail to deserialize at the moment.
 
-# Other IFC2x3 problems
+Both the select type and the enum sub type are deprecated as of IFC 4.
 
-[IfcCompoundPlaneAngleMeasure](https://www.steptools.com/docs/ifcbim/html/t_ifccompoundplaneanglemeasure.html) is a type defined as a list, which does not work in EMF/Java
+# Other IFC problems
 
-[IfcComplexNumber](https://www.steptools.com/docs/ifcbim/html/t_ifccomplexnumber.html) is a type defined as an array, which does not work in EMF/Java
+[IfcCompoundPlaneAngleMeasure](https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcpresentationstyleselect.htm) is a defined type derived from a list, which does not work in EMF/Java.
+
+[IfcComplexNumber](https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifccomplexnumber.htm) is a defined type derived from an array, which does not work in EMF/Java.
+
 
 # More issues
 For more know issues have a look at the [issue list](https://github.com/opensourceBIM/BIMserver/issues?state=open)
+
