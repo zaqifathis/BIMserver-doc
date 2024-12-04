@@ -4,7 +4,7 @@
 
 1. Read the wiki page for the relevant version of the requirements document, e.g. [Requirements 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.5)
 
-2. Make sure you can execute a JAR file by double-clicking a JAR file. If not, check that [Java](http://www.java.com) is installed properly and the JAVA environment variables are setup correctly. On your Mac, Oracle advises to install the JDK (instead of the JRE). Make sure you have 64bit Java installed.
+2. Make sure you can execute a JAR file by double-clicking a JAR file. If not, check that Java is installed properly and the JAVA environment variables are setup correctly. Make sure you have 64bit Java installed.  A JRE for your operating system can be downloaded from [Adoptium](https://adoptium.net/de/temurin/releases/?package=jre&os=any). Oracle provides JREs for Java 8 only at <https://java.com>. If you want to use java from the commandline on your Mac, Oracle advises to install a JDK (instead of the JRE).
 
 3. Download the latest [file(s)](https://github.com/opensourceBIM/BIMserver/releases). If needed, read about [which type of files to download](https://github.com/opensourceBIM/BIMserver/wiki/Download).
 
