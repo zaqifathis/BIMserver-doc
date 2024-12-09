@@ -4,7 +4,7 @@ We use Eclipse to develop BIMserver. Other IDE's should work as well, but this p
 
 It's best to download the "Eclipse Modeling Tools" package, but if you are not going to change the EMF model, you can also just download the "Standard" package, or use your own existing installation.
 
-> This page describes the manual checkout of a lot of required repositories, to speed things up a bit, you can also use [Eclipse Team Project Set](https://github.com/opensourceBIM/BIMserver/wiki/Eclipse-setup-with-Team-project-set)
+> This page describes the manual checkout of a lot of required repositories, to speed things up a bit, you can also use [Eclipse Team Project Set](Eclipse-setup-with-Team-project-set)
 
 # GitHub
 
@@ -36,7 +36,7 @@ To run the BIMserver from eclipse, right click the BimServer**Jar** project, sel
 
 ## Not enough memory
 
-When Java complains there is not enough memory, you can increase the amount of heap memory the BIMserver can use in the "Run configuration". Please read these [notes](https://github.com/opensourceBIM/BIMserver/wiki/Memory-and-Java) on memory in general. Go to the tab "Arguments" and add the following to the "VM arguments": "-Xmx4g" (this is for 4GB of heap).
+When Java complains there is not enough memory, you can increase the amount of heap memory the BIMserver can use in the "Run configuration". Please read these [notes](Memory-and-Java) on memory in general. Go to the tab "Arguments" and add the following to the "VM arguments": "-Xmx4g" (this is for 4GB of heap).
 
 ![Credentials](img/runconfigs.png)
 ![Credentials](img/runconfig.png)
@@ -52,14 +52,14 @@ You can add as many "plugins" parameters. So for example:
 -plugins "C:\Users\My Name\Plugin 1" -plugins "/home/myname/plugin2"
 ```
 
-Typical projects you'd want to link are:
-https://github.com/opensourceBIM/bimvie.ws.git
-https://github.com/opensourceBIM/BIMserver-JavaScript-API.git
+Typical projects you'd want to link are: \
+https://github.com/opensourceBIM/bimvie.ws.git \
+https://github.com/opensourceBIM/BIMserver-JavaScript-API.git \
 https://github.com/opensourceBIM/BIMsurfer.git (Version 1 is required for BIMvie.ws to run at the moment, make sure you pick the right branch)
-https://github.com/opensourceBIM/BinarySerializers.git
-https://github.com/opensourceBIM/IfcOpenShell-BIMserver-plugin.git
-https://github.com/opensourceBIM/IfcPlugins.git
-"https://github.com/opensourceBIM/console.git
+https://github.com/opensourceBIM/BinarySerializers.git \
+https://github.com/opensourceBIM/IfcOpenShell-BIMserver-plugin.git \
+https://github.com/opensourceBIM/IfcPlugins.git \
+"https://github.com/opensourceBIM/console.git 
 
 For every project, you have to clone the git repository and import the projects. Then copy the location on disk and add it as a "-plugins" argument.
 

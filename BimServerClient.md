@@ -13,7 +13,7 @@ You can find the Maven XML snippet in the latest release notes, [BIMserver 1.5.1
 </dependency>
 ```
 
-If you are using Eclipse for development, and you are not familiar with Maven yet, use [this tutorial](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClientMavenEclipse).
+If you are using Eclipse for development, and you are not familiar with Maven yet, use [[this tutorial | BimServerClientMavenEclipse]].
 
 Of course you can also use the client from source code, in that case download a source zip file, or checkout the projects from GIT.
 

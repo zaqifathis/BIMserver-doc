@@ -1,90 +1,90 @@
 **Get Started**
-* [Quick Guide](https://github.com/opensourceBIM/BIMserver/wiki/Get-Started-Quick-Guide)
-* [Requirements Version 1.2](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.2)
-* [Requirements Version 1.3](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.3)
-* [Requirements Version 1.4](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.4)
-* [Requirements Version 1.4 > 2015-09-12](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.4---2015-09-12)
-* [Requirements Version 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.5)
-* [Download](https://github.com/opensourceBIM/BIMserver/wiki/Download)
-* [JAR Starter](https://github.com/opensourceBIM/BIMserver/wiki/JAR-Starter)
-* [Setup](https://github.com/opensourceBIM/BIMserver/wiki/Setup)
+* [[Quick Guide | Get-Started-Quick-Guide]]
+* [[Requirements Version 1.2 | Requirements-1.2]]
+* [[Requirements Version 1.3 | Requirements-1.3]]
+* [[Requirements Version 1.4 | Requirements-1.4]]
+* [[Requirements Version 1.4 > 2015-09-12 | Requirements-1.4---2015-09-12]]
+* [[Requirements Version 1.5 | Requirements-1.5]]
+* [[Download | Download]]
+* [[JAR Starter | JAR-Starter]]
+* [[Setup | Setup]]
 
 **Deployment**
-* [Ubuntu installation 1.3](https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu)
-* [Windows installation](https://github.com/opensourceBIM/BIMserver/wiki/Tomcat-on-windows)
-* [Security](https://github.com/opensourceBIM/BIMserver/wiki/Security)
-* [Memory Usage](https://github.com/opensourceBIM/BIMserver/wiki/Memory-usage)
-* [More memory](https://github.com/opensourceBIM/BIMserver/wiki/Memory-and-Java)
-* [Performance statistics](https://github.com/opensourceBIM/BIMserver/wiki/Performance-statistics)
-* [Large databases](https://github.com/opensourceBIM/BIMserver/wiki/Large-databases)
+* [[Ubuntu installation 1.3 | Install-on-Ubuntu]]
+* [[Windows installation | Tomcat-on-windows]]
+* [[Security | Security]]
+* [[Memory Usage | Memory-usage]]
+* [[More memory | Memory-and-Java]]
+* [[Performance statistics | Performance-statistics]]
+* [[Large databases | Large-databases]]
 
 **Developers**
-* [Service Interfaces](https://github.com/opensourceBIM/BIMserver/wiki/Service-Interfaces)
-  * [SOAP](https://github.com/opensourceBIM/BIMserver/wiki/SOAP)
-   * [JSON](https://github.com/opensourceBIM/BIMserver/wiki/JSON-API)
-   * [Protocol Buffers](https://github.com/opensourceBIM/BIMserver/wiki/Protocol-Buffers)
+* [[Service Interfaces | Service-Interfaces]]
+  * [[SOAP | SOAP]]
+   * [[JSON | JSON-API]]
+   * [[Protocol Buffers | Protocol-Buffers]]
 * Common functions
-  * [Checkin](https://github.com/opensourceBIM/BIMserver/wiki/Checkin)
-  * [Download](https://github.com/opensourceBIM/BIMserver/wiki/Downloading-models)
+  * [[Checkin | Checkin]]
+  * [[Download | Downloading-models]]
 * Data Model
-  * [SProject](https://github.com/opensourceBIM/BIMserver/wiki/SProject)
-  * [SRevision](https://github.com/opensourceBIM/BIMserver/wiki/SRevision)
-* [Low Level Calls](https://github.com/opensourceBIM/BIMserver/wiki/Low-Level-Calls)
-* [Endpoints](https://github.com/opensourceBIM/BIMserver/wiki/Endpoints)
+  * [[SProject | Eclipse-setup-with-Team-project-set]]
+  * [[SRevision | SRevision]]
+* [[Low Level Calls | Low-Level-Calls]]
+* [[Endpoints | Endpoints]]
 
 **Clients**
-* [Java Client](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClient)
-     * [Java Client (Maven)](https://github.com/opensourceBIM/BIMserver/wiki/BimServerClientMavenEclipse)
-* [PHP Client](https://github.com/opensourceBIM/BIMserver/wiki/PHP-Client-Library)
-* [JavaScript Client](https://github.com/opensourceBIM/BIMserver/wiki/JavaScriptClient)
+* [[Java Client | BimServerClient]]
+     * [[Java Client (Maven) | BimServerClientMavenEclipse]]
+* [[PHP Client | PHP-Client-Library]]
+* [[JavaScript Client | JavaScriptClient]]
 
 **BIMServer Developers**
-* [Plugins in 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---new-style)
-* [Plugin Development](https://github.com/opensourceBIM/BIMserver/wiki/Plugin-Development)
-  * [Serializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Serializer-Plugin)
-    * [XSLT Serializer](https://github.com/opensourceBIM/BIMserver/wiki/XSLT-Serializer)
-    * [BIMsurfer Serializers](https://github.com/opensourceBIM/BIMserver/wiki/BIMsurfer-Serializers)
-  * [Deserializer Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Deserializer-Plugin)
-  * [Model Compare Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Model-Compare-Plugin)
-  * [Model Merge Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Model-Merge-Plugin)
-  * [Query Engine Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Query-Engine-Plugin)
-  * [Render Engine Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Render-Engine-Plugin)
-  * [ObjectIDM Plugin](https://github.com/opensourceBIM/BIMserver/wiki/ObjectIDM-Plugin)
-  * [Schema Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Schema-Plugin)
-  * [Service Plugin](https://github.com/opensourceBIM/BIMserver/wiki/Service-Plugin)
-* [Eclipse](https://github.com/opensourceBIM/BIMserver/wiki/Eclipse)
-* [Eclipse Modeling Framework](https://github.com/opensourceBIM/BIMserver/wiki/Eclipse-Modeling-Framework)
-* [Embedding](https://github.com/opensourceBIM/BIMserver/wiki/Embedding)
-* [Terminology](https://github.com/opensourceBIM/BIMserver/wiki/Terminology)
-* [Database/Versioning](https://github.com/opensourceBIM/BIMserver/wiki/Database---Versioning)
-* [IFC STEP Encoding](https://github.com/opensourceBIM/BIMserver/wiki/IFC-STEP-Encoding)
-* [Communication](https://github.com/opensourceBIM/BIMserver/wiki/Communication)
-* [Global changes in 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Global-changes-in-1.5)
-* [Writing a service](https://github.com/opensourceBIM/BIMserver/wiki/Writing-a-service,-the-easy-way)
-* [Services/Notifications](https://github.com/opensourceBIM/BIMserver/wiki/Services-Notifications)
-* [BIMserver 1.5 Developers](https://github.com/opensourceBIM/BIMserver/wiki/BIMserver-1.5---Developers)
-* [Extended data](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data)
-* [Extended data schema](https://github.com/opensourceBIM/BIMserver/wiki/Extended-Data-Schema)
-* [Object IDM](https://github.com/opensourceBIM/BIMserver/wiki/Object-IDMs)
+* [[Plugins in 1.5 | Plugins---new-style]]
+* [[Plugin Development | Plugin-Development]]
+  * [[Serializer Plugin | Serializer-Plugin]]
+    * [[XSLT Serializer | XSLT-Serializer]]
+    * [[BIMsurfer Serializers | BIMsurfer-Serializers]]
+  * [[Deserializer Plugin | Deserializer-Plugin]]
+  * [[Model Compare Plugin | Model-Compare-Plugin]]
+  * [[Model Merge Plugin | Model-Merge-Plugin]]
+  * [[Query Engine Plugin | Query-Engine-Plugin]]
+  * [[Render Engine Plugin | Render-Engine-Plugin]]
+  * [[ObjectIDM Plugin | ObjectIDM-Plugin]]
+  * [[Schema Plugin | Schema-Plugin]]
+  * [[Service Plugin | Service-Plugin]]
+* [[Eclipse | Eclipse]]
+* [[Eclipse Modeling Framework | Eclipse-Modeling-Framework]]
+* [[Embedding | Embedding]]
+* [[Terminology | Terminology]]
+* [[Database/Versioning | Database---Versioning]]
+* [[IFC STEP Encoding | IFC-STEP-Encoding]]
+* [[Communication | Communication]]
+* [[Global changes in 1.5 | Global-changes-in-1.5]]
+* [[Writing a service | Writing-a-service,-the-easy-way]]
+* [[Services/Notifications | Services-Notifications]]
+* [[BIMserver 1.5 Developers | BIMserver-1.5---Developers]]
+* [[Extended data | Extended-Data]]
+* [[Extended data schema | Extended-Data-Schema]]
+* [[Object IDM | Object-IDMs]]
 
 **New developments**
-* [New remote service interface](https://github.com/opensourceBIM/BIMserver/wiki/New-remote-service-interface)
-* [Plugins new](https://github.com/opensourceBIM/BIMserver/wiki/Plugins---New)
-* [Deprecated](https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
-* [New query language](https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
-* [Visual query language](https://github.com/opensourceBIM/BIMserver/wiki/Visual-query-language)
-  * [Contains](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-Contains)
-  * [Decomposes](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-Decomposes)
-  * [DecomposesContains](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-DecomposesContains)
-  * [Properties](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-Properties)
-  * [Reusable](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-blocks)
-* [Reorganizing BIMserver JavaScript API](https://github.com/opensourceBIM/BIMserver/wiki/Reorganizing-bimserverapi.js)
+* [[New remote service interface | New-remote-service-interface]]
+* [[Plugins new | Plugins---New]]
+* [[Deprecated | Deprecated]]
+* [[New query language | New-query-langage]]
+* [[Visual query language | Visual-query-language]]
+  * [[Contains | Reusable-query-Contains]]
+  * [[Decomposes | Reusable-query-Decomposes]]
+  * [[DecomposesContains | Reusable-query-DecomposesContains]]
+  * [[Properties | Reusable-query-Properties]]
+  * [[Reusable | Reusable-query-blocks]]
+* [[Reorganizing BIMserver JavaScript API | Reorganizing-bimserverapi.js]]
 
 **General**
-* [FAQ](https://github.com/opensourceBIM/BIMserver/wiki/FAQ)
-* [Known Issues](https://github.com/opensourceBIM/BIMserver/wiki/Known-Issues)
-  * [Problems querying IFC](https://github.com/opensourceBIM/BIMserver/wiki/Problems-with-querying-IFC)
-  * [Web Sockets](https://github.com/opensourceBIM/BIMserver/wiki/Web-socket-error)
-* [License](https://github.com/opensourceBIM/BIMserver/wiki/License)
-* [Feature statusses](https://github.com/opensourceBIM/BIMserver/wiki/Feature-statusses)
-* [Roadmap](https://github.com/opensourceBIM/BIMserver/wiki/Roadmap)
+* [[FAQ | FAQ]]
+* [[Known Issues | Known-issues]]
+  * [[Problems querying IFC | Problems-with-querying-IFC]]
+  * [[Web Sockets | Web-socket-error]]
+* [[License | License]]
+* [[Feature statusses | Feature-statusses]]
+* [[Roadmap | Roadmap]]

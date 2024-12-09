@@ -47,7 +47,7 @@ Problems you might run into with this approach is the fact that different versio
 
 The most important part of most BIMserver databases would be the models. Since sometimes bugs exist in older version of BIMserver, you might want to consider getting the original IFC file (stored in "{homedir}/incoming") and checking those into your new server instead of serializing those models in the original server.
 
-> Important note: Using migration methods like these will never result in the same Object IDs. You should assume all ID's to be different. There is no way to do this kind of an import and force the ID's to stay the same, at least not with the current design of the database layer in BIMserver. This can obviously be problematic for databases that need to refer to for example BIMserver projects, users or revisions. For this reason we are (slowly) introducing [UUIDs](https://github.com/opensourceBIM/BIMserver/wiki/UUIDs) for certain objects.
+> Important note: Using migration methods like these will never result in the same Object IDs. You should assume all ID's to be different. There is no way to do this kind of an import and force the ID's to stay the same, at least not with the current design of the database layer in BIMserver. This can obviously be problematic for databases that need to refer to for example BIMserver projects, users or revisions. For this reason we are (slowly) introducing [[UUIDs | UUIDs]] for certain objects.
 
 ## ServiceInterface.importData
 

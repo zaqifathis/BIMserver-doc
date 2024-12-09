@@ -8,12 +8,12 @@ The method you call is [ServiceInterface.download](https://github.com/opensource
 
 The download method has 4 parameters.
 
-- ``roids``, a set/list of roid: A roid can be acquired by called .oid on a [Revision](https://github.com/opensourceBIM/BIMserver/wiki/SRevision), .lastRevisionId on a [Project](https://github.com/opensourceBIM/BIMserver/wiki/SProject).
+- ``roids``, a set/list of roid: A roid can be acquired by called .oid on a [[Revision | SRevision]], .lastRevisionId on a [[Project | SProject]].
 - ``query``, a valid JSON query: When you are using the BIMserver API over JSON, you need to base64 this.
 - ``serializerOid``: Tell BIMserver how to serialize the results of the query. See (Acquire serializer).
 - ``sync``: Whether this method should return right away (async) or wait for the process to finsh (sync).
 
-More information about [Projects](https://github.com/opensourceBIM/BIMserver/wiki/SProject) , [Revisions](https://github.com/opensourceBIM/BIMserver/wiki/SRevision) , [Serializers](https://github.com/opensourceBIM/BIMserver/wiki/SSerializerPluginConfiguration)
+More information about [[Projects | SProject]] , [[Revisions | SRevision]] , [[Serializers | SSerializerPluginConfiguration]]
 
 # Step 2, downloading the data
 

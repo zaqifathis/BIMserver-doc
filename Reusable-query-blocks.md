@@ -8,7 +8,7 @@ Elements of a reusable query block:
 - OUT
 
 # List of reusable query blocks
-- [Decomposes](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-Decomposes)
-- [Contains](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-Contains)
-- [DecomposesContains](https://github.com/opensourceBIM/BIMserver/wiki/Reusable-query-DecomposesContains)
-- [Properties]()
+- [[Decomposes | Reusable-query-Decomposes]]
+- [[Contains | Reusable-query-Contains]]
+- [[DecomposesContains | Reusable-query-DecomposesContains]]
+- [[Properties | Reusable-query-Properties]]

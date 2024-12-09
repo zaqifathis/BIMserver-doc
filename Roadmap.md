@@ -23,10 +23,10 @@ November 2015
 - Remove query-plugin extensionpoint
 - Implement indices for model-data
 - Move GUID/Name indices to generic indexing system
-- Implement useful query method, replace current query methods (https://github.com/opensourceBIM/BIMserver/wiki/New-query-langage)
+- Implement useful query method, replace current query methods with [New-query-language](New-query-langage)
 
 December 2015
-- Remove deprecated code (https://github.com/opensourceBIM/BIMserver/wiki/Deprecated)
+- Remove [deprecated code](Deprecated)
 - Add get/list/read methods to low level interface, remove data object calls
 - Notifications on object-level
 - Implement useful functional logging system (inc. notifications, log on disk)

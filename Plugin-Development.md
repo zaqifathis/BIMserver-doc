@@ -1,6 +1,6 @@
 # Introduction
 
-The BIMserver project has a strong focus on interaction with other systems, that's what the [Service Interfaces](Service-Interfaces) are for (accessible via [SOAP](SOAP), [Protocol Buffers](Protocol-Buffers) or [JSON](JSON-API)). However, some logic will only work (efficiently) when running within the BIMserver, that's where plugins come into play.
+The BIMserver project has a strong focus on interaction with other systems, that's what the [[Service Interfaces | Service-Interfaces]] are for (accessible via [[SOAP | SOAP]], [[Protocol Buffers | Protocol-Buffers]] or [[JSON | JSON-API]]). However, some logic will only work (efficiently) when running within the BIMserver, that's where plugins come into play.
 
 # Types of plugins
 
@@ -19,17 +19,17 @@ Do not implement the Plugin class directly, there are sub-interfaces for the dif
 
 # Types of plugins
 
-| Name | Functionality |
-| ---- | ------------- |
-| [Serializer](Serializer-Plugin) | Create a serialized version of a model (can be text or binary)|
-| [Deserializer](Deserializer-Plugin) | Parse a serialized version of a model and store it in the database |
-| [Render Engine](Render-Engine-Plugin) | Triangulates IFC geometry |
-| [Query Engine](Query-Engine-Plugin) | Provides a way of querying a model |
-| [Schema](Schema-Plugin) | Provides the BIMserver with metadata about the models |
-| [Object IDM](ObjectIDM-Plugin) | Provides the BIMserver with a way of traversing objects |
-| [Model Merge](Model-Merge-Plugin) | Merge multiple models into one model |
-| [Model Compare](Model-Compare-Plugin) | Compare 2 models |
-| [Service](Service-Plugin) | Services can be triggered by certain events |
+| Name                                     | Functionality |
+|------------------------------------------| ------------- |
+| [[Serializer | Serializer-Plugin]]       | Create a serialized version of a model (can be text or binary)|
+| [[Deserializer | Deserializer-Plugin]]   | Parse a serialized version of a model and store it in the database |
+| [[Render Engine | Render-Engine-Plugin]] | Triangulates IFC geometry |
+| [[Query Engine | Query-Engine-Plugin]]   | Provides a way of querying a model |
+| [[Schema | Schema-Plugin]]               | Provides the BIMserver with metadata about the models |
+| [[Object IDM | ObjectIDM-Plugin]]        | Provides the BIMserver with a way of traversing objects |
+| [[Model Merge | Model-Merge-Plugin]]     | Merge multiple models into one model |
+| [[Model Compare | Model-Compare-Plugin]] | Compare 2 models |
+| [[Service | Service-Plugin]]             | Services can be triggered by certain events |
 
 # So how to develop a plugin
 
@@ -38,9 +38,8 @@ Do not implement the Plugin class directly, there are sub-interfaces for the dif
 
 > The easiest way to learn is to look how other people have done things, there are quite a few plugins already, so have a look at them.
 
-  * Create a new java project for your plugin, for example "PluginTest"
-![new project](http://bimserver.googlecode.com/svn/wiki/images/newproject.png)
-  * Create your plugin class, this class must implement the plugin interface you want to write a plugin for, make sure you implement all methods correctly. For this example we will create a serializer and we will name the plugin "TestSerializerPlugin" in the package "test".
+  * Create a new java project for your plugin, for example ``PluginTest``
+  * Create your plugin class, this class must implement the plugin interface you want to write a plugin for, make sure you implement all methods correctly. For this example we will create a serializer and we will name the plugin `TestSerializerPlugin` in the package `test`.
   * Create a plugin folder under your project
   * Create a plugin.xml file under the plugin folder, the content should like like this:
 ```xml
@@ -54,7 +53,7 @@ Do not implement the Plugin class directly, there are sub-interfaces for the dif
 </PluginDescriptor>
 ```
 
-Now to test your plugin locally you will have to tell the BIMserver where your plugin can be found. Edit "LocalDevPluginLoader.java" and  look for the lines with loadPluginFromEclipseProject. Add
+Now to test your plugin locally you will have to tell the BIMserver where your plugin can be found. Edit `LocalDevPluginLoader.java` and  look for the lines with ``loadPluginFromEclipseProject``. Add
 
 ```java
 pluginManager.loadPluginsFromEclipseProject(new File("../PluginTest"));
@@ -69,4 +68,4 @@ To make your plugin available on deployed BIMservers (either WAR or JAR), you ha
 # License
 
 BIMserver is an open framework that uses Plugins. Derivatives of bimserver.org code inherit the Affero GPL code. Plugins build from scratch can also be licensed under the GPL license (and used as plugin in BIMserver).  This does not go for snippets, GUIs and some separate (or remote) running services where BIMserver is a client to that service. Again: when in doubt, feel free to contact us.
-More details and examples on [http://bimserver.org/license/](http://bimserver.org/license/)
+More details and examples on [http://bimserver.org/license/](https://web.archive.org/web/20191031195220/http://bimserver.org/license/)

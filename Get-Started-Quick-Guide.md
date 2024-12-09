@@ -2,11 +2,11 @@
 
 ### **Stand-alone BIMserver**
 
-1. Read the wiki page for the relevant version of the requirements document, e.g. [Requirements 1.5](https://github.com/opensourceBIM/BIMserver/wiki/Requirements-1.5)
+1. Read the wiki page for the relevant version of the requirements document, e.g. [[Requirements 1.5 | Requirements-1.5]]
 
 2. Make sure you can execute a JAR file by double-clicking a JAR file. If not, check that Java is installed properly and the JAVA environment variables are setup correctly. Make sure you have 64bit Java installed.  A JRE for your operating system can be downloaded from [Adoptium](https://adoptium.net/de/temurin/releases/?package=jre&os=any). Oracle provides JREs for Java 8 only at <https://java.com>. If you want to use java from the commandline on your Mac, Oracle advises to install a JDK (instead of the JRE).
 
-3. Download the latest [file(s)](https://github.com/opensourceBIM/BIMserver/releases). If needed, read about [which type of files to download](https://github.com/opensourceBIM/BIMserver/wiki/Download).
+3. Download the latest [file(s)](https://github.com/opensourceBIM/BIMserver/releases). If needed, read about [[which type of files to download | Download]].
 
 4. Assuming this is your first installation, create a new folder in your system, e.g. C:\BIMserver
 **Note**: avoid creating BIMserver subfolder with spaces like C:\Program Files or C:\Program Files (x86)
@@ -45,7 +45,7 @@ bimvie.ws allows viewing of the model. Alternatively, one can use bimsurfer.org
 
 **Additional Info**
 
-1. Read [Setup Guide](https://github.com/opensourceBIM/BIMserver/wiki/Setup).
+1. Read [[Setup Guide | Setup]].
 2. Watch this [Open Source BIMserver](http://www.youtube.com/watch?v=greB5jHi6JQ) video.
 3. As a rule of thumb, set the heap size according to: 15MB per 1MB of IFC file, e.g. for 30MB of IFC file, the heap size should be at least 4GB for normal use with plugins.
 
