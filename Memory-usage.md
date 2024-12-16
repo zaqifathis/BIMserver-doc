@@ -17,6 +17,6 @@ See [the BerkeleyDB documentation](http://docs.oracle.com/cd/E17277_02/html/java
 
 # Compressed Oops
 
-Running a 64bit system with less than 32GB of memory, you can use [Compressed Oops](http://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html#compressedOop) (Ordinary Object Pointers). This feature reduces memory overhead, allowing for more efficient memory usage.
+Running a 64bit system with less than 32GB of memory, you can use [Compressed Oops](https://docs.oracle.com/en/java/javase/21/vm/java-hotspot-virtual-machine-performance-enhancements.html#GUID-932AD393-1C8C-4E50-8074-F81AD6FB2444) (Ordinary Object Pointers). This feature reduces memory overhead, allowing for more efficient memory usage.
 
 > Update: This is by default enabled on recent OpenJDK 6 and 7 implementations and onwards, so you probably won't have to do anything.

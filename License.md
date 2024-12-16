@@ -22,7 +22,7 @@ A list of projects and their license:
 | [FileBasedObjectIDM](../tree/master/FileBasedObjectIDM) | GPLv3 |
 | [GeneratedSOAPclient](../tree/master/GeneratedSoapclient) |  GPLv3 |
 | [Ifc](../tree/master/Ifc) | AfferoGPLv3 |
-| [IFCEngine](http://www.ifcbrowser.com/) | special non open source license (see GIT for details) |
+| [IFCEngine](https://rdf.bg/product-list/ifc-engine/) | special non open source license (see GIT for details) |
 | [IfcPlugins](../tree/master/IfcPlugins) | AfferoGPLv3  |
 | [JavaQueryEngine](../tree/master/JavaQueryEngine) | GPLv3 |
 | [Mergers](../tree/master/Mergers) | GPLv3 |

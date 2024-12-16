@@ -7,7 +7,7 @@ As the BIMserver's main function is to allow other software to store and retriev
 * Almost every SOAP stack interprets the standards a little different
 * A lot of diversions/extensions are available, excluding certain soap clients
 
-For these reasons another interface has been implemented: [Protocol Buffers](http://code.google.com/p/protobuf/).
+For these reasons another interface has been implemented: [Protocol Buffers](https://github.com/protocolbuffers/protobuf).
 
 The Protocol Buffers API maps all the functions available in the services [LINK], so the actual calls will not be described in this document.
 
