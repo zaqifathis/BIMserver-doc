@@ -1,6 +1,6 @@
 # Introduction
 
-The BIMserver project has a strong focus on interaction with other systems, that's what the [[Service Interfaces | Service-Interfaces]] are for (accessible via [[SOAP | SOAP]], [[Protocol Buffers | Protocol-Buffers]] or [[JSON | JSON-API]]). However, some logic will only work (efficiently) when running within the BIMserver, that's where plugins come into play.
+The BIMserver project has a strong focus on interaction with other systems, that's what the [Service Interfaces](Service-Interfaces) are for (accessible via [SOAP](SOAP), [Protocol Buffers](Protocol-Buffers) or [JSON](JSON-API)). However, some logic will only work (efficiently) when running within the BIMserver, that's where plugins come into play.
 
 # Types of plugins
 
@@ -21,15 +21,15 @@ Do not implement the Plugin class directly, there are sub-interfaces for the dif
 
 | Name                                     | Functionality |
 |------------------------------------------| ------------- |
-| [[Serializer | Serializer-Plugin]]       | Create a serialized version of a model (can be text or binary)|
-| [[Deserializer | Deserializer-Plugin]]   | Parse a serialized version of a model and store it in the database |
-| [[Render Engine | Render-Engine-Plugin]] | Triangulates IFC geometry |
-| [[Query Engine | Query-Engine-Plugin]]   | Provides a way of querying a model |
-| [[Schema | Schema-Plugin]]               | Provides the BIMserver with metadata about the models |
-| [[Object IDM | ObjectIDM-Plugin]]        | Provides the BIMserver with a way of traversing objects |
-| [[Model Merge | Model-Merge-Plugin]]     | Merge multiple models into one model |
-| [[Model Compare | Model-Compare-Plugin]] | Compare 2 models |
-| [[Service | Service-Plugin]]             | Services can be triggered by certain events |
+| [Serializer](Serializer-Plugin)       | Create a serialized version of a model (can be text or binary)|
+| [Deserializer](Deserializer-Plugin)   | Parse a serialized version of a model and store it in the database |
+| [Render Engine](Render-Engine-Plugin) | Triangulates IFC geometry |
+| [Query Engine](Query-Engine-Plugin)   | Provides a way of querying a model |
+| [Schema](Schema-Plugin)               | Provides the BIMserver with metadata about the models |
+| [Object IDM](ObjectIDM-Plugin)        | Provides the BIMserver with a way of traversing objects |
+| [Model Merge](Model-Merge-Plugin)     | Merge multiple models into one model |
+| [Model Compare](Model-Compare-Plugin) | Compare 2 models |
+| [Service](Service-Plugin)             | Services can be triggered by certain events |
 
 # So how to develop a plugin
 

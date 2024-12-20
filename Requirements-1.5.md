@@ -31,11 +31,11 @@ Requirements for using WAR files:
   * A JRE or JDK 8
   * A Servlet Specification 3.0 or higher based Container with WebSocket support (Tomcat 8 or higher, Jetty 8 or higher)
 
-See [[also | Tested-web-containers]]
+See [also](Tested-web-containers)
 
 # JAR
 
-JAR is a package file format used to aggregate many Java files and connected metadata and resources into one file for distribution. Read more about JAR [[here | JAR-Starter]].
+JAR is a package file format used to aggregate many Java files and connected metadata and resources into one file for distribution. Read more about JAR [here](JAR-Starter).
 
 Requirements for using JAR files:
   * A JRE or JDK 8

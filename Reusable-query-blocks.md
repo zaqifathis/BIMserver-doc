@@ -8,7 +8,7 @@ Elements of a reusable query block:
 - OUT
 
 # List of reusable query blocks
-- [[Decomposes | Reusable-query-Decomposes]]
-- [[Contains | Reusable-query-Contains]]
-- [[DecomposesContains | Reusable-query-DecomposesContains]]
-- [[Properties | Reusable-query-Properties]]
+- [Decomposes](Reusable-query-Decomposes)
+- [Contains](Reusable-query-Contains)
+- [DecomposesContains](Reusable-query-DecomposesContains)
+- [Properties](Reusable-query-Properties)

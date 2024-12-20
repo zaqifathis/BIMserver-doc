@@ -71,7 +71,7 @@ endPointId: othis.server.endPointId
 }
 ```
 
-Read about [[Endpoints | Endpoints]] to learn how to acquire an endPointId.
+Read about [Endpoints](Endpoints) to learn how to acquire an endPointId.
 
 When there is new progress, the ``Bimsie1NotificationInterface.progress`` method will be called on the client.
 ```

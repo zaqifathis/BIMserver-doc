@@ -25,7 +25,7 @@ The amount should cover the BIMserver requirements, but not exceed the available
 
 BIMserver needs at least 1GB.
 Depending on usage and plugins, BIMserver might require up to 100GB.
-See [[Memory usage | Memory-usage]].
+See [Memory usage](Memory-usage).
 
 
 ### External Limitations:

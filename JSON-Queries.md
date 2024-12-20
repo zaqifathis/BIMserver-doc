@@ -1,6 +1,6 @@
 > The new query language is still in development, so expect this to change.
 
-You can read the original motivations to write this language [[here | New-query-langage]]
+You can read the original motivations to write this language [here](New-query-langage)
 
 # Intro
 
@@ -15,7 +15,7 @@ Some characteristics to of this language to keep in mind:
 
 All queries must be valid JSON. This means that all keys must be quoted, all strings must be quoted. When sending a query to BIMserver using the [ServiceInterface.download](https://github.com/opensourceBIM/BIMserver/blob/0c7e37092045d08a4ae8ca836026823f02a977b2/PluginBase/src/org/bimserver/shared/interfaces/ServiceInterface.java#L102-L116) method through JSON, ensure that your query is base64 encoded.
 
-For further information regarding downloading the data via queries, please check [[Downloading models | Downloading-models]]
+For further information regarding downloading the data via queries, please check [Downloading models](Downloading-models)
 
 # Base query
 
