@@ -1,14 +1,4 @@
-# Latest updates
 
-You can view the instruction of Ubuntu installation for BIMserver version 1.5 (last update: 11/2024) : [version 1.5 installation](Install-on-Ubuntu-15)  
-
-## Configure SSL
-If you would like to secure your BIMserver installation with HTTPS, follow the [SSL Setup Guide](SSL-setup) for detailed instructions on generating and configuring an SSL certificate.  
-
-***
-***
-
-# Outdated instructions
 
 > These instructions are for the 1.3 release.
 > Updated on 06-10-2014 while installing BIMserver 1.3 on a 122GB AWS machine

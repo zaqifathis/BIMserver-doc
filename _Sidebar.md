@@ -10,7 +10,7 @@
 * [Setup](Setup)
 
 **Deployment**
-* [Ubuntu installation](Install-on-Ubuntu)
+* [Ubuntu installation](Install-on-Ubuntu-15)
 * [Windows installation](Tomcat-on-windows)
 * [Security](Security)
 * [Memory Usage](Memory-usage)
