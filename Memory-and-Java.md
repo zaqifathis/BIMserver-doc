@@ -38,3 +38,17 @@ The available and usable amount of memory is also limited by various factors, na
 
 3. The JVM cannot use the full physical and addressable memory due to the reasons under 1. A 32-bit JVM on a 32-bit OS usually can use up to approximately 1300MB of memory, which is not much! Thus, if you are on 64-bit OS, ensure you are using a 64-bit JVM to avoid memory limitations. Using a 32-bit JVM on a 64-bit OS is not recommended for running a BIMserver.
 
+
+## Tomcat user
+
+In order to change the memory allocation in Tomcat, please follow this step:
+
+```bash
+user@local:~$ mkdir /opt/tomcat/bin/setenv.sh     # create setenv.sh manually
+user@local:~$ vim /opt/tomcat/bin/setenv.sh       # edit to set memory
+```
+content of ``/opt/tomcat/bin/setenv.sh ``:
+
+````bash
+CATALINA_OPTS="-Xmx{new allocated memory}"
+````
