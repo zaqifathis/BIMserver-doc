@@ -4,10 +4,10 @@ Information about usage and interpretation of the licenses of BIMserver.org proj
 
 # Licenses of projects
 
-The code repository of BIMserver.org consists of several different projects. Every project has its own license. 
+The code repository of opensourceBIM consists of several different projects. Every project has its own license. 
 Some projects are depending on each others code. 
 
-Below is a list of projects and their respective licenses used in BIMserver version ``1.4``. With version ``1.5``, a new architecture has been introduced, restructuring into separate categories as plugins and modules.
+Below is a list of projects and their respective licenses used in BIMserver version 1.4. Since then the module and plugin structure has been reworked, but licenses stayed largely the same.
 
 | Project                                                                                                                   | License                                               |
 |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|

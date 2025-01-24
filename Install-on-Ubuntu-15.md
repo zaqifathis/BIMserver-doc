@@ -87,6 +87,17 @@ user@local:~$ sudo -u tomcat /opt/tomcat9/bin/startup.sh   # start tomcat under 
 user@local:~$ sudo /opt/tomcat9/bin/shutdown.sh            # stop tomcat
 ```
 
+Adjust memory settings (see [Heap size considerations](#considerations-for-choosing-the-heap-size)):
+
+```sh
+user@local:~$ sudo vim /opt/tomcat/bin/setenv.sh       # create if not existing and edit
+```
+
+Additional content of `setenv.sh ` for 4G heap size:
+
+````sh
+CATALINA_OPTS="-Xmx4G"   # use space to combine with other options if any
+````
 
 
 Deploy and configure BIMserver
