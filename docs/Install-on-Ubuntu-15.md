@@ -1,10 +1,5 @@
-### Outdated Instruction
 
-You can find the instruction of Ubuntu installation for previous version: [version 1.3 and 1.4 installation](Install-on-Ubuntu.md)
-
-### Configure SSL
-
-If you would like to secure your BIMserver installation with HTTPS, follow the [SSL Setup Guide](SSL-setup.md) for detailed instructions on generating and configuring an SSL certificate.
+For reference, you can find [older instructions](Install-on-Ubuntu.md) tested with Ubuntu 12.04, Tomcat 7 and BIMserver 1.3 on an AWS server.
 
 ---
 
@@ -87,6 +82,18 @@ user@local:~$ sudo -u tomcat /opt/tomcat9/bin/startup.sh   # start tomcat under 
 user@local:~$ sudo /opt/tomcat9/bin/shutdown.sh            # stop tomcat
 ```
 
+Adjust memory settings (see [Heap size considerations](#considerations-for-choosing-the-heap-size)):
+
+```sh
+user@local:~$ sudo vim /opt/tomcat/bin/setenv.sh       # create if not existing and edit
+```
+
+Additional content of `setenv.sh ` for 4G heap size:
+
+````sh
+CATALINA_OPTS="-Xmx4G"   # use space to combine with other options if any
+````
+
 ## Deploy and configure BIMserver
 
 Although Tomcat has hot deployment enabled by default, it may be more safe to stop Tomcat before any modifications of the setup and restart after.
@@ -112,6 +119,9 @@ Content of `bimserver.xml` (enter your bimserver [home](#directories-and-user-se
   <Parameter name="homedir" value="/var/bimserver/home"/>
 </Context>
 ```
+
+If you would like to secure your BIMserver installation with HTTPS, follow the [SSL Setup Guide](SSL-setup) for detailed instructions on generating and configuring an SSL certificate.
+
 
 ### Proxy note
 
