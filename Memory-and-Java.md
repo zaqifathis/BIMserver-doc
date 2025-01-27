@@ -46,7 +46,7 @@ In order to change the memory allocation in Tomcat, please follow this step:
 the `/tomcat/bin` location might be different with yours.
 
 ```bash
-user@local:~$ touch /opt/tomcat/bin/setenv.sh     # create setenv.sh manually in your tomcat/bin
+user@local:~$ touch /opt/tomcat/bin/setenv.sh     # create setenv.sh manually
 user@local:~$ vim /opt/tomcat/bin/setenv.sh       # edit to set memory
 ```
 content of ``/opt/tomcat/bin/setenv.sh ``:
