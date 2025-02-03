@@ -95,6 +95,36 @@ Additional content of `setenv.sh ` for 4G heap size:
 CATALINA_OPTS="-Xmx4G"   # use space to combine with other options if any
 ````
 
+### Automatic Startup
+In order to start Tomcat automatically on system boot, we can create a ``systemd`` service file.
+
+```sh
+user@local:~$ vim /etc/systemd/system/tomcat.service  # create and edit the service file 
+user@local:~$ systemctl daemon-reload                 # reload the service files
+user@local:~$ systemctl enable tomcat                 # enable the service
+user@local:~$ systemctl start tomcat                  # start the service
+user@local:~$ systemctl status tomcat                 # check the status if Tomcat starting up with the system successfully
+```
+Content of `tomcat.service`:    
+
+````declarative
+[Unit]
+Description=Tomcat
+After=network.target
+
+[Service]
+Type=forking
+User=tomcat
+Group=tomcat
+ExecStart=/opt/tomcat9/bin/startup.sh
+ExecStop=/opt/tomcat9/bin/shutdown.sh
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+````
+
 
 Deploy and configure BIMserver
 ----------------------
