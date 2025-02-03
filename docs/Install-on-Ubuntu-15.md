@@ -57,7 +57,7 @@ tomcat:x:1009:1009::/var/tomcat:/sbin/nologin
 The home directory names and locations can be selected freely.
 If you want to have multiple BIMserver home later, you can create a new home directory in `/var/bimserver`.
 
-## Install Tomcat
+## Install and configure Tomcat
 
 ```sh
 user@local:~$ wget [link of tomcat.zip]             # Download tomcat (Make sure you replace this with the latest release!)
@@ -92,6 +92,37 @@ Additional content of `setenv.sh ` for 4G heap size:
 
 ````sh
 CATALINA_OPTS="-Xmx4G"   # use space to combine with other options if any
+````
+
+## Automatic Tomcat startup
+
+In order to start Tomcat automatically on operating  system boot, we can create a ``systemd`` service file.
+
+```sh
+user@local:~$ vim /etc/systemd/system/tomcat.service  # create and edit the service configuration
+user@local:~$ systemctl daemon-reload                 # reload the service configuration
+user@local:~$ systemctl enable tomcat                 # enable automatic startup
+user@local:~$ systemctl start tomcat                  # manually start the service
+user@local:~$ systemctl status tomcat                 # check the status of the service
+```
+Content of `tomcat.service`:    
+
+````declarative
+[Unit]
+Description=Tomcat
+After=network.target
+
+[Service]
+Type=forking
+User=tomcat
+Group=tomcat
+ExecStart=/opt/tomcat9/bin/startup.sh
+ExecStop=/opt/tomcat9/bin/shutdown.sh
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
 ````
 
 ## Deploy and configure BIMserver
