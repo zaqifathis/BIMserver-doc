@@ -1,9 +1,5 @@
 
-### Outdated Instruction  
-You can find the instruction of Ubuntu installation for previous version: [version 1.3 and 1.4 installation](Install-on-Ubuntu)
-
-### Configure SSL
-If you would like to secure your BIMserver installation with HTTPS, follow the [SSL Setup Guide](SSL-setup) for detailed instructions on generating and configuring an SSL certificate.
+For reference, you can find [older instructions](Install-on-Ubuntu) tested with Ubuntu 12.04, Tomcat 7 and BIMserver 1.3 on an AWS server.
 
 ***
 
@@ -87,6 +83,17 @@ user@local:~$ sudo -u tomcat /opt/tomcat9/bin/startup.sh   # start tomcat under 
 user@local:~$ sudo /opt/tomcat9/bin/shutdown.sh            # stop tomcat
 ```
 
+Adjust memory settings (see [Heap size considerations](#considerations-for-choosing-the-heap-size)):
+
+```sh
+user@local:~$ sudo vim /opt/tomcat/bin/setenv.sh       # create if not existing and edit
+```
+
+Additional content of `setenv.sh ` for 4G heap size:
+
+````sh
+CATALINA_OPTS="-Xmx4G"   # use space to combine with other options if any
+````
 
 
 Deploy and configure BIMserver
@@ -115,6 +122,9 @@ Content of `bimserver.xml` (enter your bimserver [home](#directories-and-user-se
 </Context>
 ```
 
+If you would like to secure your BIMserver installation with HTTPS, follow the [SSL Setup Guide](SSL-setup) for detailed instructions on generating and configuring an SSL certificate.
+
+
 ### Proxy note
 
 If you are using proxy, configure the proxy settings in `setenv.sh`. This step may still be necessary, even if the proxy server is already configured externally for the terminal user. You can first attempt to setup BIMserver to check if this configuration is required. If plugin installation fails, delete the home folder and start over again.
@@ -128,4 +138,6 @@ Additional content of `setenv.sh`:
 ```sh
 CATALINA_OPTS="-Dhttp.proxyHost=[PROXY HOST] -Dhttp.proxyPort=[PORT] -Dhttps.proxyHost=[PROXY HOST] -Dhttps.proxyPort=[PORT]"
 ```
+
+
 
