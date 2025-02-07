@@ -82,7 +82,7 @@ user@local:~$ sudo -u tomcat /opt/tomcat9/bin/startup.sh   # start tomcat under 
 user@local:~$ sudo /opt/tomcat9/bin/shutdown.sh            # stop tomcat
 ```
 
-Adjust memory settings (see [Heap size considerations](#considerations-for-choosing-the-heap-size)):
+Adjust memory settings (see [Heap size considerations](Memory-and-Java.md#considerations-for-choosing-the-heap-size)):
 
 ```sh
 user@local:~$ sudo vim /opt/tomcat/bin/setenv.sh       # create if not existing and edit
@@ -151,7 +151,7 @@ Content of `bimserver.xml` (enter your bimserver [home](#directories-and-user-se
 </Context>
 ```
 
-If you would like to secure your BIMserver installation with HTTPS, follow the [SSL Setup Guide](SSL-setup) for detailed instructions on generating and configuring an SSL certificate.
+If you would like to secure your BIMserver installation with HTTPS, follow the [SSL Setup Guide](SSL-setup.md) for detailed instructions on generating and configuring an SSL certificate.
 
 
 ### Proxy note
