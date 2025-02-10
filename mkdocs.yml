@@ -60,6 +60,7 @@ nav:
           - Version 1.3: Requirements-1.3.md
           - Version 1.4: Requirements-1.4.md
           - Version 1.4 (2015-09-12): Requirements-1.4---2015-09-12.md
+          - Version 1.5: Requirements-1.5.md
       - Download: Download.md
       - JAR Starter: JAR-Starter.md
       - Setup: Setup.md
@@ -96,6 +97,7 @@ nav:
       - JavaScript Client: JavaScriptClient.md
 
   - BIMServer Developers:
+      - Plugins in 1.5: Plugins---new-style.md
       - Plugin Development:
           - Plugin Development: Plugin-Development.md
           - Serializer Plugin:
@@ -117,8 +119,10 @@ nav:
       - Database/Versioning: Database---Versioning.md
       - IFC STEP Encoding: IFC-STEP-Encoding.md
       - Communication: Communication.md
+      - Global changes in 1.5: Global-changes-in-1.5.md
       - Writing a service: Writing-a-service,-the-easy-way.md
       - Services/Notifications: Services-Notifications.md
+      - BIMserver 1.5 Developers: BIMserver-1.5---Developers.md
       - Extended data: Extended-Data.md
       - Extended data schema: Extended-Data-Schema.md
       - Object IDM: Object-IDMs.md
