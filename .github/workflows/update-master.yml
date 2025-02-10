@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4
+      - name: Fetch gh-pages
+        run: git fetch --depth 1 origin gh-pages:gh-pages
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
