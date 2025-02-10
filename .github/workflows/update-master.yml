@@ -1,4 +1,5 @@
-name: Deploy latest version from master branch
+name: mkdocs-build-deploy-latest
+run-name: MkDocs build latest from master branch and deploy to gh-pages
 on:
   push:
     branches:

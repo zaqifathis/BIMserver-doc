@@ -1,4 +1,5 @@
-name: Deploy version from arbitrary 1.x branch
+name: mkdocs-build-deploy-1.x
+run-name: MkDocs build from {{ github.ref_name }} branch and deploy to gh-pages
 on:
   push:
     branches:
