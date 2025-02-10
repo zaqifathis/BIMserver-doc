@@ -1,9 +1,6 @@
-name: mkdocs-build-deploy-1.x
+name: mkdocs-build-deploy
 run-name: MkDocs build from {{ github.ref_name }} branch and deploy to gh-pages
-on:
-  push:
-    branches:
-      - "1.*"
+on: push
 permissions:
   contents: write
 jobs:
@@ -21,13 +18,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - name: Cache key for weekly updates
-        run: echo "cache_id=$(date --utc '+%Y-%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+      - name: Cache for weekly updates
+        uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
+          key: mkdocs-material-$(date --utc '+%Y-%V')
           path: ~/.cache/pip
           restore-keys: mkdocs-material-
       - run: pip install mkdocs-material mike
-      - name: Deploy branch
+      - name: Deploy arbitrary branch
+        if: ${{github.ref_name != 'master' }}
         run: mike deploy --push ${GITHUB_REF_NAME}
+      - name: Deploy master
+        if: ${{github.ref_name == 'master' }}
+        run: |
+          mike deploy --push --update-aliases $(cat VERSION) latest
+          mike set-default --push latest
