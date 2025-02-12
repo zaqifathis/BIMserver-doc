@@ -68,7 +68,7 @@ nav:
   - Deployment:
       - Ubuntu installation: Install-on-Ubuntu-15.md
       - Windows installation: Tomcat-on-windows.md
-      - Security: Security.md
+      - Security: Java-Security-Manager.md
       - Memory Usage: Memory-usage.md
       - More memory: Memory-and-Java.md
       - Performance statistics: Performance-statistics.md
