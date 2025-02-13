@@ -20,7 +20,7 @@ The Opensource BIMserver community has been actively developing since 2013. We a
 
 BIMserver has a flexible architecture and various interfaces and is meant to be integrated with your software to act as an IFC backend. You may:
 
-1. Write your own [plugin](plugin-development.md) or service.
+1. Write your own [plugin](Plugin-development.md) or service.
 2. Use the clients or write your own client to have your application talk with a BIMserver instance.
 3. Embed the Opensource BIMserver in your application.
 
